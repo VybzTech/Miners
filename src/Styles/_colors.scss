@@ -1,0 +1,30 @@
+$gray_brown: #3e3333;
+$dark_brown: #2e0f10;
+$brown: #541c1d;
+$white: #f3ebec;
+// $white: #f6eee8;
+$pink: #e7c7b0;
+
+$light_yellow: #ffe330;
+$yellow: #f6d70b;
+$yellow2: #f2d30b;
+$deep_yellow: #f1c30b;
+$dirty_yellow: #977900;
+$orange: #f8a414;
+$sun_yellow: #ffb300;
+
+@mixin flex($align: center, $jus: space-between) {
+  display: flex;
+  justify-content: $jus;
+  align-items: $align;
+}
+
+@mixin transShort {
+  transition: all 150ms ease-in-out;
+}
+@mixin trans {
+  transition: all 250ms ease-in-out;
+}
+@mixin transLong {
+  transition: all 450ms ease-in-out;
+}

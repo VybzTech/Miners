@@ -18,8 +18,11 @@ const Navbar = () => {
   return (
     <nav className="Navbar">
       <div className="Logo">
-        <p>Platinum Ville</p>
-        <span>mines limited</span>
+        <span>p</span>
+        <p>
+          Platinum Ville mines
+          {/* <span>mines</span> */}
+        </p>
       </div>
       <nav>
         <a href="#Home">Home</a>

@@ -32,13 +32,39 @@ nav.Navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  width: 100%;
+  position: absolute;
   top: 0;
   left: 0;
 }
 nav.Navbar .Logo {
-  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2.5rem;
+  color: white;
+}
+nav.Navbar .Logo span {
+  font-size: 3rem;
+  color: #f1c30b;
+}
+nav.Navbar .Logo p {
+  font-size: 1.1rem;
+  height: fit-content;
+  color: white;
+  width: 100px;
 }
 nav.Navbar > nav a {
+  font-weight: 600;
+  letter-spacing: -0.1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f3ebec;
   margin-right: 1.2rem;
+  transition: all 150ms ease-in-out;
+  opacity: 0.925;
+}
+nav.Navbar > nav a:hover {
+  opacity: 1;
+  color: white;
 }
