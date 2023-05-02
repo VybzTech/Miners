@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [lightNav, setLightNav] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        setLightNav(true);
+      } else {
+        setLightNav(false);
+      }
+    });
+    return () => {
+      window.removeEventListener("scroll", () => {});
+    };
+  }, [lightNav]);
+
   return (
     <nav className="Navbar">
       <div className="Logo">
