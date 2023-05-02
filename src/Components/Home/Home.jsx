@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Background from "../Background";
 import Navbar from "./Navbar";
+import pic from "../../Images/Tractor.jpg";
 
 const Home = () => {
-  const [img, setImg] = useState("");
+  const [img, setImg] = useState(pic);
   return (
     <section id="Home">
       <Background img={img} />

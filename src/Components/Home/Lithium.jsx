@@ -1,35 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Background from "../Background";
+import Pic from "../../Images/Tractors.jpg";
+import { LITHIUM__MINING } from "../Services/Data";
+import Roller from "../Roller";
+import LithiumBubble from "../LithiumBubble";
 
 const Lithium = () => {
   const [tabbed, set] = useState(true);
+  useEffect(() => {}, []);
+  const LithiumInfo = tabbed ? LITHIUM__MINING[0] : LITHIUM__MINING[1];
+  // console.log(LithiumInfo?.content);
   return (
     <section id="#Lithium">
+      <Background img={Pic} />
       <h2>Lithium Mining</h2>
-      <main></main>
-      <aside>
-        <div
-          className={`bubble ${tabbed && "Tabbed"}`}
-          onClick={() => set((t) => (t = !t))}
-        >
-          <h4>brine</h4>
-          <p>
-            Lithium brine recovery is a straight forward but time-consuming
-            process.
-          </p>
-          <span>5 stars</span>
-        </div>
-        <div
-          className={`bubble ${!tabbed && "Tabbed"}`}
-          onClick={() => set((t) => (t = !t))}
-        >
-          <h4>hard rock</h4>
-          <p>
-            Lithium extracted by 'hard rock'comes from minerals hosted in
-            Pegmatites.
-          </p>
-          <span>4 stars</span>
-        </div>
-      </aside>
+      <Roller infos={LithiumInfo?.content} />;
+      <LithiumBubble tabbed={tabbed} set={set} LithiumInfo={LithiumInfo} />
     </section>
   );
 };
