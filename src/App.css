@@ -30,12 +30,12 @@ code {
 
 @font-face {
   font-family: Bart;
-  src: url("../Fonts/bartkey-font/BARTKEY.otf");
 }
 nav.Navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   z-index: 3;
   width: 100%;
   position: absolute;
@@ -58,6 +58,7 @@ nav.Navbar .Logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   padding-left: 2.5rem;
   color: white;
 }
@@ -196,3 +197,56 @@ nav.Navbar > nav a.screen::after {
   }
 }
 */
+#Home {
+  position: relative;
+}
+#Home .swiper-pagination {
+  width: 10vw;
+  top: 45vh;
+  right: -2rem !important;
+  left: auto;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#Home .swiper-pagination-bullet {
+  margin: 0.7rem auto;
+  background: white;
+  opacity: 0.6;
+  width: 8px;
+  height: 8px;
+  transition: all 150ms ease-in-out;
+}
+#Home .swiper-pagination-bullet-active {
+  width: 10px;
+  margin: 1.8rem auto;
+  height: 10px;
+  opacity: 1;
+  background: #f1c30b;
+}
+#Home .swiper-pagination-bullet-active::after {
+  content: "";
+  position: absolute;
+  top: -0.85rem;
+  left: -0.8rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1000px;
+  z-index: -1;
+  background: transparent;
+  border: 2px solid #f1c30b;
+}
+#Home .swiper-pagination-bullet:hover {
+  width: 9px;
+  opacity: 1;
+  height: 9px;
+}
+#Home main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}

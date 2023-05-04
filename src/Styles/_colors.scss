@@ -18,14 +18,18 @@ $black: #111;
 // FONTS
 @font-face {
   font-family: Bart;
-  src: url("../Fonts/bartkey-font/BARTKEY.otf");
+  // font-weight: 500;
+  // font-style: normal;
+  // src: url("./../Fonts/bartkey-font/BARTKEY.otf") format("opentype");
+  // src: url("./../Fonts/bartkey-font/BARTKEY\ 2.ttf");
 }
 
 //  MIXINS
-@mixin flex($align: center, $jus: space-between) {
+@mixin flex($align: center, $jus: space-between, $dir: row) {
   display: flex;
   justify-content: $jus;
   align-items: $align;
+  flex-direction: $dir;
 }
 
 @mixin transShort {
