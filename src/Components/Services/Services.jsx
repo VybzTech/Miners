@@ -2,12 +2,12 @@ import React from "react";
 import Background from "../Background";
 import Pic from "../../Images/Drilled-Hole.jpg";
 import Served from "../Services/Served";
-import Service1 from "../../Images/heavy-mining.jpg";
-import Service2 from "../../Images/heavy-mining-truck.png";
-import Service3 from "../../Images/heavy-mining-truck.png";
-import Service4 from "../../Images/heavy-mining-truck.png";
-import Service5 from "../../Images/heavy-mining-truck.png";
-import Service6 from "../../Images/heavy-mining-truck.png";
+import Service1 from "../../Images/Services/heavy-mining-truck.png";
+import Service2 from "../../Images/Services/heavy-mining-truck.png";
+import Service3 from "../../Images/Services/heavy-mining-truck.png";
+import Service4 from "../../Images/Services/heavy-mining-truck.png";
+import Service5 from "../../Images/Services/heavy-mining-truck.png";
+import Service6 from "../../Images/Services/heavy-mining-truck.png";
 
 const Services = () => {
   const ServiceArray = [

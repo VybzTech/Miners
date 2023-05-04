@@ -4,7 +4,7 @@ import Pic from "../../Images/Lands.jpg";
 // import Bg from
 const Products = () => {
   return (
-    <section>
+    <section id="Products">
       <Background img={Pic} />
       <h2>The best choice</h2>
       <p>
