@@ -13,6 +13,15 @@ $dirty_yellow: #977900;
 $orange: #f8a414;
 $sun_yellow: #ffb300;
 
+$black: #111;
+
+// FONTS
+@font-face {
+  font-family: Bart;
+  src: url("../Fonts/bartkey-font/BARTKEY.otf");
+}
+
+//  MIXINS
 @mixin flex($align: center, $jus: space-between) {
   display: flex;
   justify-content: $jus;
