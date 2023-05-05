@@ -68,11 +68,13 @@ const Home = () => {
       </Swiper>
       <Navbar />
       <main>
-        <h1>What</h1>
-        <h1>
-          we <br />
-          do
-        </h1>
+        <div className="title">
+          <h1>What</h1>
+          <h1>
+            we <br />
+            do
+          </h1>
+        </div>
         <a href="#Lithium">Lithium Mining</a>
         <div className="img_Counter">01</div>
       </main>

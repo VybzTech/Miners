@@ -18,10 +18,18 @@ $black: #111;
 // FONTS
 @font-face {
   font-family: Bart;
-  // font-weight: 500;
-  // font-style: normal;
-  // src: url("./../Fonts/bartkey-font/BARTKEY.otf") format("opentype");
-  // src: url("./../Fonts/bartkey-font/BARTKEY\ 2.ttf");
+  src: local(Bart), url("/src/Fonts/Bartkey/BARTKEY-2.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Gills;
+  src: local(Gills),
+    url("/src/Fonts/Gill-Sans/Gill-Sans.otf") format("opentype");
+}
+@font-face {
+  font-family: GillsHeavy;
+  src: local(GillsHeavy),
+    url("/src/Fonts/Gill-Sans/Gill-Sans-Heavy.otf") format("opentype");
 }
 
 //  MIXINS

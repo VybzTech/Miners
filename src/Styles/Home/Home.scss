@@ -45,9 +45,20 @@
   }
   main {
     position: absolute;
-    top: 0;
+    // top: 0;
+    top: 20vh;
     left: 0;
     width: 100%;
     z-index: 5;
+    .title {
+      width: fit-content;
+      margin: 0 auto;
+      h1 {
+        font-size: 5rem;
+        text-transform: uppercase;
+        color: white; // font-weight: 900;
+        font-family: GillsHeavy;
+      }
+    }
   }
 }
