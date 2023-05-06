@@ -10,6 +10,8 @@ $yellow: #f6d70b;
 $yellow2: #f2d30b;
 $deep_yellow: #f1c30b;
 $dirty_yellow: #977900;
+$dirty_yellow_shadow: #9779003a;
+$dirty_yellow_shadow2: #97790077;
 $orange: #f8a414;
 $sun_yellow: #ffb300;
 
@@ -30,6 +32,12 @@ $black: #111;
   font-family: GillsHeavy;
   src: local(GillsHeavy),
     url("/src/Fonts/Gill-Sans/Gill-Sans-Heavy.otf") format("opentype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: GillsBold;
+  src: local(GillsBold),
+    url("/src/Fonts/Gill-Sans/Gill-Sans-Bold.otf") format("opentype");
 }
 
 //  MIXINS

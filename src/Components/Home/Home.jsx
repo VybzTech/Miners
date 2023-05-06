@@ -23,6 +23,7 @@ register();
 
 const Home = () => {
   // const [img, setImg] = useState(pic);
+  const [count, setCount] = useState(0);
 
   // const swiper = useSwiper();
   useEffect(() => {
@@ -43,12 +44,29 @@ const Home = () => {
         // navigation
         slidesPerView={1}
         loop
-        spaceBetween={0}
+        spaceBetween={1}
         pagination={{ clickable: true }}
         onSwiper={(swiper) => {
+          // const swiper;
+          // const counter = swiper.realIndex;
           const interval = setInterval(() => {
-            setTimeout(() => swiper.slideNext(1500), 3000);
-          }, 8000);
+            // console.log(swiper.activeIndex);
+            // !swiper.animating ? swiper.activeIndex : "Animating Now"
+            setTimeout(() => {
+              swiper.slideNext(1500);
+              // console.log(swiper.realIndex);
+              // console.log(swiper.activeIndex);
+              // console.log(swiper.animating);
+
+              if (swiper.realIndex !== undefined) {
+                if (count === 4) {
+                  setCount(0);
+                } else {
+                  setCount(swiper.realIndex);
+                }
+              }
+            }, 3000);
+          }, 5000);
           return () => clearInterval(interval);
         }}
         // onSlideChange={() => console.log("slide change")}
@@ -57,13 +75,13 @@ const Home = () => {
           <Background img={pic1} />
         </SwiperSlide>
         <SwiperSlide>
-          <Background img={pic2} />
-        </SwiperSlide>
-        <SwiperSlide>
           <Background img={pic3} />
         </SwiperSlide>
         <SwiperSlide>
           <Background img={pic4} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Background img={pic2} />
         </SwiperSlide>
       </Swiper>
       <Navbar />
@@ -74,9 +92,9 @@ const Home = () => {
             we <br />
             do
           </h1>
+          <a href="#Lithium">Lithium Mining</a>
         </div>
-        <a href="#Lithium">Lithium Mining</a>
-        <div className="img_Counter">01</div>
+        <p className="img_Counter">0{count + 1}</p>
       </main>
     </section>
   );

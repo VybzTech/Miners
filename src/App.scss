@@ -1,3 +1,5 @@
+@import "./Styles/colors";
+
 /* INDEX CONTENT */
 body {
   margin: 0;
@@ -20,6 +22,21 @@ code {
   position: relative;
   scroll-behavior: smooth !important;
   margin: 0;
+  // &::selection {
+  //   background-color: $dirty_yellow;
+  // }
+  // &::-webkit-scrollbar {
+  //   background: #333a;
+  //   &-track {
+  //     width: 10px;
+  //   }
+  //   &-button {
+  //   }
+  //   &-thumb {
+  //     width: 10px;
+  //     background: #111a;
+  //   }
+  // }
 }
 
 /* APP CONTENT   */
@@ -37,3 +54,5 @@ code {
 @import "./Styles/Home/Bg";
 @import "./Styles/Home/Navbar";
 @import "./Styles/Home/Home";
+@import "./Styles/About/About";
+@import "./Styles/About/Lithium";

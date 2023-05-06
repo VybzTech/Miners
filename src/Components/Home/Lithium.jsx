@@ -11,7 +11,7 @@ const Lithium = () => {
   const LithiumInfo = tabbed ? LITHIUM__MINING[0] : LITHIUM__MINING[1];
   // console.log(LithiumInfo?.content);
   return (
-    <section id="#Lithium">
+    <section id="Lithium">
       <Background img={Pic} />
       <h2>Lithium Mining</h2>
       <Roller infos={LithiumInfo?.content} />;
