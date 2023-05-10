@@ -4,12 +4,13 @@ import { useState } from 'react';
 import { BsCircleFill } from 'react-icons/bs';
 
 const Roller = ({ infos }) => {
-    // console.log('Infos to Loop', infos);
+    const { name, content } = infos;
+    console.log('content to Loop', content);
     const [active, set] = useState(0);
     console.log(document.querySelector('.Roller')?.clientHeight);
     return (
         <main className='Roller'>
-            {infos?.map((info, i) => {
+            {content?.map((info, i) => {
                 return (
                     <div
                         className={`${
@@ -33,7 +34,11 @@ const Roller = ({ infos }) => {
                 className='line'
                 style={{
                     maxHeight: `${
-                        document.querySelector('.Roller')?.clientHeight - 69 //INCREASE TO MAKE SHORTER
+                        document.querySelector('.Roller')?.clientHeight -
+                            name ==
+                        'brine'
+                            ? 70
+                            : 55 //INCREASE TO MAKE SHORTER
                     }px`,
                 }}
             />

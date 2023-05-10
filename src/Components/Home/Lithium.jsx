@@ -13,7 +13,7 @@ const Lithium = () => {
         <section id='Lithium'>
             <LithiumBg img={Pic} />
             <div className='container'>
-                <Roller infos={LithiumInfo?.content} />
+                <Roller infos={LithiumInfo} />
                 <main>
                     <h2>Lithium Mining</h2>
                     <LithiumBubble
