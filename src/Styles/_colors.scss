@@ -4,6 +4,8 @@ $brown: #541c1d;
 $white: #f3ebec;
 // $white: #f6eee8;
 $pink: #e7c7b0;
+$pinkish: #fce1d7;
+$pinkish_Light: #faefec;
 
 $light_yellow: #ffe330;
 $yellow: #f6d70b;
@@ -16,44 +18,48 @@ $orange: #f8a414;
 $sun_yellow: #ffb300;
 
 $black: #111;
+$black2: #222;
+$black3: #333;
+$gray: #aaa;
+$light_gray: #ccc;
 
 // FONTS
 @font-face {
-  font-family: Bart;
-  src: local(Bart), url("/src/Fonts/Bartkey/BARTKEY-2.ttf") format("truetype");
-  font-weight: bold;
+    font-family: Bart;
+    src: local(Bart), url('/src/Fonts/Bartkey/BARTKEY-2.ttf') format('truetype');
+    font-weight: bold;
 }
 @font-face {
-  font-family: Gills;
-  src: local(Gills),
-    url("/src/Fonts/Gill-Sans/Gill-Sans.otf") format("opentype");
+    font-family: Gills;
+    src: local(Gills),
+        url('/src/Fonts/Gill-Sans/Gill-Sans.otf') format('opentype');
 }
 @font-face {
-  font-family: GillsHeavy;
-  src: local(GillsHeavy),
-    url("/src/Fonts/Gill-Sans/Gill-Sans-Heavy.otf") format("opentype");
-  font-weight: 900;
+    font-family: GillsHeavy;
+    src: local(GillsHeavy),
+        url('/src/Fonts/Gill-Sans/Gill-Sans-Heavy.otf') format('opentype');
+    font-weight: 900;
 }
 @font-face {
-  font-family: GillsBold;
-  src: local(GillsBold),
-    url("/src/Fonts/Gill-Sans/Gill-Sans-Bold.otf") format("opentype");
+    font-family: GillsBold;
+    src: local(GillsBold),
+        url('/src/Fonts/Gill-Sans/Gill-Sans-Bold.otf') format('opentype');
 }
 
 //  MIXINS
 @mixin flex($align: center, $jus: space-between, $dir: row) {
-  display: flex;
-  justify-content: $jus;
-  align-items: $align;
-  flex-direction: $dir;
+    display: flex;
+    justify-content: $jus;
+    align-items: $align;
+    flex-direction: $dir;
 }
 
 @mixin transShort {
-  transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 @mixin trans {
-  transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 @mixin transLong {
-  transition: all 450ms ease-in-out;
+    transition: all 450ms ease-in-out;
 }

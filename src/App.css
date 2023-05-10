@@ -1,17 +1,666 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 54 | @import "./Styles/Home/Bg";
- *    |         ^^^^^^^^^^^^^^^^^^
- *    '
- *   src\App.scss 54:9  root stylesheet */
+@font-face {
+  font-family: Bart;
+  src: local(Bart), url("/src/Fonts/Bartkey/BARTKEY-2.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Gills;
+  src: local(Gills), url("/src/Fonts/Gill-Sans/Gill-Sans.otf") format("opentype");
+}
+@font-face {
+  font-family: GillsHeavy;
+  src: local(GillsHeavy), url("/src/Fonts/Gill-Sans/Gill-Sans-Heavy.otf") format("opentype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: GillsBold;
+  src: local(GillsBold), url("/src/Fonts/Gill-Sans/Gill-Sans-Bold.otf") format("opentype");
+}
+/* INDEX CONTENT */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 54 \2502  @import \"./Styles/Home/Bg\";\a    \2502          ^^^^^^^^^^^^^^^^^^\a    \2575 \a   src\\App.scss 54:9  root stylesheet";
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+* {
+  padding: 0;
+  position: relative;
+  scroll-behavior: smooth !important;
+  margin: 0;
+}
+
+/* APP CONTENT   */
+.Bg__Image {
+  /* background-position: 100% 100vh; */
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: Bart;
+  src: local(Bart), url("/src/Fonts/Bartkey/BARTKEY-2.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Gills;
+  src: local(Gills), url("/src/Fonts/Gill-Sans/Gill-Sans.otf") format("opentype");
+}
+@font-face {
+  font-family: GillsHeavy;
+  src: local(GillsHeavy), url("/src/Fonts/Gill-Sans/Gill-Sans-Heavy.otf") format("opentype");
+  font-weight: 900;
+}
+@font-face {
+  font-family: GillsBold;
+  src: local(GillsBold), url("/src/Fonts/Gill-Sans/Gill-Sans-Bold.otf") format("opentype");
+}
+nav.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  z-index: 3;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.0117647059), rgba(0, 0, 0, 0.1333333333));
+}
+nav.Navbar.Light {
+  background: white;
+  position: fixed;
+  box-shadow: 0 3px 15px rgba(238, 238, 238, 0.3333333333);
+}
+nav.Navbar.Light .Logo p {
+  color: #111;
+}
+nav.Navbar.Light > nav a {
+  color: #333;
+}
+nav.Navbar.Light > nav a:hover {
+  color: #222;
+}
+nav.Navbar.Light > nav a.screen {
+  color: black;
+}
+nav.Navbar .Logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 2.5rem;
+  color: white;
+}
+nav.Navbar .Logo span {
+  font-size: 2.5rem;
+  color: #f1c30b;
+}
+nav.Navbar .Logo p {
+  font-family: Bart;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  height: fit-content;
+  color: white;
+  width: 8rem;
+  text-align: center;
+}
+nav.Navbar > nav {
+  padding-right: 1.5rem;
+}
+nav.Navbar > nav a {
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f3ebec;
+  margin-right: 2rem;
+  transition: all 150ms ease-in-out;
+  opacity: 0.8;
+  font-size: 1.05rem;
+}
+nav.Navbar > nav a:hover {
+  opacity: 1;
+  font-size: 1.07rem;
+  color: white;
+}
+nav.Navbar > nav a:focus, nav.Navbar > nav a:focus-visible, nav.Navbar > nav a:focus-within {
+  font-size: 1rem;
+}
+nav.Navbar > nav a.screen {
+  letter-spacing: -0.5px;
+  opacity: 1;
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+nav.Navbar > nav a.screen::after {
+  content: "";
+  position: absolute;
+  top: -0.4rem;
+  left: -0.75rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 1000px;
+  z-index: -1;
+  background-color: #f2d30b;
+  border: 2px solid #f1c30b;
+}
+
+/*
+.navbar {
+  height: 9vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 48;
+  @include trans(350ms);
+  @include flex($justify: space-between);
+  .logo {
+    z-index: 49;
+    margin: 0.5rem 0 0 2.1rem;
+    &:hover {
+      cursor: pointer;
+    }
+    svg {
+      width: 36px;
+      height: 33px;
+      z-index: 5;
+      path {
+        fill: $themeBlack2;
+        &:first-of-type {
+          fill: $themeBlue;
+        }
+      }
+    }
+  }
+  .navigation {
+    margin: auto 2.7rem;
+    @include flex;
+    .navContextual {
+      display: none;
+    }
+    .nav {
+      border: 3px solid transparent;
+      color: $themeWhite;
+      margin: 0 10px 0 3px;
+      opacity: 0.55;
+      @include trans(450ms);
+      -webkit-text-stroke: 0.3px $themeWhite;
+      &:hover,
+      &:focus {
+        border-bottom-color: $themeBlueAlpha;
+        opacity: 0.85;
+      }
+      &.active {
+        opacity: 1;
+        border-bottom-color: $themeBlue;
+      }
+    }
+    .MuiButton-text {
+      padding: 5px 5px 1px;
+      width: fit-content;
+    }
+  }
+  .navBtn {
+    display: none;
+  }
+  //-------- NAVBAR ON SCROLL
+  &.white {
+    background-color: white;
+    box-shadow: 0 -1px 10px $offWhite;
+    .logo svg path {
+      fill: $themeBlack1;
+      &:first-of-type {
+        fill: $themeCoarseBlue;
+      }
+    }
+
+    .nav {
+      color: Black;
+      -webkit-text-stroke: 0.3px Black;
+      &:hover {
+        border-bottom-color: $themeCoarseBlue;
+      }
+      &.active {
+        border-bottom-color: $themeCoarseBlue;
+      }
+    }
+    &.dark .theme button:hover {
+      box-shadow: none;
+    }
+  }
+}
+*/
+#Home {
+  position: relative;
+}
+#Home .swiper-pagination {
+  width: 10vw;
+  top: 45vh;
+  z-index: 10;
+  right: -2rem !important;
+  left: auto;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#Home .swiper-pagination-bullet {
+  margin: 0.7rem auto;
+  background: white;
+  opacity: 0.7;
+  width: 8px;
+  height: 8px;
+  transition: all 150ms ease-in-out;
+}
+#Home .swiper-pagination-bullet-active {
+  width: 10px;
+  margin: 1.8rem auto;
+  height: 10px;
+  opacity: 1;
+  background: #f1c30b;
+}
+#Home .swiper-pagination-bullet-active::after {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: -8.5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 1000px;
+  z-index: -1;
+  background: transparent;
+  border: 2px solid #f1c30b;
+}
+#Home .swiper-pagination-bullet:hover {
+  width: 9px;
+  opacity: 1;
+  height: 9px;
+}
+#Home main {
+  position: absolute;
+  top: 30vh;
+  left: 0;
+  width: 100%;
+}
+#Home main .title {
+  z-index: 2;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+#Home main .title h1 {
+  font-size: 4rem;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  color: white;
+  font-family: GillsHeavy;
+  font-weight: 900;
+  line-height: 3rem;
+  -webkit-text-stroke: 2px white;
+}
+#Home main .title h1:last-of-type {
+  font-size: 7rem;
+  -webkit-text-stroke: 7px white;
+  line-height: 5.4rem;
+}
+#Home main .title > a {
+  color: #f8a414;
+  display: inline-block;
+  transition: all 250ms ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: rgba(151, 121, 0, 0.2274509804);
+  border: 3px solid #f8a414;
+  text-shadow: 0 0 2.5px #f8a414;
+  word-spacing: 2px;
+  border-radius: 5px;
+  padding: 12px 25px 0;
+  cursor: pointer;
+  height: 28px;
+  font-size: 13px;
+  margin: 1rem auto;
+}
+#Home main .title > a:hover {
+  background-color: rgba(151, 121, 0, 0.4666666667);
+}
+#Home main .title > a:active {
+  box-shadow: 0 3px 10px rgba(151, 121, 0, 0.2274509804);
+  top: 3px;
+}
+#Home main p.img_Counter {
+  z-index: 2;
+  font-size: 7rem;
+  text-transform: uppercase;
+  color: transparent;
+  opacity: 0.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: -1rem auto 3rem 2.5rem;
+  font-weight: 900;
+  -webkit-text-stroke: 2.5px white;
+}
+
+#About {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 120vh;
+  width: 100%;
+}
+#About main {
+  width: 50%;
+  padding: 2rem 5rem 1rem 0;
+}
+#About main h2 {
+  font-family: GillsHeavy;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+}
+#About main h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0.3rem;
+  right: -0.25rem;
+  width: 10rem;
+  height: 1rem;
+  border-radius: 1000px;
+  z-index: -1;
+  background-color: #f2d30b;
+  border: 2px solid #f1c30b;
+}
+#About main p {
+  font-family: Gills;
+  width: 85%;
+  text-shadow: 0 0 4px rgba(34, 34, 34, 0.1333333333);
+  color: #111;
+  letter-spacing: 0.3px;
+  word-spacing: 3px;
+  margin: 1.2rem 0 0 auto;
+  font-size: 1.3rem;
+  text-align: right;
+  line-height: 3.2rem;
+}
+#About .AboutImg {
+  position: relative;
+  width: 50%;
+}
+#About .AboutImg img {
+  transition: all 250ms ease-in-out;
+  position: absolute;
+  top: 9rem;
+  left: 5rem;
+  width: 55vw;
+}
+#About .AboutImg .svg {
+  width: 100%;
+}
+#About .AboutImg .svg svg {
+  transition: all 250ms ease-in-out;
+  width: 42vw;
+  margin: 4rem auto 0 4rem;
+}
+#About .AboutImg:hover img {
+  top: 10rem;
+  left: 2.5rem;
+  transform: scale(0.95);
+}
+#About .AboutImg:hover .svg svg {
+  transform: rotate(45deg) scale(1.1);
+}
+
+#Lithium {
+  position: relative;
+}
+#Lithium .Bg__Image {
+  height: 125vh;
+  border-radius: 0 200px 0 200px;
+}
+#Lithium .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 2rem;
+}
+#Lithium .container > main {
+  width: 50%;
+}
+#Lithium .container h2 {
+  font-family: GillsHeavy;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: -1px;
+  color: #e7c7b0;
+  margin: 7rem 6rem 2.5rem auto;
+}
+#Lithium .container aside {
+  padding: 1rem 2rem;
+  margin: 1rem 5rem 2rem auto;
+}
+#Lithium .container aside .bubble {
+  width: 15.5rem;
+  padding: 1.5rem 1.5rem 1rem;
+  margin: 0 0 0.5rem auto;
+  border: 4px solid #2e0f10;
+  opacity: 0.7;
+  text-align: right;
+  border-radius: 30px 30px 0;
+  background: rgba(231, 199, 176, 0.4431372549);
+  transition: all 150ms ease-in-out;
+}
+#Lithium .container aside .bubble.Tabbed, #Lithium .container aside .bubble.Tabbed:hover {
+  opacity: 1;
+  border: 5px solid #2e0f10;
+  box-shadow: 0 0 15px 0.5px rgba(231, 199, 176, 0.2);
+  background: rgba(231, 199, 176, 0.631372549);
+}
+#Lithium .container aside .bubble.Tabbed span,
+#Lithium .container aside .bubble.Tabbed p, #Lithium .container aside .bubble.Tabbed:hover span,
+#Lithium .container aside .bubble.Tabbed:hover p {
+  line-height: 1.7rem;
+}
+#Lithium .container aside .bubble:last-of-type {
+  border-radius: 30px 0 30px 30px;
+}
+#Lithium .container aside .bubble:hover {
+  cursor: pointer;
+  opacity: 0.825;
+}
+#Lithium .container aside .bubble hr {
+  background-color: #fce1d7;
+  opacity: 0.25;
+  height: 1px;
+  border: none;
+  margin: 0 0 10px 0;
+}
+#Lithium .container aside .bubble h4 {
+  font-family: Gills;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  color: #fce1d7;
+}
+#Lithium .container aside .bubble span,
+#Lithium .container aside .bubble p {
+  letter-spacing: 0.8px;
+  line-height: 1.5rem;
+  color: #faefec;
+  font-size: 0.95rem;
+  transition: all 150ms ease-in-out;
+  font-family: Gills;
+  margin-bottom: 1rem;
+}
+#Lithium .container aside .bubble span {
+  font-size: 0.7rem;
+  margin: 0 -0.25rem 5rem auto;
+}
+#Lithium .container main.Roller {
+  padding-left: 3rem;
+}
+#Lithium .container main.Roller .content {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem 3rem;
+}
+#Lithium .container main.Roller .content.active p {
+  font-family: Gills;
+}
+#Lithium .container main.Roller .content.active p span {
+  font-style: normal;
+  font-size: 1.1rem;
+  letter-spacing: -0.1px;
+  line-height: 1.85rem;
+  opacity: 1;
+  color: #faefec;
+}
+#Lithium .container main.Roller .content.active p:hover span {
+  font-size: 1.1rem;
+  opacity: 1;
+}
+#Lithium .container main.Roller .content.active p::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0.5rem;
+  left: -2.5rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 10000px;
+  background-color: #e7c7b0;
+  opacity: 1;
+}
+#Lithium .container main.Roller .content p {
+  color: #fce1d7;
+  width: fit-content;
+  z-index: 2;
+}
+#Lithium .container main.Roller .content p span {
+  font-size: 0.8rem;
+  line-height: 1.15rem;
+  font-style: italic;
+  opacity: 0.5;
+  transition: all 250ms ease-in-out;
+}
+#Lithium .container main.Roller .content p:hover span {
+  opacity: 0.7;
+}
+#Lithium .container main.Roller .content p::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: -2.3rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  transition: all 150ms ease-in-out;
+  border-radius: 10000px;
+  background-color: #fce1d7;
+}
+#Lithium .container main.Roller .content p:hover::before {
+  opacity: 1 !important;
+  transform: scale(1.2);
+  cursor: pointer;
+  color: #faefec;
+}
+#Lithium .container main.Roller .line {
+  content: "";
+  opacity: 0.85;
+  background-color: #fce1d7;
+  position: absolute;
+  top: 1.7rem;
+  left: 3.85rem;
+  width: 2px;
+  height: 25rem;
+  border-radius: 1px;
+  z-index: 1;
+  transition: all 150ms ease-in-out;
+}
+#Lithium .container main.Roller .line:hover {
+  width: 3px;
+}
+
+#Products {
+  height: 120vh;
+}
+#Products .hero {
+  margin: 5rem auto 15rem;
+  width: fit-content;
+  text-align: center;
+}
+#Products .hero span {
+  color: #222;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  color: transparent;
+  opacity: 0.7;
+  font-family: Gills;
+  -webkit-text-stroke: 1px #333;
+}
+#Products .hero h1 {
+  z-index: -2;
+  font-size: 8.5rem;
+  text-transform: capitalize;
+  color: transparent;
+  opacity: 0.25;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0.25rem auto -1.8rem 2.5rem;
+  font-weight: 900;
+  line-height: 3rem;
+  -webkit-text-stroke: 2px #aaa;
+}
+#Products .hero h2 {
+  font-family: GillsHeavy;
+  text-transform: capitalize;
+  font-size: 3rem;
+  letter-spacing: -1px;
+}
+#Products .hero h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0.5rem;
+  right: 10rem;
+  width: 10rem;
+  height: 1rem;
+  border-radius: 1000px;
+  z-index: -1;
+  background-color: #f2d30b;
+  border: 2px solid #f1c30b;
+}
+#Products main {
+  padding: 0 5rem;
+}
+#Products main .card {
+  min-width: 400px;
+  box-shadow: 0 0 12px 1px #ccc;
+  border-radius: 15px;
+  overflow: hidden;
+}
+#Products main .card img {
+  width: 100%;
+  height: 15vh;
+  object-fit: cover;
 }

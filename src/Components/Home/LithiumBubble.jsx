@@ -8,6 +8,7 @@ const LithiumBubble = ({ tabbed, set, LithiumInfo }) => {
         onClick={() => set((t) => (t = !t))}
       >
         <h4>brine</h4>
+        <hr />
         <p>
           Lithium brine recovery is a straight forward but time-consuming
           process.
@@ -19,6 +20,7 @@ const LithiumBubble = ({ tabbed, set, LithiumInfo }) => {
         onClick={() => set((t) => (t = !t))}
       >
         <h4>hard rock</h4>
+        <hr />
         <p>
           Lithium extracted by 'hard rock'comes from minerals hosted in
           Pegmatites.

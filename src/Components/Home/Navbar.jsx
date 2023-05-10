@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 // import { withRouter } from "react-router-dom";
 
 // const Navbar = withRouter(({ history }) => {
-const Navbar = () => {
+const Navbar = ({ navs, activeNav, set }) => {
   const [lightNav, setLightNav] = useState(false);
 
-  const [activeNav, set] = useState("Home");
+  // const [activeNav, set] = useState("Home");
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -19,7 +19,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", () => {});
     };
   }, [lightNav]);
-  const navs = ["Home", "About", "Products", "Services", "Contact"];
+  // const navs = ["Home", "About", "Products", "Services", "Contact"];
 
   return (
     <nav className={`Navbar ${lightNav === true ? "Light" : "Fade"}`}>
