@@ -2,7 +2,7 @@
     height: 120vh;
     padding-bottom: 2.5rem;
     .hero {
-        margin: 10rem auto 7rem;
+        margin: 8rem auto 5rem;
         width: fit-content;
         text-align: center;
         span {
@@ -68,20 +68,53 @@
         }
     }
     main {
+        padding: 0 4.5rem;
+
+        //    SWIPER  PRODUUCTS EDIT
         .swiper-wrapper {
             padding: 1rem 5rem 2.5rem 0;
         }
-        .swiper-slide:first-child > .card {
+        // .swiper-slide:first-child > .card {
+        .swiper-slide:first-child {
             // margin: 0 4rem 0 1rem;
-            margin-left: 4rem;
+            // padding: 0 4.5rem;
+            // margin-left: 4rem;
+            padding-left: 2.4rem;
         }
+        .swiper-horizontal > .swiper-scrollbar,
+        .swiper-scrollbar.swiper-scrollbar-horizontal {
+            height: 0.5rem;
+            z-index: 10;
+            opacity: 0.65;
+            &:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+
+        // .swiper-button-prev,
+        // .swiper-rtl .swiper-button-next {
+        //     left: -1rem;
+        //     position: absolute;
+        //     z-index: 14;
+        //     // font-size: 1rem;
+        // }
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+            left: -0.5rem;
+            font-size: 1.8rem;
+            color: $black3;
+            font-weight: 900;
+            // font-size: 1rem;
+        }
+
         // .swiper-slide:last-child > .card {
         //     margin-right: 5rem;
         // }
         // .swiper-slide:last-of-type
         // @include flex;
         // gap: 2.7rem;
-        padding: 0 5rem;
+
         .card {
             position: relative;
             box-shadow: 0 0 12px 1px #eee;
@@ -114,8 +147,9 @@
                     font-family: Gills;
                     color: $gray_brown;
                 }
+                hr {
+                }
             }
-
             // &:last-child > .container > p {
             //     display: none;
             //     margin-right: 15rem;
@@ -130,7 +164,6 @@
                     color: $dark_brown;
                 }
             }
-
             > span {
                 display: flex;
                 position: absolute;
