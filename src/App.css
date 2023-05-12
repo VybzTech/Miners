@@ -416,6 +416,9 @@ nav.Navbar > nav a.screen::after {
   width: 42vw;
   margin: 4rem auto 0 4rem;
 }
+#About .AboutImg:hover {
+  cursor: cell3;
+}
 #About .AboutImg:hover img {
   top: 10rem;
   left: 2.5rem;
@@ -490,7 +493,7 @@ nav.Navbar > nav a.screen::after {
 }
 #Lithium .container aside .bubble hr {
   background-color: #fce1d7;
-  opacity: 0.25;
+  opacity: 0.1;
   height: 1px;
   border: none;
   margin: 0 0 10px 0;
@@ -607,7 +610,7 @@ nav.Navbar > nav a.screen::after {
   padding-bottom: 2.5rem;
 }
 #Products .hero {
-  margin: 10rem auto 7rem;
+  margin: 8rem auto 5rem;
   width: fit-content;
   text-align: center;
 }
@@ -652,13 +655,31 @@ nav.Navbar > nav a.screen::after {
   border: 2px solid #f1c30b;
 }
 #Products main {
-  padding: 0 5rem;
+  padding: 0 4.5rem;
 }
 #Products main .swiper-wrapper {
   padding: 1rem 5rem 2.5rem 0;
 }
-#Products main .swiper-slide:first-child > .card {
-  margin-left: 4rem;
+#Products main .swiper-slide:first-child {
+  padding-left: 2.4rem;
+}
+#Products main .swiper-horizontal > .swiper-scrollbar,
+#Products main .swiper-scrollbar.swiper-scrollbar-horizontal {
+  height: 0.5rem;
+  z-index: 10;
+  opacity: 0.65;
+}
+#Products main .swiper-horizontal > .swiper-scrollbar:hover,
+#Products main .swiper-scrollbar.swiper-scrollbar-horizontal:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#Products main .swiper-button-prev:after,
+#Products main .swiper-rtl .swiper-button-next:after {
+  left: -0.5rem;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 900;
 }
 #Products main .card {
   position: relative;

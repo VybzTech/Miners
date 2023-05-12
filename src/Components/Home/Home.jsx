@@ -4,7 +4,6 @@ import pic1 from '../../Images/Tractor.jpg';
 import pic2 from '../../Images/Bulldozer.jpg';
 import pic3 from '../../Images/Excavator.jpg';
 import pic4 from '../../Images/Scoop-tractor.jpg';
-import pic5 from '../../Images/Drilled-Hole.jpg';
 
 import { register } from 'swiper/element/bundle';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -92,9 +91,6 @@ const Home = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Background img={pic2} />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Background img={pic5} />
                 </SwiperSlide>
             </Swiper>
             <main>

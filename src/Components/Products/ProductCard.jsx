@@ -13,6 +13,7 @@ const ProductCard = ({ product }) => {
             <img src={img} alt={name} />
             <div className='container'>
                 <h3>{name}</h3>
+                <hr />
                 <p>{content}</p>
             </div>
             <span>

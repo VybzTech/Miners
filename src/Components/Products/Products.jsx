@@ -25,13 +25,13 @@ const Products = () => {
             </div>
             <main>
                 <Swiper
-                    // navigation
-                    scrollbar
-                    loopedSlides={6}
+                    navigation
+                    // scrollbar
+                    // loopedSlides={6}
                     slidesPerView={3}
                     // slidesPerView={3.5}
                     // loop={true}
-                    loop
+                    // loop
                     // freeMode
                     // spaceBetween={300}
                     spaceBetween={80}
