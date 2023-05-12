@@ -28,10 +28,13 @@ const Products = () => {
                     // navigation
                     scrollbar
                     loopedSlides={6}
-                    slidesPerView={3.5}
-                    loop={true}
+                    slidesPerView={3}
+                    // slidesPerView={3.5}
+                    // loop={true}
+                    loop
                     // freeMode
-                    spaceBetween={40}
+                    // spaceBetween={300}
+                    spaceBetween={80}
                     // pagination={{ clickable: true }}
                     onSwiper={(swiper) => {}}>
                     {PRODUCTS.map((prod) => (

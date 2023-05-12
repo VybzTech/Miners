@@ -46,10 +46,19 @@ const Home = () => {
                 slidesPerView={1}
                 loop
                 spaceBetween={1}
+                fadeEffect
                 pagination={{ clickable: true }}
                 onSwiper={(swiper) => {
                     // const swiper;
                     // const counter = swiper.realIndex;
+
+                    // IF SWIPER IS CLICKED
+                    console.log(swiper.activeIndex);
+                    if (swiper.animating) {
+                        console.log(swiper.activeIndex);
+                    }
+
+                    // DEFAULT SWIPER TIMER
                     const interval = setInterval(() => {
                         // console.log(swiper.activeIndex);
                         // !swiper.animating ? swiper.activeIndex : "Animating Now"

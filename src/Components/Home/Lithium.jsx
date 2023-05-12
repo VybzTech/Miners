@@ -11,7 +11,7 @@ const Lithium = () => {
     const LithiumInfo = tabbed ? LITHIUM__MINING[0] : LITHIUM__MINING[1];
     return (
         <section id='Lithium'>
-            <LithiumBg img={Pic} />
+            <LithiumBg img={Pic} color={'#2e0f10cc'} color2={'#2e0f10af'} />
             <div className='container'>
                 <Roller infos={LithiumInfo} />
                 <main>

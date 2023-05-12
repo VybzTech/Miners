@@ -430,7 +430,7 @@ nav.Navbar > nav a.screen::after {
 }
 #Lithium .Bg__Image {
   height: 125vh;
-  border-radius: 0 200px 0 200px;
+  border-radius: 0 210px 0 210px;
 }
 #Lithium .container {
   display: flex;
@@ -531,9 +531,9 @@ nav.Navbar > nav a.screen::after {
 }
 #Lithium .container main.Roller .content.active p span {
   font-style: normal;
-  font-size: 1.1rem;
+  font-size: 1.08rem;
   letter-spacing: -0.1px;
-  line-height: 1.85rem;
+  line-height: 1.35rem;
   opacity: 1;
   color: #faefec;
 }
@@ -604,9 +604,10 @@ nav.Navbar > nav a.screen::after {
 
 #Products {
   height: 120vh;
+  padding-bottom: 2.5rem;
 }
 #Products .hero {
-  margin: 5rem auto 15rem;
+  margin: 10rem auto 7rem;
   width: fit-content;
   text-align: center;
 }
@@ -653,14 +654,68 @@ nav.Navbar > nav a.screen::after {
 #Products main {
   padding: 0 5rem;
 }
+#Products main .swiper-wrapper {
+  padding: 1rem 5rem 2.5rem 0;
+}
+#Products main .swiper-slide:first-child > .card {
+  margin-left: 4rem;
+}
 #Products main .card {
-  min-width: 400px;
-  box-shadow: 0 0 12px 1px #ccc;
-  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 0 12px 1px #eee;
+  min-width: 370px;
+  border-radius: 45px;
   overflow: hidden;
+  border: 1px solid #eee;
+  cursor: grabbing;
+  transition: all 150ms ease-in-out;
 }
 #Products main .card img {
   width: 100%;
-  height: 15vh;
+  height: 30vh;
   object-fit: cover;
+}
+#Products main .card .container {
+  padding: 1rem 2.2rem;
+}
+#Products main .card .container h3 {
+  font-family: Bart;
+  font-size: 1.8rem;
+  margin: 1.5rem auto 0.7rem;
+  color: #333;
+}
+#Products main .card .container p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  opacity: 0.9;
+  padding-right: 1rem;
+  transition: all 150ms ease-in-out;
+  font-family: Gills;
+  color: #3e3333;
+}
+#Products main .card:hover {
+  box-shadow: 0 0 20px 1px #ccc;
+}
+#Products main .card:hover .container h3 {
+  color: #111;
+}
+#Products main .card:hover .container p {
+  opacity: 1;
+  color: #2e0f10;
+}
+#Products main .card > span {
+  display: flex;
+  position: absolute;
+  background-color: white;
+  border-radius: 10000px;
+  width: 5rem;
+  height: 5rem;
+  top: 10rem;
+  left: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+#Products main .card > span svg {
+  color: #541c1d;
+  font-size: 2rem;
 }

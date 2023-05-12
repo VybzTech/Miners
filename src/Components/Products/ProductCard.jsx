@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsBattery } from 'react-icons/bs';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 const ProductCard = ({ product }) => {
@@ -10,8 +11,13 @@ const ProductCard = ({ product }) => {
             {/* <div >
     </div> */}
             <img src={img} alt={name} />
-            <h3>{name}</h3>
-            <p>{content}</p>
+            <div className='container'>
+                <h3>{name}</h3>
+                <p>{content}</p>
+            </div>
+            <span>
+                <BsBattery />
+            </span>
         </div>
         // </SwiperSlide>
     );
