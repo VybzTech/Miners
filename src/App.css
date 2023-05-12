@@ -714,6 +714,13 @@ nav.Navbar > nav a.screen::after {
   font-family: Gills;
   color: #3e3333;
 }
+#Products main .card .container hr {
+  background-color: #ccc;
+  opacity: 0.1;
+  height: 1px;
+  border: none;
+  margin: 0 0 10px 0;
+}
 #Products main .card:hover {
   box-shadow: 0 0 20px 1px #ccc;
 }

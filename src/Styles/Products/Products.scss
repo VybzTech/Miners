@@ -148,6 +148,11 @@
                     color: $gray_brown;
                 }
                 hr {
+                    background-color: $light_gray;
+                    opacity: 0.1;
+                    height: 1px;
+                    border: none;
+                    margin: 0 0 10px 0;
                 }
             }
             // &:last-child > .container > p {
