@@ -771,10 +771,11 @@ nav.Navbar > nav a.screen::after {
   width: fit-content;
   font-family: GillsHeavy;
   text-transform: uppercase;
-  font-size: 4rem;
-  letter-spacing: -1px;
+  font-size: 3rem;
+  word-spacing: 7px;
+  letter-spacing: -3px;
   color: #f3ebec;
-  margin: 7rem auto 2.5rem;
+  margin: 5rem auto;
 }
 #Services .container .OurServices {
   display: flex;
@@ -784,15 +785,15 @@ nav.Navbar > nav a.screen::after {
   flex-wrap: wrap;
   position: relative;
   padding: 0 7rem;
-  gap: 1.2rem;
+  gap: 1.1rem;
   z-index: 2;
 }
 #Services .container .OurServices > div {
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 4px;
   width: 32%;
-  height: 65vh;
-  margin-bottom: 1.5rem;
+  height: 62vh;
+  margin-bottom: 1.25rem;
   transition: all 250ms ease-in-out;
 }
 #Services .container .OurServices > div::before {
@@ -807,7 +808,7 @@ nav.Navbar > nav a.screen::after {
   z-index: 1;
 }
 #Services .container .OurServices > div img {
-  height: 65vh;
+  height: 62vh;
   object-fit: cover;
   transition: all 250ms ease-in-out;
   width: 100%;
@@ -816,7 +817,8 @@ nav.Navbar > nav a.screen::after {
   transform: scale(0);
 }
 #Services .container .OurServices > div:hover img {
-  transform: scale(1.035);
+  filter: blur(1.1px);
+  transform: scale(1.02);
 }
 #Services .container .OurServices > div:hover::before {
   width: 100%;
@@ -843,48 +845,88 @@ nav.Navbar > nav a.screen::after {
   position: relative;
 }
 #Contact .Bg__Image {
+  z-index: 1;
   height: 110vh;
 }
 #Contact .container {
   position: absolute;
-  top: 40vh;
-  right: 5rem;
+  top: 30vh;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  width: 100%;
 }
 #Contact .container .hero {
-  margin: 2.5rem auto 4rem;
+  margin: 0 3.5rem 4rem auto;
   width: fit-content;
   text-align: center;
 }
 #Contact .container .hero p {
-  color: #f3ebec;
-  font-size: 1.2rem;
+  color: #333;
+  font-size: 0.9rem;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  opacity: 0.75;
+  opacity: 0.7;
   font-family: Gills;
+  margin-bottom: 0.5rem;
+  margin-right: -0.1rem;
   text-align: right;
-  -webkit-text-stroke: 1px #f3ebec;
+  text-shadow: 0 0 30px #333;
+  -webkit-text-stroke: 1px #333;
 }
 #Contact .container .hero h2 {
   font-weight: 900;
-  line-height: 1.3rem;
+  line-height: 2.5rem;
+  width: 15rem;
   font-family: Bart;
   text-align: right;
   text-transform: uppercase;
   font-size: 2.5rem;
-  letter-spacing: -1px;
-  z-index: 1;
-  color: white;
+  letter-spacing: 1px;
+  color: #111;
 }
 #Contact .container .hero h2::after {
   content: "";
-  width: 10rem;
-  height: 1rem;
+  width: 8rem;
+  height: 0.8rem;
   position: absolute;
-  bottom: 0.5rem;
+  bottom: 0.1rem;
   right: 1rem;
+  right: 0;
   border-radius: 1000px;
-  z-index: 0;
+  z-index: -1;
   background-color: #f2d30b;
   border: 2px solid #f1c30b;
+}
+#Contact footer {
+  color: #f3ebec;
+  max-width: 100%;
+  background: #2e0f10;
+  padding: 0.5rem 3rem;
+  filter: grayscale(-0.4) brightness(8);
+}
+#Contact footer .logo {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: Bart;
+  width: 7rem;
+  color: #e7c7b0;
+  text-align: center;
+  font-size: 0.95rem;
+}
+#Contact footer .logo span {
+  font-weight: 400;
+  font-size: 0.65rem;
+}
+#Contact footer hr {
+  transform: rotate(90deg);
+  opacity: 0.3;
+  height: 1rem;
+  display: none;
+}
+#Contact footer sub {
+  text-align: right;
 }

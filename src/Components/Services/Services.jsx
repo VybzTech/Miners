@@ -23,7 +23,8 @@ const Services = () => {
 
     return (
         <section id='Services'>
-            <LithiumBg img={Pic} color={'#000a'} color2={'#222a'} />
+            <LithiumBg img={Pic} color={'#000c'} color2={'#222e'} />
+            {/* <LithiumBg img={Pic} color={'#000a'} color2={'#222a'} /> */}
             <div className='container'>
                 <h2>Our Services</h2>
                 <div className='OurServices'>

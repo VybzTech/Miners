@@ -16,25 +16,26 @@
             font-family: GillsHeavy;
             // text-align: right;
             text-transform: uppercase;
-            font-size: 4rem;
-            letter-spacing: -1px;
+            font-size: 3rem;
+            word-spacing: 7px;
+            letter-spacing: -3px;
             color: $white;
             //  6rem font-family: GillsBold;
-            margin: 7rem auto 2.5rem;
+            margin: 5rem auto;
         }
         .OurServices {
             @include flex;
             flex-wrap: wrap;
             position: relative;
             padding: 0 7rem;
-            gap: 1.2rem;
+            gap: 1.1rem;
             z-index: 2;
             & > div {
                 overflow: hidden;
-                border-radius: 5px;
+                border-radius: 4px;
                 width: 32%;
-                height: 65vh;
-                margin-bottom: 1.5rem;
+                height: 62vh;
+                margin-bottom: 1.25rem;
                 @include trans;
                 &::before {
                     content: '';
@@ -51,9 +52,12 @@
                     z-index: 1;
                 }
                 img {
-                    height: 65vh;
+                    height: 62vh;
                     object-fit: cover;
                     @include trans;
+                    // opacity: 0.7;
+                    // filter: drop-shadow(0px 0px 100px white) brightness(0.75)
+                    //     grayscale(0.25);
                     width: 100%;
                 }
                 span {
@@ -73,7 +77,8 @@
                 }
                 &:hover {
                     img {
-                        transform: scale(1.035);
+                        filter: blur(1.1px);
+                        transform: scale(1.02);
                         // height: 65vh;
                         // object-fit: cover;
                         // width: 100%;
