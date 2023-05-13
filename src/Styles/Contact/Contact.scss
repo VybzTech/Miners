@@ -1,0 +1,65 @@
+#Contact {
+    position: relative;
+    .Bg__Image {
+        // height: 150vh;
+        height: 110vh;
+    }
+    // padding-top: 5rem;
+    .container {
+        position: absolute;
+        top: 40vh;
+        right: 5rem;
+
+        .hero {
+            margin: 2.5rem auto 4rem;
+            width: fit-content;
+            text-align: center;
+            p {
+                color: $white;
+                font-size: 1.2rem;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                // color: transparent;
+                opacity: 0.75;
+                // opacity: 1;
+                font-family: Gills;
+                // border: 1.5px solid white;
+                // font-weight: 900;
+                // color: white; // font-weight: 900;
+                //   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                //   margin: 6rem auto 2rem 2.5rem;
+                // font-family: Gills;
+                text-align: right;
+                //   text-shadow: 0 0 3px #3332;
+                -webkit-text-stroke: 1px $white;
+            }
+            h2 {
+                font-weight: 900;
+                line-height: 1.3rem;
+                font-family: Bart;
+                text-align: right;
+                // text-transform: capitalize;
+                text-transform: uppercase;
+                font-size: 2.5rem;
+                letter-spacing: -1px;
+                z-index: 1;
+                color: white;
+                &::after {
+                    content: '';
+                    width: 10rem;
+                    height: 1rem;
+                    position: absolute;
+                    bottom: 0.5rem;
+                    right: 1rem;
+                    // right: 10rem;
+                    border-radius: 1000px;
+                    z-index: 0;
+                    // z-index: 1;
+                    background-color: $yellow2;
+                    border: 2px solid $deep_yellow;
+                }
+                //   font-family: GillsBold;
+            }
+        }
+    }
+}

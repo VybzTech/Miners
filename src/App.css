@@ -754,3 +754,137 @@ nav.Navbar > nav a.screen::after {
   color: #541c1d;
   font-size: 2rem;
 }
+
+#Services {
+  position: relative;
+}
+#Services .Bg__Image {
+  height: 150vh;
+}
+#Services .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#Services .container h2 {
+  width: fit-content;
+  font-family: GillsHeavy;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: -1px;
+  color: #f3ebec;
+  margin: 7rem auto 2.5rem;
+}
+#Services .container .OurServices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0 7rem;
+  gap: 1.2rem;
+  z-index: 2;
+}
+#Services .container .OurServices > div {
+  overflow: hidden;
+  border-radius: 5px;
+  width: 32%;
+  height: 65vh;
+  margin-bottom: 1.5rem;
+  transition: all 250ms ease-in-out;
+}
+#Services .container .OurServices > div::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 0vh;
+  transition: all 150ms ease-in-out;
+  background: linear-gradient(0deg, transparent, transparent);
+  z-index: 1;
+}
+#Services .container .OurServices > div img {
+  height: 65vh;
+  object-fit: cover;
+  transition: all 250ms ease-in-out;
+  width: 100%;
+}
+#Services .container .OurServices > div span {
+  transform: scale(0);
+}
+#Services .container .OurServices > div:hover img {
+  transform: scale(1.035);
+}
+#Services .container .OurServices > div:hover::before {
+  width: 100%;
+  height: 65vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9333333333), rgba(17, 17, 17, 0.4666666667));
+}
+#Services .container .OurServices > div:hover span {
+  z-index: 2;
+  position: absolute;
+  bottom: 1.4rem;
+  transform: scale(1);
+  left: 1.8rem;
+  line-height: 1.4;
+  width: 60%;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: GillsBold;
+  text-align: left;
+  letter-spacing: -1px;
+  color: #faefec;
+}
+
+#Contact {
+  position: relative;
+}
+#Contact .Bg__Image {
+  height: 110vh;
+}
+#Contact .container {
+  position: absolute;
+  top: 40vh;
+  right: 5rem;
+}
+#Contact .container .hero {
+  margin: 2.5rem auto 4rem;
+  width: fit-content;
+  text-align: center;
+}
+#Contact .container .hero p {
+  color: #f3ebec;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  opacity: 0.75;
+  font-family: Gills;
+  text-align: right;
+  -webkit-text-stroke: 1px #f3ebec;
+}
+#Contact .container .hero h2 {
+  font-weight: 900;
+  line-height: 1.3rem;
+  font-family: Bart;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  z-index: 1;
+  color: white;
+}
+#Contact .container .hero h2::after {
+  content: "";
+  width: 10rem;
+  height: 1rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+  border-radius: 1000px;
+  z-index: 0;
+  background-color: #f2d30b;
+  border: 2px solid #f1c30b;
+}

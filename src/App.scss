@@ -1,58 +1,60 @@
-@import "./Styles/colors";
+@import './Styles/colors';
 
 /* INDEX CONTENT */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
 }
 
 // DEFAULT STYLES & VARIABLES
 
 * {
-  padding: 0;
-  position: relative;
-  scroll-behavior: smooth !important;
-  margin: 0;
-  // &::selection {
-  //   background-color: $dirty_yellow;
-  // }
-  // &::-webkit-scrollbar {
-  //   background: #333a;
-  //   &-track {
-  //     width: 10px;
-  //   }
-  //   &-button {
-  //   }
-  //   &-thumb {
-  //     width: 10px;
-  //     background: #111a;
-  //   }
-  // }
+    padding: 0;
+    position: relative;
+    scroll-behavior: smooth !important;
+    margin: 0;
+    // &::selection {
+    //   background-color: $dirty_yellow;
+    // }
+    // &::-webkit-scrollbar {
+    //   background: #333a;
+    //   &-track {
+    //     width: 10px;
+    //   }
+    //   &-button {
+    //   }
+    //   &-thumb {
+    //     width: 10px;
+    //     background: #111a;
+    //   }
+    // }
 }
 
 /* APP CONTENT   */
 .Bg__Image {
-  /* background-position: 100% 100vh; */
-  background-position: center;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
+    /* background-position: 100% 100vh; */
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
 
 //  HOME STYLES
-@import "./Styles/Home/Navbar";
-@import "./Styles/Home/Home";
-@import "./Styles/About/About";
-@import "./Styles/Home/Lithium";
-@import "./Styles/Products/Products";
+@import './Styles/Home/Navbar';
+@import './Styles/Home/Home';
+@import './Styles/About/About';
+@import './Styles/Home/Lithium';
+@import './Styles/Products/Products';
+@import './Styles/Services/Services';
+@import './Styles/Contact/Contact';
