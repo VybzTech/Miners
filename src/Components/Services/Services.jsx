@@ -6,7 +6,7 @@ import Service1 from '../../Images/Services/heavy-mining-truck.png';
 import Service2 from '../../Images/Services/heavy-mining-truck.png';
 import Service3 from '../../Images/Services/heavy-mining-truck.png';
 import Service4 from '../../Images/Services/heavy-mining-truck.png';
-import Service5 from '../../Images/Services/heavy-mining-truck.png';
+import Service5 from '../../zImages/Services/heavy-mining-truck.png';
 import Service6 from '../../Images/Services/heavy-mining-truck.png';
 import LithiumBg from '../Home/LithiumBg';
 

@@ -610,7 +610,7 @@ nav.Navbar > nav a.screen::after {
   padding-bottom: 2.5rem;
 }
 #Products .hero {
-  margin: 8rem auto 5rem;
+  margin: 7.5rem auto 4rem;
   width: fit-content;
   text-align: center;
 }
@@ -620,7 +620,7 @@ nav.Navbar > nav a.screen::after {
   letter-spacing: 0.5px;
   text-transform: capitalize;
   color: transparent;
-  opacity: 0.7;
+  opacity: 0.5;
   font-family: Gills;
   -webkit-text-stroke: 1px #333;
 }
@@ -655,13 +655,16 @@ nav.Navbar > nav a.screen::after {
   border: 2px solid #f1c30b;
 }
 #Products main {
-  padding: 0 4.5rem;
+  padding: 0 3.2rem 0 2.5rem;
 }
 #Products main .swiper-wrapper {
-  padding: 1rem 5rem 2.5rem 0;
+  padding: 2rem 0;
 }
 #Products main .swiper-slide:first-child {
-  padding-left: 2.4rem;
+  padding-left: 2.8rem;
+}
+#Products main .swiper-slide {
+  margin-right: 4rem !important;
 }
 #Products main .swiper-horizontal > .swiper-scrollbar,
 #Products main .swiper-scrollbar.swiper-scrollbar-horizontal {
@@ -674,12 +677,15 @@ nav.Navbar > nav a.screen::after {
   opacity: 1;
   cursor: pointer;
 }
-#Products main .swiper-button-prev:after,
-#Products main .swiper-rtl .swiper-button-next:after {
-  left: -0.5rem;
+#Products main [class^=swiper-button-]:after,
+#Products main .swiper-rtl [class^=swiper-button-]:after {
   font-size: 1.8rem;
   color: #333;
   font-weight: 900;
+}
+#Products main .swiper-button-next,
+#Products main .swiper-rtl .swiper-button-next {
+  right: -0.1rem;
 }
 #Products main .card {
   position: relative;
@@ -697,7 +703,7 @@ nav.Navbar > nav a.screen::after {
   object-fit: cover;
 }
 #Products main .card .container {
-  padding: 1rem 2.2rem;
+  padding: 1rem 2.2rem 5rem;
 }
 #Products main .card .container h3 {
   font-family: Bart;
@@ -722,6 +728,7 @@ nav.Navbar > nav a.screen::after {
   margin: 0 0 10px 0;
 }
 #Products main .card:hover {
+  transform: translateY(-10px);
   box-shadow: 0 0 20px 1px #ccc;
 }
 #Products main .card:hover .container h3 {

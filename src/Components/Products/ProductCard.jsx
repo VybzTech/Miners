@@ -19,6 +19,7 @@ const ProductCard = ({ product }) => {
             <span>
                 <BsBattery />
             </span>
+            {/* PREVIEW LINK */}
         </div>
         // </SwiperSlide>
     );

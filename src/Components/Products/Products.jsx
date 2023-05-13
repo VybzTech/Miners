@@ -28,7 +28,7 @@ const Products = () => {
                     navigation
                     // scrollbar
                     // loopedSlides={6}
-                    slidesPerView={3}
+                    slidesPerView={2.5}
                     // slidesPerView={3.5}
                     // loop={true}
                     // loop

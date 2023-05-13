@@ -2,7 +2,7 @@
     height: 120vh;
     padding-bottom: 2.5rem;
     .hero {
-        margin: 8rem auto 5rem;
+        margin: 7.5rem auto 4rem;
         width: fit-content;
         text-align: center;
         span {
@@ -11,7 +11,7 @@
             letter-spacing: 0.5px;
             text-transform: capitalize;
             color: transparent;
-            opacity: 0.7;
+            opacity: 0.5;
             // opacity: 1;
             font-family: Gills;
             // border: 1.5px solid white;
@@ -68,18 +68,31 @@
         }
     }
     main {
-        padding: 0 4.5rem;
+        padding: 0 3.2rem 0 2.5rem;
+        // margin-right: 3rem;
 
         //    SWIPER  PRODUUCTS EDIT
         .swiper-wrapper {
-            padding: 1rem 5rem 2.5rem 0;
+            // margin-right: 3rem;
+            padding: 2rem 0;
         }
         // .swiper-slide:first-child > .card {
         .swiper-slide:first-child {
             // margin: 0 4rem 0 1rem;
             // padding: 0 4.5rem;
             // margin-left: 4rem;
-            padding-left: 2.4rem;
+            // padding-left: 1.5rem;
+            padding-left: 2.8rem;
+        }
+        // .swiper-slide:last-child::after,
+        .swiper-slide {
+            // padding-right: 14rem;
+            margin-right: 4rem !important;
+        }
+        // .swiper-slide:last-child > .card::after,
+        .swiper-slide:last-child > .card::after {
+            //     padding-right: 4rem;
+            //     margin-right: 3rem;
         }
         .swiper-horizontal > .swiper-scrollbar,
         .swiper-scrollbar.swiper-scrollbar-horizontal {
@@ -99,13 +112,23 @@
         //     z-index: 14;
         //     // font-size: 1rem;
         // }
-        .swiper-button-prev:after,
-        .swiper-rtl .swiper-button-next:after {
-            left: -0.5rem;
+        [class^='swiper-button-']:after,
+        .swiper-rtl [class^='swiper-button-']:after {
             font-size: 1.8rem;
             color: $black3;
             font-weight: 900;
-            // font-size: 1rem;
+        }
+        // .swiper-button-prev,
+        // .swiper-rtl .swiper-button-prev {
+        //     // left: -0.2rem;
+        // }
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-next {
+            right: -0.1rem;
+            //     font-size: 1.8rem;
+            //     color: $black3;
+            //     font-weight: 900;
+            //     // font-size: 1rem;
         }
 
         // .swiper-slide:last-child > .card {
@@ -131,7 +154,7 @@
                 object-fit: cover;
             }
             .container {
-                padding: 1rem 2.2rem;
+                padding: 1rem 2.2rem 5rem;
                 h3 {
                     font-family: Bart;
                     font-size: 1.8rem;
@@ -160,6 +183,7 @@
             //     margin-right: 15rem;
             // }
             &:hover {
+                transform: translateY(-10px);
                 box-shadow: 0 0 20px 1px $light_gray;
                 .container h3 {
                     color: $black;
