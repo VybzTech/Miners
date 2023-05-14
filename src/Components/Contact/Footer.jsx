@@ -6,22 +6,27 @@ import { TfiEmail } from 'react-icons/tfi';
 const Footer = () => {
     return (
         <footer>
-            <div className='highlight'>
-                Need help finding us ?<span>+234-8023-456-7890</span>
-            </div>
             <div className='block'>
                 <div>
                     <div className='logo'>
                         <big>p</big>
-                        platinum ville <span> mines limited</span>
+                        <p>
+                            platinum ville <span> mines limited</span>
+                        </p>
                     </div>
                     <div className='socials'>
-                        <TfiEmail />
+                        <span>
+                            <TfiEmail />
+                        </span>
+                        <span>
+                            <AiFillFacebook />
+                        </span>
+                        <span>
+                            <MdOutlineWhatsapp />
+                        </span>
                         {/* <MdEmail /> */}
-                        <AiFillFacebook />
                         {/* <TiSocialFacebook /> */}
                         {/* <FaFacebookF /> */}
-                        <MdOutlineWhatsapp />
                         {/* <FaWhatsappSquare /> */}
                     </div>
                 </div>
@@ -50,9 +55,9 @@ const Footer = () => {
             <hr />
             {/* <div className='block'> */}
 
-            <sub>
+            <div className='copyX'>
                 Platinum Ville Mines Limited &copy; 2023. All Rights Reserved.
-            </sub>
+            </div>
             {/* </div> */}
         </footer>
     );
