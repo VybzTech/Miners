@@ -21,7 +21,7 @@
             letter-spacing: -3px;
             color: $white;
             //  6rem font-family: GillsBold;
-            margin: 5rem auto;
+            margin: 6rem auto 2.5rem;
         }
         .OurServices {
             @include flex;
@@ -35,7 +35,7 @@
                 border-radius: 4px;
                 width: 32%;
                 height: 62vh;
-                margin-bottom: 1.25rem;
+                margin-bottom: 1.75rem;
                 @include trans;
                 &::before {
                     content: '';

@@ -775,7 +775,7 @@ nav.Navbar > nav a.screen::after {
   word-spacing: 7px;
   letter-spacing: -3px;
   color: #f3ebec;
-  margin: 5rem auto;
+  margin: 6rem auto 2.5rem;
 }
 #Services .container .OurServices {
   display: flex;
@@ -793,7 +793,7 @@ nav.Navbar > nav a.screen::after {
   border-radius: 4px;
   width: 32%;
   height: 62vh;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.75rem;
   transition: all 250ms ease-in-out;
 }
 #Services .container .OurServices > div::before {
@@ -903,10 +903,23 @@ nav.Navbar > nav a.screen::after {
 }
 #Contact footer {
   color: #f3ebec;
-  max-width: 100%;
+  width: 100%;
+  opacity: 0.9;
   background: #2e0f10;
-  padding: 0.5rem 3rem;
   filter: grayscale(-0.4) brightness(8);
+}
+#Contact footer .highlight {
+  background: #f6d70b;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+#Contact footer .block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 #Contact footer .logo {
   text-transform: uppercase;

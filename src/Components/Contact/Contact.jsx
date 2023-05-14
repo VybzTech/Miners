@@ -8,7 +8,15 @@ const Contact = () => {
     return (
         <section id='Contact'>
             {/* <Background img={Pic} /> */}
-            <LithiumBg img={Pic} color={'#eee7'} color2={'#eeed'} />
+            {/* <div
+                className='fakeSpace'
+                style={{ backgroundColor: '#fffd', height: 100 }}></div> */}
+            <LithiumBg
+                img={Pic}
+                color={'#eee7'}
+                color2={'#fffd'}
+                color3={'#fdfdfdee'}
+            />
             <div className='container'>
                 <div className='hero'>
                     <p>stay in touch</p>
