@@ -69,7 +69,7 @@ nav.Navbar {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  z-index: 3;
+  z-index: 5;
   width: 100%;
   position: absolute;
   top: 0;
@@ -859,12 +859,103 @@ nav.Navbar > nav a.screen::after {
   z-index: 2;
   width: 100%;
 }
-#Contact .container .hero {
+#Contact .container main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#Contact .container main .Form {
+  margin: auto;
+  /* height: 50vh; */
+}
+#Contact .container main .Form p {
+  font-family: Gills;
+  font-size: 1.2rem;
+  color: #333;
+  color: #541c1d;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 1px rgba(51, 51, 51, 0.4666666667);
+}
+#Contact .container main .Form .formGroup {
+  box-shadow: 0 0 15px 1px rgba(84, 28, 29, 0.3176470588);
+  padding: 0.5rem;
+  padding-left: 1.8rem;
+  border: 2px solid rgba(84, 28, 29, 0.4784313725);
+  border-radius: 1000px;
+  transition: all 250ms ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#Contact .container main .Form .formGroup input {
+  border: none;
+  width: 20rem;
+  transition: all 250ms ease-in-out;
+  height: 1.5rem;
+  background: transparent;
+  font-size: 1.1rem;
+  font-family: Gills;
+  opacity: 0.9;
+  color: #541c1d;
+}
+#Contact .container main .Form .formGroup input::after {
+  position: absolute;
+  top: -0.5rem;
+  right: -1.2rem;
+  content: "*";
+  color: red;
+}
+#Contact .container main .Form .formGroup input::placeholder {
+  word-spacing: 2px;
+  opacity: 0.4;
+  color: #aaa;
+  color: #2e0f10;
+  font-size: 1.02rem;
+  font-family: Gills;
+}
+#Contact .container main .Form .formGroup input:focus, #Contact .container main .Form .formGroup input:focus-visible, #Contact .container main .Form .formGroup input:focus-within {
+  outline: none;
+}
+#Contact .container main .Form .formGroup button {
+  border: none;
+  outline: none;
+  color: transparent;
+  background-color: #541c1d;
+  opacity: 0.6;
+  padding: 4px 5px 3px;
+  border-radius: 1000px;
+  transition: all 250ms ease-in-out;
+}
+#Contact .container main .Form .formGroup button:focus, #Contact .container main .Form .formGroup button:focus-visible, #Contact .container main .Form .formGroup button:focus-within {
+  outline: none;
+  background: rgba(17, 17, 17, 0.3333333333);
+  box-shadow: 0 0.5px 10px 0.25px rgba(17, 17, 17, 0.3333333333);
+}
+#Contact .container main .Form .formGroup button svg {
+  font-size: 1.5rem;
+  color: #fce1d7;
+  transition: all 250ms ease-in-out;
+}
+#Contact .container main .Form .formGroup > input:focus,
+#Contact .container main .Form .formGroup > input:focus-visible,
+#Contact .container main .Form .formGroup > input:focus-within, #Contact .container main .Form .formGroup:hover {
+  border: 2px solid rgba(84, 28, 29, 0.7921568627);
+}
+#Contact .container main .Form .formGroup > input:focus button,
+#Contact .container main .Form .formGroup > input:focus-visible button,
+#Contact .container main .Form .formGroup > input:focus-within button, #Contact .container main .Form .formGroup:hover button {
+  opacity: 0.7;
+  transform: scale(1.02);
+}
+#Contact .container main .hero {
   margin: 0 3.5rem 4rem auto;
   width: fit-content;
   text-align: center;
 }
-#Contact .container .hero p {
+#Contact .container main .hero p {
   color: #333;
   font-size: 0.9rem;
   letter-spacing: 0.5px;
@@ -877,18 +968,18 @@ nav.Navbar > nav a.screen::after {
   text-shadow: 0 0 30px #333;
   -webkit-text-stroke: 1px #333;
 }
-#Contact .container .hero h2 {
+#Contact .container main .hero h2 {
   font-weight: 900;
   line-height: 2.5rem;
-  width: 15rem;
+  width: 20rem;
   font-family: Bart;
   text-align: right;
   text-transform: uppercase;
-  font-size: 2.7rem;
+  font-size: 3.2rem;
   letter-spacing: 1px;
   color: #111;
 }
-#Contact .container .hero h2::after {
+#Contact .container main .hero h2::after {
   content: "";
   width: 8rem;
   height: 0.8rem;
@@ -905,8 +996,8 @@ nav.Navbar > nav a.screen::after {
   width: 100%;
 }
 #Contact .container .footer .highlight {
-  background: #f2d30b;
-  border: 2px solid #f1c30b;
+  background: #977900;
+  border: 2px solid rgba(151, 121, 0, 0.2274509804);
   border-width: 0 0 3px 0;
   padding: 0.4rem 0;
   text-align: center;
@@ -1003,7 +1094,7 @@ nav.Navbar > nav a.screen::after {
   vertical-align: middle;
   color: #fce1d7;
   opacity: 0.7;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 #Contact .container .footer footer .socials span:hover {
   cursor: pointer;
@@ -1019,6 +1110,25 @@ nav.Navbar > nav a.screen::after {
 #Contact .container .footer footer .shortLinks {
   padding-right: 3rem;
 }
+#Contact .container .footer footer .underline {
+  clip-path: polygon(0% 0%, 20% 0%, 100% 0%, 80% 100%, 0% 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 40%;
+  overflow: hidden;
+}
+#Contact .container .footer footer .underline > div {
+  clip-path: polygon(0% 0%, 20% 0%, 100% 0%, 80% 100%, 0% 100%);
+  width: 100%;
+  height: 10px;
+  background: #f2d30b;
+}
+#Contact .container .footer footer .underline > div:first-child {
+  background: white;
+  padding-right: 5px;
+}
 #Contact .container .footer footer hr {
   transform: rotate(90deg);
   opacity: 0.3;
@@ -1026,10 +1136,9 @@ nav.Navbar > nav a.screen::after {
   display: none;
 }
 #Contact .container .footer footer div.copyX {
-  font-family: Gills;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 0.7rem;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 200;
+  font-size: 0.8rem;
   width: fit-content;
   margin: 0.7rem auto 0;
   padding-bottom: 0.8rem;

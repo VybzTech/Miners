@@ -1,7 +1,9 @@
 import React from 'react';
 import { AiFillFacebook } from 'react-icons/ai';
-import { MdOutlineWhatsapp } from 'react-icons/md';
+import { FaFacebookF } from 'react-icons/fa';
+import { MdEmail, MdOutlineWhatsapp } from 'react-icons/md';
 import { TfiEmail } from 'react-icons/tfi';
+import { TiSocialFacebook } from 'react-icons/ti';
 
 const Footer = () => {
     return (
@@ -16,23 +18,28 @@ const Footer = () => {
                     </div>
                     <div className='socials'>
                         <span>
-                            <TfiEmail />
+                            {/* <TfiEmail /> */}
+                            <MdEmail />
                         </span>
                         <span>
-                            <AiFillFacebook />
+                            <TiSocialFacebook />
+                            {/* <AiFillFacebook /> */}
+                            {/* <FaFacebookF /> */}
                         </span>
                         <span>
                             <MdOutlineWhatsapp />
                         </span>
                         {/* <MdEmail /> */}
-                        {/* <TiSocialFacebook /> */}
-                        {/* <FaFacebookF /> */}
                         {/* <FaWhatsappSquare /> */}
                     </div>
                 </div>
                 <div className='addresses'>
                     {/* <h2>Find Us</h2>  */}
                     <h2>Our Offices</h2>
+                    <div className='underline'>
+                        <div />
+                        <div />
+                    </div>
                     <div>
                         22, Aguiyilronsi Street (Merit House) Maitama, fCT
                         Abuja.
@@ -41,6 +48,10 @@ const Footer = () => {
                 </div>
                 <div className='shortLinks'>
                     <h2>Useful links</h2>
+                    <div className='underline'>
+                        <div />
+                        <div />
+                    </div>
                     <span>FAQs</span>
                     <br />
                     <span>Privacy Policy</span>

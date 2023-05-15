@@ -14,67 +14,199 @@
         @include flex($dir: column);
         z-index: 2;
         width: 100%;
-        .hero {
-            margin: 0 3.5rem 4rem auto;
-            width: fit-content;
-            text-align: center;
-            p {
-                color: $black3;
-                font-size: 0.9rem;
-                letter-spacing: 0.5px;
-                text-transform: uppercase;
-                // color: transparent;
-                opacity: 0.7;
-                // opacity: 1;
-                font-family: Gills;
-                // border: 1.5px solid white;
-                // font-weight: 900;
-                // color: white; // font-weight: 900;
-                //   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-                //   margin: 6rem auto 2rem 2.5rem;
-                margin-bottom: 0.5rem;
-                margin-right: -0.1rem;
-                // font-family: Gills;
-                text-align: right;
-                text-shadow: 0 0 30px #333;
-                -webkit-text-stroke: 1px $black3;
-            }
-            h2 {
-                font-weight: 900;
-                line-height: 2.5rem;
-                width: 15rem;
-                font-family: Bart;
-                text-align: right;
-                // text-transform: capitalize;
-                text-transform: uppercase;
-                font-size: 2.7rem;
-                letter-spacing: 1px;
-                // z-index: 12;
-                color: $black;
-                &::after {
-                    content: '';
-                    width: 8rem;
-                    height: 0.8rem;
-                    position: absolute;
-                    bottom: 0.1rem;
-                    right: 1rem;
-                    right: 0;
-                    // right: 10rem;
-                    border-radius: 1000px;
-                    // z-index: 0;
-                    z-index: -1;
-                    background-color: $yellow2;
-                    border: 2px solid $deep_yellow;
+        main {
+            width: 100%;
+            @include flex;
+            .Form {
+                margin: auto;
+                // background: #fefefe;
+                // border: 1px solid #eee;
+                // border-radius: 20px;
+                // padding: 5rem 4rem 15rem;
+
+                /* height: 50vh; */
+                // position: absolute;
+                // top: 0;
+                // z-index: 2;
+                // left: 8rem;
+                // @include flex($dir: column, $align: flex-start);
+                p {
+                    font-family: Gills;
+                    font-size: 1.2rem;
+                    color: $black3;
+                    // color: $gray;
+                    // color: $gray_brown;
+                    color: $brown;
+                    margin-bottom: 1rem;
+                    text-shadow: 0 0 1px #3337;
                 }
-                //   font-family: GillsBold;
+                .formGroup {
+                    // color: $gray_brown;
+                    // border: 2px solid $brown;
+                    box-shadow: 0 0 15px 1px #541c1d51;
+                    padding: 0.5rem;
+                    padding-left: 1.8rem;
+
+                    border: 2px solid #541c1d7a;
+                    // box-shadow: 0 0 7px #541c1d;
+                    border-radius: 1000px;
+                    @include trans;
+                    // padding: 0.7rem 1rem 0.7rem 1.9rem;
+                    @include flex;
+                    // label {
+                    //     font-family: Gills;
+                    //     width: 10rem;
+                    //     font-size: 1.2rem;
+                    //     text-shadow: 0 0 1.5px #111a;
+                    //     text-align: left;
+                    // }
+                    input {
+                        // border: 2px solid #eee;
+                        border: none;
+                        // padding: 6px 15px;
+                        width: 20rem;
+                        @include trans;
+                        // width: 100%;
+                        height: 1.5rem;
+                        background: transparent;
+                        // border-radius: 6px;
+                        // margin-bottom: 1rem;
+                        font-size: 1.1rem;
+                        font-family: Gills;
+                        opacity: 0.9;
+                        color: $brown;
+                        // color: $black3;
+                        &::after {
+                            // &:required::after {
+                            position: absolute;
+                            top: -0.5rem;
+                            right: -1.2rem;
+                            content: '*';
+                            color: red;
+                        }
+                        &::placeholder {
+                            word-spacing: 2px;
+                            opacity: 0.4;
+                            color: $gray;
+                            color: $dark_brown;
+                            font-size: 1.02rem;
+                            font-family: Gills;
+                        }
+                        &:focus,
+                        &:focus-visible,
+                        &:focus-within {
+                            outline: none;
+                            // background: #1115;
+                            // box-shadow: 0 0.5px 10px 0.25px #1115;
+                        }
+                    }
+                    button {
+                        border: none;
+                        outline: none;
+                        color: transparent;
+                        background-color: $brown;
+                        opacity: 0.6;
+                        padding: 4px 5px 3px;
+                        // padding: 7px 8px;
+                        border-radius: 1000px;
+                        &:focus,
+                        &:focus-visible,
+                        &:focus-within {
+                            outline: none;
+                            background: #1115;
+                            box-shadow: 0 0.5px 10px 0.25px #1115;
+                        }
+                        svg {
+                            font-size: 1.5rem;
+                            color: $pinkish;
+                            // background: #1112;
+                            @include trans;
+                        }
+                        @include trans;
+                    }
+                    > input:focus,
+                    > input:focus-visible,
+                    > input:focus-within,
+                    &:hover {
+                        border: 2px solid #541c1dca;
+
+                        input {
+                            &::placeholder {
+                            }
+                        }
+                        button {
+                            opacity: 0.7;
+                            transform: scale(1.02);
+                            // padding: 5px 6px 4px;
+                            svg {
+                            }
+                        }
+                    }
+                }
+            }
+            .hero {
+                margin: 0 3.5rem 4rem auto;
+                width: fit-content;
+                text-align: center;
+                p {
+                    color: $black3;
+                    font-size: 0.9rem;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                    // color: transparent;
+                    opacity: 0.7;
+                    // opacity: 1;
+                    font-family: Gills;
+                    // border: 1.5px solid white;
+                    // font-weight: 900;
+                    // color: white; // font-weight: 900;
+                    //   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                    //   margin: 6rem auto 2rem 2.5rem;
+                    margin-bottom: 0.5rem;
+                    margin-right: -0.1rem;
+                    // font-family: Gills;
+                    text-align: right;
+                    text-shadow: 0 0 30px #333;
+                    -webkit-text-stroke: 1px $black3;
+                }
+                h2 {
+                    font-weight: 900;
+                    line-height: 2.5rem;
+                    width: 20rem;
+                    font-family: Bart;
+                    text-align: right;
+                    // text-transform: capitalize;
+                    text-transform: uppercase;
+                    font-size: 3.2rem;
+                    letter-spacing: 1px;
+                    // z-index: 12;
+                    color: $black;
+                    &::after {
+                        content: '';
+                        width: 8rem;
+                        height: 0.8rem;
+                        position: absolute;
+                        bottom: 0.1rem;
+                        right: 1rem;
+                        right: 0;
+                        // right: 10rem;
+                        border-radius: 1000px;
+                        // z-index: 0;
+                        z-index: -1;
+                        background-color: $yellow2;
+                        border: 2px solid $deep_yellow;
+                    }
+                    //   font-family: GillsBold;
+                }
             }
         }
+
         .footer {
             width: 100%;
 
             .highlight {
-                background: $yellow2;
-                border: 2px solid $deep_yellow;
+                background: $dirty_yellow;
+                border: 2px solid $dirty_yellow_shadow;
                 border-width: 0 0 3px 0;
                 // background: yellow;
                 padding: 0.4rem 0;
@@ -172,7 +304,7 @@
                             vertical-align: middle;
                             color: $pinkish;
                             opacity: 0.7;
-                            font-size: 1rem;
+                            font-size: 1.1rem;
                             //ADD BOX SHADWO
                         }
                         &:hover {
@@ -191,7 +323,35 @@
                 .shortLinks {
                     padding-right: 3rem;
                 }
-
+                .underline {
+                    clip-path: polygon(
+                        0% 0%,
+                        20% 0%,
+                        100% 0%,
+                        80% 100%,
+                        0% 100%
+                    );
+                    // height: 10px;
+                    @include flex;
+                    width: 40%;
+                    overflow: hidden;
+                    > div {
+                        clip-path: polygon(
+                            0% 0%,
+                            20% 0%,
+                            100% 0%,
+                            80% 100%,
+                            0% 100%
+                        );
+                        width: 100%;
+                        height: 10px;
+                        background: $yellow2;
+                        &:first-child {
+                            background: white;
+                            padding-right: 5px;
+                        }
+                    }
+                }
                 hr {
                     transform: rotate(90deg);
                     opacity: 0.3;
@@ -199,10 +359,11 @@
                     display: none;
                 }
                 div.copyX {
-                    font-family: Gills;
-                    font-style: italic;
-                    font-weight: 400;
-                    font-size: 0.7rem;
+                    font-family: Calibri, 'Trebuchet MS', sans-serif;
+                    // font-family: Gills;
+                    // font-style: italic;
+                    font-weight: 200;
+                    font-size: 0.8rem;
                     width: fit-content;
                     margin: 0.7rem auto 0;
                     padding-bottom: 0.8rem;
