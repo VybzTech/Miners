@@ -14,9 +14,9 @@ const Contact = () => {
                 style={{ backgroundColor: '#fffd', height: 100 }}></div> */}
             <LithiumBg
                 img={Pic}
-                color={'#eee7'}
+                color={'#eee6'}
                 color2={'#fffd'}
-                color3={'#fdfdfdee'}
+                color3={'#fefefedd'}
             />
             <div className='container'>
                 <div className='hero'>
