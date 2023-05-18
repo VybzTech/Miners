@@ -15,7 +15,7 @@ const Form = () => {
     };
 
     const validateEmail = (e) => {
-        console.log('Starting');
+        // console.log('Starting');
         const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
         e.preventDefault();
 
@@ -24,18 +24,22 @@ const Form = () => {
         } else {
             setError('');
             setVerified(true);
-            console.log('It worked ');
+            // console.log('It worked ');
         }
         console.log('Finished Submission');
     };
-
+    const sendMail = () => {
+        console.log('email', email);
+        console.log('message', message);
+    };
     return (
         <main>
+            <div className='error'></div>
             <div className='Form'>
                 <p>
                     {!verified ? 'First ,' : 'Now, Let us know what you think'}
                     {verified && (
-                        <BiLogOutCircle onClick={setVerified(false)} />
+                        <BiLogOutCircle onClick={() => setVerified(false)} />
                     )}
                 </p>
                 {/* <form> */}
@@ -81,7 +85,7 @@ const Form = () => {
                         rows='10'
                         placeholder='Type your message'
                     />
-                    <button>
+                    <button type='submit' onClick={sendMail}>
                         Message <BiMailSend />
                     </button>
                 </div>
