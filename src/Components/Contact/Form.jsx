@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BsArrowRightShort } from 'react-icons/bs';
-import { BiMailSend } from 'react-icons/bi';
+import { BiLogOutCircle, BiMailSend } from 'react-icons/bi';
 
 const Form = () => {
     // /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
@@ -34,6 +34,9 @@ const Form = () => {
             <div className='Form'>
                 <p>
                     {!verified ? 'First ,' : 'Now, Let us know what you think'}
+                    {verified && (
+                        <BiLogOutCircle onClick={setVerified(false)} />
+                    )}
                 </p>
                 {/* <form> */}
                 <div className={`formGroup ${verified && 'disappear'}`}>

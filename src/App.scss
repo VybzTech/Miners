@@ -24,21 +24,25 @@
     &::selection {
         background-color: $dirty_yellow;
     }
-    // &::-webkit-scrollbar {
-    //   background: #333a;
-    //   &-track {
-    //     width: 10px;
-    //   }
-    //   &-button {
-    //   }
-    //   &-thumb {
-    //     width: 10px;
-    //     background: #111a;
-    //   }
-    // }
 }
+// &::-webkit-scrollbar {
+//   background: #333a;
+//   &-track {
+//     width: 10px;
+//   }
+//   &-button {
+//   }
+//   &-thumb {
+//     width: 10px;
+//     background: #111a;
+//   }
+// }
 
 /* APP CONTENT   */
+input:-internal-autofill-selected {
+    background-color: transparent !important;
+}
+
 .Bg__Image {
     /* background-position: 100% 100vh; */
     background-position: center;
