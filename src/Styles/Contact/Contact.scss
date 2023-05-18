@@ -39,6 +39,7 @@
                     color: $brown;
                     margin-bottom: 1rem;
                     text-shadow: 0 0 1px #3337;
+                    opacity: 0.85;
                 }
                 .formGroup {
                     // color: $gray_brown;
@@ -95,6 +96,7 @@
                         &:focus,
                         &:focus-visible,
                         &:focus-within {
+                            border: none;
                             outline: none;
                             // background: #1115;
                             // box-shadow: 0 0.5px 10px 0.25px #1115;
@@ -105,7 +107,7 @@
                         outline: none;
                         color: transparent;
                         background-color: $brown;
-                        opacity: 0.6;
+                        opacity: 0.5;
                         padding: 4px 5px 3px;
                         // padding: 7px 8px;
                         border-radius: 1000px;
@@ -124,13 +126,16 @@
                         }
                         @include trans;
                     }
-                    > input:focus,
-                    > input:focus-visible,
-                    > input:focus-within,
+                    // > input:focus,
+                    // > input:focus-visible,
+                    // > input:focus-within,
                     &:hover {
+                        // .formGroup {
                         border: 2px solid #541c1dca;
 
                         input {
+                            // border: none;
+                            // outline: none;
                             &::placeholder {
                             }
                         }
@@ -140,6 +145,7 @@
                             // padding: 5px 6px 4px;
                             svg {
                             }
+                            // }
                         }
                     }
                 }
