@@ -476,10 +476,13 @@
                             vertical-align: middle;
                             color: $pinkish;
                             opacity: 0.8;
-                            font-size: 1.25rem;
-                            &:first-child {
-                                font-size: 1.1rem;
-                            }
+                            font-size: 1.45rem;
+                        }
+                        &:first-child svg {
+                            font-size: 1.18rem;
+                        }
+                        &:last-child svg {
+                            font-size: 1.3rem;
                         }
 
                         &:hover {

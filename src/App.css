@@ -1187,10 +1187,13 @@ textarea:focus-within) button {
   vertical-align: middle;
   color: #fce1d7;
   opacity: 0.8;
-  font-size: 1.25rem;
+  font-size: 1.45rem;
 }
-#Contact .container .footer footer .socials span svg:first-child {
-  font-size: 1.1rem;
+#Contact .container .footer footer .socials span:first-child svg {
+  font-size: 1.18rem;
+}
+#Contact .container .footer footer .socials span:last-child svg {
+  font-size: 1.3rem;
 }
 #Contact .container .footer footer .socials span:hover {
   cursor: pointer;
