@@ -10,6 +10,7 @@ const Footer = () => {
         <footer>
             <div className='block'>
                 <div>
+                    {/* <div className='logoNsocials'> */}
                     <div className='logo'>
                         <big>p</big>
                         <p>
@@ -36,30 +37,43 @@ const Footer = () => {
                 <div className='addresses'>
                     {/* <h2>Find Us</h2>  */}
                     <h2>Our Offices</h2>
-                    <div className='underline'>
+                    {/* <div className='underlin'>
                         <div />
                         <div />
+                    </div> */}
+                    <div>
+                        <span>
+                            22, Aguiyilronsi Street (Merit House) Maitama, fCT
+                            Abuja.
+                        </span>
+                        <span>
+                            No 4, Itaji Street krashi Olasegun Lagos State.
+                        </span>
                     </div>
                     <div>
-                        22, Aguiyilronsi Street (Merit House) Maitama, fCT
-                        Abuja.
+                        <p>Mobile Nos:</p>
+                        <span>+234 801 253 6589, +234 801 253 6589</span>
                     </div>
-                    <div>No 4, Itaji Street krashi Olasegun Lagos State.</div>
                 </div>
                 <div className='shortLinks'>
                     <h2>Useful links</h2>
-                    <div className='underline'>
+                    {/* <div className='underlin'>
                         <div />
                         <div />
+                    </div> */}
+                    <div>
+                        {/* <hr /> */}
+                        <span>FAQs</span>
                     </div>
-                    <span>FAQs</span>
-                    <br />
-                    <span>Privacy Policy</span>
-                    <br />
-                    {/* <hr /> */}
-                    <span>Terms & Conditions </span>
-                    <br />
-                    <span>Our Projects </span>
+                    <div>
+                        <span>Privacy Policy</span>
+                    </div>
+                    <div>
+                        <span>Terms & Conditions </span>
+                    </div>
+                    <div>
+                        <span>Our Projects </span>
+                    </div>
                     {/* Default Content: This section holds informaton about our company (poicies) Projects. We have 2 completed... Most of our ongoing proj..... We are obliged  */}
                 </div>
             </div>

@@ -1,19 +1,42 @@
 import React, { useState } from 'react';
 import { BsArrowRightShort } from 'react-icons/bs';
+import { BiMailSend } from 'react-icons/bi';
 
 const Form = () => {
     // /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
-    const rgex = ' /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,}$/i';
+    // const rgex = ' /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,}$/i';
     const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [verified, setVerified] = useState(false);
+    const [error, setError] = useState('');
     const ChangeEmail = (e) => {
         email !== e.target.value && setEmail(e.target.value);
-        console.log(email);
+        // console.log(email);
     };
+
+    const validateEmail = (e) => {
+        console.log('Starting');
+        const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+        e.preventDefault();
+
+        if (!emailRegex.test(email)) {
+            setError('Please enter a valid email address');
+        } else {
+            setError('');
+            setVerified(true);
+            console.log('It worked ');
+        }
+        console.log('Finished Submission');
+    };
+
     return (
         <main>
             <div className='Form'>
-                <p>First,</p>
-                <div className='formGroup'>
+                <p>
+                    {!verified ? 'First ,' : 'Now, Let us know what you think'}
+                </p>
+                {/* <form> */}
+                <div className={`formGroup ${verified && 'disappear'}`}>
                     {/* <label htmlFor='Email'>Email :</label> */}
                     <input
                         type='email'
@@ -24,10 +47,11 @@ const Form = () => {
                         onChange={ChangeEmail}
                         placeholder='Enter Your Email Address'
                     />
-                    <button type='submit'>
+                    <button type='submit' onClick={validateEmail}>
                         <BsArrowRightShort />
                     </button>
                 </div>
+                {/* </form> */}
                 {/* <div className='formGroup'>
                     <label htmlFor='Message'>Message :</label>
                     <input
@@ -43,6 +67,21 @@ const Form = () => {
                         <BsArrowRightShort />
                     </button>
                 </div> */}
+                <div
+                    className={`formGroup message ${!verified && 'disappear'}`}>
+                    {/* <div className={`${!verified ? 'disappear' : 'formGroup'}`}> */}
+                    {/* <div className='formGroup'> */}
+                    <textarea
+                        name='message'
+                        id='message'
+                        cols='30'
+                        rows='10'
+                        placeholder='Type your message'
+                    />
+                    <button>
+                        Message <BiMailSend />
+                    </button>
+                </div>
             </div>
             <div className='hero'>
                 <p>stay in touch</p>

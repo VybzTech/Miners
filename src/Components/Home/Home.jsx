@@ -52,7 +52,7 @@ const Home = () => {
                     // const counter = swiper.realIndex;
 
                     // IF SWIPER IS CLICKED
-                    console.log(swiper.activeIndex);
+                    // console.log(swiper.activeIndex);
                     if (swiper.animating) {
                         console.log(swiper.activeIndex);
                     }
