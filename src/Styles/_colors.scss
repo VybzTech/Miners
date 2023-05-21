@@ -2,7 +2,6 @@ $gray_brown: #3e3333;
 $dark_brown: #2e0f10;
 $brown: #541c1d;
 $white: #f3ebec;
-// $white: #f6eee8;
 $pink: #e7c7b0;
 $pinkish: #fce1d7;
 $pinkish_Light: #faefec;
@@ -40,11 +39,11 @@ $light_gray: #ccc;
         url('/src/Fonts/Gill-Sans/Gill-Sans-Heavy.otf') format('opentype');
     font-weight: 900;
 }
-@font-face {
-    font-family: GillsBold;
-    src: local(GillsBold),
-        url('/src/Fonts/Gill-Sans/Gill-Sans-Bold.otf') format('opentype');
-}
+// @font-face {
+//     font-family: GillsBold;
+//     src: local(GillsBold),
+//         url('/src/Fonts/Gill-Sans/Gill-Sans-Bold.otf') format('opentype');
+// }
 
 //  MIXINS
 @mixin flex($align: center, $jus: space-between, $dir: row) {

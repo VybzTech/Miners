@@ -40,7 +40,8 @@
 
 /* APP CONTENT   */
 input:-internal-autofill-selected {
-    background-color: transparent !important;
+    color: $brown !important;
+    background-color: white !important;
 }
 
 .Bg__Image {
