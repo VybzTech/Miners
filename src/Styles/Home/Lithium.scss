@@ -1,0 +1,213 @@
+#Lithium {
+    position: relative;
+
+    .Bg__Image {
+        height: 125vh;
+        border-radius: 0 210px 0 210px;
+    }
+    .container {
+        @include flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0 2rem;
+        > main {
+            width: 50%;
+        }
+        h2 {
+            font-family: GillsHeavy;
+            text-align: right;
+            text-transform: uppercase;
+            font-size: 3rem;
+            letter-spacing: -1px;
+            color: $pink;
+            //   font-family: GillsBold;
+            margin: 7rem 6rem 2.5rem auto;
+            // margin: 10rem 5rem 2.5rem auto;
+        }
+        aside {
+            padding: 1rem 2rem;
+            margin: 1rem 5rem 2rem auto;
+            .bubble {
+                width: 15.5rem;
+                padding: 1.5rem 1.5rem 1rem;
+                // padding: 1.5rem 1.5rem 0;
+                margin: 0 0 0.5rem auto;
+                border: 4px solid $dark_brown;
+                opacity: 0.7;
+                text-align: right;
+                border-radius: 30px 30px 0;
+                background: #e7c7b071;
+                @include transShort;
+                &.Tabbed,
+                &.Tabbed:hover {
+                    opacity: 1;
+                    border: 5px solid $dark_brown;
+                    box-shadow: 0 0 15px 0.5px #e7c7b033;
+                    background: #e7c7b0a1;
+                    span,
+                    p {
+                        line-height: 1.7rem;
+                    }
+                }
+                &:last-of-type {
+                    border-radius: 30px 0 30px 30px;
+                }
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.825;
+                }
+                hr {
+                    background-color: $pinkish;
+                    opacity: 0.1;
+                    height: 1px;
+                    border: none;
+                    margin: 0 0 10px 0;
+                }
+                h4 {
+                    font-family: Gills;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: 2.2rem;
+                    color: $pinkish;
+                }
+                span,
+                p {
+                    letter-spacing: 0.8px;
+                    line-height: 1.5rem;
+                    color: $pinkish_Light;
+                    font-size: 0.95rem;
+                    @include transShort;
+                    font-family: Gills;
+                    margin-bottom: 1rem;
+                }
+                span {
+                    font-size: 0.7rem;
+                    margin: 0 -0.25rem 5rem auto;
+                }
+            }
+        }
+        main.Roller {
+            padding-left: 3rem;
+            .content {
+                @include flex($jus: left, $align: center);
+                padding: 1rem 3rem;
+
+                // 3// overflow: hidden;
+
+                //   ACTIVE ROLLER
+                &.active {
+                    p {
+                        font-family: Gills;
+
+                        span {
+                            font-style: normal;
+                            font-size: 1.08rem;
+                            letter-spacing: -0.1px;
+                            line-height: 1.35rem;
+                            // line-height: 1.85rem;
+                            opacity: 1;
+                            color: $pinkish_Light;
+                        }
+                        &:hover span {
+                            font-size: 1.1rem;
+                            opacity: 1;
+                        }
+                        &::before {
+                            content: '';
+                            // opacity: 0.85;
+                            // background-color: $pinkish;
+                            position: absolute;
+                            // top: 0;
+                            z-index: 2;
+                            // left: 0;
+                            top: 0.5rem;
+                            left: -2.5rem;
+
+                            width: 0.8rem;
+                            height: 0.8rem;
+                            border-radius: 10000px;
+                            background-color: $pink;
+                            opacity: 1;
+                            //     // margin: 0 1rem 0;
+                            // font-size: 0.8rem;
+                        }
+                    }
+                    // span.svg {
+                    // svg {
+                    //     color: $pink;
+                    //     opacity: 1;
+                    //     // margin: 0 1rem 0;
+                    //     font-size: 0.8rem;
+                    //     // }
+                    // }
+                }
+
+                p {
+                    color: $pinkish;
+                    width: fit-content;
+                    z-index: 2;
+                    span {
+                        font-size: 0.8rem;
+                        line-height: 1.15rem;
+                        font-style: italic;
+                        opacity: 0.5;
+                        @include trans;
+                    }
+                    &:hover span {
+                        // line-height: 1.2rem;
+                        // font-size: 0.85rem;
+
+                        opacity: 0.7;
+                    }
+                    &::before {
+                        content: '';
+                        // opacity: 0.85;
+                        // background-color: $pinkish;
+                        position: absolute;
+                        // top: 0;
+                        // left: 0;
+                        top: 0.5rem;
+                        left: -2.3rem;
+                        width: 0.5rem;
+                        height: 0.5rem;
+                        @include transShort;
+                        border-radius: 10000px;
+                        background-color: $pinkish;
+                        //     // margin: 0 1rem 0;
+                        // font-size: 0.8rem;
+                    }
+                    &:hover::before {
+                        // width: 0.6rem;
+                        // height: 0.6rem;
+                        opacity: 1 !important;
+                        transform: scale(1.2);
+                        cursor: pointer;
+                        color: $pinkish_Light;
+                        // padding-left: 0.225rem;
+                        // font-size: 0.6rem;
+                    }
+                }
+            }
+            .line {
+                content: '';
+                opacity: 0.85;
+                background-color: $pinkish;
+                position: absolute;
+                top: 1.7rem;
+                left: 3.85rem;
+                width: 2px;
+                height: 25rem;
+                border-radius: 1px;
+                // z-index: -1;
+                z-index: 1;
+                @include transShort; // color: $yellow2;
+                // border: 2px solid $deep_yellow;
+                &:hover {
+                    width: 3px;
+                }
+            }
+        }
+    }
+}

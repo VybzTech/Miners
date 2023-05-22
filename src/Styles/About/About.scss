@@ -1,68 +1,83 @@
 #About {
-  @include flex;
-  height: 120vh;
-  width: 100%;
-  main {
-    width: 50%;
-    padding: 2rem 5rem 1rem 0;
-    // margin: auto 0;
-    h2 {
-      font-family: GillsHeavy;
-      text-align: right;
-      text-transform: uppercase;
-      font-size: 2.2rem;
-      letter-spacing: -1px;
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0.3rem;
-        right: -0.25rem;
-        width: 10rem;
-        height: 1rem;
-        border-radius: 1000px;
-        z-index: -1;
-        // z-index: 1;
-        background-color: $yellow2;
-        border: 2px solid $deep_yellow;
-      }
-      //   font-family: GillsBold;
+    @include flex;
+    height: 120vh;
+    width: 100%;
+    main {
+        width: 50%;
+        padding: 2rem 5rem 1rem 0;
+        // margin: auto 0;
+        h2 {
+            font-family: GillsHeavy;
+            text-align: right;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            letter-spacing: -1px;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0.3rem;
+                right: -0.25rem;
+                width: 10rem;
+                height: 1rem;
+                border-radius: 1000px;
+                z-index: -1;
+                // z-index: 1;
+                background-color: $yellow2;
+                border: 2px solid $deep_yellow;
+            }
+            //   font-family: GillsBold;
+        }
+        p {
+            font-family: Gills;
+            width: 85%;
+            text-shadow: 0 0 4px #2222;
+            color: #111;
+            letter-spacing: 0.3px;
+            word-spacing: 3px;
+            margin: 1.2rem 0 0 auto;
+            font-size: 1.3rem;
+            text-align: right;
+            line-height: 3.2rem;
+        }
     }
-    p {
-      font-family: Gills;
-      width: 85%;
-      text-shadow: 0 0 4px #2222;
-      color: #111;
-      letter-spacing: 0.3px;
-      word-spacing: 3px;
-      margin: 1.2rem 0 0 auto;
-      font-size: 1.3rem;
-      text-align: right;
-      line-height: 3.2rem;
-    }
-  }
-  .AboutImg {
-    position: relative;
-    width: 50%;
-    // width: 60%;
-    img {
-      position: absolute;
-      top: 9rem;
-      left: 5rem;
-      width: 55vw;
-      // width: 65vw;
-      // width: 40vw;
+    .AboutImg {
+        position: relative;
+        width: 50%;
+        // width: 60%;
+        img {
+            @include trans;
+            position: absolute;
+            top: 9rem;
+            left: 5rem;
+            width: 55vw;
+            // width: 65vw;
+            // width: 40vw;
 
-      // margin: 0 auto;
-    }
-    .svg {
-      width: 100%;
-      svg {
-        width: 42vw;
-        margin: 4rem auto 0 4rem;
+            // margin: 0 auto;
+        }
+        .svg {
+            width: 100%;
+            svg {
+                @include trans;
+                width: 42vw;
+                margin: 4rem auto 0 4rem;
 
-        // width: 40vw;
-        // margin: 2rem auto 0;
-      }
+                // width: 40vw;
+                // margin: 2rem auto 0;
+            }
+        }
+        &:hover {
+            cursor: cell3;
+            img {
+                top: 10rem;
+                left: 2.5rem;
+                // transform: rotateZ(-2.5deg);
+                transform: scale(0.95);
+            }
+            .svg svg {
+                transform: rotate(45deg) scale(1.1);
+                // transform: rotate3d(30deg);
+            }
+        }
     }
-  }
 }

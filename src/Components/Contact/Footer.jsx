@@ -1,29 +1,45 @@
-import React from "react";
-import { AiFillFacebook } from "react-icons/ai";
-import { MdOutlineWhatsapp } from "react-icons/md";
-import { TfiEmail } from "react-icons/tfi";
+import React from 'react';
+import Socials from './Socials';
+import Links from './Links';
 
 const Footer = () => {
-  return (
-    <footer>
-      <div className="logo">platinum ville mines</div>
-      <div className="socials">
-        <TfiEmail />
-        {/* <MdEmail /> */}
-        <AiFillFacebook />
-        {/* <TiSocialFacebook /> */}
-        {/* <FaFacebookF /> */}
-        <MdOutlineWhatsapp />
-        {/* <FaWhatsappSquare /> */}
-      </div>
-      <div className="shortLinks">
-        <span>Privacy Policy</span>
-        <hr />
-        <span>Terms & Conditions </span>
-      </div>
-      <sub>Platinum Ville Mines Limited &copy; 2023. All Rights Reserved.</sub>
-    </footer>
-  );
+    return (
+        <footer>
+            <div className='block'>
+                <div>
+                    {/* <div className='logoNsocials'> */}
+                    <div className='logo'>
+                        <big>p</big>
+                        <p>
+                            platinum ville <span> mines limited</span>
+                        </p>
+                    </div>
+                    <Socials />
+                </div>
+                <div className='addresses'>
+                    <h2>Our Offices</h2>
+                    <div>
+                        <span>
+                            22, Aguiyilronsi Street (Merit House) Maitama, fCT
+                            Abuja.
+                        </span>
+                        <span>
+                            No 4, Itaji Street krashi Olasegun Lagos State.
+                        </span>
+                    </div>
+                    <div>
+                        <p>Mobile Nos:</p>
+                        <span>+234 801 253 6589, +234 801 253 6589</span>
+                    </div>
+                </div>
+                <Links />
+            </div>
+            {/* <hr /> */}
+            <div className='copyX'>
+                Platinum Ville Mines Limited &copy; 2023. All Rights Reserved.
+            </div>
+        </footer>
+    );
 };
 
 export default Footer;

@@ -1,0 +1,37 @@
+.shortLinks {
+    padding-right: 5rem;
+    div {
+        margin-bottom: 7px;
+        // margin-bottom: 1rem;
+        width: 10rem;
+        max-width: 10rem;
+        opacity: 0.7;
+        max-height: 1.2rem;
+        @include trans;
+        span {
+            font-size: 16px;
+            font-family: Gills;
+            color: $pinkish;
+            // margin-bottom: 20px;
+            &::before {
+                @include trans;
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 1px;
+                width: 0%;
+                height: 2px;
+                background-color: $pinkish;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
+            color: white;
+            font-size: 18px;
+            span::before {
+                width: 98%;
+            }
+        }
+    }
+}

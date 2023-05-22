@@ -1,0 +1,118 @@
+#Services {
+    // height: 135vh;
+    position: relative;
+    .Bg__Image {
+        height: 150vh;
+    }
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        // right: 0;
+        // padding: 0 2rem;
+        width: 100%;
+        h2 {
+            width: fit-content;
+            font-family: GillsHeavy;
+            // text-align: right;
+            text-transform: uppercase;
+            font-size: 3rem;
+            word-spacing: 7px;
+            letter-spacing: -3px;
+            color: $white;
+            //  6rem font-family: GillsBold;
+            margin: 6rem auto 2.5rem;
+        }
+        .OurServices {
+            @include flex;
+            flex-wrap: wrap;
+            position: relative;
+            padding: 0 7rem;
+            gap: 1.1rem;
+            z-index: 2;
+            & > div {
+                overflow: hidden;
+                border-radius: 4px;
+                width: 32%;
+                height: 62vh;
+                margin-bottom: 1.75rem;
+                @include trans;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 0vh;
+                    // width: 100%;
+                    @include transShort;
+                    // transform: rotate(90deg);
+                    // @include transLong;
+                    background: linear-gradient(0deg, transparent, transparent);
+                    z-index: 1;
+                }
+                img {
+                    height: 62vh;
+                    object-fit: cover;
+                    @include trans;
+                    // opacity: 0.7;
+                    // filter: drop-shadow(0px 0px 100px white) brightness(0.75)
+                    //     grayscale(0.25);
+                    width: 100%;
+                }
+                span {
+                    transform: scale(0);
+                    //     z-index: 2;
+                    //     position: absolute;
+                    //     bottom: 1.4rem;
+                    //     left: 1.8rem;
+                    //     line-height: 1.4;
+                    //     width: 60%;
+                    //     text-transform: uppercase;
+                    //     font-size: 1.2rem;
+                    //     font-family: GillsBold;
+                    //     text-align: left;
+                    //     letter-spacing: -1px;
+                    //     color: $pinkish_Light;
+                }
+                &:hover {
+                    img {
+                        filter: blur(1.1px);
+                        transform: scale(1.02);
+                        // height: 65vh;
+                        // object-fit: cover;
+                        // width: 100%;
+                    }
+                    &::before {
+                        // content: '';
+                        // position: absolute;
+                        // top: 0;
+                        // left: 0;
+                        width: 100%;
+                        height: 65vh;
+                        background: linear-gradient(0deg, #000e, #1117);
+                        // z-index: 1;
+                    }
+                    & span {
+                        z-index: 2;
+                        position: absolute;
+                        bottom: 1.4rem;
+                        transform: scale(1);
+                        left: 1.8rem;
+                        line-height: 1.4;
+                        width: 60%;
+                        text-transform: uppercase;
+                        font-size: 1.2rem;
+                        font-family: GillsHeavy;
+                        font-family: Gills;
+                        font-weight: 800;
+                        // font-family: GillsBold;
+                        text-align: left;
+                        letter-spacing: -1px;
+                        color: $pinkish_Light;
+                    }
+                }
+            }
+        }
+    }
+}

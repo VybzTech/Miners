@@ -1,98 +1,105 @@
-@import "../colors";
+@import '../colors';
 nav.Navbar {
-  @include flex;
-  z-index: 3;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 10vh;
-  background: linear-gradient(0deg, #00000003, #0002);
+    @include flex;
+    z-index: 5;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    background: linear-gradient(0deg, #00000003, #0002);
+    //  SCROLLED CHANGES
+    &.Light {
+        background: white;
+        position: fixed;
+        box-shadow: 0 3px 15px #eee5;
 
-  //  SCROLLED CHANGES
-  &.Light {
-    background: white;
-    position: fixed;
-
+        .Logo {
+            span {
+            }
+            p {
+                color: $black;
+            }
+        }
+        > nav {
+            a {
+                color: $black3;
+                &:hover {
+                    color: $black2;
+                }
+                &.screen {
+                    color: black;
+                }
+            }
+        }
+    }
     .Logo {
-      span {
-      }
-      p {
-        color: $black;
-      }
+        @include flex;
+        padding-left: 2.5rem;
+        color: white;
+        span {
+            font-size: 2.5rem;
+            color: $deep_yellow;
+        }
+        p {
+            font-family: Bart;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            height: fit-content;
+            color: white;
+            width: 8rem;
+            text-align: center;
+            // width: 120px;
+        }
     }
     > nav {
-      a {
-        color: $black;
-        &:hover {
+        padding-right: 1.5rem;
+        a {
+            font-weight: 600;
+            letter-spacing: -0.1px;
+            text-transform: uppercase;
+            // font-family: Gills;
+            text-decoration: none;
+            color: $white;
+            margin-right: 2rem;
+            @include transShort;
+            opacity: 0.8;
+            font-size: 1.05rem;
+            &:hover {
+                opacity: 1;
+                font-size: 1.07rem;
+                color: white;
+            }
+            &:focus,
+            &:focus-visible,
+            &:focus-within {
+                font-size: 1rem;
+            }
+            // ACTIVE NAV
+            &.screen {
+                letter-spacing: -0.5px;
+                opacity: 1;
+                color: white;
+                font-size: 1.15rem;
+                font-weight: 600;
+                // &:hover::after,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -0.65rem;
+                    left: -0.8rem;
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    border-radius: 1000px;
+                    z-index: -1;
+                    // z-index: 1;
+                    background-color: $yellow2;
+                    border: 2px solid $deep_yellow;
+                }
+            }
         }
-        &.screen {
-          color: black;
-        }
-      }
     }
-  }
-
-  .Logo {
-    @include flex;
-    padding-left: 2.5rem;
-    color: white;
-    span {
-      font-size: 3rem;
-      color: $deep_yellow;
-    }
-    p {
-      font-family: Bart;
-      text-transform: uppercase;
-      font-size: 1rem;
-      letter-spacing: 2px;
-      height: fit-content;
-      color: white;
-      width: 8rem;
-      text-align: center;
-      // width: 120px;
-    }
-  }
-  > nav {
-    padding-right: 1.5rem;
-    a {
-      font-weight: 500;
-      letter-spacing: -0.1px;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: $white;
-      margin-right: 2rem;
-      @include transShort;
-      opacity: 0.8;
-      font-size: 1.1rem;
-      &:hover {
-        opacity: 1;
-        color: white;
-      }
-      // ACTIVE NAV
-      &.screen {
-        letter-spacing: -0.5px;
-        opacity: 1;
-        color: white;
-        font-size: 1.2rem;
-        font-weight: 600;
-        // &:hover::after,
-        &::after {
-          content: "";
-          position: absolute;
-          top: -0.4rem;
-          left: -0.75rem;
-          width: 2.4rem;
-          height: 2.4rem;
-          border-radius: 1000px;
-          z-index: -1;
-          // z-index: 1;
-          background-color: $yellow2;
-          border: 2px solid $deep_yellow;
-        }
-      }
-    }
-  }
 }
 
 /*

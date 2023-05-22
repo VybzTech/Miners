@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react';
 
-const Served = ({ service, img }) => {
-  return <div>{service.service}</div>;
+const Served = ({ service }) => {
+    return (
+        <div>
+            <img src={service.img} alt={service.service} />
+            <span>{service.service}</span>
+        </div>
+    );
 };
 
 export default Served;
