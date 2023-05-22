@@ -27,7 +27,7 @@ const Form = () => {
         } else {
             if (!emailRegex.test(email)) {
                 // setError('Please enter a valid email address');
-                toast.error('Please check the email address');
+                toast.error("Please check the email address' spelling");
                 // setError('');
                 // toast.error(error);
             } else {
@@ -41,7 +41,8 @@ const Form = () => {
     };
 
     const ServiceID = 'service_akhfykf';
-    const TemplateID = 'tcg515e';
+    const TemplateID = 'template_lfbfzzl';
+    const publicKey = 'QXFYq9qCqWYZXGhQj';
     const apiKey = 'c9df20ab4dcc4877bbd25e39dfbb44be';
     const apiURL =
         'https://emailvalidation.abstractapi.com/v1/?api_key=' + apiKey;
@@ -81,20 +82,35 @@ const Form = () => {
     };
 
     const sendMail = () => {
+        const name = (email) => {
+            const regex = /@.*$/;
+            const newArr = [...email];
+            return newArr.map((str) => str.replace(regex, '')).toString();
+        };
+        console.log(name);
         console.log('email', email);
         console.log('message', message);
-        emailjs.send(ServiceID, TemplateID, { email, message }).then(
-            (result) => {
-                console.log('SUCCESS!', result.status, result.text);
-                console.log(result.text);
-                toast.success('Email successfully sent !');
-            },
-            (error) => {
-                console.log(error.text);
-                toast.error(error.name);
-                toast.error(error.text);
-            }
-        );
+        if (message === undefined || message === '') {
+            toast.info("Pls Indulge us, we'd like to know what you think!");
+            return;
+        }
+        const load = toast.loading('Loading...');
+        emailjs
+            .send(ServiceID, TemplateID, { name, email, message }, publicKey)
+            .then(
+                (result) => {
+                    console.log('SUCCESS!', result.status, result.text);
+                    console.log(result.text);
+                    toast.dismiss(load);
+                    toast.success('Email successfully sent !');
+                },
+                (error) => {
+                    console.log(error.text);
+                    toast.dismiss(load);
+                    toast.error(error.name);
+                    toast.error(error.text);
+                }
+            );
     };
 
     return (
