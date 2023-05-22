@@ -12,7 +12,7 @@ const Highlight = () => {
       {/* </div> */}
     </div>
     // <div>Highlight</div>
-  );
+  ); 
 };
 
 export default Highlight;
