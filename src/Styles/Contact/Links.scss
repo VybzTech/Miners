@@ -1,37 +1,61 @@
+@import "../colors";
+
 .shortLinks {
-    padding-right: 5rem;
-    div {
-        margin-bottom: 7px;
-        // margin-bottom: 1rem;
-        width: 10rem;
-        max-width: 10rem;
-        opacity: 0.7;
-        max-height: 1.2rem;
+  padding-right: 5rem;
+  div {
+    margin-bottom: 7px;
+    // margin-bottom: 1rem;
+    width: 10rem;
+    max-width: 10rem;
+    opacity: 0.7;
+    max-height: 1.2rem;
+    @include trans;
+    span {
+      font-size: 16px;
+      font-family: Gills;
+      color: $pinkish;
+      // margin-bottom: 20px;
+      &::before {
         @include trans;
-        span {
-            font-size: 16px;
-            font-family: Gills;
-            color: $pinkish;
-            // margin-bottom: 20px;
-            &::before {
-                @include trans;
-                content: '';
-                position: absolute;
-                bottom: -2px;
-                left: 1px;
-                width: 0%;
-                height: 2px;
-                background-color: $pinkish;
-            }
-        }
-        &:hover {
-            cursor: pointer;
-            opacity: 1;
-            color: white;
-            font-size: 18px;
-            span::before {
-                width: 98%;
-            }
-        }
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 1px;
+        width: 0%;
+        height: 2px;
+        background-color: $pinkish;
+      }
     }
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+      color: white;
+      font-size: 18px;
+      span::before {
+        width: 98%;
+      }
+    }
+  }
+}
+.Faqs {
+  &.noshow {
+    display: none;
+  }
+  width: 100%;
+  background: #fffb;
+  backdrop-filter: blur(3px);
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  main {
+    background: #fff;
+    border-radius: 15px;
+    margin: 4rem auto;
+    width: 75%;
+    padding: 2rem 5rem;
+    box-shadow: 1px 3px 15px 0.5px #fafafa;
+    header {
+      @include flex;
+    }
+  }
 }

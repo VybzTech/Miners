@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import Faqs from './Faqs';
+import Faqs from "./Faqs";
 
 const Links = () => {
   const [showFaqs, setShowFaqs] = useState(false);
@@ -18,7 +18,7 @@ const Links = () => {
       <div>
         <span>Our Projects </span>
       </div>
-      {/* <Faqs showFaqs={showFaqs} setShowFaqs={setShowFaqs} /> */}
+      <Faqs showFaqs={showFaqs} setShowFaqs={setShowFaqs} />
       {/* Default Content: This section holds informaton about our company (poicies) Projects. We have 2 completed... Most of our ongoing proj..... We are obliged  */}
     </div>
   );
