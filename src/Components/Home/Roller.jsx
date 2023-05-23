@@ -1,12 +1,12 @@
 /* eslint-disable array-callback-return */
 import React, { useEffect } from "react";
-import { useState } from "react";
+// import { useState } from "react";
 // import { BsCircleFill } from 'react-icons/bs';
 
-const Roller = ({ infos }) => {
+const Roller = ({ infos, active, set }) => {
   const { name, content } = infos;
   // console.log('content to Loop', content);
-  const [active, set] = useState(0);
+  // const [active, set] = useState(0);
   useEffect(() => {
     if (active === content.length) {
       set(0);
@@ -56,7 +56,7 @@ const Roller = ({ infos }) => {
         }}
       />
     </main>
-  )
+  );
 };
 
 export default Roller;

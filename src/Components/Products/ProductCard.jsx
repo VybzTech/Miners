@@ -1,11 +1,12 @@
 import React from "react";
-import { BsBattery } from "react-icons/bs";
+// import { BsBattery } from "react-icons/bs";
 // import { Swiper, SwiperSlide } from 'swiper/react';
 
 const ProductCard = ({ product }) => {
   // console.log(product);
-  const { name, content, img } = product;
+  const { name, content, img, svg } = product;
   // console.log(product);
+  // const shorten = (p) => p.substr(0, 80) + "...";
   return (
     <div className="card">
       {/* <div >
@@ -17,7 +18,8 @@ const ProductCard = ({ product }) => {
         <p>{content}</p>
       </div>
       <span>
-        <BsBattery />
+        {svg}
+        {/* <BsBattery /> */}
       </span>
       {/* PREVIEW LINK */}
     </div>

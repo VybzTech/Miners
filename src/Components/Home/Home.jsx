@@ -1,15 +1,16 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Background from "../Background";
-import Navbar from "./Navbar";
 import pic1 from "../../Images/Tractor.jpg";
 import pic2 from "../../Images/Bulldozer.jpg";
 import pic3 from "../../Images/Excavator.jpg";
 import pic4 from "../../Images/Scoop-tractor.jpg";
 import { register } from "swiper/element/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
+import mouse from "../../Images/Svg/Mouse.svg";
+// import Navbar from "./Navbar";  useRef,
+// import { useSwiper } from "swiper/react";
+// import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 // Import Swiper styles
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import { useSwiper } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -22,21 +23,21 @@ import "swiper/css/scrollbar";
 register();
 
 const Home = () => {
-    // const [img, setImg] = useState(pic);
-    const [count, setCount] = useState(0);
+  // const [img, setImg] = useState(pic);
+  const [count, setCount] = useState(0);
 
-    // const swiper = useSwiper();
-    useEffect(() => {
-        // const slide = () => swiper.slideNext();
-        // onClick={() => swiper.slideNext()}
-        // setTimeout(slide(), 1000);
-        // swiperEl.addEventListener('progress', (event) => {
-        //   const [swiper, progress] = event.detail;
-        // });
-        // swiperEl.addEventListener('slidechange', (event) => {
-        //   console.log('slide changed');
-        // });
-    }, []);
+  // const swiper = useSwiper();
+  useEffect(() => {
+    // const slide = () => swiper.slideNext();
+    // onClick={() => swiper.slideNext()}
+    // setTimeout(slide(), 1000);
+    // swiperEl.addEventListener('progress', (event) => {
+    //   const [swiper, progress] = event.detail;
+    // });
+    // swiperEl.addEventListener('slidechange', (event) => {
+    //   console.log('slide changed');
+    // });
+  }, []);
 
   return (
     <section id="Home">
@@ -84,7 +85,6 @@ const Home = () => {
           <Background img={pic2} />
         </SwiperSlide>
       </Swiper>
-      <Navbar />
       <main>
         <div className="title">
           <h1>What</h1>
@@ -95,6 +95,7 @@ const Home = () => {
           <a href="#Lithium">Lithium Mining</a>
         </div>
         <p className="img_Counter">0{count + 1}</p>
+        <img src={mouse} alt="mouse" />
       </main>
     </section>
   );

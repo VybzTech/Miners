@@ -12,6 +12,17 @@
   src: local(GillsHeavy), url("/src/Fonts/Gill-Sans/Gill-Sans-Heavy.otf") format("opentype");
   font-weight: 900;
 }
+@keyframes bounce {
+  0% {
+    bottom: 12vh;
+  }
+  50% {
+    bottom: 13vh;
+  }
+  100% {
+    bottom: 12vh;
+  }
+}
 /* INDEX CONTENT */
 * {
   padding: 0;
@@ -55,6 +66,17 @@ input:-internal-autofill-selected {
   font-family: GillsHeavy;
   src: local(GillsHeavy), url("/src/Fonts/Gill-Sans/Gill-Sans-Heavy.otf") format("opentype");
   font-weight: 900;
+}
+@keyframes bounce {
+  0% {
+    bottom: 12vh;
+  }
+  50% {
+    bottom: 13vh;
+  }
+  100% {
+    bottom: 12vh;
+  }
 }
 nav.Navbar {
   display: flex;
@@ -235,6 +257,31 @@ nav.Navbar > nav a.screen::after {
   }
 }
 */
+@font-face {
+  font-family: Bart;
+  src: local(Bart), url("/src/Fonts/Bartkey/BARTKEY-2.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Gills;
+  src: local(Gills), url("/src/Fonts/Gill-Sans/Gill-Sans.otf") format("opentype");
+}
+@font-face {
+  font-family: GillsHeavy;
+  src: local(GillsHeavy), url("/src/Fonts/Gill-Sans/Gill-Sans-Heavy.otf") format("opentype");
+  font-weight: 900;
+}
+@keyframes bounce {
+  0% {
+    bottom: 12vh;
+  }
+  50% {
+    bottom: 13vh;
+  }
+  100% {
+    bottom: 12vh;
+  }
+}
 #Home {
   position: relative;
 }
@@ -345,6 +392,12 @@ nav.Navbar > nav a.screen::after {
   font-weight: 900;
   -webkit-text-stroke: 2.5px white;
 }
+#Home main img[alt=mouse] {
+  left: 50%;
+  bottom: 14vh;
+  z-index: 2;
+  animation: bounce 2s 100ms ease-in-out infinite forwards;
+}
 
 #About {
   display: flex;
@@ -356,19 +409,20 @@ nav.Navbar > nav a.screen::after {
 }
 #About main {
   width: 50%;
-  padding: 2rem 5rem 1rem 0;
+  padding: 0 5rem 1rem 0;
 }
 #About main h2 {
   font-family: GillsHeavy;
   text-align: right;
   text-transform: uppercase;
-  font-size: 2.5rem;
   letter-spacing: -1px;
+  font-size: 3rem;
+  -webkit-text-stroke: 2px black;
 }
 #About main h2::after {
   content: "";
   position: absolute;
-  bottom: 0.3rem;
+  bottom: 0.5rem;
   right: -0.25rem;
   width: 10rem;
   height: 1rem;
@@ -379,13 +433,13 @@ nav.Navbar > nav a.screen::after {
 }
 #About main p {
   font-family: Gills;
-  width: 85%;
-  text-shadow: 0 0 4px rgba(34, 34, 34, 0.1333333333);
+  width: 82.5%;
+  text-shadow: 0 0 5px rgba(34, 34, 34, 0.1333333333);
   color: #111;
   letter-spacing: 0.3px;
   word-spacing: 3px;
-  margin: 1.2rem 0 0 auto;
-  font-size: 1.3rem;
+  margin: 2rem 0 0 auto;
+  font-size: 1.2rem;
   text-align: right;
   line-height: 3.2rem;
 }
@@ -397,27 +451,27 @@ nav.Navbar > nav a.screen::after {
   transition: all 250ms ease-in-out;
   position: absolute;
   top: 9rem;
-  left: 5rem;
-  width: 55vw;
+  left: 3rem;
+  width: 50vw;
 }
 #About .AboutImg .svg {
   width: 100%;
 }
 #About .AboutImg .svg svg {
   transition: all 250ms ease-in-out;
-  width: 42vw;
-  margin: 4rem auto 0 4rem;
+  width: 40vw;
+  margin: 4rem auto 0 3rem;
 }
 #About .AboutImg:hover {
-  cursor: cell3;
+  cursor: cell;
 }
 #About .AboutImg:hover img {
   top: 10rem;
   left: 2.5rem;
-  transform: scale(0.95);
+  transform: scale(1.05);
 }
 #About .AboutImg:hover .svg svg {
-  transform: rotate(45deg) scale(1.1);
+  transform: rotate(30deg) scale(1.075);
 }
 
 #Lithium {
@@ -503,13 +557,23 @@ nav.Navbar > nav a.screen::after {
   line-height: 1.5rem;
   color: #faefec;
   font-size: 0.95rem;
-  transition: all 150ms ease-in-out;
   font-family: Gills;
-  margin-bottom: 1rem;
+  transition: all 150ms ease-in-out;
 }
 #Lithium .container aside .bubble span {
   font-size: 0.7rem;
-  margin: 0 -0.25rem 5rem auto;
+  margin-left: 0.75rem;
+}
+#Lithium .container aside .bubble svg {
+  margin-right: 0.2rem;
+  width: 13px;
+}
+#Lithium .container aside .bubble > nav {
+  margin: 0.7rem -0.05rem 1.2rem auto;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-direction: row;
 }
 #Lithium .container main.Roller {
   padding-left: 3rem;
@@ -602,7 +666,7 @@ nav.Navbar > nav a.screen::after {
   padding-bottom: 2.5rem;
 }
 #Products .hero {
-  margin: 7.5rem auto 4rem;
+  margin: 6rem auto 4rem;
   width: fit-content;
   text-align: center;
 }
@@ -631,15 +695,15 @@ nav.Navbar > nav a.screen::after {
 #Products .hero h2 {
   font-family: GillsHeavy;
   text-transform: capitalize;
-  font-size: 3rem;
+  font-size: 3.5rem;
   letter-spacing: -1px;
 }
 #Products .hero h2::after {
   content: "";
   position: absolute;
   bottom: 0.5rem;
-  right: 10rem;
-  width: 10rem;
+  right: 8.5rem;
+  width: 12rem;
   height: 1rem;
   border-radius: 1000px;
   z-index: -1;
@@ -682,20 +746,22 @@ nav.Navbar > nav a.screen::after {
 #Products main .card {
   position: relative;
   box-shadow: 0 0 12px 1px #eee;
-  min-width: 370px;
+  min-width: 380px;
+  width: 450px;
   border-radius: 45px;
   overflow: hidden;
   border: 1px solid #eee;
   cursor: grabbing;
-  transition: all 150ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 #Products main .card img {
   width: 100%;
-  height: 30vh;
+  height: 35vh;
   object-fit: cover;
 }
 #Products main .card .container {
-  padding: 1rem 2.2rem 5rem;
+  z-index: 3;
+  padding: 0.4rem 2rem 3rem;
 }
 #Products main .card .container h3 {
   font-family: Bart;
@@ -730,21 +796,35 @@ nav.Navbar > nav a.screen::after {
   opacity: 1;
   color: #2e0f10;
 }
+#Products main .card:hover > span svg {
+  fill: #111 !important;
+}
 #Products main .card > span {
   display: flex;
   position: absolute;
   background-color: white;
-  border-radius: 10000px;
+  border-radius: 1000px;
   width: 5rem;
   height: 5rem;
-  top: 10rem;
+  top: 11.5rem;
   left: 1rem;
   align-items: center;
   justify-content: center;
 }
 #Products main .card > span svg {
-  color: #541c1d;
-  font-size: 2rem;
+  transition: all 150ms ease-in-out;
+  fill: #541c1d !important;
+  fill: #333 !important;
+  height: 2.75rem;
+  width: 2.75rem;
+}
+#Products main .card > span svg.min {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+#Products main .card > span svg.max {
+  height: 2.95rem;
+  width: 2.95rem;
 }
 
 #Services {
@@ -763,7 +843,7 @@ nav.Navbar > nav a.screen::after {
   width: fit-content;
   font-family: GillsHeavy;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 3.2rem;
   word-spacing: 7px;
   letter-spacing: -3px;
   color: #f3ebec;
@@ -831,7 +911,7 @@ nav.Navbar > nav a.screen::after {
   font-family: Gills;
   font-weight: 800;
   text-align: left;
-  letter-spacing: -1px;
+  letter-spacing: 0.3px;
   color: #faefec;
 }
 

@@ -36,7 +36,7 @@ const Navbar = ({ navs, activeNav, set }) => {
         </p>
       </div>
       <nav>
-        {navs.map((nav) => (
+        {navs?.map((nav) => (
           <a
             key={nav}
             href={`#${nav}`}

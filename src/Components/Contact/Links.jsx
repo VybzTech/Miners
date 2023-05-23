@@ -6,7 +6,7 @@ const Links = () => {
   return (
     <div className="shortLinks">
       <h2>Useful links</h2>
-      <div onClick={setShowFaqs(!showFaqs)}>
+      <div onClick={() => setShowFaqs(!showFaqs)}>
         <span>FAQs</span>
       </div>
       <div>

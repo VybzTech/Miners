@@ -1,132 +1,139 @@
+@import "../colors";
 #Home {
-    position: relative;
+  position: relative;
 
-    //  SWIPER OVERRIDES
-    .swiper-pagination {
-        width: 10vw;
-        top: 45vh;
-        z-index: 10;
-        right: -2rem !important;
-        left: auto;
-        height: fit-content;
-        @include flex($dir: column);
-    }
-    .swiper-pagination-bullet {
-        margin: 0.7rem auto;
-        background: white;
-        opacity: 0.7;
-        width: 8px;
-        height: 8px;
-        @include transShort;
-        &-active {
-            width: 10px;
-            margin: 1.8rem auto;
-            height: 10px;
-            opacity: 1;
-            background: $deep_yellow;
-            &::after {
-                content: '';
-                position: absolute;
-                // top: -0.85rem; // INCREASE TO TAKEDOWN
-                // left: -0.8rem; // INCREASE TO TAKE RIGHT
-                top: -9px; // INCREASE TO TAKEDOWN
-                left: -8.5px; // INCREASE TO TAKE RIGHT
-                width: 25px;
-                height: 25px;
-                border-radius: 1000px;
-                z-index: -1;
-                // z-index: 1;
-                background: transparent;
-                border: 2px solid $deep_yellow;
-            }
-        }
-        &:hover {
-            width: 9px;
-            opacity: 1;
-            height: 9px;
-        }
-    }
-    main {
+  //  SWIPER OVERRIDES
+  .swiper-pagination {
+    width: 10vw;
+    top: 45vh;
+    z-index: 10;
+    right: -2rem !important;
+    left: auto;
+    height: fit-content;
+    @include flex($dir: column);
+  }
+  .swiper-pagination-bullet {
+    margin: 0.7rem auto;
+    background: white;
+    opacity: 0.7;
+    width: 8px;
+    height: 8px;
+    @include transShort;
+    &-active {
+      width: 10px;
+      margin: 1.8rem auto;
+      height: 10px;
+      opacity: 1;
+      background: $deep_yellow;
+      &::after {
+        content: "";
         position: absolute;
-        // top: 0;
-        top: 30vh;
-        left: 0;
-        // width: max-content;
-        width: 100%;
-        .title {
-            z-index: 2;
-            width: fit-content;
-            margin: 0 auto;
-            text-align: center;
-            h1 {
-                font-size: 4rem;
-                letter-spacing: -3px;
-                text-transform: uppercase;
-                color: white; // font-weight: 900;
-                font-family: GillsHeavy;
-                // font-family: Gills;
-                font-weight: 900;
-                line-height: 3rem;
-                -webkit-text-stroke: 2px white;
-                &:last-of-type {
-                    font-size: 7rem;
-                    -webkit-text-stroke: 7px white;
-                    line-height: 5.4rem;
-                }
-            }
-            & > a {
-                // font-family: Gills;
-                color: $orange;
-                // border: 2px solid $deep_yellow;
-                // background-color: $dirty_yellow;
-
-                //  button {
-                display: inline-block;
-                @include trans;
-                position: relative;
-                text-transform: uppercase;
-                text-decoration: none;
-                // color: #1D9AF2;
-                background-color: $dirty_yellow_shadow;
-                border: 3px solid $orange;
-                text-shadow: 0 0 2.5px $orange;
-                // -webkit-text-stroke: 1px solid $orange;
-                word-spacing: 2px;
-                border-radius: 5px;
-                padding: 12px 25px 0;
-                cursor: pointer;
-                height: 28px;
-                font-size: 13px;
-                margin: 1rem auto;
-
-                &:hover {
-                    background-color: $dirty_yellow_shadow2;
-                }
-                &:active {
-                    box-shadow: 0 3px 10px $dirty_yellow_shadow;
-                    top: 3px;
-                }
-            }
-        }
-        p.img_Counter {
-            z-index: 2;
-            // text-shadow: 0 0 5px $white;
-            font-size: 7rem;
-            // letter-spacing: -1px;
-            text-transform: uppercase;
-            color: transparent;
-            opacity: 0.5;
-            // opacity: 1;
-            // border: 1.5px solid white;
-            // font-weight: 900;
-            // color: white; // font-weight: 900;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: -1rem auto 3rem 2.5rem;
-            // font-family: Gills;
-            font-weight: 900;
-            // line-height: 3rem;
-            -webkit-text-stroke: 2.5px white;
-            // box-shadow: inset 1px 1px 5px #fff1, 0 0 7px 1px #fff8;
-        }
+        // top: -0.85rem; // INCREASE TO TAKEDOWN
+        // left: -0.8rem; // INCREASE TO TAKE RIGHT
+        top: -9px; // INCREASE TO TAKEDOWN
+        left: -8.5px; // INCREASE TO TAKE RIGHT
+        width: 25px;
+        height: 25px;
+        border-radius: 1000px;
+        z-index: -1;
+        // z-index: 1;
+        background: transparent;
+        border: 2px solid $deep_yellow;
+      }
     }
+    &:hover {
+      width: 9px;
+      opacity: 1;
+      height: 9px;
+    }
+  }
+  main {
+    position: absolute;
+    // top: 0;
+    top: 30vh;
+    left: 0;
+    // width: max-content;
+    width: 100%;
+    .title {
+      z-index: 2;
+      width: fit-content;
+      margin: 0 auto;
+      text-align: center;
+      h1 {
+        font-size: 4rem;
+        letter-spacing: -3px;
+        text-transform: uppercase;
+        color: white; // font-weight: 900;
+        font-family: GillsHeavy;
+        // font-family: Gills;
+        font-weight: 900;
+        line-height: 3rem;
+        -webkit-text-stroke: 2px white;
+        &:last-of-type {
+          font-size: 7rem;
+          -webkit-text-stroke: 7px white;
+          line-height: 5.4rem;
+        }
+      }
+      & > a {
+        // font-family: Gills;
+        color: $orange;
+        // border: 2px solid $deep_yellow;
+        // background-color: $dirty_yellow;
+
+        //  button {
+        display: inline-block;
+        @include trans;
+        position: relative;
+        text-transform: uppercase;
+        text-decoration: none;
+        // color: #1D9AF2;
+        background-color: $dirty_yellow_shadow;
+        border: 3px solid $orange;
+        text-shadow: 0 0 2.5px $orange;
+        // -webkit-text-stroke: 1px solid $orange;
+        word-spacing: 2px;
+        border-radius: 5px;
+        padding: 12px 25px 0;
+        cursor: pointer;
+        height: 28px;
+        font-size: 13px;
+        margin: 1rem auto;
+
+        &:hover {
+          background-color: $dirty_yellow_shadow2;
+        }
+        &:active {
+          box-shadow: 0 3px 10px $dirty_yellow_shadow;
+          top: 3px;
+        }
+      }
+    }
+    p.img_Counter {
+      z-index: 2;
+      // text-shadow: 0 0 5px $white;
+      font-size: 7rem;
+      // letter-spacing: -1px;
+      text-transform: uppercase;
+      color: transparent;
+      opacity: 0.5;
+      // opacity: 1;
+      // border: 1.5px solid white;
+      // font-weight: 900;
+      // color: white; // font-weight: 900;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: -1rem auto 3rem 2.5rem;
+      // font-family: Gills;
+      font-weight: 900;
+      // line-height: 3rem;
+      -webkit-text-stroke: 2.5px white;
+      // box-shadow: inset 1px 1px 5px #fff1, 0 0 7px 1px #fff8;
+    }
+    img[alt="mouse"] {
+      left: 50%;
+      bottom: 14vh;
+      z-index: 2;
+      animation: bounce 2s 100ms ease-in-out infinite forwards;
+    }
+  }
 }
