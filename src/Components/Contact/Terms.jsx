@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { MdClose } from "react-icons/md";
 
-const Faqs = ({ showFaqs, setShowFaqs }) => {
+const Terms = ({ showTerms, setShowTerms }) => {
   return ReactDOM.createPortal(
     <div
-      className={`Faqs ${showFaqs ? "show" : "noshow"}`}
-      // onClick={() => setShowFaqs(!showFaqs)}
+      className={`Terms ${showTerms ? "show" : "noshow"}`}
+      // onClick={() => setShowTerms(!showTerms)}
     >
       <main
       // onClick={() => {
@@ -14,10 +14,10 @@ const Faqs = ({ showFaqs, setShowFaqs }) => {
       // }}
       >
         <header>
-          <h1>FAQs</h1>
+          <h1>Terms & Conditions</h1>
           <aside>
-            <button onClick={() => setShowFaqs(!showFaqs)}>
-              {/* <button onClick={()={setShowFaqs((s)=>s=!s)}}> */}
+            <button onClick={() => setShowTerms(!showTerms)}>
+              {/* <button onClick={()={setShowTerms((s)=>s=!s)}}> */}
               <MdClose />
             </button>
           </aside>
@@ -30,4 +30,4 @@ const Faqs = ({ showFaqs, setShowFaqs }) => {
   );
 };
 
-export default Faqs;
+export default Terms;
