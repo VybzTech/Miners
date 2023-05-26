@@ -1,20 +1,25 @@
 import React, { useEffect, useState } from "react";
 // import { withRouter } from "react-router-dom";
-
+import { RxHamburgerMenu } from "react-icons/rx";
 // const Navbar = withRouter(({ history }) => {
 const Navbar = ({ navs, activeNav, set }) => {
   const [lightNav, setLightNav] = useState(false);
+  const [smallNav, setSmallNav] = useState(false);
 
   // const [activeNav, set] = useState("Home");
 
+  console.log("I have rendered");
   useEffect(() => {
     window.addEventListener("scroll", () => {
+      console.log(window.scrollY);
+      console.log("I scrolled");
       if (window.scrollY > 50) {
         setLightNav(true);
       } else {
         setLightNav(false);
       }
     });
+    console.log("I am re rendering");
     return () => {
       window.removeEventListener("scroll", () => {});
     };
@@ -22,7 +27,11 @@ const Navbar = ({ navs, activeNav, set }) => {
   // const navs = ["Home", "About", "Products", "Services", "Contact"];
 
   return (
-    <nav className={`Navbar ${lightNav === true ? "Light" : "Fade"}`}>
+    <nav
+      className={`Navbar ${lightNav === true ? "Light" : "Fade"} ${
+        smallNav === true ? "small" : "nosmall"
+      }`}
+    >
       <div
         className="Logo"
         // onClick={() => {
@@ -46,31 +55,10 @@ const Navbar = ({ navs, activeNav, set }) => {
             {nav}
           </a>
         ))}
-        {/* <a href="#Home" className={activeNav==="Home"?'screen':''}>Home</a>
-        <a href="#About" className={activeNav==="About"?'screen':''}>About</a>
-        <a href="#Products" className={activeNav==="Products"?'screen':''}>Products</a>
-        <a href="#Services" className={activeNav==="Services"?'screen':''}>Services</a>
-        <a href="#Contact" className={activeNav==="Contact"?'screen':''}>Contact</a>
-        
-        
-        import ReactVisibilitySensor from 'react-visibility-sensor'
-        
-        <ReactVisibilitySensor
-			resizeCheck={true}
-			delayedCall={true}
-			scrollCheck={true}
-			scrollDelay={150}
-			partialVisibility={true}
-			minTopValue={200}
-			onChange={(isVisible) =>
-				setAnime(isVisible)
-			}
-			active={!anime}
-		>
-
-
-        */}
       </nav>
+      <div className="hamburger" onClick={() => setSmallNav(!smallNav)}>
+        <RxHamburgerMenu />
+      </div>
     </nav>
   );
 };
