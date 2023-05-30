@@ -1,10 +1,414 @@
 // @import "../colors";
 //  Small iPhone
-@media screen and (min-width: 320px) and (max-height: 750px) {
+// @media screen and (min-width: 320px) and (max-height: 550px) {
+#Home {
+  position: relative;
+  .Bg__Image {
+    margin-top: 10vh;
+    height: 85vh;
+  }
+  //  SWIPER OVERRIDES
+  .swiper-pagination {
+    width: 5vw;
+    bottom: 3vh;
+    z-index: 5;
+    right: 1rem !important;
+    left: auto;
+    height: fit-content;
+    @include flex($dir: column);
+  }
+  .swiper-pagination-bullet {
+    margin: 0.45rem auto;
+    background: white;
+    opacity: 0.7;
+    width: 5px;
+    height: 5px;
+    z-index: 5;
+    @include transShort;
+    &-active {
+      height: 7px;
+      width: 7px;
+      margin: 1rem auto;
+      opacity: 1;
+      background: $deep_yellow;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -0.2265rem; // INCREASE TO TAKEDOWN
+        left: -0.225rem; // INCREASE TO TAKE RIGHT
+        // top: -0.47vh;
+        // left: -0.49vh;
+        width: 12px;
+        height: 12px;
+        border-radius: 1000px;
+        z-index: -1;
+        background: transparent;
+        border: 1px solid $deep_yellow;
+      }
+    }
+  }
+  .swiper-slide > .Bg__Image::before {
+    width: 100%;
+    height: 85vh;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    background: linear-gradient(0deg, #0007, #0002);
+    z-index: 2;
+    content: "";
+    backdrop-filter: brightness(1.2) blur(0.6px);
+  }
+  main {
+    position: absolute;
+    top: 35vh;
+    left: 0;
+    width: 100%;
+    .title {
+      z-index: 2;
+      width: fit-content;
+      margin: 0 auto;
+      text-align: center;
+      h1 {
+        font-size: 9vw;
+        line-height: 5vh;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+        color: white;
+        font-family: GillsHeavy;
+        font-weight: 900;
+        -webkit-text-stroke: 1px white;
+        &:last-of-type {
+          font-size: 16vw;
+          padding-left: 3px;
+          -webkit-text-stroke: 3px white;
+          line-height: 8.25vh;
+        }
+      }
+      & > a {
+        @include trans;
+        cursor: pointer;
+        background-color: $dirty_yellow_shadow;
+        border: 2px solid $orange;
+        border-radius: 0.95vh;
+        color: $orange;
+        display: inline-block;
+        font-size: 9px;
+        height: 18px;
+        letter-spacing: 0.4px;
+        margin: 0.35rem auto;
+        padding: 8px 9px 0;
+        position: relative;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-shadow: 0 0 2px $orange;
+        word-spacing: -0.5px;
+        &:hover {
+          background-color: $dirty_yellow_shadow2;
+        }
+        &:active {
+          box-shadow: 0 3px 10px $dirty_yellow_shadow;
+          top: 3px;
+        }
+      }
+    }
+    p.img_Counter {
+      -webkit-text-stroke: 1px white;
+      color: transparent;
+      filter: blur(0.4vh);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 900;
+      font-size: 9vh;
+      letter-spacing: 1.2px;
+      margin: 5.25rem auto 0 1rem;
+      opacity: 0.6;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+    img[alt="mouse"] {
+      left: 48%;
+      bottom: 4vh;
+      // bottom: 4vh !important;
+      z-index: 2;
+      width: 4vw;
+      animation: bounce 2s 100ms ease-in-out infinite forwards !important;
+    }
+  }
+}
+// }
+
+//  Small iPhone 2
+@media screen and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
+  #Home {
+    // position: relative;
+    .Bg__Image {
+      margin-top: 12vh;
+      // height: 80vh;
+    }
+    //  SWIPER OVERRIDES
+    // .swiper-pagination {
+    //   width: 5vw;
+    //   bottom: 3vh;
+    //   z-index: 5;
+    //   right: 1rem !important;
+    //   left: auto;
+    //   height: fit-content;
+    //   @include flex($dir: column);
+    // }
+    .swiper-pagination-bullet {
+      //   margin: 0.45rem auto;
+      //   background: white;
+      //   opacity: 0.7;
+      //   width: 5px;
+      //   height: 5px;
+      //   z-index: 5;
+      //   @include transShort;
+      &-active {
+        //     height: 7px;
+        //     width: 7px;
+        //     margin: 1.2rem auto;
+        //     opacity: 1;
+        //     background: $deep_yellow;
+        &::after {
+          //       content: "";
+          //       position: absolute;
+          top: -3.065px; // INCREASE TO TAKEDOWN
+          left: -3.015px; // INCREASE TO TAKE RIGHT
+          //       // top: -0.47vh;
+          //       // left: -0.49vh;
+          //       width: 12px;
+          //       height: 12px;
+          //       border-radius: 1000px;
+          //       z-index: -1;
+          //       background: transparent;
+          //       border: 1px solid $deep_yellow;
+        }
+      }
+    }
+    .swiper-slide > .Bg__Image::before {
+      // width: 100%;
+      // height: 80vh;
+      // position: fixed;
+      top: 12vh;
+      // left: 0;
+      // background: linear-gradient(0deg, #0007, #0002);
+      // z-index: 2;
+      // content: "";
+      // backdrop-filter: brightness(1.2) blur(0.6px);
+    }
+    main {
+      // position: absolute;
+      // top: 28vh;
+      // left: 0;
+      // width: 100%;
+      .title {
+        // z-index: 2;
+        // width: fit-content;
+        // margin: 0 auto;
+        // text-align: center;
+        h1 {
+          font-size: 10vw;
+          line-height: 4vh;
+          // letter-spacing: -1px;
+          // text-transform: uppercase;
+          // color: white;
+          // font-family: GillsHeavy;
+          // font-weight: 900;
+          // -webkit-text-stroke: 1px white;
+          &:last-of-type {
+            font-size: 18vw;
+            padding-left: 0;
+            //   -webkit-text-stroke: 3px white;
+            line-height: 7.8vh;
+          }
+        }
+        & > a {
+          // @include trans;
+          // cursor: pointer;
+          // background-color: $dirty_yellow_shadow;
+          // border: 2px solid $orange;
+          border-radius: 0.85vh;
+          // color: $orange;
+          // display: inline-block;
+          // font-size: 8px;
+          // height: 17px;
+          // letter-spacing: 0.4px;
+          // margin: 0.3rem auto;
+          // padding: 7px 9px 0;
+          // position: relative;
+          // text-transform: uppercase;
+          // text-decoration: none;
+          // text-shadow: 0 0 2px $orange;
+          // word-spacing: 2px;
+          // &:hover {
+          //   background-color: $dirty_yellow_shadow2;
+          // }
+          // &:active {
+          //   box-shadow: 0 3px 10px $dirty_yellow_shadow;
+          //   top: 3px;
+          // }
+        }
+      }
+      p.img_Counter {
+        // -webkit-text-stroke: 2px white;
+        // color: transparent;
+        // filter: blur(0.35vh);
+        // font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        // font-weight: 900;
+        // font-size: 8.5vh;
+        // letter-spacing: 1.2px;
+        margin-top: 8rem;
+        // auto 0 1.2rem;
+        // margin: 7.5rem auto 0 1.2rem;
+        // opacity: 0.6;
+        // text-transform: uppercase;
+        // z-index: 1;
+      }
+      img[alt="mouse"] {
+        // left: 48%;
+        // bottom: 4vh !important;
+        // z-index: 2;
+        // width: 4vw;
+        // animation: bounce 2s 100ms ease-in-out infinite forwards !important;
+      }
+    }
+  }
 }
 
 // iPhone 6/7/8 and similar devices:
 @media screen and (min-width: 375px) and (max-height: 667px) {
+  #Home {
+    position: relative;
+    .Bg__Image {
+      margin-top: 10vh;
+      height: 85vh;
+    }
+    //  SWIPER OVERRIDES
+    .swiper-pagination {
+      width: 5vw;
+      bottom: 3vh;
+      z-index: 5;
+      right: 1rem !important;
+      left: auto;
+      height: fit-content;
+      @include flex($dir: column);
+    }
+    .swiper-pagination-bullet {
+      margin: 0.45rem auto;
+      background: white;
+      opacity: 0.7;
+      width: 5px;
+      height: 5px;
+      z-index: 5;
+      @include transShort;
+      &-active {
+        height: 7px;
+        width: 7px;
+        margin: 1rem auto;
+        opacity: 1;
+        background: $deep_yellow;
+        &::after {
+          content: "";
+          position: absolute;
+          top: -0.2265rem; // INCREASE TO TAKEDOWN
+          left: -0.225rem; // INCREASE TO TAKE RIGHT
+          // top: -0.47vh;
+          // left: -0.49vh;
+          width: 12px;
+          height: 12px;
+          border-radius: 1000px;
+          z-index: -1;
+          background: transparent;
+          border: 1px solid $deep_yellow;
+        }
+      }
+    }
+    .swiper-slide > .Bg__Image::before {
+      width: 100%;
+      height: 85vh;
+      position: fixed;
+      top: 10vh;
+      left: 0;
+      background: linear-gradient(0deg, #0007, #0002);
+      z-index: 2;
+      content: "";
+      backdrop-filter: brightness(1.2) blur(0.6px);
+    }
+    main {
+      position: absolute;
+      top: 35vh;
+      left: 0;
+      width: 100%;
+      .title {
+        z-index: 2;
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+        h1 {
+          font-size: 9vw;
+          line-height: 5vh;
+          letter-spacing: -1px;
+          text-transform: uppercase;
+          color: white;
+          font-family: GillsHeavy;
+          font-weight: 900;
+          -webkit-text-stroke: 1px white;
+          &:last-of-type {
+            font-size: 16vw;
+            padding-left: 3px;
+            -webkit-text-stroke: 3px white;
+            line-height: 8.25vh;
+          }
+        }
+        & > a {
+          @include trans;
+          cursor: pointer;
+          background-color: $dirty_yellow_shadow;
+          border: 2px solid $orange;
+          border-radius: 0.75vh;
+          color: $orange;
+          display: inline-block;
+          font-size: 9px;
+          height: 18px;
+          letter-spacing: 0.4px;
+          margin: 0.35rem auto;
+          padding: 8px 9px 0;
+          position: relative;
+          text-transform: uppercase;
+          text-decoration: none;
+          text-shadow: 0 0 2px $orange;
+          word-spacing: -0.5px;
+          &:hover {
+            background-color: $dirty_yellow_shadow2;
+          }
+          &:active {
+            box-shadow: 0 3px 10px $dirty_yellow_shadow;
+            top: 3px;
+          }
+        }
+      }
+      p.img_Counter {
+        -webkit-text-stroke: 2px white;
+        color: transparent;
+        filter: blur(0.35vh);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 900;
+        font-size: 8.5vh;
+        letter-spacing: 1.2px;
+        margin: 5.25rem auto 0 1rem;
+        opacity: 0.6;
+        text-transform: uppercase;
+        z-index: 1;
+      }
+      img[alt="mouse"] {
+        left: 48%;
+        bottom: 4vh;
+        // bottom: 4vh !important;
+        z-index: 2;
+        width: 4vw;
+        animation: bounce 2s 100ms ease-in-out infinite forwards !important;
+      }
+    }
+  }
 }
 
 // For iPhone X and similar devices:
@@ -27,7 +431,10 @@
 @media screen and (min-width: 1024px) {
   #Home {
     position: relative;
-
+    .Bg__Image {
+      margin-top: 0;
+      height: 100vh;
+    }
     //  SWIPER OVERRIDES
     .swiper-pagination {
       width: 10vw;
@@ -87,57 +494,46 @@
     }
     main {
       position: absolute;
-      // top: 0;
       top: 30vh;
       left: 0;
-      // width: max-content;
       width: 100%;
       .title {
-        z-index: 2;
-        width: fit-content;
         margin: 0 auto;
         text-align: center;
+        width: fit-content;
+        z-index: 2;
         h1 {
-          font-size: 4rem;
-          letter-spacing: -3px;
-          text-transform: uppercase;
-          color: white; // font-weight: 900;
-          font-family: GillsHeavy;
-          // font-family: Gills;
-          font-weight: 900;
-          line-height: 3rem;
           -webkit-text-stroke: 2px white;
+          color: white; // font-weight: 900;
+          font-size: 4.95vw;
+          font-family: GillsHeavy;
+          font-weight: 900;
+          letter-spacing: -3px;
+          line-height: 7vh;
+          text-transform: uppercase;
           &:last-of-type {
-            font-size: 7rem;
+            font-size: 9vw;
             -webkit-text-stroke: 7px white;
-            line-height: 5.4rem;
+            line-height: 14vh;
           }
         }
         & > a {
-          // font-family: Gills;
-          color: $orange;
-          // border: 2px solid $deep_yellow;
-          // background-color: $dirty_yellow;
-
-          //  button {
-          display: inline-block;
           @include trans;
+          background-color: $dirty_yellow_shadow;
+          border-radius: 1vh;
+          border: 3px solid $orange;
+          color: $orange;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 13px;
+          height: 28px;
+          margin: 1rem auto;
+          padding: 12px 25px 0;
           position: relative;
           text-transform: uppercase;
           text-decoration: none;
-          // color: #1D9AF2;
-          background-color: $dirty_yellow_shadow;
-          border: 3px solid $orange;
           text-shadow: 0 0 2.5px $orange;
-          // -webkit-text-stroke: 1px solid $orange;
           word-spacing: 2px;
-          border-radius: 5px;
-          padding: 12px 25px 0;
-          cursor: pointer;
-          height: 28px;
-          font-size: 13px;
-          margin: 1rem auto;
-
           &:hover {
             background-color: $dirty_yellow_shadow2;
           }
@@ -153,6 +549,7 @@
         font-size: 7rem;
         // letter-spacing: -1px;
         text-transform: uppercase;
+        filter: blur(0.4vh);
         color: transparent;
         opacity: 0.5;
         // opacity: 1;
@@ -162,7 +559,6 @@
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         margin: -1rem auto 3rem 2.5rem;
         // font-family: Gills;
-        filter: blur(2px);
         font-weight: 900;
         // line-height: 3rem;
         -webkit-text-stroke: 3px white;
@@ -170,8 +566,9 @@
       }
       img[alt="mouse"] {
         left: 50%;
-        bottom: 10vh;
+        bottom: 9.85vh;
         z-index: 2;
+        width: 1.55vw;
         animation: bounce 2s 100ms ease-in-out infinite forwards;
       }
     }

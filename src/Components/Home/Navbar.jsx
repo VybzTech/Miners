@@ -24,7 +24,6 @@ const Navbar = ({ navs, activeNav, set }) => {
       window.removeEventListener("scroll", () => {});
     };
   }, [lightNav]);
-  // const navs = ["Home", "About", "Products", "Services", "Contact"];
 
   return (
     <nav
@@ -32,12 +31,7 @@ const Navbar = ({ navs, activeNav, set }) => {
         smallNav === true ? "small" : "nosmall"
       }`}
     >
-      <div
-        className="Logo"
-        // onClick={() => {
-        // history.push("/");
-        // }}
-      >
+      <div className="Logo" onClick={() => window.scroll(0, 0)}>
         <span>p</span>
         <p>
           Platinum Ville mines

@@ -1,5 +1,106 @@
 //  Small iPhone
-@media screen and (min-width: 320px) and (max-height: 750px) {
+// @media screen and (min-width: 320px) and (max-height: 550px) {
+.socials {
+  @include flex($jus: center);
+  padding: 0.25rem 0 0 1.2rem;
+  gap: 15px;
+  // gap: 1rem;
+  // padding: 2rem 0 1.5rem 3rem;
+  span {
+    a {
+      background-color: $brown;
+      border-radius: 1000px;
+      // padding: 0.5rem;
+      // margin-right: 0.7rem;
+      opacity: 0.7;
+      width: 1.9rem;
+      height: 1.9rem;
+      // display: block;
+      @include flex;
+      @include transShort;
+      svg {
+        margin: auto;
+        @include trans;
+        vertical-align: middle;
+        color: $pinkish;
+        opacity: 0.8;
+        font-size: 18px;
+      }
+    }
+    &:first-child svg {
+      font-size: 14px;
+    }
+    &:last-child svg {
+      font-size: 16px;
+      padding: 0 0 1px 1px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+      box-shadow: 1px 2px 8px 0.1px #0003;
+      // box-shadow: 1px 2px 5px #2e0f10a9;
+      svg {
+        color: $pinkish_Light;
+        // font-size: 1.4rem;
+        transform: scale(1.12);
+      }
+    }
+  }
+}
+// }
+
+//  Small iPhone 2
+@media screen and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
+  .socials {
+    @include flex($jus: center);
+    padding: 0.25rem 0 0 1.2rem;
+    gap: 15px;
+    // gap: 1rem;
+    // padding: 2rem 0 1.5rem 3rem;
+    span {
+      background-color: $brown;
+      border-radius: 1000px;
+      // padding: 0.5rem;
+      // margin-right: 0.7rem;
+      opacity: 0.7;
+      a {
+        width: 2.3rem;
+        height: 2.3rem;
+        // display: block;
+        @include flex;
+        @include transShort;
+        svg {
+          margin: auto;
+          @include trans;
+          vertical-align: middle;
+          color: $pinkish;
+          opacity: 0.8;
+          font-size: 20px;
+        }
+      }
+      &:first-child svg {
+        // font-size: calc($svgSiz-3)px;
+        font-size: 17px;
+      }
+      &:last-child svg {
+        font-size: 19px;
+        padding: 0 0 1px 1px;
+      }
+
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+        box-shadow: 1px 2px 8px 0.1px #0003;
+        // box-shadow: 1px 2px 5px #2e0f10a9;
+        svg {
+          color: $pinkish_Light;
+          // font-size: 1.4rem;
+          transform: scale(1.12);
+        }
+      }
+    }
+  }
 }
 
 // iPhone 6/7/8 and similar devices:

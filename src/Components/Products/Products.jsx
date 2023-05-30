@@ -25,11 +25,33 @@ const Products = () => {
       </div>
       <main>
         <Swiper
+          // Responsive breakpoints
+          breakpoints={{
+            // when window width is >= 320px
+            320: {
+              slidesPerView: 1,
+            },
+            // when window width is >= 480px
+            480: {
+              slidesPerView: 1.2,
+            },
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 1.8,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 2.5,
+            },
+          }}
           navigation
           // scrollbar
           // loopedSlides={6}
           //   slidesPerView={3.5}
-          slidesPerView={2.5}
+          // slidesPerView={2.5}
+          // slidesPerView={1}
           // loop={true}
           // loop
           // freeMode
