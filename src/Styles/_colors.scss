@@ -98,4 +98,27 @@ $light_gray: #ccc;
     height: 1px;
     background-color: $pinkish;
   }
+  @media screen and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
+    &::after {
+      width: 82vw;
+      left: -0.25rem;
+    }
+  }
+}
+
+@mixin svgValues($siz) {
+  $min: $siz - 1vw;
+  $max: $siz + 2vw;
+  svg {
+    height: $siz;
+    width: $siz;
+    &.min {
+      height: $min;
+      width: $min;
+    }
+    &.max {
+      height: $max;
+      width: $max;
+    }
+  }
 }

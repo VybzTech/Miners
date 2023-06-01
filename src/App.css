@@ -28,7 +28,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(0.9);
+    transform: scale(0.8);
   }
   100% {
     transform: scale(1.2);
@@ -54,6 +54,10 @@
 
 img {
   width: 10vw;
+}
+
+*::-webkit-scrollbar {
+  padding-top: 13vh;
 }
 
 /* APP CONTENT   */
@@ -205,6 +209,42 @@ nav.Navbar.nosmall > nav {
     left: -0.8rem;
   }
 }
+@media screen and (min-width: 375px) and (max-height: 667px) {
+  nav.Navbar > nav {
+    top: 11.5vh;
+    padding-bottom: 50vh;
+    height: 77vh;
+  }
+  nav.Navbar > nav a {
+    font-size: 4.5vw;
+    padding: 0.2rem;
+  }
+  nav.Navbar > nav a:hover {
+    font-size: 4vw;
+  }
+  nav.Navbar > nav a.screen {
+    font-size: 5.25vw;
+  }
+  nav.Navbar > nav a.screen::after {
+    top: -0.2rem;
+    left: -0.8rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  nav.Navbar .hamburger {
+    margin-right: 1.35rem;
+    padding: 8px 8px 3px;
+  }
+  nav.Navbar .hamburger svg {
+    font-size: 5.75vw;
+  }
+  nav.Navbar .hamburger:hover {
+    padding: 9px 9px 4px;
+  }
+  nav.Navbar .hamburger:hover svg {
+    font-size: 5.9vw;
+  }
+}
 @media screen and (min-width: 1024px) {
   nav.Navbar {
     display: flex;
@@ -331,14 +371,14 @@ nav.Navbar.nosmall > nav {
   margin: 0.45rem auto;
   background: white;
   opacity: 0.7;
-  width: 5px;
-  height: 5px;
+  width: 7px;
+  height: 7px;
   z-index: 5;
   transition: all 150ms ease-in-out;
 }
 #Home .swiper-pagination-bullet-active {
-  height: 7px;
-  width: 7px;
+  height: 9px;
+  width: 9px;
   margin: 1rem auto;
   opacity: 1;
   background: #f1c30b;
@@ -346,10 +386,10 @@ nav.Navbar.nosmall > nav {
 #Home .swiper-pagination-bullet-active::after {
   content: "";
   position: absolute;
-  top: -0.2265rem;
-  left: -0.225rem;
-  width: 12px;
-  height: 12px;
+  top: -3.5px;
+  left: -3px;
+  width: 14px;
+  height: 14px;
   border-radius: 1000px;
   z-index: -1;
   background: transparent;
@@ -428,7 +468,7 @@ nav.Navbar.nosmall > nav {
   font-weight: 900;
   font-size: 9vh;
   letter-spacing: 1.2px;
-  margin: 5.25rem auto 0 1rem;
+  margin: 16vh auto 0 1rem;
   opacity: 0.6;
   text-transform: uppercase;
   z-index: 1;
@@ -465,141 +505,102 @@ nav.Navbar.nosmall > nav {
     border-radius: 0.85vh;
   }
   #Home main p.img_Counter {
-    margin-top: 8rem;
+    margin-top: 22vh;
   }
 }
 @media screen and (min-width: 375px) and (max-height: 667px) {
   #Home {
+    /*
     position: relative;
+      margin-top: 10vh;
+      width: 5vw;
+      bottom: 3vh;
+      z-index: 5;
+      right: 1rem !important;
+      left: auto;
+      height: fit-content;
+      @include flex($dir: column);
+      margin: 0.45rem auto;
+      background: white;
+      opacity: 0.7;
+      width: 5px;
+      height: 5px;
+      z-index: 5;
+      @include transShort;
+        height: 7px;
+        width: 7px;
+        margin: 1rem auto;
+        opacity: 1;
+        background: $deep_yellow;
+          content: "";
+          position: absolute;
+          top: -0.2265rem; // INCREASE TO TAKEDOWN
+          left: -0.225rem; // INCREASE TO TAKE RIGHT
+          // top: -0.47vh;
+          // left: -0.49vh;
+          width: 12px;
+          height: 12px;
+          border-radius: 1000px;
+          z-index: -1;
+          background: transparent;
+          border: 1px solid $deep_yellow;
+      width: 100%;
+      height: 85vh;
+      position: fixed;
+      top: 10vh;
+      left: 0;
+      background: linear-gradient(0deg, #0007, #0002);
+      z-index: 2;
+      content: "";
+      backdrop-filter: brightness(1.2) blur(0.6px);
+      */
   }
   #Home .Bg__Image {
-    margin-top: 10vh;
-    height: 85vh;
-  }
-  #Home .swiper-pagination {
-    width: 5vw;
-    bottom: 3vh;
-    z-index: 5;
-    right: 1rem !important;
-    left: auto;
-    height: fit-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+    height: 88vh;
   }
   #Home .swiper-pagination-bullet {
-    margin: 0.45rem auto;
-    background: white;
-    opacity: 0.7;
-    width: 5px;
-    height: 5px;
-    z-index: 5;
-    transition: all 150ms ease-in-out;
+    height: 8px;
+    width: 8px;
   }
   #Home .swiper-pagination-bullet-active {
-    height: 7px;
-    width: 7px;
-    margin: 1rem auto;
-    opacity: 1;
-    background: #f1c30b;
+    height: 12px;
+    width: 12px;
   }
   #Home .swiper-pagination-bullet-active::after {
-    content: "";
-    position: absolute;
-    top: -0.2265rem;
-    left: -0.225rem;
-    width: 12px;
-    height: 12px;
-    border-radius: 1000px;
-    z-index: -1;
-    background: transparent;
-    border: 1px solid #f1c30b;
+    height: 18px;
+    width: 18px;
+    left: -4px;
+    top: -4px;
   }
   #Home .swiper-slide > .Bg__Image::before {
-    width: 100%;
-    height: 85vh;
-    position: fixed;
-    top: 10vh;
-    left: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4666666667), rgba(0, 0, 0, 0.1333333333));
-    z-index: 2;
-    content: "";
-    backdrop-filter: brightness(1.2) blur(0.6px);
+    backdrop-filter: brightness(1.3) blur(0.3px);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7333333333), rgba(17, 17, 17, 0.0666666667));
+    height: 88vh;
+    top: 12vh;
   }
   #Home main {
-    position: absolute;
-    top: 35vh;
-    left: 0;
-    width: 100%;
-  }
-  #Home main .title {
-    z-index: 2;
-    width: fit-content;
-    margin: 0 auto;
-    text-align: center;
+    top: 30vh;
   }
   #Home main .title h1 {
-    font-size: 9vw;
-    line-height: 5vh;
-    letter-spacing: -1px;
-    text-transform: uppercase;
-    color: white;
-    font-family: GillsHeavy;
-    font-weight: 900;
-    -webkit-text-stroke: 1px white;
+    font-size: 11vw;
+    line-height: 4.5vh;
   }
   #Home main .title h1:last-of-type {
-    font-size: 16vw;
-    padding-left: 3px;
-    -webkit-text-stroke: 3px white;
-    line-height: 8.25vh;
+    font-size: 20vw;
+    line-height: 8.3vh;
   }
   #Home main .title > a {
-    transition: all 250ms ease-in-out;
-    cursor: pointer;
-    background-color: rgba(151, 121, 0, 0.2274509804);
-    border: 2px solid #f8a414;
-    border-radius: 0.75vh;
-    color: #f8a414;
-    display: inline-block;
-    font-size: 9px;
-    height: 18px;
-    letter-spacing: 0.4px;
-    margin: 0.35rem auto;
-    padding: 8px 9px 0;
-    position: relative;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-shadow: 0 0 2px #f8a414;
-    word-spacing: -0.5px;
-  }
-  #Home main .title > a:hover {
-    background-color: rgba(151, 121, 0, 0.4666666667);
-  }
-  #Home main .title > a:active {
-    box-shadow: 0 3px 10px rgba(151, 121, 0, 0.2274509804);
-    top: 3px;
+    border-radius: 0.8vh;
+    font-size: 11.5px;
+    height: 25px;
+    margin-top: 3.5vh;
+    padding: 10px 15px 0;
+    word-spacing: -1px;
   }
   #Home main p.img_Counter {
-    -webkit-text-stroke: 2px white;
-    color: transparent;
+    margin: 25.25vh auto auto 5vw;
     filter: blur(0.35vh);
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 900;
-    font-size: 8.5vh;
-    letter-spacing: 1.2px;
-    margin: 5.25rem auto 0 1rem;
-    opacity: 0.6;
-    text-transform: uppercase;
-    z-index: 1;
-  }
-  #Home main img[alt=mouse] {
-    left: 48%;
-    bottom: 4vh;
-    z-index: 2;
-    width: 4vw;
-    animation: bounce 2s 100ms ease-in-out infinite forwards !important;
+    opacity: 0.5;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -632,19 +633,19 @@ nav.Navbar.nosmall > nav {
     transition: all 150ms ease-in-out;
   }
   #Home .swiper-pagination-bullet-active {
-    width: 10px;
+    width: 13px;
+    height: 13px;
     margin: 1.8rem auto;
-    height: 10px;
     opacity: 1;
     background: #f1c30b;
   }
   #Home .swiper-pagination-bullet-active::after {
     content: "";
     position: absolute;
-    top: -9px;
-    left: -8.5px;
-    width: 25px;
-    height: 25px;
+    top: -6.8px;
+    left: -6.5px;
+    width: 22px;
+    height: 22px;
     border-radius: 1000px;
     z-index: -1;
     background: transparent;
@@ -837,6 +838,23 @@ nav.Navbar.nosmall > nav {
   }
   #About .AboutImg img {
     width: 90vw;
+  }
+}
+@media screen and (min-width: 375px) and (max-height: 667px) {
+  #About {
+    height: 100vh;
+  }
+  #About main h2 {
+    font-size: 8vw;
+    -webkit-text-stroke: 0.75px black;
+  }
+  #About main h2::after {
+    bottom: 0.2rem;
+    right: 6.75rem;
+  }
+  #About main p {
+    width: 90%;
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1170,6 +1188,82 @@ nav.Navbar.nosmall > nav {
   #Lithium .container main.Roller .line {
     top: 2.3rem;
     left: 3rem;
+  }
+}
+@media screen and (min-width: 375px) and (max-height: 667px) {
+  #Lithium .Bg__Image {
+    height: 120vh;
+  }
+  #Lithium .container h2 {
+    font-size: 7.5vw;
+    letter-spacing: -1px;
+    margin: 3.5rem auto 2rem;
+  }
+  #Lithium .container aside {
+    padding-bottom: 0.5rem;
+  }
+  #Lithium .container aside .bubble {
+    width: 37vw;
+    padding-left: 11px;
+  }
+  #Lithium .container aside .bubble.Tabbed, #Lithium .container aside .bubble.Tabbed:hover {
+    padding-left: 14px;
+  }
+  #Lithium .container aside .bubble.Tabbed span,
+  #Lithium .container aside .bubble.Tabbed p, #Lithium .container aside .bubble.Tabbed:hover span,
+  #Lithium .container aside .bubble.Tabbed:hover p {
+    padding: 3px 0 0 0;
+    line-height: 2.9vh;
+    word-spacing: 1.5px;
+    font-size: 11px;
+  }
+  #Lithium .container aside .bubble.Tabbed nav, #Lithium .container aside .bubble.Tabbed:hover nav {
+    opacity: 1;
+  }
+  #Lithium .container aside .bubble:last-of-type {
+    margin-left: 4px;
+  }
+  #Lithium .container aside .bubble h4 {
+    font-size: 5vw;
+  }
+  #Lithium .container aside .bubble span,
+  #Lithium .container aside .bubble p {
+    padding: 2px 5px 0 1px;
+    font-size: 10.5px;
+    letter-spacing: 0.2px;
+    line-height: 3vh;
+    word-spacing: 1px;
+  }
+  #Lithium .container aside .bubble svg {
+    width: 9px;
+  }
+  #Lithium .container aside .bubble > nav {
+    opacity: 0.6;
+    margin: 7px auto 10px 2px;
+  }
+  #Lithium .container main.Roller {
+    padding: 0.5rem 1rem 0 3rem;
+  }
+  #Lithium .container main.Roller .content.active p span {
+    font-size: 4.2vw;
+    line-height: 4.5vh;
+  }
+  #Lithium .container main.Roller .content.active p::before {
+    left: -1.485rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  #Lithium .container main.Roller .content p span {
+    font-size: 3.5vw;
+    line-height: 2vh;
+  }
+  #Lithium .container main.Roller .content p::before {
+    left: -1.3rem;
+    width: 0.575rem;
+    height: 0.575rem;
+  }
+  #Lithium .container main.Roller .line {
+    left: 2.55rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1506,9 +1600,6 @@ nav.Navbar.nosmall > nav {
   justify-content: center;
 }
 #Products main .card > span svg {
-  transition: all 150ms ease-in-out;
-  fill: #541c1d !important;
-  fill: #333 !important;
   height: 10vw;
   width: 10vw;
 }
@@ -1519,6 +1610,10 @@ nav.Navbar.nosmall > nav {
 #Products main .card > span svg.max {
   height: 12vw;
   width: 12vw;
+}
+#Products main .card > span svg {
+  transition: all 150ms ease-in-out;
+  fill: #333 !important;
 }
 
 @media screen and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
@@ -1558,6 +1653,52 @@ nav.Navbar.nosmall > nav {
   }
   #Products main .card > span {
     top: 6.75rem;
+  }
+}
+@media screen and (min-width: 375px) and (max-height: 667px) {
+  #Products .hero {
+    margin: 4rem auto 1.5rem;
+  }
+  #Products .hero h1 {
+    opacity: 0.15;
+    filter: blur(0.8px);
+  }
+  #Products .hero h2 {
+    margin-top: -0.7rem;
+  }
+  #Products main .swiper-slide:first-child {
+    padding-left: 1.3rem;
+  }
+  #Products main .card img {
+    height: 22vh;
+  }
+  #Products main .card .container {
+    padding: 1.7rem 0.8rem 2rem 1.5rem;
+  }
+  #Products main .card .container h3 {
+    font-size: 7vw;
+    letter-spacing: 1px;
+  }
+  #Products main .card .container p {
+    font-size: 16px;
+    line-height: 4.5vh;
+  }
+  #Products main .card > span {
+    width: 4.5rem;
+    height: 4.5rem;
+    top: 7.25rem;
+  }
+  #Products main .card > span svg {
+    height: 8.75vw;
+    width: 8.75vw;
+  }
+  #Products main .card > span svg.min {
+    height: 7.75vw;
+    width: 7.75vw;
+  }
+  #Products main .card > span svg.max {
+    height: 10.75vw;
+    width: 10.75vw;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1836,6 +1977,29 @@ nav.Navbar.nosmall > nav {
     filter: brightness(1.25);
   }
 }
+@media screen and (min-width: 375px) and (max-height: 667px) {
+  #Services .container .OurServices > div {
+    border: 1px solid transparent;
+    box-shadow: 0 1px 8px 0.1px rgba(46, 15, 16, 0.3529411765);
+    height: 33vh;
+    margin-bottom: 1.75vh;
+  }
+  #Services .container .OurServices > div::before {
+    bottom: -1;
+    left: 1;
+    width: 102%;
+    height: 33vh;
+  }
+  #Services .container .OurServices > div img {
+    height: 33vh;
+  }
+  #Services .container .OurServices > div span {
+    font-size: 3.25vw;
+  }
+  #Services .container .OurServices > div:hover::before {
+    height: 33vh;
+  }
+}
 @media screen and (min-width: 1024px) {
   #Services {
     position: relative;
@@ -1926,12 +2090,11 @@ nav.Navbar.nosmall > nav {
   }
 }
 #Contact {
-  position: relative;
-  height: 170vh;
+  height: 185vh;
 }
 #Contact .Bg__Image {
   z-index: 1;
-  height: 170vh;
+  height: 185vh;
 }
 #Contact .container {
   position: absolute;
@@ -1953,7 +2116,6 @@ nav.Navbar.nosmall > nav {
 }
 #Contact .container main .Form {
   margin: 2.8rem auto auto 1.8rem;
-  /* height: 50vh; */
 }
 #Contact .container main .Form p {
   display: flex;
@@ -1998,22 +2160,22 @@ nav.Navbar.nosmall > nav {
   flex-direction: row;
 }
 #Contact .container main .Form .formGroup input {
-  border: none;
-  width: 60vw;
   transition: all 250ms ease-in-out;
-  height: 0.8rem;
-  background: transparent;
+  background: transparent !important;
+  border: none;
+  color: #541c1d;
+  height: 1.4rem;
   font-size: 1rem;
   font-family: Gills;
   opacity: 0.9;
-  color: #541c1d;
+  width: 60vw;
 }
 #Contact .container main .Form .formGroup input::placeholder {
-  word-spacing: 2px;
-  opacity: 0.4;
   color: #2e0f10;
   font-size: 1.02rem;
   font-family: Gills;
+  opacity: 0.4;
+  word-spacing: 2px;
 }
 #Contact .container main .Form .formGroup input:focus, #Contact .container main .Form .formGroup input:focus-visible, #Contact .container main .Form .formGroup input:focus-within {
   border: none;
@@ -2060,15 +2222,16 @@ nav.Navbar.nosmall > nav {
   display: none;
 }
 #Contact .container main .Form .formGroup.message {
-  border-radius: 20px;
-  margin-top: 0.5rem;
+  border-radius: 14px;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
   flex-direction: column;
-  padding: 1rem 2rem;
+  padding: 0.7rem 1.2rem;
 }
 #Contact .container main .Form .formGroup.message textarea {
   border: none;
-  width: 25rem;
-  height: 7rem;
+  width: 70vw;
+  height: 15vh;
   transition: all 250ms ease-in-out;
   background: transparent;
   font-size: 1.1rem;
@@ -2137,13 +2300,14 @@ textarea:focus-within) button {
 }
 #Contact .container main .hero h2 {
   font-weight: 900;
-  line-height: 7vh;
+  line-height: 6vh;
   word-spacing: -5px;
   font-family: Bart;
   text-transform: uppercase;
-  font-size: 11vw;
+  font-size: 11.5vw;
   letter-spacing: 1px;
   color: #111;
+  -webkit-text-stroke: 0.25px #222;
 }
 #Contact .container main .hero h2::after {
   content: "";
@@ -2189,7 +2353,7 @@ textarea:focus-within) button {
   width: 70vw;
   color: #e7c7b0;
   text-align: center;
-  padding: 0.5rem 0 0;
+  padding: 0.1rem 0 0;
   margin-left: -1rem;
 }
 #Contact .container .footer footer .logo big {
@@ -2253,6 +2417,12 @@ textarea:focus-within) button {
   height: 1px;
   background-color: #fce1d7;
 }
+@media screen and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
+  #Contact .container .footer footer .addresses::after {
+    width: 82vw;
+    left: -0.25rem;
+  }
+}
 #Contact .container .footer footer div.copyX {
   font-family: system-ui;
   font-weight: 100;
@@ -2289,36 +2459,68 @@ textarea:focus-within) button {
 }
 
 @media screen and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
+  #Contact {
+    height: 160vh;
+  }
+  #Contact .Bg__Image {
+    height: 160vh;
+  }
+  #Contact .container {
+    top: 15vh;
+  }
   #Contact .container main .Form {
+    margin-top: 1.8rem;
     /* height: 50vh; */
   }
-  #Contact .container main .Form .formGroup.message button {
-    color: #fce1d7;
-    font-size: 0.8rem;
-    transition: all 250ms ease-in-out;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    padding: 10px 25px 9px;
-    border-radius: 10px;
-    border-radius: 7px;
-    font-size: 1.1rem;
+  #Contact .container main .Form p svg {
+    padding: 9px;
+    font-size: 1rem;
   }
-  #Contact .container main .Form .formGroup.message button svg {
-    margin-left: 0.4rem;
-    font-size: 1.1rem;
-    transition: all 250ms ease-in-out;
+  #Contact .container main .Form .formGroup input {
+    height: 1.2rem;
+  }
+  #Contact .container main .Form .formGroup.message {
+    border-radius: 10px;
+    margin-left: -0.35rem;
+  }
+  #Contact .container main .hero h2::after {
+    bottom: -0.05rem;
+    right: 5rem;
   }
   #Contact .container .footer footer div.copyX {
-    font-family: system-ui;
-    font-weight: 100;
-    font-size: 11px;
-    width: fit-content;
-    margin: 0.7rem auto 0 4rem;
-    color: #fce1d7;
-    padding-bottom: 0.75rem;
-    letter-spacing: 0.3px;
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 375px) and (max-height: 667px) {
+  #Contact {
+    height: 160vh;
+  }
+  #Contact .Bg__Image {
+    height: 160vh;
+  }
+  #Contact .container {
+    top: 17vh;
+  }
+  #Contact .container main .Form {
+    margin-top: 2rem;
+  }
+  #Contact .container main .Form p {
+    font-size: 15px;
+    padding-left: 7px;
+  }
+  #Contact .container main .Form .formGroup input {
+    height: 1.2rem;
+  }
+  #Contact .container main .Form .formGroup.message {
+    border-radius: 10px;
+    margin-left: -0.35rem;
+  }
+  #Contact .container main .hero h2::after {
+    bottom: -0.05rem;
+    right: 5rem;
+  }
+  #Contact .container .footer footer div.copyX {
+    font-size: 10px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -2671,8 +2873,7 @@ textarea:focus-within) button {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding: 0.25rem 0 0 1.2rem;
-  gap: 15px;
+  gap: 12px;
 }
 .socials span a {
   background-color: #541c1d;
@@ -2848,6 +3049,12 @@ textarea:focus-within) button {
   height: 1px;
   background-color: #fce1d7;
 }
+@media screen and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
+  .shortLinks::after {
+    width: 82vw;
+    left: -0.25rem;
+  }
+}
 
 .Privacy,
 .Terms,
@@ -2916,47 +3123,6 @@ textarea:focus-within) button {
 }
 
 @media screen and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
-  .shortLinks {
-    margin: 0.5rem auto 1.2rem 0;
-  }
-  .shortLinks div {
-    min-height: 1.75rem;
-    transition: all 250ms ease-in-out;
-  }
-  .shortLinks div span {
-    font-size: 15px;
-    font-family: Gills;
-    color: #fce1d7;
-  }
-  .shortLinks div span::before {
-    transition: all 250ms ease-in-out;
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 1px;
-    width: 0%;
-    height: 2px;
-    background-color: #fce1d7;
-  }
-  .shortLinks div:hover {
-    cursor: pointer;
-    opacity: 1;
-    color: white;
-    font-size: 18px;
-  }
-  .shortLinks div:hover span::before {
-    width: 98%;
-  }
-  .shortLinks::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    width: 80vw;
-    left: 0;
-    opacity: 0.1;
-    height: 1px;
-    background-color: #fce1d7;
-  }
   .Privacy,
   .Terms,
   .Faqs {
@@ -3021,6 +3187,11 @@ textarea:focus-within) button {
     opacity: 0.18;
     height: 1.5px;
     border: none;
+  }
+}
+@media screen and (min-width: 375px) and (max-height: 667px) {
+  .shortLinks div span {
+    font-size: 14.75px;
   }
 }
 @media screen and (min-width: 1024px) {
