@@ -6,20 +6,14 @@ const Navbar = ({ navs, activeNav, set }) => {
   const [lightNav, setLightNav] = useState(false);
   const [smallNav, setSmallNav] = useState(false);
 
-  // const [activeNav, set] = useState("Home");
-
-  console.log("I have rendered");
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      console.log(window.scrollY);
-      console.log("I scrolled");
       if (window.scrollY > 50) {
         setLightNav(true);
       } else {
         setLightNav(false);
       }
     });
-    console.log("I am re rendering");
     return () => {
       window.removeEventListener("scroll", () => {});
     };
@@ -33,10 +27,7 @@ const Navbar = ({ navs, activeNav, set }) => {
     >
       <div className="Logo" onClick={() => window.scroll(0, 0)}>
         <span>p</span>
-        <p>
-          Platinum Ville mines
-          {/* <span>mines</span> */}
-        </p>
+        <p>Platinum Ville mines</p>
       </div>
       <nav>
         {navs?.map((nav) => (
@@ -44,7 +35,10 @@ const Navbar = ({ navs, activeNav, set }) => {
             key={nav}
             href={`#${nav}`}
             className={activeNav === nav ? "screen" : ""}
-            onClick={() => set(nav)}
+            onClick={() => {
+              set(nav);
+              setSmallNav(!smallNav);
+            }}
           >
             {nav}
           </a>
