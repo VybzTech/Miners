@@ -532,7 +532,103 @@
 }
 
 // For iPhone X and similar devices:
-@media only screen and (min-width: 375px) and (max-height: 812px) {
+@media only screen and (min-width: 375px) and (min-height: 730px) and (max-height: 850px) {
+  #Lithium {
+    .Bg__Image {
+      height: 90vh;
+      border-radius: 0 90px 0 90px;
+    }
+    .container {
+      h2 {
+        // font-size: 7.5vw;
+        // letter-spacing: -2px;
+        margin-top: 4.75rem;
+        // margin: 3.5rem auto 2rem;
+        word-spacing: 5px;
+      }
+      aside {
+        // padding-bottom: 0.5rem;
+        .bubble {
+          // width: 37vw;
+          // padding-left: 11px;
+          // padding: 12px 10px 1px 13px;
+          // border-radius: 15px 20px 0;
+          &.Tabbed,
+          &.Tabbed:hover {
+            // padding-left: 14px;
+            // padding: 12px 8px 3px 12px;
+            // border: 2px solid $dark_brown;
+            span,
+            p {
+              // padding: 3px 0 0 0;
+              // line-height: 2.9vh;
+              // word-spacing: 1.5px;
+              font-size: 11px;
+            }
+            nav {
+              // opacity: 1;
+              margin-top: 12px;
+            }
+          }
+          &:last-of-type {
+            // margin-left: 4px;
+            // border-radius: 15px 20px 15px 0;
+          }
+          h4 {
+            // font-size: 5vw;
+          }
+          span,
+          p {
+            // padding: 2px 5px 0 1px;
+            font-size: 10px;
+            // letter-spacing: 0.2px;
+            // line-height: 3vh;
+            // word-spacing: 1px;
+          }
+          svg {
+            width: 10px;
+          }
+          > nav {
+            // opacity: 0.6;
+            // margin: 7px auto 10px 2px;
+          }
+        }
+      }
+      main.Roller {
+        // padding: 0.5rem 1rem 0 3rem;
+        .content {
+          //   ACTIVE ROLLER
+          &.active {
+            p {
+              span {
+                // font-size: 4.2vw;
+                line-height: 2.75vh;
+              }
+              &::before {
+                // left: -1.485rem;
+                // width: 1rem;
+                // height: 1rem;
+              }
+            }
+          }
+          p {
+            span {
+              // font-size: 3.5vw;
+              line-height: 2vh;
+            }
+            &::before {
+              // left: -1.3rem;
+              // width: 0.575rem;
+              // height: 0.575rem;
+            }
+          }
+        }
+        .line {
+          // left: 2.55rem;
+        }
+      }
+    }
+  }
 }
 
 // For iPhone 6+/7+/8+ and similar devices:
