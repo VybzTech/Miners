@@ -672,6 +672,7 @@
           }
         }
         .hero {
+          margin-top: -1rem;
           p {
             // font-size: 3.75vw;
             // opacity: 0.3;
@@ -745,8 +746,116 @@
   }
 }
 
-// For iPhone 6+/7+/8+ and similar devices:
-@media screen and (min-width: 410px) and (max-width: 480px)  and (min-height: 730px){ //900
+// For iPhone 6+/7+/8+ and similar devices: Nexus 6, iPhone XR
+@media screen and (min-width: 410px) and (max-width: 480px) and (min-height: 730px) {
+  #Contact {
+    height: 130vh;
+    .Bg__Image {
+      height: 130vh;
+    }
+    .container {
+      main {
+        .Form {
+          p {
+            font-size: 17px;
+            svg {
+            }
+          }
+          .formGroup {
+            input {
+              &::placeholder {
+              }
+              &:focus,
+              &:focus-visible,
+              &:focus-within {
+              }
+            }
+            button {
+            }
+            &:hover {
+            }
+            &:has(input:focus, input:focus-visible, input:focus-within) {
+            }
+            &.disappear {
+            }
+            &.message {
+              textarea {
+                &::after {
+                }
+                &::placeholder {
+                }
+                &:focus,
+                &:focus-visible,
+                &:focus-within {
+                }
+              }
+              button {
+              }
+              &:hover {
+                input {
+                  &::placeholder {
+                  }
+                }
+                button {
+                  svg {
+                  }
+                }
+              }
+            }
+          }
+        }
+        .hero {
+          p {
+            opacity: 0.4;
+          }
+          h2 {
+            line-height: 5.5vh;
+            &::after {
+              // height: 1.1rem;
+              bottom: -0.2rem;
+              width: 10rem;
+              right: 6.3rem;
+            }
+          }
+        }
+      }
+      .footer {
+        // footer {
+        //   .addresses {
+        //     > div {
+        //       margin-bottom: 0;
+        //       & > p {
+        //         font-size: 18px;
+        //         display: inline;
+        //       }
+        //       > span {
+        //         padding-left: 7px;
+        //         display: inline;
+        //         font-size: 13px;
+        //         &:last-of-type {
+        //           display: inline-block;
+        //           padding-left: 0;
+        //         }
+        //       }
+        //     }
+        //   }
+        //   div.copyX {
+        //     font-size: 11px;
+        //   }
+        // }
+      }
+    }
+  }
+  // .Toastify {
+  //   > div {
+  //     top: 12.5vh;
+  //   }
+  // }
+}
+
+// Longer phone iPhone XR
+@media only screen and (min-height: 850px) {
+  
 }
 
 // For iPads, Tablets Sizes

@@ -631,16 +631,253 @@
   }
 }
 
-// For iPhone 6+/7+/8+ and similar devices:
-@media screen and (min-width: 450px) and (max-width: 480px) {
+// For iPhone 6+/7+/8+ and similar devices: Nexus 6, iPhone XR
+@media screen and (min-width: 410px) and (max-width: 480px) and (min-height: 730px) {
+  #Lithium {
+    .Bg__Image {
+      height: 105vh;
+      // border-radius: 0 90px 0 90px;
+    }
+    .container {
+      h2 {
+        // font-size: 7.5vw;
+        // letter-spacing: -2px;
+        // margin: 3.5rem auto 2rem;
+        // word-spacing: 5px;
+        // margin-top: 4.75rem;
+      }
+      aside {
+        // padding-bottom: 0.5rem;
+        .bubble {
+          // width: 37vw;
+          // padding-left: 11px;
+          padding: 12px 3px 1px 13px;
+          // border-radius: 15px 20px 0;
+          &.Tabbed,
+          &.Tabbed:hover {
+            // padding-left: 14px;
+            padding: 12px 5px 3px 12px;
+            // border: 2px solid $dark_brown;
+            span,
+            p {
+              // padding: 3px 0 0 0;
+              line-height: 2.75vh;
+              // word-spacing: 1.5px;
+              font-size: 12px;
+            }
+            nav {
+              // opacity: 1;
+              // margin-top: 12px;
+            }
+          }
+          &:last-of-type {
+            // margin-left: 4px;
+            // border-radius: 15px 20px 15px 0;
+          }
+          h4 {
+            // font-size: 5vw;
+          }
+          span,
+          p {
+            // padding: 2px 5px 0 1px;
+            font-size: 10.5px;
+            // letter-spacing: 0.2px;
+            line-height: 2.5vh;
+            // word-spacing: 1px;
+          }
+          svg {
+            // width: 10px;
+          }
+          > nav {
+            // opacity: 0.6;
+            // margin: 7px auto 10px 2px;
+          }
+        }
+      }
+      main.Roller {
+        .content {
+          padding-top: 1.3rem;
+          padding-right: 1.3rem;
+          //   ACTIVE ROLLER
+          &.active {
+            padding-top: 1.5rem;
+            p {
+              span {
+                font-size: 3.75vw;
+                line-height: 2.75vh;
+              }
+              &::before {
+                // left: -1.485rem;
+                // width: 1rem;
+                // height: 1rem;
+              }
+            }
+          }
+          p {
+            span {
+              font-size: 3vw;
+              // line-height: 2vh;
+            }
+            &::before {
+              // left: -1.3rem;
+              // width: 0.575rem;
+              // height: 0.575rem;
+            }
+          }
+        }
+        .line {
+          // left: 2.55rem;
+          top: 2.75rem;
+        }
+      }
+    }
+  }
+}
+// Longer phone iPhone XR
+@media only screen and (min-height: 850px) {
+  #Lithium {
+    height: 90vh;
+    .Bg__Image {
+      height: 90vh;
+    }
+    h2 {
+      margin-top: 7.5vh !important ;
+    }
+    .container {
+      aside {
+        .bubble {
+          // padding: 12px 3px 1px 13px;
+          &.Tabbed,
+          &.Tabbed:hover {
+            // padding: 12px 5px 3px 12px;
+            span,
+            p {
+              line-height: 2.25vh;
+            }
+          }
+          span,
+          p {
+            line-height: 2vh;
+          }
+        }
+      }
+    }
+  }
 }
 
-// For iPads, Tablets Sizes
-@media screen and (min-width: 481px) and (max-width: 768px) {
+// For iPads, Tablets Sizes: iPad , iPad Mini
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
+  #Lithium {
+    height: 105vh;
+    .Bg__Image {
+      height: 105vh;
+      border-radius: 0 150px 0 150px;
+    }
+    .container {
+      h2 {
+        font-size: 7vw;
+        letter-spacing: -3px;
+        // margin: 3.5rem auto 2rem;
+        word-spacing: 7px;
+        margin-top: 7rem;
+      }
+      aside {
+        // padding-bottom: 0.5rem;
+        .bubble {
+          width: 40vw;
+          // padding-left: 11px;
+          padding: 15px 18px 7px 19px;
+          border-radius: 30px 35px 0;
+          &.Tabbed,
+          &.Tabbed:hover {
+            padding: 18px 20px 15px 25px;
+            // padding-left: 14px;
+            // border: 2px solid $dark_brown;
+            span,
+            p {
+              // padding: 3px 0 0 0;
+              line-height: 3vh;
+              font-size: 20px;
+              // word-spacing: 1.5px;
+            }
+            nav {
+              // opacity: 1;
+              margin-top: 1.2rem;
+              svg {
+                width: 17px;
+              }
+            }
+          }
+          &:last-of-type {
+            margin-left: 0.5em;
+            border-radius: 30px 35px 30px 0;
+          }
+          h4 {
+            // font-size: 5vw;
+          }
+          span,
+          p {
+            // padding: 2px 5px 0 1px;
+            // letter-spacing: 0.2px;
+            line-height: 3.5vh;
+            font-size: 18px;
+            // word-spacing: 1px;
+          }
+          svg {
+            // width: 10px;
+          }
+          > nav {
+            // opacity: 0.6;
+            // margin: 7px auto 10px 2px;
+            svg {
+              width: 15px;
+            }
+          }
+        }
+      }
+      main.Roller {
+        padding: 2.5rem 5.5rem 3rem 9rem;
+        .content {
+          padding-top: 2rem;
+          padding-right: 1.5rem;
+          //   ACTIVE ROLLER
+          &.active {
+            padding-top: 2.5rem;
+            p {
+              span {
+                font-size: 3.5vw;
+                line-height: 3.3vh;
+              }
+              &::before {
+                // left: -1.75rem;
+                width: 1.2rem;
+                height: 1.2rem;
+              }
+            }
+          }
+          p {
+            span {
+              font-size: 2.75vw;
+              line-height: 3vh;
+            }
+            &::before {
+              // left: -1.3rem;
+              width: 0.9rem;
+              height: 0.9rem;
+            }
+          }
+        }
+        .line {
+          left: 8.7rem;
+          top: 5.5rem;
+        }
+      }
+    }
+  }
 }
 
-// For Small screens, Laptops Sizes
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+// For Small screens, Laptops Sizes: iPad Air, Surface Pro
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 }
 
 // For Desktops, Large screens, Extra large screens, TVs

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import { withRouter } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { CgClose } from "react-icons/cg";
 // const Navbar = withRouter(({ history }) => {
 const Navbar = ({ navs, activeNav, set }) => {
   const [lightNav, setLightNav] = useState(false);
@@ -45,7 +46,7 @@ const Navbar = ({ navs, activeNav, set }) => {
         ))}
       </nav>
       <div className="hamburger" onClick={() => setSmallNav(!smallNav)}>
-        <RxHamburgerMenu />
+        {smallNav ? <CgClose /> : <RxHamburgerMenu />}
       </div>
     </nav>
   );

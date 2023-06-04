@@ -138,36 +138,62 @@
     // align-self: left;
     //   // margin: 0 auto 0 1rem;
     //   padding: 0.5rem 0;
-      span {
-        a {
-          width: 2.5rem;
-          height: 2.5rem;
-          svg {
-            font-size: 24px;
-          }
+    span {
+      a {
+        width: 2.5rem;
+        height: 2.5rem;
+        svg {
+          font-size: 24px;
         }
-        &:first-child svg {
-          font-size: 18px;
-        }
-        &:last-child svg {
-          font-size: 21px;
-        }
+      }
+      &:first-child svg {
+        font-size: 18px;
+      }
+      &:last-child svg {
+        font-size: 21px;
+      }
+    }
   }
-}
 }
 
 // For iPhone 6+/7+/8+ and similar devices:
 @media screen and (min-width: 414px) and (max-width: 480px) {
 }
-
-// For iPads, Tablets Sizes
-@media screen and (min-width: 481px) and (max-width: 768px) {
+// Longer phone iPhone XR
+@media only screen and (min-height: 850px) {
+  .socials {
+    gap: 5px;
+    span {
+      a {
+        width: 2.25rem;
+        height: 2.25rem;
+        svg {
+          font-size: 22px;
+        }
+      }
+      &:first-child svg {
+        font-size: 17.5px;
+      }
+      &:last-child svg {
+        font-size: 20px;
+      }
+    }
+  }
 }
 
-// For Small screens, Laptops Sizes
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+// For iPads, Tablets Sizes: iPad , iPad Mini
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height:1024px) {
+  .socials {
+    display: none;
+  }}
+
+//  iPad Air 820, 1180 ----912, 1368
+// For Small screens, Laptops Sizes: iPad Air, Surface Pro
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  
 }
 
+// iPad Pro 1024, 1366
 // For Desktops, Large screens, Extra large screens, TVs
 @media screen and (min-width: 1024px) {
   .socials {
@@ -216,3 +242,10 @@
     }
   }
 }
+
+
+
+// // For iPads, Tablets Sizes: iPad , iPad Mini
+// @media screen and (min-width: 481px) and (max-width: 768px) and (max-height:1024px) {}
+// // For Small screens, Laptops Sizes: iPad Air, Surface Pro
+// @media screen and (min-width: 769px) and (max-width: 1024px) {}

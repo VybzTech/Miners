@@ -37,10 +37,10 @@ const Products = () => {
             },
             // when window width is >= 640px
             640: {
-              slidesPerView: 1.8,
+              slidesPerView: 1.5,
             },
             768: {
-              slidesPerView: 2,
+              slidesPerView: 1.8,
             },
             1024: {
               slidesPerView: 2.5,

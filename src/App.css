@@ -295,7 +295,61 @@ nav.Navbar.nosmall > nav {
     height: 78vh;
   }
   nav.Navbar > nav a {
-    font-size: 5vw;
+    font-size: 4.85vw;
+    padding: 0.4rem;
+  }
+  nav.Navbar > nav a:hover {
+    font-size: 5.35vw;
+  }
+  nav.Navbar > nav a:focus, nav.Navbar > nav a:focus-visible, nav.Navbar > nav a:focus-within {
+    font-size: 5.35vw;
+  }
+  nav.Navbar > nav a.screen {
+    font-size: 5.7vw;
+  }
+  nav.Navbar > nav a.screen::after {
+    top: -0.15rem;
+    left: -0.7rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  nav.Navbar .hamburger svg {
+    font-size: 6.5vw;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
+  nav.Navbar {
+    height: 14vh;
+  }
+  nav.Navbar > nav {
+    top: 14vh;
+    height: 86vh;
+  }
+  nav.Navbar > nav a {
+    font-size: 4.2vw;
+    padding: 0.7rem;
+  }
+  nav.Navbar > nav a:hover {
+    font-size: 4.5vw;
+  }
+  nav.Navbar > nav a:focus, nav.Navbar > nav a:focus-visible, nav.Navbar > nav a:focus-within {
+    font-size: 5.25vw;
+  }
+  nav.Navbar > nav a.screen {
+    font-size: 5.35vw;
+  }
+  nav.Navbar > nav a.screen::after {
+    top: -0.1rem;
+    left: -0.75rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  nav.Navbar .hamburger {
+    margin-right: 2.75rem;
+    padding: 13px 13px 7px;
+  }
+  nav.Navbar .hamburger:hover {
+    padding: 14px 14px 9px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -732,6 +786,108 @@ nav.Navbar.nosmall > nav {
     font-size: 18vw;
   }
 }
+@media screen and (min-width: 410px) and (max-width: 480px) and (min-height: 730px) {
+  #Home .Bg__Image {
+    margin-top: 12vh;
+    height: 88vh;
+  }
+  #Home .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+  }
+  #Home .swiper-pagination-bullet-active {
+    height: 15px;
+    width: 15px;
+  }
+  #Home .swiper-pagination-bullet-active::after {
+    height: 21px;
+    width: 21px;
+    left: -4px;
+    top: -4px;
+  }
+  #Home .swiper-slide > .Bg__Image::before {
+    backdrop-filter: brightness(1.3) blur(0.15px);
+    height: 88vh;
+    top: 12vh;
+  }
+  #Home main {
+    top: 40vh;
+  }
+  #Home main .title h1 {
+    font-size: 12vw;
+    line-height: 4.75vh;
+  }
+  #Home main .title h1:last-of-type {
+    font-size: 20vw;
+    line-height: 8.35vh;
+  }
+  #Home main .title > a {
+    font-size: 13px;
+    max-height: 38px;
+    margin-top: 1.2vh;
+    padding: 13px 18px 10px;
+  }
+  #Home main p.img_Counter {
+    margin: 15.75vh auto auto 7vw;
+  }
+}
+@media only screen and (min-height: 850px) {
+  main .title h1 {
+    line-height: 2.35rem !important;
+  }
+  main .title h1:last-of-type {
+    line-height: 4rem !important;
+  }
+  p.img_Counter {
+    margin-top: 12.55rem !important;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
+  #Home .Bg__Image {
+    margin-top: 14vh;
+    height: 86vh;
+  }
+  #Home .swiper-pagination-bullet {
+    height: 14px;
+    width: 14px;
+  }
+  #Home .swiper-pagination-bullet-active {
+    height: 18px;
+    width: 18px;
+  }
+  #Home .swiper-pagination-bullet-active::after {
+    height: 24px;
+    width: 24px;
+    left: -4px;
+    top: -4px;
+  }
+  #Home .swiper-slide > .Bg__Image::before {
+    height: 86vh;
+    top: 14vh;
+  }
+  #Home main {
+    top: 40vh;
+  }
+  #Home main .title h1 {
+    font-size: 10vw;
+    line-height: 5.5vh !important;
+  }
+  #Home main .title h1:last-of-type {
+    font-size: 18vw;
+    line-height: 9.75vh !important;
+  }
+  #Home main .title > a {
+    border-radius: 0.7vh;
+    font-size: 18px;
+    max-height: 40px;
+    margin-top: 2vh;
+    padding: 17px 23px 18px;
+    word-spacing: 1px;
+  }
+  #Home main p.img_Counter {
+    margin-top: 13.5vh !important;
+  }
+}
 @media screen and (min-width: 1024px) {
   #Home {
     position: relative;
@@ -1000,6 +1156,57 @@ nav.Navbar.nosmall > nav {
   #About main p {
     font-size: 17px;
     line-height: 5.5vh;
+  }
+}
+@media screen and (min-width: 410px) and (max-width: 480px) and (min-height: 730px) {
+  #About {
+    height: 120vh;
+  }
+  #About main {
+    width: 98%;
+  }
+  #About main h2::after {
+    bottom: 0.2rem;
+    right: 6rem;
+    height: 1rem;
+    width: 9rem;
+    opacity: 0.8;
+  }
+  #About main p {
+    padding-top: 0.35rem;
+    font-size: 17.5px;
+    line-height: 6vh;
+  }
+}
+@media only screen and (min-height: 850px) {
+  #About {
+    height: 105vh;
+  }
+  #About main h2::after {
+    right: 6.8rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
+  #About {
+    height: 110vh;
+  }
+  #About main h2 {
+    font-size: 6.5vw;
+  }
+  #About main h2::after {
+    bottom: 0.3rem;
+    right: 13rem;
+    height: 1.35rem;
+    width: 12rem;
+  }
+  #About main p {
+    padding-top: 0.5rem;
+    font-size: 23px;
+    line-height: 6.5vh;
+  }
+  #About .AboutImg .svg svg {
+    width: 75vw;
+    margin: -8rem auto 1rem 3.5rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1442,6 +1649,142 @@ nav.Navbar.nosmall > nav {
     line-height: 2vh;
   }
 }
+@media screen and (min-width: 410px) and (max-width: 480px) and (min-height: 730px) {
+  #Lithium .Bg__Image {
+    height: 105vh;
+  }
+  #Lithium .container aside .bubble {
+    padding: 12px 3px 1px 13px;
+  }
+  #Lithium .container aside .bubble.Tabbed, #Lithium .container aside .bubble.Tabbed:hover {
+    padding: 12px 5px 3px 12px;
+  }
+  #Lithium .container aside .bubble.Tabbed span,
+  #Lithium .container aside .bubble.Tabbed p, #Lithium .container aside .bubble.Tabbed:hover span,
+  #Lithium .container aside .bubble.Tabbed:hover p {
+    line-height: 2.75vh;
+    font-size: 12px;
+  }
+  #Lithium .container aside .bubble span,
+  #Lithium .container aside .bubble p {
+    font-size: 10.5px;
+    line-height: 2.5vh;
+  }
+  #Lithium .container main.Roller .content {
+    padding-top: 1.3rem;
+    padding-right: 1.3rem;
+  }
+  #Lithium .container main.Roller .content.active {
+    padding-top: 1.5rem;
+  }
+  #Lithium .container main.Roller .content.active p span {
+    font-size: 3.75vw;
+    line-height: 2.75vh;
+  }
+  #Lithium .container main.Roller .content p span {
+    font-size: 3vw;
+  }
+  #Lithium .container main.Roller .line {
+    top: 2.75rem;
+  }
+}
+@media only screen and (min-height: 850px) {
+  #Lithium {
+    height: 90vh;
+  }
+  #Lithium .Bg__Image {
+    height: 90vh;
+  }
+  #Lithium h2 {
+    margin-top: 7.5vh !important;
+  }
+  #Lithium .container aside .bubble.Tabbed span,
+  #Lithium .container aside .bubble.Tabbed p, #Lithium .container aside .bubble.Tabbed:hover span,
+  #Lithium .container aside .bubble.Tabbed:hover p {
+    line-height: 2.25vh;
+  }
+  #Lithium .container aside .bubble span,
+  #Lithium .container aside .bubble p {
+    line-height: 2vh;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
+  #Lithium {
+    height: 105vh;
+  }
+  #Lithium .Bg__Image {
+    height: 105vh;
+    border-radius: 0 150px 0 150px;
+  }
+  #Lithium .container h2 {
+    font-size: 7vw;
+    letter-spacing: -3px;
+    word-spacing: 7px;
+    margin-top: 7rem;
+  }
+  #Lithium .container aside .bubble {
+    width: 40vw;
+    padding: 15px 18px 7px 19px;
+    border-radius: 30px 35px 0;
+  }
+  #Lithium .container aside .bubble.Tabbed, #Lithium .container aside .bubble.Tabbed:hover {
+    padding: 18px 20px 15px 25px;
+  }
+  #Lithium .container aside .bubble.Tabbed span,
+  #Lithium .container aside .bubble.Tabbed p, #Lithium .container aside .bubble.Tabbed:hover span,
+  #Lithium .container aside .bubble.Tabbed:hover p {
+    line-height: 3vh;
+    font-size: 20px;
+  }
+  #Lithium .container aside .bubble.Tabbed nav, #Lithium .container aside .bubble.Tabbed:hover nav {
+    margin-top: 1.2rem;
+  }
+  #Lithium .container aside .bubble.Tabbed nav svg, #Lithium .container aside .bubble.Tabbed:hover nav svg {
+    width: 17px;
+  }
+  #Lithium .container aside .bubble:last-of-type {
+    margin-left: 0.5em;
+    border-radius: 30px 35px 30px 0;
+  }
+  #Lithium .container aside .bubble span,
+  #Lithium .container aside .bubble p {
+    line-height: 3.5vh;
+    font-size: 18px;
+  }
+  #Lithium .container aside .bubble > nav svg {
+    width: 15px;
+  }
+  #Lithium .container main.Roller {
+    padding: 2.5rem 5.5rem 3rem 9rem;
+  }
+  #Lithium .container main.Roller .content {
+    padding-top: 2rem;
+    padding-right: 1.5rem;
+  }
+  #Lithium .container main.Roller .content.active {
+    padding-top: 2.5rem;
+  }
+  #Lithium .container main.Roller .content.active p span {
+    font-size: 3.5vw;
+    line-height: 3.3vh;
+  }
+  #Lithium .container main.Roller .content.active p::before {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  #Lithium .container main.Roller .content p span {
+    font-size: 2.75vw;
+    line-height: 3vh;
+  }
+  #Lithium .container main.Roller .content p::before {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+  #Lithium .container main.Roller .line {
+    left: 8.7rem;
+    top: 5.5rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   #Lithium {
     position: relative;
@@ -1881,6 +2224,10 @@ nav.Navbar.nosmall > nav {
   #Products main .swiper-slide:first-child {
     padding-left: 1.875rem;
   }
+  #Products main .swiper-button-prev::after,
+  #Products main .swiper-button-next::after {
+    font-size: 5.75vw;
+  }
   #Products main .card {
     width: 84vw;
     border-radius: 30px;
@@ -1911,6 +2258,139 @@ nav.Navbar.nosmall > nav {
   #Products main .card > span svg.max {
     height: 9.75vw;
     width: 9.75vw;
+  }
+}
+@media screen and (min-width: 410px) and (max-width: 480px) and (min-height: 730px) {
+  #Products .hero h1 {
+    opacity: 0.1;
+    filter: blur(1.5px);
+  }
+  #Products main .swiper-slide:first-child {
+    padding-left: 2.05rem;
+  }
+  #Products main .swiper-button-prev::after,
+  #Products main .swiper-button-next::after {
+    font-size: 5vw;
+  }
+  #Products main .swiper-button-prev,
+  #Products main .swiper-rtl .swiper-button-prev {
+    left: 0.12rem;
+  }
+  #Products main .swiper-button-next,
+  #Products main .swiper-rtl .swiper-button-next {
+    right: 0.12rem;
+  }
+  #Products main .card {
+    width: 84vw;
+    border-radius: 45px;
+  }
+  #Products main .card img {
+    height: 20vh;
+  }
+  #Products main .card > span {
+    top: 16vh;
+  }
+  #Products main .card > span svg {
+    height: 7.5vw;
+    width: 7.5vw;
+  }
+  #Products main .card > span svg.min {
+    height: 6.5vw;
+    width: 6.5vw;
+  }
+  #Products main .card > span svg.max {
+    height: 9.5vw;
+    width: 9.5vw;
+  }
+}
+@media only screen and (min-height: 850px) {
+  #Products main .card img {
+    height: 18vh;
+  }
+  #Products main .card .container p {
+    line-height: 3.75vh;
+  }
+  #Products main .card > span {
+    top: 14.75vh;
+  }
+  #Products main .card > span svg {
+    height: 6.9vw;
+    width: 6.9vw;
+  }
+  #Products main .card > span svg.min {
+    height: 5.9vw;
+    width: 5.9vw;
+  }
+  #Products main .card > span svg.max {
+    height: 8.9vw;
+    width: 8.9vw;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
+  #Products .hero {
+    margin-top: 7rem;
+  }
+  #Products .hero h1 {
+    opacity: 0.25;
+    filter: blur(2px);
+  }
+  #Products .hero h2 {
+    margin-top: -1.2rem;
+  }
+  #Products .hero h2::after {
+    width: 15rem;
+    right: 3rem;
+    bottom: 0.5rem;
+    height: 1.5rem;
+  }
+  #Products main .swiper-slide:first-child {
+    padding-left: 2.85rem;
+  }
+  #Products main .swiper-button-prev::after,
+  #Products main .swiper-button-next::after {
+    font-size: 5vw;
+  }
+  #Products main .swiper-button-prev,
+  #Products main .swiper-rtl .swiper-button-prev {
+    left: 0.5rem;
+  }
+  #Products main .swiper-button-next,
+  #Products main .swiper-rtl .swiper-button-next {
+    right: 0.5rem;
+  }
+  #Products main .card {
+    width: 58vw;
+    border-radius: 55px;
+  }
+  #Products main .card img {
+    height: 20vh;
+  }
+  #Products main .card .container {
+    padding: 1.9rem 1.2rem 3rem 2rem;
+  }
+  #Products main .card .container h3 {
+    font-size: 5vw;
+  }
+  #Products main .card .container p {
+    font-size: 21px;
+  }
+  #Products main .card > span {
+    width: 7rem;
+    height: 7rem;
+    left: 2vw;
+    top: 15vh;
+  }
+  #Products main .card > span svg {
+    height: 7.5vw;
+    width: 7.5vw;
+  }
+  #Products main .card > span svg.min {
+    height: 6.5vw;
+    width: 6.5vw;
+  }
+  #Products main .card > span svg.max {
+    height: 9.5vw;
+    width: 9.5vw;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -2207,10 +2687,14 @@ nav.Navbar.nosmall > nav {
     height: 33vh;
   }
   #Services .container .OurServices > div span {
+    opacity: 0.6;
     font-size: 3.25vw;
   }
   #Services .container .OurServices > div:hover::before {
     height: 33vh;
+  }
+  #Services .container .OurServices > div:hover span {
+    opacity: 1;
   }
 }
 @media only screen and (min-width: 375px) and (min-height: 730px) and (max-height: 850px) {
@@ -2232,6 +2716,80 @@ nav.Navbar.nosmall > nav {
   }
   #Services .container .OurServices > div span {
     font-size: 3vw;
+    opacity: 0.6;
+  }
+  #Services .container .OurServices > div:hover span {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 410px) and (max-width: 480px) and (min-height: 730px) {
+  #Services {
+    height: 110vh;
+  }
+  #Services .Bg__Image {
+    height: 110vh;
+  }
+  #Services .container h2 {
+    font-size: 8vw;
+  }
+  #Services .container .OurServices {
+    gap: 8px;
+  }
+  #Services .container .OurServices > div {
+    width: 45vw;
+    height: 32vh;
+  }
+  #Services .container .OurServices > div img {
+    height: 32vh;
+  }
+  #Services .container .OurServices > div span {
+    opacity: 0.6;
+    font-size: 2.5vw;
+  }
+  #Services .container .OurServices > div:hover span {
+    opacity: 1;
+  }
+}
+@media only screen and (min-height: 850px) {
+  #Services {
+    height: 95vh;
+  }
+  #Services .Bg__Image {
+    height: 95vh;
+  }
+  #Services .container .OurServices > div {
+    height: 27vh;
+  }
+  #Services .container .OurServices > div img {
+    height: 27vh;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
+  #Services {
+    height: 110vh;
+  }
+  #Services .Bg__Image {
+    height: 110vh;
+  }
+  #Services .container h2 {
+    font-size: 8vw;
+  }
+  #Services .container .OurServices {
+    gap: 8px;
+  }
+  #Services .container .OurServices > div {
+    width: 45vw;
+    height: 32vh;
+  }
+  #Services .container .OurServices > div img {
+    height: 32vh;
+  }
+  #Services .container .OurServices > div span {
+    opacity: 0.6;
+    font-size: 2.5vw;
+  }
+  #Services .container .OurServices > div:hover span {
+    opacity: 1;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -2751,6 +3309,9 @@ textarea:focus-within) button {
   #Contact .Bg__Image {
     height: 120vh;
   }
+  #Contact .container main .hero {
+    margin-top: -1rem;
+  }
   #Contact .container main .hero h2 {
     line-height: 4vh;
   }
@@ -2780,6 +3341,28 @@ textarea:focus-within) button {
   }
   .Toastify > div {
     top: 13.75vh;
+  }
+}
+@media screen and (min-width: 410px) and (max-width: 480px) and (min-height: 730px) {
+  #Contact {
+    height: 130vh;
+  }
+  #Contact .Bg__Image {
+    height: 130vh;
+  }
+  #Contact .container main .Form p {
+    font-size: 17px;
+  }
+  #Contact .container main .hero p {
+    opacity: 0.4;
+  }
+  #Contact .container main .hero h2 {
+    line-height: 5.5vh;
+  }
+  #Contact .container main .hero h2::after {
+    bottom: -0.2rem;
+    width: 10rem;
+    right: 6.3rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -3250,6 +3833,29 @@ textarea:focus-within) button {
   }
   .socials span:last-child svg {
     font-size: 21px;
+  }
+}
+@media only screen and (min-height: 850px) {
+  .socials {
+    gap: 5px;
+  }
+  .socials span a {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+  .socials span a svg {
+    font-size: 22px;
+  }
+  .socials span:first-child svg {
+    font-size: 17.5px;
+  }
+  .socials span:last-child svg {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
+  .socials {
+    display: none;
   }
 }
 @media screen and (min-width: 1024px) {
