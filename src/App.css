@@ -2597,7 +2597,7 @@ nav.Navbar.nosmall > nav {
   transition: all 250ms ease-in-out;
   overflow: hidden;
   border-radius: 1.2vh;
-  border: 1px solid #2e0f10;
+  box-shadow: 0 0 10px #2e0f10;
   width: 45vw;
   height: 35vh;
   margin-bottom: 1.5vh;

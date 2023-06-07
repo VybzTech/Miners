@@ -37,13 +37,11 @@
         @include trans;
         overflow: hidden;
         border-radius: 1.2vh;
-        border: 1px solid $dark_brown;
-        
-        // border: 1px solid $white;
-
+        // border: 1px solid #2e0f1031;
+        // border: 1px solid $dark_brown;
+        box-shadow: 0 0 10px $dark_brown;
         width: 45vw;
         height: 35vh;
-        // margin-bottom: -40vh;
         margin-bottom: 1.5vh;
         z-index: 0;
         &::before {
@@ -55,9 +53,6 @@
           width: 100%;
           height: 60vh;
           background: linear-gradient(0deg, #000a, #0001);
-          // width: 0%;
-          // height: 0vh;
-          // background: linear-gradient(0deg, transparent, transparent);
           z-index: 1;
         }
         img {
@@ -616,7 +611,7 @@
           // box-shadow: 0 1px 8px 0.1px #2e0f105a;
           width: 42vw;
           height: 37vh;
-          margin-bottom: -.75vh;
+          margin-bottom: -0.75vh;
           // @include trans;
           // overflow: hidden;
           border-radius: 1.5vh;
@@ -641,7 +636,7 @@
             // height: 27vh;
             // height: 33vh;
             //   @include trans;
-          height: 37vh;
+            height: 37vh;
             //   object-fit: cover;
             //   width: 100%;
             // }
