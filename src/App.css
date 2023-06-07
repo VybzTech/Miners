@@ -2766,30 +2766,40 @@ nav.Navbar.nosmall > nav {
 }
 @media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
   #Services {
-    height: 110vh;
+    height: 120vh;
   }
   #Services .Bg__Image {
-    height: 110vh;
+    height: 120vh;
   }
   #Services .container h2 {
-    font-size: 8vw;
+    font-size: 7.2vw;
+    letter-spacing: -3px;
+    margin: 3rem auto 1.5rem;
   }
   #Services .container .OurServices {
-    gap: 8px;
+    gap: 1.2rem;
   }
   #Services .container .OurServices > div {
-    width: 45vw;
-    height: 32vh;
+    width: 42vw;
+    height: 37vh;
+    margin-bottom: -0.75vh;
+    border-radius: 1.5vh;
+  }
+  #Services .container .OurServices > div::before {
+    width: 102%;
+    height: 37vh;
   }
   #Services .container .OurServices > div img {
-    height: 32vh;
+    height: 37vh;
   }
   #Services .container .OurServices > div span {
-    opacity: 0.6;
+    opacity: 0.7;
+    left: 10%;
     font-size: 2.5vw;
   }
   #Services .container .OurServices > div:hover span {
     opacity: 1;
+    color: #f3ebec;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -3363,6 +3373,44 @@ textarea:focus-within) button {
     bottom: -0.2rem;
     width: 10rem;
     right: 6.3rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
+  #Contact .container main .Form {
+    margin: 4rem auto auto;
+  }
+  #Contact .container main .Form p {
+    font-size: 22px;
+  }
+  #Contact .container main .Form .formGroup {
+    padding: 0.5rem;
+    padding-left: 2.5rem;
+  }
+  #Contact .container main .Form .formGroup input {
+    height: 2.2rem;
+    font-size: 3vw;
+  }
+  #Contact .container main .hero {
+    margin-top: 10vh;
+  }
+  #Contact .container main .hero p {
+    font-size: 25px;
+    opacity: 0.3;
+  }
+  #Contact .container main .hero h2 {
+    margin-top: 3vh;
+    font-size: 10vw;
+    max-width: 70vw;
+    line-height: 6vh;
+  }
+  #Contact .container main .hero h2::after {
+    height: 1.85rem;
+    width: 18rem;
+    bottom: -0.4rem;
+    right: 6.3rem;
+  }
+  #Contact .container main .hero .formGroup input::placeholder {
+    font-size: 17px;
   }
 }
 @media screen and (min-width: 1024px) {

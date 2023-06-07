@@ -855,15 +855,165 @@
 
 // Longer phone iPhone XR
 @media only screen and (min-height: 850px) {
-  
 }
 
-// For iPads, Tablets Sizes
-@media screen and (min-width: 481px) and (max-width: 768px) {
+// For iPads, Tablets Sizes: iPad , iPad Mini
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
+  #Contact {
+    // height: 130vh;
+    .Bg__Image {
+      // height: 130vh;
+    }
+    .container {
+      main {
+        .Form {
+          margin: 4rem auto auto;
+          p {
+            font-size: 22px;
+            svg {
+            }
+          }
+          .formGroup {
+            padding: 0.5rem;
+            padding-left: 2.5rem;
+            input {
+              height: 2.2rem;
+              font-size: 3vw;
+              &::placeholder {
+              }
+              &:focus,
+              &:focus-visible,
+              &:focus-within {
+              }
+            }
+            button {
+            }
+            &:hover {
+            }
+            &:has(input:focus, input:focus-visible, input:focus-within) {
+            }
+            &.disappear {
+            }
+            &.message {
+              textarea {
+                &::after {
+                }
+                &::placeholder {
+                }
+                &:focus,
+                &:focus-visible,
+                &:focus-within {
+                }
+              }
+              button {
+              }
+              &:hover {
+                input {
+                  &::placeholder {
+                  }
+                }
+                button {
+                  svg {
+                  }
+                }
+              }
+            }
+          }
+        }
+        .hero {
+          margin-top: 10vh;
+          p {
+            font-size: 25px;
+            opacity: 0.3;
+          }
+          h2 {
+            margin-top: 3vh;
+            font-size: 10vw;
+            max-width: 70vw;
+            line-height: 6vh;
+            &::after {
+              height: 1.85rem;
+              width: 18rem;
+              bottom: -0.4rem;
+              right: 6.3rem;
+            }
+          }
+          .formGroup {
+            input {
+              &::placeholder {
+                font-size: 17px;
+              }
+              &:focus,
+              &:focus-visible,
+              &:focus-within {
+              }
+            }
+            button {
+            }
+            &:hover {
+            }
+            &:has(input:focus, input:focus-visible, input:focus-within) {
+            }
+            &.disappear {
+            }
+            &.message {
+              textarea {
+                &::after {
+                }
+                &::placeholder {
+                }
+                &:focus,
+                &:focus-visible,
+                &:focus-within {
+                }
+              }
+              button {
+              }
+              &:hover {
+                input {
+                  &::placeholder {
+                  }
+                }
+                button {
+                  svg {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .footer {
+        // footer {
+        //   .addresses {
+        //     > div {
+        //       margin-bottom: 0;
+        //       & > p {
+        //         font-size: 18px;
+        //         display: inline;
+        //       }
+        //       > span {
+        //         padding-left: 7px;
+        //         display: inline;
+        //         font-size: 13px;
+        //         &:last-of-type {
+        //           display: inline-block;
+        //           padding-left: 0;
+        //         }
+        //       }
+        //     }
+        //   }
+        //   div.copyX {
+        //     font-size: 11px;
+        //   }
+        // }
+      }
+    }
+  }
 }
 
-// For Small screens, Laptops Sizes
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+// For Small screens, Laptops Sizes: iPad Air, Surface Pro
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 }
 
 // For Desktops, Large screens, Extra large screens, TVs
