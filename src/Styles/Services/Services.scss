@@ -37,9 +37,9 @@
         @include trans;
         overflow: hidden;
         border-radius: 1.2vh;
-        // border: 1px solid #2e0f1031;
+        border: 1px solid #2e0f1091;
         // border: 1px solid $dark_brown;
-        box-shadow: 0 0 10px $dark_brown;
+        box-shadow: 0 0 18px 1px $dark_brown;
         width: 45vw;
         height: 35vh;
         margin-bottom: 1.5vh;
@@ -82,7 +82,8 @@
         }
         &:hover {
           border-radius: 2vh;
-          z-index: 1;
+        box-shadow: 0 0 40px 2px $dark_brown;
+        z-index: 1;
           //   width: 48vw;
           // height: 42.5vh;
           img {

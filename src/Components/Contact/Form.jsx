@@ -23,7 +23,7 @@ const Form = () => {
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     e.preventDefault();
     if (email === "") {
-      toast.warn("Email field cannot be empty");
+      toast.error("Email field cannot be empty");
     } else {
       if (!emailRegex.test(email)) {
         // setError('Please enter a valid email address');
@@ -118,7 +118,7 @@ const Form = () => {
       <div className="error"></div>
       <div className="Form">
         <p>
-          {!verified ? "First ," : "Now, Let us know what you think"}
+          {!verified ? "Firstly," : "Now, Let us know what you think"}
           {verified && <BiLogOutCircle onClick={() => setVerified(false)} />}
         </p>
         <div className={`formGroup ${verified && "disappear"}`}>

@@ -75,7 +75,7 @@ const Home = () => {
         <SwiperSlide>
           <Background img={pic1} />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <Background img={pic3} />
         </SwiperSlide>
         <SwiperSlide>
@@ -83,7 +83,7 @@ const Home = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Background img={pic2} />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
       <main>
         <div className="title">

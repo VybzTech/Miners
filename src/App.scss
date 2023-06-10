@@ -20,7 +20,9 @@
   position: relative;
   scroll-behavior: smooth !important;
   margin: 0;
+  
   scroll-padding-top:10vh;
+  
   &::selection {
     background-color: $dirty_yellow;
   }
