@@ -613,7 +613,7 @@
 // For Small screens, Laptops Sizes: iPad Air, Surface Pro
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   #About {
-    height: 97vh;
+    height: 100vh;
     // @include flex($dir: column-reverse, $jus: center);
     // width: 100%;
     main {
@@ -622,7 +622,8 @@
       // margin: auto 0;
       h2 {
         // letter-spacing: -2px;
-        font-size: 5vw;width: fit-content;
+        font-size: 5vw;
+        width: fit-content;
         // -webkit-text-stroke: 0.75px black;
         // font-family: GillsHeavy;
         // text-align: center;
@@ -631,7 +632,7 @@
         margin: 0 auto;
         &::after {
           bottom: 0.2rem;
-          right: -.2rem;
+          right: -0.2rem;
           height: 1.1rem;
           width: 10rem;
           // opacity: 0.8;

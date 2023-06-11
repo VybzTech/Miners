@@ -510,7 +510,7 @@ nav.Navbar {
     //  SCROLLED CHANGES
     &.Light {
       background: white;
-      // position: fixed;
+      position: fixed;
       box-shadow: 0 3px 15px #eee5;
       .Logo {
         span {
@@ -523,9 +523,15 @@ nav.Navbar {
         a {
           color: $black3;
           &:hover {
-            color: $black2;
+            color: black !important;
           }
           &.screen {
+            color: black;
+          }
+          &:focus,
+          &:focus-visible,
+          &:focus-within {
+            opacity: 1;
             color: black;
           }
         }
@@ -559,7 +565,8 @@ nav.Navbar {
       transform: none !important;
       height: auto !important;
       width: auto !important;
-      padding: 0 1.2vw 0 0;
+      padding: 0;
+      // .5vw 0 0;
       background-color: transparent;
       position: initial;
       // margin: auto 0;
@@ -583,9 +590,10 @@ nav.Navbar {
         &:focus,
         &:focus-visible,
         &:focus-within {
+          opacity: 0.9;
           font-size: 1.6vw;
         }
-          // ACTIVE NAV
+        // ACTIVE NAV
         &.screen {
           letter-spacing: -0.75px;
           opacity: 1;
@@ -617,7 +625,7 @@ nav.Navbar {
 // min-height: 768px
 
 // For Desktops, Large screens, Extra large screens, TVs
-@media screen and (min-width: 1024px) and (min-height: 768px) {
+@media screen and (min-width: 1024px) and (max-width: 5000px) and (min-height: 768px) {
   nav.Navbar {
     @include flex;
     z-index: 5;
@@ -629,7 +637,7 @@ nav.Navbar {
     height: 10vh;
     background: linear-gradient(0deg, #00000003, #0002);
     padding: 0;
-    display: none;
+
     //  SCROLLED CHANGES
     &.Light {
       background: white;
@@ -646,9 +654,15 @@ nav.Navbar {
         a {
           color: $black3;
           &:hover {
-            color: $black2;
+            color: black !important;
           }
           &.screen {
+            color: black;
+          }
+          &:focus,
+          &:focus-visible,
+          &:focus-within {
+            opacity: 1;
             color: black;
           }
         }
@@ -678,13 +692,13 @@ nav.Navbar {
     }
     > nav {
       flex-direction: row;
-      transform: none;
       height: auto !important;
       width: auto !important;
-      padding: 0 1.2vw 0 0;
+      padding: 0;
       background-color: transparent;
       position: initial;
-      margin: auto 0 0;
+      // margin: auto 0;
+      transform: none !important;
       a {
         // font-weight: 600;
         // letter-spacing: -0.1px;
@@ -695,33 +709,35 @@ nav.Navbar {
         // @include trans;
         // opacity: 0.8;
         // font-size: 1.05rem;
-        font-size: 1.15vw;
-        font-size: 1.2vw;
+        // font-size: 1.15vw;
+        // font-size: 1.2vw;
+        font-size: 1.45vw;
         &:hover {
           opacity: 1;
           // font-size: 1.07rem;
-          font-size: 1.3vw;
+          font-size: 1.55vw;
           color: white !important;
         }
         &:focus,
         &:focus-visible,
         &:focus-within {
-          font-size: 1.05vw;
+          opacity: 0.9;
+          font-size: 1.3vw;
         }
         // ACTIVE NAV
         &.screen {
           letter-spacing: -0.5px;
           opacity: 1;
           color: white;
-          font-size: 1.3vw;
+          font-size: 1.65vw;
           font-weight: 600;
           &::after {
             content: "";
             position: absolute;
-            top: -0.65rem;
+            top: -0.5rem;
             left: -0.8rem;
-            width: 2.4rem;
-            height: 2.4rem;
+            width: 2rem;
+            height: 2rem;
             border-radius: 1000px;
             z-index: -1;
             background-color: $yellow2;

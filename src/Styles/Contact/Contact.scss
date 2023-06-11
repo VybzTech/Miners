@@ -1089,29 +1089,29 @@
 }
 
 // For Small screens, Laptops Sizes: iPad Air, Surface Pro
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1023px) and (min-height: 1000px) {
   #Contact {
-    // height: 107vh;
+    height: 90vh;
     .Bg__Image {
-      // height: 107vh;
+      height: 90vh;
     }
     .container {
       main {
         .Form {
-          // margin: 5rem auto auto;
+          margin: 3rem auto auto;
           p {
-            // font-size: 25px;
+            font-size: 2.75vw;
             svg {
             }
           }
           .formGroup {
-            // padding: 0.55rem;
-            // padding-left: 2.75rem;
+            padding: 0.3rem;
+            padding-left: 2.5rem;
             input {
-              // height: 3rem;
-              // font-size: 3vw;
+              height: 3rem;
+              font-size: 3vw;
               &::placeholder {
-                // font-size: 2.8vw;
+                font-size: 2.8vw;
               }
               &:focus,
               &:focus-visible,
@@ -1120,7 +1120,7 @@
             }
             button {
               svg {
-                // font-size: 5vw;
+                font-size: 5vw;
               }
             }
             &:hover {
@@ -1131,12 +1131,12 @@
             }
             &.message {
               // padding-left: 2.75rem;
-              // padding: 1rem 1.5rem;
+              padding: 1rem 1.5rem;
               textarea {
                 // height: 3rem;
-                // font-size: 3vw;
+                font-size: 3vw;
                 &::placeholder {
-                  // font-size: 2.8vw;
+                  font-size: 2.8vw;
                 }
                 &::after {
                 }
@@ -1161,16 +1161,18 @@
           }
         }
         .hero {
-          // margin-top: 3vh;
+          margin-top: -5vh;
           p {
+            font-size: 2.1vw;
             // font-size: 21px;
-            // opacity: 0.3;
+            margin-bottom: 1.5vh;
+            opacity: 0.2;
           }
           h2 {
             // margin-top: 2vh;
-            // font-size: 10vw;
-            // max-width: 70vw;
-            // line-height: 7vh;
+            font-size: 8vw;
+            max-width: 50vw;
+            line-height: 4.5vh;
             &::after {
               // height: 1.75rem;
               // width: 15rem;
@@ -1226,27 +1228,35 @@
       .footer {
         footer {
           .block {
-            // max-width: 100vw;
-            // flex-direction: row;
+            max-width: 100vw;
+            flex-direction: row;
+
+            // -reverse;
             // }
             > div:first-child {
-              // position: absolute;
-              // bottom: -0.5rem;
-              // right: 2.2rem;
+              position: absolute;
+              bottom: -0.5rem;
+              right: 2.2rem;
             }
             .shortLinks,
             .addresses {
-              // width: 50vw;
+              width: 50vw;
               h2 {
-                // font-size: 3.1vw;
-                // letter-spacing: -0.25px;
+                font-size: 3.1vw;
+                letter-spacing: -0.25px;
                 // color: white;
+                // font-family: Gills;
+                // font-weight: 500;
+                // margin-bottom: 0.5rem;
               }
             }
             .shortLinks {
               // width: 50vw;
+              // margin: 0.5rem 2rem 0 0;
+              // transform: translateY(100%);
+              // flex-shrink: 0;
               h2 {
-                // text-align: right;
+                text-align: right;
               }
               div {
                 // text-align: right;
@@ -1258,30 +1268,56 @@
             }
             .addresses {
               > div {
-                // margin-bottom: 0;
+                //       margin-bottom: 0;
                 & > p {
-                  // font-size: 16px;
-                  // text-shadow: 0 0 20px $gray_brown;
+                  font-size: 16px;
+                  text-shadow: 0 0 20px $gray_brown;
                   // display: inline-block;
                   // line-height: 1vh;
                   // width: fit-content;
                 }
                 > span {
-                  // line-height: 1.3vh;
-                  // font-size: 13px;
+                  // width: fit-content;
+                  line-height: 1.3vh;
+                  //         padding-left: 7px;
+                  //         display: inline;
+                  font-size: 13px;
                   &:last-of-type {
+                    //           display: inline-block;
+                    //           padding-left: 0;
                   }
                 }
               }
             }
           }
           div.copyX {
-            // opacity: 0.8;
-            // font-size: 13px;
+            opacity: 0.8;
+            font-size: 13px;
           }
         }
       }
     }
+  }
+  .Toastify {
+    > div {
+      top: 7.2vh;
+      right: auto;
+      // padding: 1.5rem;
+      left: 0.1rem;
+      > div {
+        border-radius: 12px;
+        font-size: 2.35vw;
+        padding: 1.1rem;
+        width: 50vw;
+        svg {
+          font-size: 8vw;
+        }
+      }
+    }
+  }
+  .Toastify__toast-icon svg {
+    width: 5.5vw !important;
+    // height: 1rem !important;
   }
 }
 

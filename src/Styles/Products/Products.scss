@@ -562,7 +562,107 @@
 }
 
 // For Small screens, Laptops Sizes: iPad Air, Surface Pro
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  #Products {
+    // height: 100vh;
+    .hero {
+      margin-top: 5rem;
+      h1 {
+        opacity: 0.3;
+        filter: blur(3px);
+        font-size: 15vw;
+      }
+      h2 {
+        margin-top: -2.5rem;
+        font-size: 7vw;
+        width: fit-content;
+        margin: 0 auto;
+
+        &::after {
+          // width: 15rem;
+          // right: 3rem;
+          // bottom: 0.5rem;
+          // height: 1.5rem;
+
+          bottom: 0.5rem;
+          right: -0.25rem;
+          height: 1.1rem;
+          width: 10rem;
+        }
+      }
+      span {
+        font-size: 2.25vw;
+        opacity: 0.35;
+        // filter: blur(0.75px);
+      }
+    }
+    main {
+      //    SWIPER  PRODUUCTS EDIT
+      .swiper-slide:first-child {
+        padding-left: 3rem;
+      }
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        font-size: 4vw;
+      }
+      .swiper-button-prev,
+      .swiper-rtl .swiper-button-prev {
+        left: 0.35rem;
+      }
+      .swiper-button-next,
+      .swiper-rtl .swiper-button-next {
+        right: 0.35rem;
+      }
+      .swiper-slide {
+        margin-right: -1.5rem !important;
+      }
+      .card {
+        margin-right: 0;
+        min-width: 35vw;
+        width: 43vw;
+        border-radius: 40px;
+        img {
+          height: 15vh;
+        }
+        .container {
+          padding: 1.5rem 1.2rem 2.5rem 1.8rem;
+          h3 {
+            font-size: 3vw;
+            // word-spacing: -7px;
+            letter-spacing: 0.1px;
+          }
+          p {
+            font-size: 17px;
+            line-height: 2.75vh;
+          }
+        }
+        > span {
+          width: 4.75rem;
+          height: 4.75rem;
+          left: 1.85vw;
+          top: 12vh;
+          @include svgValues(4.25vw);
+          // svg{
+          // $siz: 7vw;
+          // height: $siz;
+          //   width: $siz;
+          //   &.min {
+          //     // $size: 2.2rem;
+          //     $size: 9vw;
+          //     height: $size;
+          //     width: $size;
+          //   }
+          //   &.max {
+          //     // $size: 2.95rem;
+          //     $size: 12vw;
+          //     height: $size;
+          //     width: $size;
+          //   }
+          // }
+        }
+      }
+    }
+  }
 }
 
 // For Desktops, Large screens, Extra large screens, TVs
