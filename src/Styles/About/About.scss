@@ -714,8 +714,172 @@
 }
 
 // For Desktops, Large screens, Extra large screens, TVs
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (min-height: 550px) {
+  // @media screen and (min-width: 1024px) {
   #About {
+    @include flex;
+    height: 90vh;
+    width: 100%;
+    main {
+      width: 100%;
+      padding: 0 3.5rem 1rem 0;
+      // margin: auto 0;
+      h2 {
+        font-family: GillsHeavy;
+        text-align: right;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        font-size: 4vw;
+        -webkit-text-stroke: 2px black;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0.2rem;
+          right: -0.25rem;
+          width: 10rem;
+          height: 1rem;
+          border-radius: 1000px;
+          z-index: -1;
+          // z-index: 1;
+          background-color: $yellow2;
+          border: 2px solid $deep_yellow;
+        }
+        //   font-family: GillsBold;
+      }
+      p {
+        font-family: Gills;
+        width: 100%;
+        text-shadow: 0 0 5px #2222;
+        color: #111;
+        letter-spacing: 0.3px;
+        word-spacing: 3px;
+        margin: 1rem -0.75rem 0 auto;
+        font-size: 1.2rem;
+        text-align: right;
+        line-height: 3rem;
+      }
+    }
+    .AboutImg {
+      position: relative;
+      width: 45%;
+      // width: 60%;
+      img {
+        @include trans;
+        position: absolute;
+        top: 9rem;
+        left: 1.75rem;
+        width: 50vw;
+        // width: 65vw;
+        // width: 40vw;
+
+        // margin: 0 auto;
+      }
+      .svg {
+        width: 100%;
+        svg {
+          @include trans;
+          width: 40vw;
+          margin: 4rem auto 0 1.75rem;
+
+          // width: 40vw;
+          // margin: 2rem auto 0;
+        }
+      }
+      &:hover {
+        cursor: cell;
+        img {
+          top: 10rem;
+          left: 2.5rem;
+          transform: scale(1.05);
+          // transform: rotateZ(-2.5deg);
+          // transform: scale(0.95);
+          // transform-origin: 0 -100%;
+          // transform: scale(1.05) rotate(-7deg);
+        }
+        .svg svg {
+          transform: rotate(30deg) scale(1.075);
+          // transform: rotate3d(30deg);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #About {
+    // @include flex;
+    height: 100vh;
+    // width: 100%;
+    main {
+      // width: 100%;
+      padding: 0 4rem 1rem 0;
+      h2 {
+        // font-family: GillsHeavy;
+        // text-align: right;
+        // text-transform: uppercase;
+        // letter-spacing: -1px;
+        font-size: 3.5vw;
+        // -webkit-text-stroke: 2px black;
+        &::after {
+          // content: "";
+          // position: absolute;
+          bottom: 0.3rem;
+          // right: -0.25rem;
+          width: 12rem;
+          height: 1.1rem;
+          // border-radius: 1000px;
+          // z-index: -1;
+          // background-color: $yellow2;
+          // border: 2px solid $deep_yellow;
+        }
+      }
+      p {
+        // font-family: Gills;
+        width: 80%;
+        // text-shadow: 0 0 5px #2222;
+        // color: #111;
+        // letter-spacing: 0.3px;
+        // word-spacing: 3px;
+        // margin: 1rem 0 0 auto;
+        // font-size: 1.2rem;
+        // text-align: right;
+        // line-height: 3rem;
+      }
+    }
+    .AboutImg {
+      // position: relative;
+      // width: 50%;
+      img {
+        // @include trans;
+        // position: absolute;
+        // top: 9rem;
+        // left: 3rem;
+        // width: 50vw;
+      }
+      .svg {
+        // width: 100%;
+        svg {
+          // @include trans;
+          // width: 40vw;
+          // margin: 4rem auto 0 3rem;
+        }
+      }
+      &:hover {
+        // cursor: cell;
+        img {
+          // top: 10rem;
+          // left: 2.5rem;
+          // transform: scale(1.05);
+        }
+        .svg svg {
+          // transform: rotate(30deg) scale(1.075);
+        }
+      }
+    }
+  }
+}
+/*
+ #About {
     @include flex;
     height: 120vh;
     width: 100%;
@@ -802,4 +966,4 @@
       }
     }
   }
-}
+*/

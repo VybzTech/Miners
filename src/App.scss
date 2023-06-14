@@ -20,9 +20,9 @@
   position: relative;
   scroll-behavior: smooth !important;
   margin: 0;
-  
-  scroll-padding-top:10vh;
-  
+
+  scroll-padding-top: 10vh;
+
   &::selection {
     background-color: $dirty_yellow;
   }
@@ -35,9 +35,8 @@ img {
   width: 10vw;
 }
 
-*::-webkit-scrollbar {
-  //   background: #333a;
-  //   &-track {
+//   background: #333a;
+//   &-track {
   //     width: 10px;
   //   }
   //   &-button {
@@ -46,13 +45,16 @@ img {
   //     width: 10px;
   //     background: #111a;
   //   }
-  padding-top: 13vh;
-}
+//   *::-webkit-scrollbar {
+  // padding-top: 13vh;
+//   padding-top: 13vh;
+// }
 
 /* APP CONTENT   */
 input:-internal-autofill-selected {
   color: $brown !important;
-  background-color: white !important;
+  background-color: transparent !important;
+  background: transparent !important;
 }
 
 .Bg__Image {

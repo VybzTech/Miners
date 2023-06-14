@@ -809,6 +809,7 @@
 // For Desktops, Large screens, Extra large screens, TVs
 @media screen and (min-width: 1024px) {
   #Services {
+    display: none;
     // height: 135vh;
     position: relative;
     .Bg__Image {

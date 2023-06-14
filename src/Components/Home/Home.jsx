@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Background from "../Background";
 import pic1 from "../../Images/Tractor.jpg";
-import pic2 from "../../Images/Bulldozer.jpg";
-import pic3 from "../../Images/Excavator.jpg";
-import pic4 from "../../Images/Scoop-tractor.jpg";
+import pic2 from "../../Images/Excavator.jpg";
+import pic3 from "../../Images/Scoop-tractor.jpg";
+import pic4 from "../../Images/Bulldozer.jpg";
 import { register } from "swiper/element/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import mouse from "../../Images/Svg/Mouse.svg";
@@ -75,15 +75,15 @@ const Home = () => {
         <SwiperSlide>
           <Background img={pic1} />
         </SwiperSlide>
-        {/* <SwiperSlide>
+        <SwiperSlide>
+          <Background img={pic2} />
+        </SwiperSlide>
+        <SwiperSlide>
           <Background img={pic3} />
         </SwiperSlide>
         <SwiperSlide>
           <Background img={pic4} />
         </SwiperSlide>
-        <SwiperSlide>
-          <Background img={pic2} />
-        </SwiperSlide> */}
       </Swiper>
       <main>
         <div className="title">
