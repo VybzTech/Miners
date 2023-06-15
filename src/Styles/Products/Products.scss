@@ -164,6 +164,7 @@
         }
       }
       > span {
+        z-index: 2;
         display: flex;
         position: absolute;
         background-color: white;
@@ -669,7 +670,7 @@
 @media screen and (min-width: 1024px) and (min-height: 550px) {
   // @media screen and (min-width: 1024px) {
   #Products {
-    height: 100vh;
+    height: 105vh;
     padding-bottom: 2.5rem;
     .hero {
       margin: 10vh auto 2vh;
@@ -696,37 +697,29 @@
         //   line-height: 3rem;
       }
       h1 {
-        font-size: 7rem;
-        z-index: -2;
-        //   letter-spacing: -0.5px;
-        text-transform: capitalize;
+        -webkit-text-stroke: 2px $gray;
         color: transparent;
-        opacity: 0.3;
         filter: blur(0.4vh);
-        // opacity: 1;
-        // border: 1.5px solid white;
-        // font-weight: 900;
-        // color: white; // font-weight: 900;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0.25rem auto -1.8rem 2.5rem;
-        // font-family: Gills;
+        font-size: 7.5rem;
         font-weight: 900;
         line-height: 3rem;
-        -webkit-text-stroke: 2px $gray;
+        margin: 0.25rem auto -1.8rem 2.5rem;
+        opacity: 0.45;
+        text-transform: capitalize;
+        z-index: -2;
       }
       h2 {
         font-family: GillsHeavy;
-        //   text-align: right;
         text-transform: capitalize;
-        //   text-transform: uppercase;
-        font-size: 4.5vw;
+        font-size: 4.2vw;
         letter-spacing: -1px;
         &::after {
           content: "";
           position: absolute;
-          bottom: 0.5rem;
-          right: 8.5rem;
-          width: 12rem;
+          bottom: 0.3rem;
+          right: 9rem;
+          width: 9rem;
           height: 1rem;
           border-radius: 1000px;
           z-index: -1;
@@ -738,7 +731,7 @@
       }
     }
     main {
-      padding: 0 3.2rem 0 2.5rem;
+      padding: 0 3rem 0 2rem;
       // margin-right: 3rem;
 
       //    SWIPER  PRODUUCTS EDIT
@@ -746,7 +739,6 @@
         // margin-right: 3rem;
         padding: 2rem 0;
       }
-      // .swiper-slide:first-child > .card {
       .swiper-slide:first-child {
         // margin: 0 4rem 0 1rem;
         // padding: 0 4.5rem;
@@ -754,12 +746,10 @@
         // padding-left: 1.5rem;
         padding-left: 2.8rem;
       }
-      // .swiper-slide:last-child::after,
       .swiper-slide {
         // padding-right: 14rem;
         margin-right: 4rem !important;
       }
-      // .swiper-slide:last-child > .card::after,
       .swiper-slide:last-child > .card::after {
         //     padding-right: 4rem;
         //     margin-right: 3rem;
@@ -774,23 +764,12 @@
           cursor: pointer;
         }
       }
-      // .swiper-button-prev,
-      // .swiper-rtl .swiper-button-next {
-      //     left: -1rem;
-      //     position: absolute;
-      //     z-index: 14;
-      //     // font-size: 1rem;
-      // }
       [class^="swiper-button-"]:after,
       .swiper-rtl [class^="swiper-button-"]:after {
         font-size: 1.8rem;
         color: $black3;
         font-weight: 900;
       }
-      // .swiper-button-prev,
-      // .swiper-rtl .swiper-button-prev {
-      //     // left: -0.2rem;
-      // }
       .swiper-button-next,
       .swiper-rtl .swiper-button-next {
         right: -0.1rem;
@@ -799,21 +778,15 @@
         //     font-weight: 900;
         //     // font-size: 1rem;
       }
-      // .swiper-slide:last-child > .card {
-      //     margin-right: 5rem;
-      // }
       // .swiper-slide:last-of-type
       // @include flex;
-      // gap: 2.7rem;
+      // gap: 7rem;
       .card {
         position: relative;
         box-shadow: 0 0 12px 1px #eee;
         //   box-shadow: 0 0 25px 1px $gray;
-        min-width: 380px;
-        width: 450px;
-        //   min-width: 400px;
-        //   min-width: 250px;
-        //   border-radius: 30px;
+        min-width: 300px;
+        width: 355px;
         border-radius: 45px;
         overflow: hidden;
         border: 1px solid #eee;
@@ -821,21 +794,22 @@
         @include trans;
         img {
           width: 100%;
-          height: 35vh;
+          height: 20vh;
           object-fit: cover;
         }
         .container {
           z-index: 3;
-          padding: 0.4rem 2rem 3rem;
+          padding: 0.4rem 1rem 3rem 1.7rem;
           h3 {
             font-family: Bart;
-            font-size: 1.8rem;
-            margin: 1.5rem auto 0.7rem;
+            font-size: 1.55rem;
+            margin: 1.5rem auto 0;
             color: $black3;
           }
           p {
-            font-size: 1.2rem;
-            line-height: 2rem;
+            font-size: 1.075rem;
+            word-spacing: 1px;
+            line-height: 1.7rem;
             opacity: 0.9;
             padding-right: 1rem;
             @include transShort;
@@ -850,10 +824,6 @@
             margin: 0 0 10px 0;
           }
         }
-        // &:last-child > .container > p {
-        //     display: none;
-        //     margin-right: 15rem;
-        // }
         &:hover {
           transform: translateY(-10px);
           box-shadow: 0 0 20px 1px $light_gray;
@@ -873,43 +843,45 @@
           position: absolute;
           background-color: white;
           border-radius: 1000px;
-          width: 5rem;
-          height: 5rem;
-          top: 11.5rem;
+          width: 4.5rem;
+          height: 4.5rem;
+          top: 7.5rem;
           left: 1rem;
           align-items: center;
           justify-content: center;
-          svg {
-            @include transShort;
-            //   //   fill: 2rem;
-            //   fill: $black3 !important;
-            // border-radius: 10px;
-            $siz: 2.75rem;
-            fill: $brown !important;
-            // fill: $black2 !important;
-            fill: $black3 !important;
-            // fill: $dark_brown !important;
-            // fill: $gray_brown !important;
-            //   width: 2rem;
-            //   height: 2rem;
-            //   width: 3rem;
-            //   height: 2.75rem;
-            height: $siz;
-            width: $siz;
-            //   font-size: 1.5rem;
-            //   border-radius: 10000px;
-            //   path {
-            &.min {
-              $size: 2.2rem;
-              height: $size;
-              width: $size;
-            }
-            &.max {
-              $size: 2.95rem;
-              height: $size;
-              width: $size;
-            }
-          }
+          @include svgValues(3.5vw);
+
+          // svg {
+          //   @include transShort;
+          //   //   //   fill: 2rem;
+          //   //   fill: $black3 !important;
+          //   // border-radius: 10px;
+          //   $siz: 2.75rem;
+          //   fill: $brown !important;
+          //   // fill: $black2 !important;
+          //   fill: $black3 !important;
+          //   // fill: $dark_brown !important;
+          //   // fill: $gray_brown !important;
+          //   //   width: 2rem;
+          //   //   height: 2rem;
+          //   //   width: 3rem;
+          //   //   height: 2.75rem;
+          //   height: $siz;
+          //   width: $siz;
+          //   //   font-size: 1.5rem;
+          //   //   border-radius: 10000px;
+          //   //   path {
+          //   &.min {
+          //     $size: 2.2rem;
+          //     height: $size;
+          //     width: $size;
+          //   }
+          //   &.max {
+          //     $size: 2.95rem;
+          //     height: $size;
+          //     width: $size;
+          //   }
+          // }
         }
       }
     }
@@ -926,8 +898,9 @@
       }
       h1 {
         // z-index: -2;
-        // font-size: 8.5rem;
+        font-size: 9rem;
         // text-transform: capitalize;
+        filter: blur(0.5vh);
         // color: transparent;
         // opacity: 0.25;
         // font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -944,9 +917,9 @@
         &::after {
           // content: "";
           // position: absolute;
-          // bottom: 0.5rem;
-          // right: 8.5rem;
-          // width: 12rem;
+          bottom: 0.55rem;
+          right: 8rem;
+          width: 11rem;
           // height: 1rem;
           // border-radius: 1000px;
           // z-index: -1;
@@ -957,7 +930,6 @@
     }
     main {
       // padding: 0 3.2rem 0 2.5rem;
-
       .swiper-wrapper {
         // padding: 2rem 0;
       }

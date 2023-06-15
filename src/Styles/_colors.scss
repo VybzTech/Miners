@@ -154,4 +154,20 @@ $light_gray: #ccc;
       width: $max;
     }
   }
+  @media screen and (min-width: 1024px) {
+    $min: $siz - 0.65vw;
+    $max: $siz + 0.75vw;
+    svg {
+      height: $siz;
+      width: $siz;
+      &.min {
+        height: $min;
+        width: $min;
+      }
+      &.max {
+        height: $max;
+        width: $max;
+      }
+    }
+  }
 }

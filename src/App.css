@@ -2993,6 +2993,7 @@ nav.Navbar.nosmall > nav {
   fill: #111 !important;
 }
 #Products main .card > span {
+  z-index: 2;
   display: flex;
   position: absolute;
   background-color: white;
@@ -3015,6 +3016,20 @@ nav.Navbar.nosmall > nav {
 #Products main .card > span svg.max {
   height: 12vw;
   width: 12vw;
+}
+@media screen and (min-width: 1024px) {
+  #Products main .card > span svg {
+    height: 10vw;
+    width: 10vw;
+  }
+  #Products main .card > span svg.min {
+    height: 9.35vw;
+    width: 9.35vw;
+  }
+  #Products main .card > span svg.max {
+    height: 10.75vw;
+    width: 10.75vw;
+  }
 }
 #Products main .card > span svg {
   transition: all 150ms ease-in-out;
@@ -3106,6 +3121,20 @@ nav.Navbar.nosmall > nav {
     width: 10.75vw;
   }
 }
+@media screen and (min-width: 375px) and (max-height: 667px) and (min-width: 1024px) {
+  #Products main .card > span svg {
+    height: 8.75vw;
+    width: 8.75vw;
+  }
+  #Products main .card > span svg.min {
+    height: 8.1vw;
+    width: 8.1vw;
+  }
+  #Products main .card > span svg.max {
+    height: 9.5vw;
+    width: 9.5vw;
+  }
+}
 @media only screen and (min-width: 375px) and (min-height: 730px) and (max-height: 850px) {
   #Products main .swiper-slide:first-child {
     padding-left: 1.875rem;
@@ -3144,6 +3173,20 @@ nav.Navbar.nosmall > nav {
   #Products main .card > span svg.max {
     height: 9.75vw;
     width: 9.75vw;
+  }
+}
+@media only screen and (min-width: 375px) and (min-height: 730px) and (max-height: 850px) and (min-width: 1024px) {
+  #Products main .card > span svg {
+    height: 7.75vw;
+    width: 7.75vw;
+  }
+  #Products main .card > span svg.min {
+    height: 7.1vw;
+    width: 7.1vw;
+  }
+  #Products main .card > span svg.max {
+    height: 8.5vw;
+    width: 8.5vw;
   }
 }
 @media screen and (min-width: 410px) and (max-width: 480px) and (min-height: 730px) {
@@ -3189,6 +3232,20 @@ nav.Navbar.nosmall > nav {
     width: 9.5vw;
   }
 }
+@media screen and (min-width: 410px) and (max-width: 480px) and (min-height: 730px) and (min-width: 1024px) {
+  #Products main .card > span svg {
+    height: 7.5vw;
+    width: 7.5vw;
+  }
+  #Products main .card > span svg.min {
+    height: 6.85vw;
+    width: 6.85vw;
+  }
+  #Products main .card > span svg.max {
+    height: 8.25vw;
+    width: 8.25vw;
+  }
+}
 @media only screen and (min-height: 850px) {
   #Products main .card img {
     height: 18vh;
@@ -3210,6 +3267,20 @@ nav.Navbar.nosmall > nav {
   #Products main .card > span svg.max {
     height: 8.9vw;
     width: 8.9vw;
+  }
+}
+@media only screen and (min-height: 850px) and (min-width: 1024px) {
+  #Products main .card > span svg {
+    height: 6.9vw;
+    width: 6.9vw;
+  }
+  #Products main .card > span svg.min {
+    height: 6.25vw;
+    width: 6.25vw;
+  }
+  #Products main .card > span svg.max {
+    height: 7.65vw;
+    width: 7.65vw;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
@@ -3277,6 +3348,20 @@ nav.Navbar.nosmall > nav {
   #Products main .card > span svg.max {
     height: 9.5vw;
     width: 9.5vw;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) and (min-width: 1024px) {
+  #Products main .card > span svg {
+    height: 7.5vw;
+    width: 7.5vw;
+  }
+  #Products main .card > span svg.min {
+    height: 6.85vw;
+    width: 6.85vw;
+  }
+  #Products main .card > span svg.max {
+    height: 8.25vw;
+    width: 8.25vw;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -3361,9 +3446,23 @@ nav.Navbar.nosmall > nav {
     width: 6.25vw;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1023px) and (min-width: 1024px) {
+  #Products main .card > span svg {
+    height: 4.25vw;
+    width: 4.25vw;
+  }
+  #Products main .card > span svg.min {
+    height: 3.6vw;
+    width: 3.6vw;
+  }
+  #Products main .card > span svg.max {
+    height: 5vw;
+    width: 5vw;
+  }
+}
 @media screen and (min-width: 1024px) and (min-height: 550px) {
   #Products {
-    height: 100vh;
+    height: 105vh;
     padding-bottom: 2.5rem;
   }
   #Products .hero {
@@ -3382,30 +3481,30 @@ nav.Navbar.nosmall > nav {
     opacity: 0.3;
   }
   #Products .hero h1 {
-    font-size: 7rem;
-    z-index: -2;
-    text-transform: capitalize;
+    -webkit-text-stroke: 2px #aaa;
     color: transparent;
-    opacity: 0.3;
     filter: blur(0.4vh);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0.25rem auto -1.8rem 2.5rem;
+    font-size: 7.5rem;
     font-weight: 900;
     line-height: 3rem;
-    -webkit-text-stroke: 2px #aaa;
+    margin: 0.25rem auto -1.8rem 2.5rem;
+    opacity: 0.45;
+    text-transform: capitalize;
+    z-index: -2;
   }
   #Products .hero h2 {
     font-family: GillsHeavy;
     text-transform: capitalize;
-    font-size: 4.5vw;
+    font-size: 4.2vw;
     letter-spacing: -1px;
   }
   #Products .hero h2::after {
     content: "";
     position: absolute;
-    bottom: 0.5rem;
-    right: 8.5rem;
-    width: 12rem;
+    bottom: 0.3rem;
+    right: 9rem;
+    width: 9rem;
     height: 1rem;
     border-radius: 1000px;
     z-index: -1;
@@ -3413,7 +3512,7 @@ nav.Navbar.nosmall > nav {
     border: 2px solid #f1c30b;
   }
   #Products main {
-    padding: 0 3.2rem 0 2.5rem;
+    padding: 0 3rem 0 2rem;
   }
   #Products main .swiper-wrapper {
     padding: 2rem 0;
@@ -3448,8 +3547,8 @@ nav.Navbar.nosmall > nav {
   #Products main .card {
     position: relative;
     box-shadow: 0 0 12px 1px #eee;
-    min-width: 380px;
-    width: 450px;
+    min-width: 300px;
+    width: 355px;
     border-radius: 45px;
     overflow: hidden;
     border: 1px solid #eee;
@@ -3458,22 +3557,23 @@ nav.Navbar.nosmall > nav {
   }
   #Products main .card img {
     width: 100%;
-    height: 35vh;
+    height: 20vh;
     object-fit: cover;
   }
   #Products main .card .container {
     z-index: 3;
-    padding: 0.4rem 2rem 3rem;
+    padding: 0.4rem 1rem 3rem 1.7rem;
   }
   #Products main .card .container h3 {
     font-family: Bart;
-    font-size: 1.8rem;
-    margin: 1.5rem auto 0.7rem;
+    font-size: 1.55rem;
+    margin: 1.5rem auto 0;
     color: #333;
   }
   #Products main .card .container p {
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 1.075rem;
+    word-spacing: 1px;
+    line-height: 1.7rem;
     opacity: 0.9;
     padding-right: 1rem;
     transition: all 150ms ease-in-out;
@@ -3506,27 +3606,38 @@ nav.Navbar.nosmall > nav {
     position: absolute;
     background-color: white;
     border-radius: 1000px;
-    width: 5rem;
-    height: 5rem;
-    top: 11.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    top: 7.5rem;
     left: 1rem;
     align-items: center;
     justify-content: center;
   }
   #Products main .card > span svg {
-    transition: all 150ms ease-in-out;
-    fill: #541c1d !important;
-    fill: #333 !important;
-    height: 2.75rem;
-    width: 2.75rem;
+    height: 3.5vw;
+    width: 3.5vw;
   }
   #Products main .card > span svg.min {
-    height: 2.2rem;
-    width: 2.2rem;
+    height: 2.5vw;
+    width: 2.5vw;
   }
   #Products main .card > span svg.max {
-    height: 2.95rem;
-    width: 2.95rem;
+    height: 5.5vw;
+    width: 5.5vw;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 550px) and (min-width: 1024px) {
+  #Products main .card > span svg {
+    height: 3.5vw;
+    width: 3.5vw;
+  }
+  #Products main .card > span svg.min {
+    height: 2.85vw;
+    width: 2.85vw;
+  }
+  #Products main .card > span svg.max {
+    height: 4.25vw;
+    width: 4.25vw;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -3536,6 +3647,15 @@ nav.Navbar.nosmall > nav {
   #Products .hero span {
     font-size: 1.3vw;
     opacity: 0.25;
+  }
+  #Products .hero h1 {
+    font-size: 9rem;
+    filter: blur(0.5vh);
+  }
+  #Products .hero h2::after {
+    bottom: 0.55rem;
+    right: 8rem;
+    width: 11rem;
   }
 }
 /*
