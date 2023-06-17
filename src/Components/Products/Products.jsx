@@ -45,6 +45,9 @@ const Products = () => {
             1024: {
               slidesPerView: 2.5,
             },
+            1240: {
+              slidesPerView: 3,
+            },
           }}
           navigation
           // scrollbar

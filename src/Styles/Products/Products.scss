@@ -91,10 +91,22 @@
     .swiper-button-prev,
     .swiper-rtl .swiper-button-prev {
       left: 0;
+      border-radius: 1000px;
+      &:focus,
+      &:focus-visible,
+      &:focus-within {
+        outline: none;
+      }
     }
     .swiper-button-next,
     .swiper-rtl .swiper-button-next {
       right: 0;
+      border-radius: 1000px;
+      &:focus,
+      &:focus-visible,
+      &:focus-within {
+        outline: none;
+      }
     }
     .swiper-slide:last-child > .card {
       margin-right: 2rem;
@@ -670,8 +682,8 @@
 @media screen and (min-width: 1024px) and (min-height: 550px) {
   // @media screen and (min-width: 1024px) {
   #Products {
-    height: 105vh;
-    padding-bottom: 2.5rem;
+    // height: 100vh;
+    padding-bottom: 5rem;
     .hero {
       margin: 10vh auto 2vh;
       width: fit-content;
@@ -731,13 +743,13 @@
       }
     }
     main {
-      padding: 0 3rem 0 2rem;
+      padding: 2rem 3rem 0 2rem;
       // margin-right: 3rem;
 
       //    SWIPER  PRODUUCTS EDIT
       .swiper-wrapper {
         // margin-right: 3rem;
-        padding: 2rem 0;
+        padding: 3rem 0;
       }
       .swiper-slide:first-child {
         // margin: 0 4rem 0 1rem;
@@ -766,13 +778,21 @@
       }
       [class^="swiper-button-"]:after,
       .swiper-rtl [class^="swiper-button-"]:after {
-        font-size: 1.8rem;
+        font-size: 1.45rem;
         color: $black3;
         font-weight: 900;
       }
       .swiper-button-next,
       .swiper-rtl .swiper-button-next {
-        right: -0.1rem;
+        right: -0.3rem;
+        //     font-size: 1.8rem;
+        //     color: $black3;
+        //     font-weight: 900;
+        //     // font-size: 1rem;
+      }
+      .swiper-button-prev,
+      .swiper-rtl .swiper-button-prev {
+        left: -0.4rem;
         //     font-size: 1.8rem;
         //     color: $black3;
         //     font-weight: 900;
@@ -799,19 +819,19 @@
         }
         .container {
           z-index: 3;
-          padding: 0.4rem 1rem 3rem 1.7rem;
+          padding: 0.4rem 1rem 3rem 1.5rem;
           h3 {
             font-family: Bart;
-            font-size: 1.55rem;
-            margin: 1.5rem auto 0;
+            font-size: 1.5rem;
+            margin: 1rem auto 0;
             color: $black3;
           }
           p {
-            font-size: 1.075rem;
+            font-size: 0.975rem;
             word-spacing: 1px;
-            line-height: 1.7rem;
+            line-height: 1.75rem;
             opacity: 0.9;
-            padding-right: 1rem;
+            // padding-right: 1rem;
             @include transShort;
             font-family: Gills;
             color: $gray_brown;
@@ -826,7 +846,7 @@
         }
         &:hover {
           transform: translateY(-10px);
-          box-shadow: 0 0 20px 1px $light_gray;
+          box-shadow: 0 0 25px 1px $light_gray;
           .container h3 {
             color: $black;
           }
@@ -918,7 +938,7 @@
           // content: "";
           // position: absolute;
           bottom: 0.55rem;
-          right: 8rem;
+          right: 9rem;
           width: 11rem;
           // height: 1rem;
           // border-radius: 1000px;
@@ -929,15 +949,15 @@
       }
     }
     main {
-      // padding: 0 3.2rem 0 2.5rem;
+      padding: 0 1.2rem 0 1.5rem;
       .swiper-wrapper {
-        // padding: 2rem 0;
+        padding: 3rem 0;
       }
       .swiper-slide:first-child {
         // padding-left: 2.8rem;
       }
       .swiper-slide {
-        // margin-right: 4rem !important;
+        // margin-right: 2rem !important;
       }
       .swiper-slide:last-child > .card::after {
       }
@@ -953,43 +973,47 @@
       }
       [class^="swiper-button-"]:after,
       .swiper-rtl [class^="swiper-button-"]:after {
-        // font-size: 1.8rem;
+        font-size: 1.8rem;
         // color: $black3;
         // font-weight: 900;
       }
       .swiper-button-next,
       .swiper-rtl .swiper-button-next {
-        // right: -0.1rem;
+        right: -0.1rem;
+      }
+      .swiper-button-prev,
+      .swiper-rtl .swiper-button-prev {
+        left: -0.1rem;
       }
       .card {
         // position: relative;
-        // box-shadow: 0 0 12px 1px #eee;
+        box-shadow: 0 0 10px 0.01px #ddd;
         // min-width: 380px;
-        // width: 450px;
-        // border-radius: 45px;
+        width: 400px;
+        border-radius: 50px;
         // overflow: hidden;
         // border: 1px solid #eee;
         // cursor: grabbing;
         // @include trans;
         img {
           // width: 100%;
-          // height: 35vh;
+          height: 28.5vh;
           // object-fit: cover;
         }
         .container {
           // z-index: 3;
-          // padding: 0.4rem 2rem 3rem;
+          padding: 0 2rem 3rem;
           h3 {
             // font-family: Bart;
-            // font-size: 1.8rem;
-            // margin: 1.5rem auto 0.7rem;
+            font-size: 1.65rem;
+            margin: 1.5rem auto 0.7rem;
             // color: $black3;
           }
           p {
-            // font-size: 1.2rem;
-            // line-height: 2rem;
+            font-size: 1.1rem;
+            line-height: 2rem;
             // opacity: 0.9;
-            // padding-right: 1rem;
+            padding-right: 0;
             // @include transShort;
             // font-family: Gills;
             // color: $gray_brown;
@@ -999,7 +1023,7 @@
             // opacity: 0.1;
             // height: 1px;
             // border: none;
-            // margin: 0 0 10px 0;
+            margin: -7px 0 3px 0;
           }
         }
         &:hover {
@@ -1021,30 +1045,32 @@
           // position: absolute;
           // background-color: white;
           // border-radius: 1000px;
-          // width: 5rem;
-          // height: 5rem;
-          // top: 11.5rem;
-          // left: 1rem;
+          width: 5rem;
+          height: 5rem;
+          top: 8.9rem;
+          left: 1rem;
+          @include svgValues(3.15vw);
+
           // align-items: center;
           // justify-content: center;
-          svg {
-            // @include transShort;
-            // $siz: 2.75rem;
-            // fill: $brown !important;
-            // fill: $black3 !important;
-            // height: $siz;
-            // width: $siz;
-            &.min {
-              // $size: 2.2rem;
-              // height: $size;
-              // width: $size;
-            }
-            &.max {
-              // $size: 2.95rem;
-              // height: $size;
-              // width: $size;
-            }
-          }
+          // svg {
+          //   // @include transShort;
+          //   // $siz: 2.75rem;
+          //   // fill: $brown !important;
+          //   // fill: $black3 !important;
+          //   // height: $siz;
+          //   // width: $siz;
+          //   &.min {
+          //     // $size: 2.2rem;
+          //     // height: $size;
+          //     // width: $size;
+          //   }
+          //   &.max {
+          //     // $size: 2.95rem;
+          //     // height: $size;
+          //     // width: $size;
+          //   }
+          // }
         }
       }
     }

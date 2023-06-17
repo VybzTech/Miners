@@ -807,120 +807,187 @@
 }
 
 // For Desktops, Large screens, Extra large screens, TVs
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (min-height: 550px) {
   #Services {
-    display: none;
-    // height: 135vh;
     position: relative;
+    height: 110vh;
     .Bg__Image {
-      height: 150vh;
+      height: 110vh;
     }
     .container {
       position: absolute;
       top: 0;
       left: 0;
-      // right: 0;
-      // padding: 0 2rem;
       width: 100%;
       h2 {
         width: fit-content;
         font-family: GillsHeavy;
-        // text-align: right;
         text-transform: uppercase;
-        font-size: 3.2rem;
+        font-size: 4.5vw;
         word-spacing: 7px;
         letter-spacing: -3px;
         color: $white;
         //  6rem font-family: GillsBold;
-        margin: 6rem auto 2.5rem;
+        margin: 4rem auto 2.75rem;
       }
       .OurServices {
+        $service__Height: 46vh;
         @include flex;
         flex-wrap: wrap;
         position: relative;
-        padding: 0 7rem;
-        gap: 1.1rem;
+        padding: 0 3.5rem;
+        gap: 0.7rem;
         z-index: 2;
         & > div {
-          overflow: hidden;
-          border-radius: 4px;
-          width: 32%;
-          height: 62vh;
-          margin-bottom: 1.75rem;
           @include trans;
+          border-radius: 1.2vh;
+          height: $service__Height;
+          margin-bottom: 0.8rem;
+          overflow: hidden;
+          width: 32%;
           &::before {
+            @include transShort;
             content: "";
             position: absolute;
             bottom: 0;
             left: 0;
             width: 0%;
             height: 0vh;
-            // width: 100%;
-            @include transShort;
-            // transform: rotate(90deg);
-            // @include transLong;
             background: linear-gradient(0deg, transparent, transparent);
             z-index: 1;
           }
           img {
-            height: 62vh;
+            height: $service__Height;
             object-fit: cover;
             @include trans;
-            // opacity: 0.7;
-            // filter: drop-shadow(0px 0px 100px white) brightness(0.75)
-            //     grayscale(0.25);
             width: 100%;
           }
           span {
             transform: scale(0);
-            //     z-index: 2;
-            //     position: absolute;
-            //     bottom: 1.4rem;
-            //     left: 1.8rem;
-            //     line-height: 1.4;
-            //     width: 60%;
-            //     text-transform: uppercase;
-            //     font-size: 1.2rem;
-            //     font-family: GillsBold;
-            //     text-align: left;
-            //     letter-spacing: -1px;
-            //     color: $pinkish_Light;
           }
           &:hover {
             img {
               filter: blur(1.1px);
               transform: scale(1.02);
-              // height: 65vh;
-              // object-fit: cover;
-              // width: 100%;
             }
             &::before {
-              // content: '';
-              // position: absolute;
-              // top: 0;
-              // left: 0;
               width: 100%;
-              height: 65vh;
+              height: $service__Height;
               background: linear-gradient(0deg, #000e, #1117);
-              // z-index: 1;
             }
             & span {
               z-index: 2;
               position: absolute;
-              bottom: 1.4rem;
               transform: scale(1);
-              left: 1.8rem;
-              line-height: 1.4;
-              width: 60%;
+              left: 10%;
+              // right: auto;
+              // line-height: 1.4;
+              width: 80%;
               text-transform: uppercase;
-              font-size: 1.2rem;
-              font-family: GillsHeavy;
+              font-size: 1.5vw;
               font-family: Gills;
               font-weight: 800;
-              // font-family: GillsBold;
-              text-align: left;
+              // transform: scale(1);
+              margin: 0 auto;
+              // left: 1.8rem;
+              // line-height: 1.4;
+              // width: 60%;
+              text-align: center;
               letter-spacing: 0.3px;
               color: $pinkish_Light;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #Services {
+    // position: relative;
+    height: 155vh;
+    .Bg__Image {
+      height: 155vh;
+    }
+    .container {
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // width: 100%;
+      h2 {
+        // width: fit-content;
+        // font-family: GillsHeavy;
+        // text-transform: uppercase;
+        // font-size: 3.2rem;
+        // word-spacing: 7px;
+        // letter-spacing: -3px;
+        // color: $white;
+        // margin: 6rem auto 2.5rem;
+      }
+      .OurServices {
+        $service__Height: 65vh;
+        // @include flex;
+        // flex-wrap: wrap;
+        // position: relative;
+        padding: 0 5rem;
+        // gap: 1.1rem;
+        // z-index: 2;
+        & > div {
+          // overflow: hidden;
+          // border-radius: 4px;
+          width: 32%;
+          // margin-bottom: 1.75rem;
+          // @include trans;
+          height: $service__Height;
+          margin-bottom: 2rem;
+
+          &::before {
+            // content: "";
+            // position: absolute;
+            // bottom: 0;
+            // left: 0;
+            // width: 0%;
+            // height: 0vh;
+            // @include transShort;
+            // background: linear-gradient(0deg, transparent, transparent);
+            // z-index: 1;
+          }
+          img {
+            height: $service__Height;
+            // object-fit: cover;
+            // @include trans;
+            // width: 100%;
+          }
+          span {
+            // transform: scale(0);
+          }
+          &:hover {
+            img {
+              // filter: blur(1.1px);
+              // transform: scale(1.02);
+            }
+            &::before {
+              // width: 100%;
+              // background: linear-gradient(0deg, #000e, #1117);
+              height: $service__Height;
+            }
+            & span {
+              // z-index: 2;
+              // position: absolute;
+              // bottom: 1.4rem;
+              // transform: scale(1);
+              // left: 1.8rem;
+              // line-height: 1.4;
+              // width: 60%;
+              // text-transform: uppercase;
+              font-size: 1.2vw;
+              // font-family: GillsHeavy;
+              // font-family: Gills;
+              // font-weight: 800;
+              // text-align: left;
+              // letter-spacing: 0.3px;
+              // color: $pinkish_Light;
             }
           }
         }

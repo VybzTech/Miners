@@ -2929,10 +2929,24 @@ nav.Navbar.nosmall > nav {
 #Products main .swiper-button-prev,
 #Products main .swiper-rtl .swiper-button-prev {
   left: 0;
+  border-radius: 1000px;
+}
+#Products main .swiper-button-prev:focus, #Products main .swiper-button-prev:focus-visible, #Products main .swiper-button-prev:focus-within,
+#Products main .swiper-rtl .swiper-button-prev:focus,
+#Products main .swiper-rtl .swiper-button-prev:focus-visible,
+#Products main .swiper-rtl .swiper-button-prev:focus-within {
+  outline: none;
 }
 #Products main .swiper-button-next,
 #Products main .swiper-rtl .swiper-button-next {
   right: 0;
+  border-radius: 1000px;
+}
+#Products main .swiper-button-next:focus, #Products main .swiper-button-next:focus-visible, #Products main .swiper-button-next:focus-within,
+#Products main .swiper-rtl .swiper-button-next:focus,
+#Products main .swiper-rtl .swiper-button-next:focus-visible,
+#Products main .swiper-rtl .swiper-button-next:focus-within {
+  outline: none;
 }
 #Products main .swiper-slide:last-child > .card {
   margin-right: 2rem;
@@ -3462,8 +3476,7 @@ nav.Navbar.nosmall > nav {
 }
 @media screen and (min-width: 1024px) and (min-height: 550px) {
   #Products {
-    height: 105vh;
-    padding-bottom: 2.5rem;
+    padding-bottom: 5rem;
   }
   #Products .hero {
     margin: 10vh auto 2vh;
@@ -3512,10 +3525,10 @@ nav.Navbar.nosmall > nav {
     border: 2px solid #f1c30b;
   }
   #Products main {
-    padding: 0 3rem 0 2rem;
+    padding: 2rem 3rem 0 2rem;
   }
   #Products main .swiper-wrapper {
-    padding: 2rem 0;
+    padding: 3rem 0;
   }
   #Products main .swiper-slide:first-child {
     padding-left: 2.8rem;
@@ -3536,13 +3549,17 @@ nav.Navbar.nosmall > nav {
   }
   #Products main [class^=swiper-button-]:after,
   #Products main .swiper-rtl [class^=swiper-button-]:after {
-    font-size: 1.8rem;
+    font-size: 1.45rem;
     color: #333;
     font-weight: 900;
   }
   #Products main .swiper-button-next,
   #Products main .swiper-rtl .swiper-button-next {
-    right: -0.1rem;
+    right: -0.3rem;
+  }
+  #Products main .swiper-button-prev,
+  #Products main .swiper-rtl .swiper-button-prev {
+    left: -0.4rem;
   }
   #Products main .card {
     position: relative;
@@ -3562,20 +3579,19 @@ nav.Navbar.nosmall > nav {
   }
   #Products main .card .container {
     z-index: 3;
-    padding: 0.4rem 1rem 3rem 1.7rem;
+    padding: 0.4rem 1rem 3rem 1.5rem;
   }
   #Products main .card .container h3 {
     font-family: Bart;
-    font-size: 1.55rem;
-    margin: 1.5rem auto 0;
+    font-size: 1.5rem;
+    margin: 1rem auto 0;
     color: #333;
   }
   #Products main .card .container p {
-    font-size: 1.075rem;
+    font-size: 0.975rem;
     word-spacing: 1px;
-    line-height: 1.7rem;
+    line-height: 1.75rem;
     opacity: 0.9;
-    padding-right: 1rem;
     transition: all 150ms ease-in-out;
     font-family: Gills;
     color: #3e3333;
@@ -3589,7 +3605,7 @@ nav.Navbar.nosmall > nav {
   }
   #Products main .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 20px 1px #ccc;
+    box-shadow: 0 0 25px 1px #ccc;
   }
   #Products main .card:hover .container h3 {
     color: #111;
@@ -3654,8 +3670,81 @@ nav.Navbar.nosmall > nav {
   }
   #Products .hero h2::after {
     bottom: 0.55rem;
-    right: 8rem;
+    right: 9rem;
     width: 11rem;
+  }
+  #Products main {
+    padding: 0 1.2rem 0 1.5rem;
+  }
+  #Products main .swiper-wrapper {
+    padding: 3rem 0;
+  }
+  #Products main [class^=swiper-button-]:after,
+  #Products main .swiper-rtl [class^=swiper-button-]:after {
+    font-size: 1.8rem;
+  }
+  #Products main .swiper-button-next,
+  #Products main .swiper-rtl .swiper-button-next {
+    right: -0.1rem;
+  }
+  #Products main .swiper-button-prev,
+  #Products main .swiper-rtl .swiper-button-prev {
+    left: -0.1rem;
+  }
+  #Products main .card {
+    box-shadow: 0 0 10px 0.01px #ddd;
+    width: 400px;
+    border-radius: 50px;
+  }
+  #Products main .card img {
+    height: 28.5vh;
+  }
+  #Products main .card .container {
+    padding: 0 2rem 3rem;
+  }
+  #Products main .card .container h3 {
+    font-size: 1.65rem;
+    margin: 1.5rem auto 0.7rem;
+  }
+  #Products main .card .container p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    padding-right: 0;
+  }
+  #Products main .card .container hr {
+    margin: -7px 0 3px 0;
+  }
+  #Products main .card > span {
+    width: 5rem;
+    height: 5rem;
+    top: 8.9rem;
+    left: 1rem;
+  }
+  #Products main .card > span svg {
+    height: 3.15vw;
+    width: 3.15vw;
+  }
+  #Products main .card > span svg.min {
+    height: 2.15vw;
+    width: 2.15vw;
+  }
+  #Products main .card > span svg.max {
+    height: 5.15vw;
+    width: 5.15vw;
+  }
+}
+@media screen and (min-width: 1300px) and (min-width: 1024px) {
+  #Products main .card > span svg {
+    height: 3.15vw;
+    width: 3.15vw;
+  }
+  #Products main .card > span svg.min {
+    height: 2.5vw;
+    width: 2.5vw;
+  }
+  #Products main .card > span svg.max {
+    height: 3.9vw;
+    width: 3.9vw;
   }
 }
 /*
@@ -4194,13 +4283,13 @@ nav.Navbar.nosmall > nav {
     color: #f3ebec;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (min-height: 550px) {
   #Services {
-    display: none;
     position: relative;
+    height: 110vh;
   }
   #Services .Bg__Image {
-    height: 150vh;
+    height: 110vh;
   }
   #Services .container {
     position: absolute;
@@ -4212,11 +4301,11 @@ nav.Navbar.nosmall > nav {
     width: fit-content;
     font-family: GillsHeavy;
     text-transform: uppercase;
-    font-size: 3.2rem;
+    font-size: 4.5vw;
     word-spacing: 7px;
     letter-spacing: -3px;
     color: #f3ebec;
-    margin: 6rem auto 2.5rem;
+    margin: 4rem auto 2.75rem;
   }
   #Services .container .OurServices {
     display: flex;
@@ -4225,31 +4314,31 @@ nav.Navbar.nosmall > nav {
     flex-direction: row;
     flex-wrap: wrap;
     position: relative;
-    padding: 0 7rem;
-    gap: 1.1rem;
+    padding: 0 3.5rem;
+    gap: 0.7rem;
     z-index: 2;
   }
   #Services .container .OurServices > div {
-    overflow: hidden;
-    border-radius: 4px;
-    width: 32%;
-    height: 62vh;
-    margin-bottom: 1.75rem;
     transition: all 250ms ease-in-out;
+    border-radius: 1.2vh;
+    height: 46vh;
+    margin-bottom: 0.8rem;
+    overflow: hidden;
+    width: 32%;
   }
   #Services .container .OurServices > div::before {
+    transition: all 150ms ease-in-out;
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0%;
     height: 0vh;
-    transition: all 150ms ease-in-out;
     background: linear-gradient(0deg, transparent, transparent);
     z-index: 1;
   }
   #Services .container .OurServices > div img {
-    height: 62vh;
+    height: 46vh;
     object-fit: cover;
     transition: all 250ms ease-in-out;
     width: 100%;
@@ -4263,25 +4352,48 @@ nav.Navbar.nosmall > nav {
   }
   #Services .container .OurServices > div:hover::before {
     width: 100%;
-    height: 65vh;
+    height: 46vh;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.9333333333), rgba(17, 17, 17, 0.4666666667));
   }
   #Services .container .OurServices > div:hover span {
     z-index: 2;
     position: absolute;
-    bottom: 1.4rem;
     transform: scale(1);
-    left: 1.8rem;
-    line-height: 1.4;
-    width: 60%;
+    left: 10%;
+    width: 80%;
     text-transform: uppercase;
-    font-size: 1.2rem;
-    font-family: GillsHeavy;
+    font-size: 1.5vw;
     font-family: Gills;
     font-weight: 800;
-    text-align: left;
+    margin: 0 auto;
+    text-align: center;
     letter-spacing: 0.3px;
     color: #faefec;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #Services {
+    height: 155vh;
+  }
+  #Services .Bg__Image {
+    height: 155vh;
+  }
+  #Services .container .OurServices {
+    padding: 0 5rem;
+  }
+  #Services .container .OurServices > div {
+    width: 32%;
+    height: 65vh;
+    margin-bottom: 2rem;
+  }
+  #Services .container .OurServices > div img {
+    height: 65vh;
+  }
+  #Services .container .OurServices > div:hover::before {
+    height: 65vh;
+  }
+  #Services .container .OurServices > div:hover span {
+    font-size: 1.2vw;
   }
 }
 #Contact {
@@ -4980,17 +5092,18 @@ textarea:focus-within) button {
     width: 5.5vw !important;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (min-height: 550px) {
   #Contact {
     position: relative;
+    height: 107vh;
   }
   #Contact .Bg__Image {
+    height: 107vh;
     z-index: 1;
-    height: 110vh;
   }
   #Contact .container {
     position: absolute;
-    top: 30vh;
+    top: 28vh;
     bottom: 0;
     display: flex;
     justify-content: space-between;
@@ -5183,7 +5296,7 @@ textarea:focus-within) button {
     font-size: 0.9rem;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    opacity: 0.7;
+    opacity: 0.5;
     font-family: Gills;
     margin-bottom: 0.5rem;
     margin-right: -0.1rem;
@@ -5193,23 +5306,22 @@ textarea:focus-within) button {
   }
   #Contact .container main .hero h2 {
     font-weight: 900;
-    line-height: 2.5rem;
-    width: 20rem;
+    line-height: 3.25rem;
+    width: 35vw;
     font-family: Bart;
     text-align: right;
     text-transform: uppercase;
-    font-size: 3.2rem;
+    font-size: 5.5vw;
     letter-spacing: 1px;
     color: #111;
   }
   #Contact .container main .hero h2::after {
     content: "";
-    width: 8rem;
-    height: 0.8rem;
     position: absolute;
     bottom: 0.1rem;
-    right: 1rem;
-    right: 0;
+    right: 0.1rem;
+    width: 10rem;
+    height: 1.1rem;
     border-radius: 1000px;
     z-index: -1;
     background-color: #f2d30b;
@@ -5220,7 +5332,6 @@ textarea:focus-within) button {
   }
   #Contact .container .footer footer {
     color: #f3ebec;
-    opacity: 0.8;
     opacity: 0.925;
     background: #2e0f10;
     filter: grayscale(-0.4) brightness(8);
@@ -5230,8 +5341,8 @@ textarea:focus-within) button {
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
-    padding: 1rem 3rem 0;
-    margin-bottom: -2rem;
+    padding: 1.75rem 2rem 0;
+    margin-bottom: -1rem;
   }
   #Contact .container .footer footer .logo {
     display: flex;
@@ -5266,20 +5377,38 @@ textarea:focus-within) button {
   }
   #Contact .container .footer footer .shortLinks h2,
   #Contact .container .footer footer .addresses h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: white;
     font-family: Gills;
     font-weight: 500;
     letter-spacing: 0.5px;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.7rem;
   }
   #Contact .container .footer footer .addresses {
     font-family: Gills;
     font-weight: 500;
   }
+  #Contact .container .footer footer .addresses::after {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    left: 0;
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 550px) and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
+  #Contact .container .footer footer .addresses::after {
+    width: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 550px) {
   #Contact .container .footer footer .addresses > div {
-    max-width: 450px;
+    max-width: 40vw;
     margin-bottom: 15px;
+  }
+  #Contact .container .footer footer .addresses > div p {
+    font-size: 1rem;
   }
   #Contact .container .footer footer .addresses > div > span {
     margin-bottom: 3px;
@@ -5287,17 +5416,17 @@ textarea:focus-within) button {
     font-weight: 400;
     font-family: system-ui;
     font-size: 0.825rem;
-    display: block;
+    display: inline;
   }
-  #Contact .container .footer footer .addresses > div:last-of-type {
-    margin-top: 1rem;
+  #Contact .container .footer footer .addresses > div > span:last-of-type {
+    padding-left: 7px;
   }
   #Contact .container .footer footer div.copyX {
     font-family: system-ui;
     font-weight: 100;
     font-size: 0.7rem;
     width: fit-content;
-    margin: 0.7rem auto 0 4rem;
+    margin: 0.7rem auto 0;
     color: #fce1d7;
     padding-bottom: 0.75rem;
     letter-spacing: 0.3px;
@@ -5323,6 +5452,383 @@ textarea:focus-within) button {
     width: 1.05rem !important;
   }
 }
+@media screen and (min-width: 1300px) {
+  #Contact .container main .hero p {
+    opacity: 0.35;
+  }
+  #Contact .container main .hero h2 {
+    line-height: 3.75rem;
+    width: 25rem;
+    font-size: 4.8vw;
+  }
+  #Contact .container main .hero h2::after {
+    width: 14rem;
+    height: 1.3rem;
+  }
+  #Contact .container .footer footer .addresses > div p {
+    font-size: 0.95rem;
+  }
+  #Contact .container .footer footer .addresses > div > span {
+    font-size: 0.75rem;
+  }
+}
+/*
+ #Contact {
+    position: relative;
+    .Bg__Image {
+      // height: 150vh;
+      z-index: 1;
+      height: 110vh;
+    }
+    // padding-top: 5rem;
+    .container {
+      position: absolute;
+      top: 30vh;
+      // right: 2.5rem;
+      bottom: 0;
+      @include flex($dir: column);
+      z-index: 2;
+      width: 100%;
+      main {
+        width: 100%;
+        @include flex;
+        .Form {
+          margin: auto;
+          margin-left: 7rem;
+          p {
+            @include flex;
+            font-family: Gills;
+            font-size: 1.15rem;
+            color: $brown;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 1px #3337;
+            opacity: 0.85;
+            letter-spacing: 0.25px;
+            svg {
+              padding: 10px;
+              @include trans;
+              opacity: 0.85;
+              font-size: 1.2rem;
+              border-radius: 1000px;
+              background-color: #541c1d3a;
+              box-shadow: 0 0 10px #541c1d2a;
+              &:hover {
+                cursor: pointer;
+                box-shadow: 0 0 20px 0.5px #541c1d7a;
+                opacity: 1;
+                color: $dark_brown;
+                background-color: #541c1d7a;
+              }
+            }
+          }
+          .formGroup {
+            box-shadow: 0 0 15px 1px #541c1d51;
+            padding: 0.5rem;
+            padding-left: 1.8rem;
+            border: 2px solid #541c1d7a;
+            border-radius: 1000px;
+            @include trans;
+            @include flex;
+            input {
+              border: none;
+              width: 20rem;
+              @include trans;
+              height: 1.5rem;
+              background: transparent;
+              font-size: 1.1rem;
+              font-family: Gills;
+              opacity: 0.9;
+              color: $brown;
+              &::placeholder {
+                word-spacing: 2px;
+                opacity: 0.4;
+                color: $dark_brown;
+                font-size: 1.02rem;
+                font-family: Gills;
+              }
+              &:focus,
+              &:focus-visible,
+              &:focus-within {
+                border: none;
+                outline: none;
+              }
+            }
+            button {
+              border: none;
+              outline: none;
+              color: transparent;
+              background-color: $brown;
+              opacity: 0.5;
+              padding: 4px 5px 3px;
+              border-radius: 1000px;
+              &:focus,
+              &:focus-visible,
+              &:focus-within {
+                outline: none;
+                background: #1115;
+                box-shadow: 0 0.5px 10px 0.25px #1115;
+              }
+              svg {
+                font-size: 1.5rem;
+                color: $pinkish;
+                @include trans;
+              }
+              @include trans;
+            }
+            &:hover {
+              border: 2px solid #541c1dca;
+              input {
+                &::placeholder {
+                }
+              }
+              button {
+                opacity: 0.7;
+                transform: scale(1.02);
+                svg {
+                }
+              }
+            }
+            &:has(input:focus, input:focus-visible, input:focus-within) {
+              border: 2px solid #541c1dca;
+              input {
+                background: transparent;
+              }
+              button {
+                opacity: 0.85;
+                transform: scale(1);
+              }
+            }
+            &.disappear {
+              display: none;
+            }
+            &.message {
+              border-radius: 20px;
+              margin-top: 0.5rem;
+              flex-direction: column;
+              padding: 1rem 2rem;
+              textarea {
+                border: none;
+                width: 25rem;
+                height: 7rem;
+                @include trans;
+                background: transparent;
+                font-size: 1.1rem;
+                opacity: 0.9;
+                color: $brown;
+                &::after {
+                }
+                &::placeholder {
+                  word-spacing: 3px;
+                  opacity: 0.4;
+                  color: $dark_brown;
+                  font-size: 1.03rem;
+                }
+                &:focus,
+                &:focus-visible,
+                &:focus-within {
+                  border: none;
+                  outline: none;
+                }
+              }
+              button {
+                color: $pinkish;
+                font-size: 0.8rem;
+                @include trans;
+                @include flex;
+                padding: 10px 25px 9px;
+                border-radius: 10px;
+                border-radius: 7px;
+                font-size: 1.1rem;
+                svg {
+                  margin-left: 0.4rem;
+                  font-size: 1.1rem;
+                  @include trans;
+                }
+              }
+              &:hover {
+                input {
+                  &::placeholder {
+                  }
+                }
+                button {
+                  svg {
+                  }
+                }
+              }
+              &:has(
+                  textarea:focus,
+                  textarea:focus-visible,
+                  textarea:focus-within
+                ) {
+                border: 2px solid #541c1dca;
+                textarea {
+                  background: transparent;
+                }
+
+                button {
+                  opacity: 1;
+                  transform: scale(1);
+                }
+              }
+            }
+          }
+        }
+        .hero {
+          margin: 0 3.5rem 4rem auto;
+          width: fit-content;
+          text-align: center;
+          p {
+            color: $black3;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            opacity: 0.7;
+            font-family: Gills;
+            margin-bottom: 0.5rem;
+            margin-right: -0.1rem;
+            text-align: right;
+            text-shadow: 0 0 30px #333;
+            -webkit-text-stroke: 1px $black3;
+          }
+          h2 {
+            font-weight: 900;
+            line-height: 2.5rem;
+            width: 20rem;
+            font-family: Bart;
+            text-align: right;
+            text-transform: uppercase;
+            font-size: 3.2rem;
+            letter-spacing: 1px;
+            color: $black;
+            &::after {
+              content: "";
+              width: 8rem;
+              height: 0.8rem;
+              position: absolute;
+              bottom: 0.1rem;
+              right: 1rem;
+              right: 0;
+              border-radius: 1000px;
+              z-index: -1;
+              background-color: $yellow2;
+              border: 2px solid $deep_yellow;
+            }
+          }
+        }
+      }
+
+      .footer {
+        width: 100%;
+        footer {
+          color: $white;
+          opacity: 0.8;
+          opacity: 0.925;
+          background: $dark_brown;
+          filter: grayscale(-0.4) brightness(8);
+          .block {
+            @include flex($align: flex-start);
+            padding: 1rem 3rem 0;
+            margin-bottom: -2rem;
+          }
+          .logo {
+            @include flex;
+            text-transform: uppercase;
+            font-weight: 900;
+            width: 8rem;
+            width: 15rem;
+            color: $pink;
+            text-align: center;
+            padding: 0.5rem 0 0.5rem 1rem;
+            big {
+              font-size: 2.5rem;
+              color: $deep_yellow;
+            }
+            p {
+              font-family: Bart;
+              padding-left: 1rem;
+              font-size: 1.5rem;
+              letter-spacing: 1.2px;
+              word-spacing: -10px;
+            }
+            span {
+              letter-spacing: 0.9px;
+              word-spacing: 0px;
+              font-family: Bart;
+              font-weight: 400;
+              font-size: 0.9rem;
+            }
+          }
+          //  REMOVED IMPORTS
+          .shortLinks,
+          .addresses {
+            h2 {
+              font-size: 1.2rem;
+              color: white;
+              font-family: Gills;
+              font-weight: 500;
+              letter-spacing: 0.5px;
+              margin-bottom: 0.75rem;
+            }
+          }
+          .addresses {
+            font-family: Gills;
+            font-weight: 500;
+            > div {
+              max-width: 450px;
+              margin-bottom: 15px;
+              > span {
+                margin-bottom: 3px;
+                opacity: 0.7;
+                font-weight: 400;
+                font-family: system-ui;
+                font-size: 0.825rem;
+                // font-size: 0.25rem;
+                display: block;
+              }
+              &:last-of-type {
+                margin-top: 1rem;
+              }
+            }
+          }
+          div.copyX {
+            font-family: system-ui;
+            font-weight: 100;
+            font-size: 0.7rem;
+            width: fit-content;
+            margin: 0.7rem auto 0 4rem;
+            color: $pinkish;
+            padding-bottom: 0.75rem;
+            letter-spacing: 0.3px;
+          }
+        }
+      }
+    }
+
+    //TOASTIFY EDITS
+  }
+  .Toastify {
+    > div {
+      top: 10vh;
+      right: auto;
+      left: 2rem;
+      > div {
+        border-radius: 10px;
+        font-family: Gills;
+        font-size: 1.05rem;
+        letter-spacing: 0.15px;
+        color: $black;
+        box-shadow: 1px 2px 20px 0.5px $white;
+        padding-left: 0.75rem;
+      }
+    }
+  }
+  .Toastify__progress-bar {
+    height: 3px !important;
+  }
+  .Toastify__toast-icon svg {
+    width: 1.05rem !important;
+  }
+*/
 .socials {
   display: flex;
   justify-content: space-between;
@@ -5468,7 +5974,7 @@ textarea:focus-within) button {
     font-size: 20px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (min-height: 550px) {
   .socials {
     display: flex;
     justify-content: center;
@@ -5514,6 +6020,99 @@ textarea:focus-within) button {
     transform: scale(1.12);
   }
 }
+@media screen and (min-width: 1300px) {
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0.25rem 0 0 1.2rem;
+    gap: 0.9rem;
+    gap: 1rem;
+  }
+  .socials span a {
+    background-color: #541c1d;
+    border-radius: 1000px;
+    opacity: 0.7;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    transition: all 150ms ease-in-out;
+  }
+  .socials span a svg {
+    margin: auto;
+    transition: all 250ms ease-in-out;
+    vertical-align: middle;
+    color: #fce1d7;
+    opacity: 0.8;
+    font-size: 1.45rem;
+  }
+  .socials span a:first-child svg {
+    font-size: 1.18rem;
+  }
+  .socials span a:last-child svg {
+    font-size: 1.3rem;
+  }
+  .socials span a:hover {
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 1px 2px 8px 0.1px rgba(0, 0, 0, 0.2);
+  }
+  .socials span a:hover svg {
+    color: #faefec;
+    transform: scale(1.12);
+  }
+}
+/*
+ .socials {
+    @include flex($jus: center);
+    padding: 0.25rem 0 0 1.2rem;
+    gap: 0.9rem;
+    gap: 1rem;
+    // padding: 2rem 0 1.5rem 3rem;
+    span a {
+      background-color: $brown;
+      border-radius: 1000px;
+      // padding: 0.5rem;
+      // margin-right: 0.7rem;
+      opacity: 0.7;
+      width: 2.5rem;
+      height: 2.5rem;
+      // display: block;
+      @include flex;
+      @include transShort;
+      svg {
+        margin: auto;
+        @include trans;
+        vertical-align: middle;
+        color: $pinkish;
+        opacity: 0.8;
+        font-size: 1.45rem;
+      }
+      &:first-child svg {
+        font-size: 1.18rem;
+      }
+      &:last-child svg {
+        font-size: 1.3rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+        box-shadow: 1px 2px 8px 0.1px #0003;
+        // box-shadow: 1px 2px 5px #2e0f10a9;
+        svg {
+          color: $pinkish_Light;
+          // font-size: 1.4rem;
+          transform: scale(1.12);
+        }
+      }
+    }
+  }
+*/
 .shortLinks {
   margin: 0.5rem auto 1.2rem 0;
 }
@@ -5714,6 +6313,21 @@ textarea:focus-within) button {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
+  .shortLinks::after {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    left: 0;
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
+  .shortLinks::after {
+    width: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
   .shortLinks div {
     min-height: 1.6rem;
     text-align: right;
@@ -5726,6 +6340,8 @@ textarea:focus-within) button {
     bottom: -3.5px;
     left: -4px;
   }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
   .shortLinks::after {
     position: absolute;
     bottom: 0;
@@ -5734,7 +6350,7 @@ textarea:focus-within) button {
     opacity: 0;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
+@media screen and (min-width: 769px) and (max-width: 1023px) and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
   .shortLinks::after {
     width: 0;
     left: 0;
@@ -5753,6 +6369,12 @@ textarea:focus-within) button {
     bottom: -3.5px;
     left: -4px;
   }
+}
+@media screen and (min-width: 1024px) and (min-height: 550px) {
+  .shortLinks {
+    margin: 0;
+    padding-right: 2rem;
+  }
   .shortLinks::after {
     position: absolute;
     bottom: 0;
@@ -5761,26 +6383,25 @@ textarea:focus-within) button {
     opacity: 0;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1023px) and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
+@media screen and (min-width: 1024px) and (min-height: 550px) and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
   .shortLinks::after {
     width: 0;
     left: 0;
   }
 }
-@media screen and (min-width: 1024px) {
-  .shortLinks {
-    padding-right: 5rem;
+@media screen and (min-width: 1024px) and (min-height: 550px) {
+  .shortLinks h2, .shortLinks > div {
+    width: fit-content;
+    margin: 0 0 0 auto;
   }
   .shortLinks div {
-    margin-bottom: 10px;
-    width: 10rem;
     max-width: 10rem;
-    opacity: 0.7;
+    opacity: 0.825;
     max-height: 1.2rem;
     transition: all 250ms ease-in-out;
   }
   .shortLinks div span {
-    font-size: 16px;
+    font-size: 17px;
     font-family: Gills;
     color: #fce1d7;
   }
@@ -5869,3 +6490,163 @@ textarea:focus-within) button {
     border: none;
   }
 }
+@media screen and (min-width: 1300px) {
+  .shortLinks div span {
+    font-size: 16px;
+  }
+  .Privacy,
+  .Terms,
+  .Faqs {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7333333333);
+    backdrop-filter: blur(3px);
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+  }
+  .Privacy.noshow,
+  .Terms.noshow,
+  .Faqs.noshow {
+    display: none;
+  }
+  .Privacy main,
+  .Terms main,
+  .Faqs main {
+    background: #fff;
+    border-radius: 15px;
+    z-index: 6;
+    margin: 4rem auto;
+    width: 75%;
+    padding: 2rem 5rem 7rem;
+    box-shadow: 1px 3px 15px 0.5px #fafafa;
+  }
+  .Privacy main header,
+  .Terms main header,
+  .Faqs main header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 2rem auto 1rem;
+  }
+  .Privacy main header aside button,
+  .Terms main header aside button,
+  .Faqs main header aside button {
+    padding: 8px 9px 3px;
+    background: transparent;
+    border: 1px solid #fbfbfb;
+    border-radius: 30px;
+    font-size: 1.4rem;
+    color: #aaa;
+    box-shadow: 1px 1px 5px 0.5px rgba(238, 238, 238, 0.2666666667);
+    transition: all 250ms ease-in-out;
+  }
+  .Privacy main header aside button:hover,
+  .Terms main header aside button:hover,
+  .Faqs main header aside button:hover {
+    padding: 9px 10px 4px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    color: #111;
+    box-shadow: 1px 1px 5px 0.5px rgba(204, 204, 204, 0.2666666667);
+  }
+  .Privacy main hr,
+  .Terms main hr,
+  .Faqs main hr {
+    margin-bottom: 2rem;
+    background-color: #ccc;
+    opacity: 0.18;
+    height: 1.5px;
+    border: none;
+  }
+}
+/*
+ .shortLinks {
+    padding-right: 5rem;
+    div {
+      margin-bottom: 10px;
+      // margin-bottom: 1rem;
+      width: 10rem;
+      max-width: 10rem;
+      opacity: 0.7;
+      max-height: 1.2rem;
+      @include trans;
+      span {
+        font-size: 16px;
+        font-family: Gills;
+        color: $pinkish;
+        // margin-bottom: 20px;
+        &::before {
+          @include trans;
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          left: 1px;
+          width: 0%;
+          height: 2px;
+          background-color: $pinkish;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+        color: white;
+        font-size: 18px;
+        span::before {
+          width: 98%;
+        }
+      }
+    }
+  }
+  .Privacy,
+  .Terms,
+  .Faqs {
+    &.noshow {
+      display: none;
+    }
+    width: 100%;
+    background: #fffb;
+    backdrop-filter: blur(3px);
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    main {
+      background: #fff;
+      border-radius: 15px;
+      z-index: 6;
+      margin: 4rem auto;
+      width: 75%;
+      padding: 2rem 5rem 7rem;
+      box-shadow: 1px 3px 15px 0.5px #fafafa;
+      header {
+        @include flex;
+        margin: 2rem auto 1rem;
+        aside button {
+          padding: 8px 9px 3px;
+          background: transparent;
+          border: 1px solid #fbfbfb;
+          border-radius: 30px;
+          font-size: 1.4rem;
+          color: #aaa;
+          box-shadow: 1px 1px 5px 0.5px #eee4;
+          @include trans;
+          &:hover {
+            padding: 9px 10px 4px;
+            cursor: pointer;
+            border: 1px solid #eee;
+            color: #111;
+            box-shadow: 1px 1px 5px 0.5px #ccc4;
+          }
+        }
+      }
+      hr {
+        margin-bottom: 2rem;
+        background-color: $light_gray;
+        opacity: 0.18;
+        height: 1.5px;
+        border: none;
+        // margin: 0 0 10px 0;
+      }
+    }
+  }
+*/
