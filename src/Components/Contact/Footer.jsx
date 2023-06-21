@@ -1,15 +1,18 @@
 import React from "react";
 import Socials from "./Socials";
 import Links from "./Links";
+import Logo from "../../Images/P-Logo.png";
 
-const Footer = () => {
+const Footer = ({ props }) => {
+  console.log(props);
   return (
     <footer>
       <div className="block">
         <div>
           {/* <div className='logoNsocials'> */}
           <div className="logo">
-            <big>p</big>
+            <img src={Logo} alt="Logo" />
+            {/* <big>p</big> */}
             <p>
               platinum ville <span> mines limited</span>
             </p>
@@ -38,7 +41,7 @@ const Footer = () => {
             <span>+234 801 253 6589, +234 801 253 6589</span>
           </div> */}
         </div>
-        <Links />
+        <Links props={props} />
       </div>
       {/* <hr /> */}
       <div className="copyX">

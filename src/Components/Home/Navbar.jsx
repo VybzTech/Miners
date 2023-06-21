@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 // import { withRouter } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { CgClose } from "react-icons/cg";
+import Logo from "../../Images/P-Logo.png";
 // const Navbar = withRouter(({ history }) => {
 const Navbar = ({ navs, activeNav, set }) => {
   const [lightNav, setLightNav] = useState(false);
@@ -27,7 +28,9 @@ const Navbar = ({ navs, activeNav, set }) => {
       }`}
     >
       <div className="Logo" onClick={() => window.scroll(0, 0)}>
-        <span>p</span>
+        <span>
+          <img src={Logo} alt="Logo" />
+        </span>
         <p>Platinum Ville mines</p>
       </div>
       <nav>

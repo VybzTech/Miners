@@ -770,8 +770,11 @@ nav.Navbar {
       // position: fixed;
       // box-shadow: 0 3px 15px #eee5;
       .Logo {
-        // span {
-        // }
+        span {
+          img {
+            // width: 3vw;
+          }
+        }
         // p {
         //   color: $black;
         // }
@@ -795,27 +798,31 @@ nav.Navbar {
       }
     }
     //END SCROLL CHANGES
-    // .Logo {
-    //   @include flex;
-    //   padding-left: 2.5rem;
-    //   color: white;
-    //   span {
-    //     // font-size: 2.5rem;
-    //     font-size: 2.8vw;
-    //     color: $deep_yellow;
-    //   }
-    //   p {
-    //     font-family: Bart;
-    //     text-transform: uppercase;
-    //     font-size: 1.3vw;
-    //     letter-spacing: 2px;
-    //     height: fit-content;
-    //     color: white;
-    //     width: 8rem;
-    //     text-align: center;
-    //     display: block;
-    //   }
-    // }
+    .Logo {
+      //   @include flex;
+      //   padding-left: 2.5rem;
+      //   color: white;
+      span {
+        //     // font-size: 2.5rem;
+        //     font-size: 2.8vw;
+        //     color: $deep_yellow;
+        img {
+          margin-top: 10px;
+          width: 1.9vw;
+        }
+      }
+      //   p {
+      //     font-family: Bart;
+      //     text-transform: uppercase;
+      //     font-size: 1.3vw;
+      //     letter-spacing: 2px;
+      //     height: fit-content;
+      //     color: white;
+      //     width: 8rem;
+      //     text-align: center;
+      //     display: block;
+      //   }
+    }
     > nav {
       // flex-direction: row;
       // height: auto !important;

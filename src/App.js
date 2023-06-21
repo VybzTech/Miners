@@ -9,12 +9,32 @@ import Services from "./Components/Services/Services";
 import ErrorHandler from "./Components/ErrorHandler";
 import Navbar from "./Components/Home/Navbar";
 
+// import React, { Component  } from 'react'
+// // useEffect, useState
+// export class App extends Component {
+//   componentDidMount(){
+
+//   }
+
+//   render() {
+//     return (
+//       <div>App</div>
+//     )
+//   }
+// }
+
+// export default App
+
 function App() {
   const [activeNav, set] = useState("Home");
   const navs = ["Home", "About", "Products", "Services", "Contact"];
-
+  // console.log(document?.getElementById("portal"), "portal div");
   useEffect(() => {
-    navs?.map((nav) => {
+    navs?.forEach((nav) => {
+      // console.log(document.querySelector(`section#${nav}`));
+      const elem =
+        document?.querySelector(`section#${nav}`) ??
+        document?.getElementById("portal");
       var observer = new IntersectionObserver(onIntersection, {
         root: null,
         threshold: 0.5,
@@ -26,7 +46,7 @@ function App() {
         }
       }
       //   console.log(nav);
-      observer.observe(window?.document?.querySelector(`section#${nav}`));
+      observer.observe(elem);
     });
     window.addEventListener("scroll", () => {
       if (document.documentElement.scrollTop === 0) {
@@ -36,30 +56,35 @@ function App() {
     return () => {
       window.removeEventListener("scroll", () => {});
     };
-  }, [navs]);
+  }, []);
 
   return (
-    <div className="App">
-      <Navbar navs={navs} activeNav={activeNav} set={set} />
-      <ErrorHandler>
-        <Home />
-      </ErrorHandler>
-      <ErrorHandler>
-        <About />
-      </ErrorHandler>
-      <ErrorHandler>
-        <Lithium />
-      </ErrorHandler>
-      <ErrorHandler>
-        <Products />
-      </ErrorHandler>
-      <ErrorHandler>
-        <Services />
-      </ErrorHandler>
-      <ErrorHandler>
-        <Contact />
-      </ErrorHandler>
-    </div>
+    <>
+      <div className="App">
+        <Navbar navs={navs} activeNav={activeNav} set={set} />
+        <ErrorHandler>
+          <Home />
+        </ErrorHandler>
+        <ErrorHandler>
+          <About />
+        </ErrorHandler>
+        <ErrorHandler>
+          <Lithium />
+        </ErrorHandler>
+        <ErrorHandler>
+          <Products />
+        </ErrorHandler>
+        <ErrorHandler>
+          <Services />
+        </ErrorHandler>
+        <ErrorHandler>
+          <Contact />
+        </ErrorHandler>
+      </div>
+      {/* <ErrorHandler>
+        <div id="portal" />
+      </ErrorHandler> */}
+    </>
   );
 }
 

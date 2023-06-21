@@ -37,16 +37,16 @@ img {
 
 //   background: #333a;
 //   &-track {
-  //     width: 10px;
-  //   }
-  //   &-button {
-  //   }
-  //   &-thumb {
-  //     width: 10px;
-  //     background: #111a;
-  //   }
+//     width: 10px;
+//   }
+//   &-button {
+//   }
+//   &-thumb {
+//     width: 10px;
+//     background: #111a;
+//   }
 //   *::-webkit-scrollbar {
-  // padding-top: 13vh;
+// padding-top: 13vh;
 //   padding-top: 13vh;
 // }
 
@@ -68,10 +68,15 @@ input:-internal-autofill-selected {
 }
 
 //  PORTAL
+.portal,
 #portal {
   position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
 }
 
 //  HOME STYLES
