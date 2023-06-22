@@ -1,0 +1,15 @@
+{
+  "short_name": "Platinum Miners App",
+  "name": "Platinum Ville Miners Limited First App v1.0",
+  "icons": [
+    {
+      "src": "P-Logo.png",
+      "type": "image/png",
+      "sizes": "298x298"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#fefefe"
+}

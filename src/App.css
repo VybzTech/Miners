@@ -61,7 +61,7 @@
 }
 
 .App {
-  overflow: hidden auto;
+  overflow: hidden;
 }
 
 img {
@@ -85,17 +85,6 @@ input:-internal-autofill-selected {
   height: 100vh;
 }
 
-.portal,
-#portal {
-  position: absolute;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 100;
-}
-
 nav.Navbar {
   display: flex;
   justify-content: space-between;
@@ -115,9 +104,8 @@ nav.Navbar .Logo {
   padding-left: 1.2rem;
   z-index: 5;
 }
-nav.Navbar .Logo span {
-  font-size: 7vw;
-  color: #f1c30b;
+nav.Navbar .Logo span img {
+  width: 5vw;
 }
 nav.Navbar .Logo p {
   display: none;
@@ -6526,7 +6514,7 @@ textarea:focus-within) button {
     backdrop-filter: blur(3px);
     height: 100vh;
     position: fixed;
-    z-index: 5;
+    z-index: 50;
   }
   .Privacy.noshow,
   .Terms.noshow,
@@ -6583,7 +6571,7 @@ textarea:focus-within) button {
   .Privacy > main hr,
   .Terms > main hr,
   .Faqs > main hr {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.45rem;
     background-color: #ccc;
     opacity: 0.05;
     height: 1.5px;
@@ -6618,18 +6606,41 @@ textarea:focus-within) button {
   .Faqs > main .wrapper .container {
     margin-bottom: 1.5rem;
   }
-  .Privacy > main .wrapper .container::first-line,
-  .Terms > main .wrapper .container::first-line,
-  .Faqs > main .wrapper .container::first-line {
-    padding-left: 70px;
+  .Privacy > main .wrapper .container p,
+  .Terms > main .wrapper .container p,
+  .Faqs > main .wrapper .container p {
+    letter-spacing: -0.2px;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    font-family: system-ui;
+    word-spacing: 1px;
+  }
+  .Privacy > main .wrapper .container p::first-letter,
+  .Terms > main .wrapper .container p::first-letter,
+  .Faqs > main .wrapper .container p::first-letter {
+    font-size: 1rem;
+    padding-left: 7px;
   }
   .Privacy > main span,
   .Terms > main span,
   .Faqs > main span {
     font-style: italic;
-    font-size: 0.6rem;
+    font-size: 0.65rem;
+    opacity: 0.7;
+    display: block;
+    padding-top: 0.9rem;
   }
 }
+.portal,
+#portal {
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
 /*
  .shortLinks {
     padding-right: 5rem;

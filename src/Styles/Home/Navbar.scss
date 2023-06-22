@@ -48,9 +48,10 @@ nav.Navbar {
   .Logo {
     padding-left: 1.2rem;
     z-index: 5;
-    span {
-      font-size: 7vw;
-      color: $deep_yellow;
+    span img {
+      width: 5vw;
+      // font-size: 7vw;
+      // color: $deep_yellow;
     }
     p {
       display: none;

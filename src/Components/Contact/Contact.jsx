@@ -12,7 +12,7 @@ import Terms from "./Terms";
 const Contact = () => {
   const [showFaqs, setShowFaqs] = useState(false);
   const [showPrivacy, setShowPrivacy] = useState(false);
-  const [showTerms, setShowTerms] = useState(true);
+  const [showTerms, setShowTerms] = useState(false);
   const Props = {
     showFaqs: showFaqs,
     showPrivacy: showPrivacy,

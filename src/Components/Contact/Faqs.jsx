@@ -3,9 +3,11 @@ import ReactDOM from "react-dom";
 import { MdClose } from "react-icons/md";
 
 const Faqs = ({ showFaqs, setShowFaqs }) => {
-  showFaqs ? (
-    // return
-    ReactDOM.createPortal(
+  if (showFaqs) {
+    return (
+      // showFaqs ? (
+      //   // return
+      //   ReactDOM.createPortal(
       <div
         className={`Faqs ${showFaqs ? "show" : "noshow"}`}
         // onClick={() => setShowFaqs(!showFaqs)}
@@ -17,22 +19,32 @@ const Faqs = ({ showFaqs, setShowFaqs }) => {
         >
           <header>
             <h1>FAQs</h1>
+            <h2>(Frequently Asked Questions)</h2>
             <aside>
-              <button onClick={() => setShowFaqs(!showFaqs)}>
+              <button
+                onClick={() => {
+                  setShowFaqs((s) => (s = !s));
+                }}
+              >
                 {/* <button onClick={()={setShowFaqs((s)=>s=!s)}}> */}
                 <MdClose />
               </button>
             </aside>
           </header>
           <hr />
-          <div className="container">There's no content yet....</div>
+          <div className="wrapper">
+            <div className="container">
+              <h2>Introduction</h2>
+              <p>{`
+  `}</p>
+            </div>
+          </div>
+          <span>Last updated on June 21, 2023.</span>
         </main>
-      </div>,
-      document?.getElementById("portal")
-    )
-  ) : (
-    <></>
-  );
+      </div>
+    );
+  }
+  return <></>;
 };
 
 export default Faqs;
