@@ -28,9 +28,9 @@ const Navbar = ({ navs, activeNav, set }) => {
       }`}
     >
       <div className="Logo" onClick={() => window.scroll(0, 0)}>
-        <span>
+        <div>
           <img src={Logo} alt="Logo" />
-        </span>
+        </div>
         <p>Platinum Ville mines</p>
       </div>
       <nav>

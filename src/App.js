@@ -8,6 +8,7 @@ import Products from "./Components/Products/Products";
 import Services from "./Components/Services/Services";
 import ErrorHandler from "./Components/ErrorHandler";
 import Navbar from "./Components/Home/Navbar";
+import TopBtn from "./Components/Home/TopBtn";
 
 // import React, { Component  } from 'react'
 // // useEffect, useState
@@ -80,6 +81,7 @@ function App() {
         <ErrorHandler>
           <Contact />
         </ErrorHandler>
+        {/* <TopBtn /> */}
       </div>
       {/* <ErrorHandler>
         <div id="portal" />

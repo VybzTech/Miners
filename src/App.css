@@ -85,6 +85,38 @@ input:-internal-autofill-selected {
   height: 100vh;
 }
 
+.TopBtn {
+  position: fixed;
+  bottom: 5vh;
+  right: 4vw;
+  width: fit-content;
+  padding: 0.4rem 0.48rem 0.25rem;
+  border-radius: 1000px;
+  background-color: white;
+  z-index: 50;
+  box-shadow: 0 0 5px 0.01px rgba(68, 68, 68, 0.4666666667);
+  transition: all 250ms ease-in-out;
+  visibility: visible;
+  opacity: 1;
+}
+.TopBtn svg {
+  transition: all 250ms ease-in-out;
+  font-size: 0.985rem;
+  color: #aaa;
+  transform: rotate(-90deg);
+}
+.TopBtn:hover {
+  box-shadow: 1px 2px 10px 0.1px rgba(17, 17, 17, 0.6666666667);
+}
+.TopBtn:hover svg {
+  font-size: 1rem;
+  color: black;
+}
+.TopBtn.noShow {
+  opacity: 0;
+  visibility: hidden;
+}
+
 nav.Navbar {
   display: flex;
   justify-content: space-between;
@@ -94,18 +126,18 @@ nav.Navbar {
   width: 100%;
   top: 0;
   left: 0;
-  height: 10vh;
+  height: 11vh;
   background: white;
   position: fixed;
   box-shadow: 0 3px 15px rgba(204, 204, 204, 0.6666666667);
   transition: all 250ms ease-in-out;
 }
 nav.Navbar .Logo {
-  padding-left: 1.2rem;
+  padding-left: 1.5rem;
   z-index: 5;
 }
-nav.Navbar .Logo span img {
-  width: 5vw;
+nav.Navbar .Logo img {
+  width: 4.5vw;
 }
 nav.Navbar .Logo p {
   display: none;
@@ -119,8 +151,8 @@ nav.Navbar > nav {
   align-items: center;
   flex-direction: column;
   transition: all 450ms ease-in-out;
-  height: 50vh;
   height: 42vh;
+  height: 80vh;
   width: 100%;
   left: 0;
   transform: translateY(0%);
@@ -389,9 +421,8 @@ nav.Navbar.nosmall > nav {
     padding-left: 2.5rem;
     color: white;
   }
-  nav.Navbar .Logo span {
+  nav.Navbar .Logo img {
     font-size: 3vw;
-    color: #f1c30b;
   }
   nav.Navbar .Logo p {
     font-family: Bart;
@@ -494,9 +525,8 @@ nav.Navbar.nosmall > nav {
     padding-left: 2.5rem;
     color: white;
   }
-  nav.Navbar .Logo span {
+  nav.Navbar .Logo img {
     font-size: 2.8vw;
-    color: #f1c30b;
   }
   nav.Navbar .Logo p {
     font-family: Bart;
@@ -556,7 +586,7 @@ nav.Navbar.nosmall > nav {
   }
 }
 @media screen and (min-width: 1300px) {
-  nav.Navbar .Logo span img {
+  nav.Navbar .Logo img {
     margin-top: 10px;
     width: 1.9vw;
   }
@@ -577,6 +607,51 @@ nav.Navbar.nosmall > nav {
   nav.Navbar > nav a.screen::after {
     top: -0.275rem;
     left: -0.55rem;
+  }
+}
+@media screen and (min-height: 320px) and (max-height: 450px) {
+  nav.Navbar {
+    height: 12vh;
+  }
+  nav.Navbar .Logo {
+    padding-left: 1.75rem;
+  }
+  nav.Navbar .Logo img {
+    width: 3vw;
+  }
+  nav.Navbar > nav {
+    top: 12vh;
+    height: 78vh;
+  }
+  nav.Navbar > nav a {
+    font-size: 3.3vw;
+  }
+  nav.Navbar > nav a:hover {
+    font-size: 3.5vw;
+  }
+  nav.Navbar > nav a:focus, nav.Navbar > nav a:focus-visible, nav.Navbar > nav a:focus-within {
+    font-size: 3.5vw;
+  }
+  nav.Navbar > nav a.screen {
+    font-size: 3.8vw;
+  }
+  nav.Navbar > nav a.screen::after {
+    top: -0.1rem;
+    left: -0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  nav.Navbar .hamburger {
+    padding: 4px 4px 1px;
+  }
+  nav.Navbar .hamburger svg {
+    font-size: 3.25vw;
+  }
+  nav.Navbar .hamburger:hover {
+    padding: 5px 6px 2px;
+  }
+  nav.Navbar .hamburger:hover svg {
+    font-size: 3.3vw;
   }
 }
 #Home {
@@ -617,8 +692,8 @@ nav.Navbar.nosmall > nav {
 #Home .swiper-pagination-bullet-active::after {
   content: "";
   position: absolute;
-  top: -3.5px;
-  left: -3px;
+  top: -34%;
+  left: -33.5%;
   width: 14px;
   height: 14px;
   border-radius: 1000px;
@@ -1235,6 +1310,17 @@ nav.Navbar.nosmall > nav {
   #Home main img[alt=mouse] {
     bottom: 12vh;
     width: 1.35vw;
+  }
+}
+@media screen and (min-height: 320px) and (max-height: 450px) {
+  #Home {
+    height: 88vh;
+  }
+  #Home main h1 {
+    font-size: 9vw;
+  }
+  #Home main h1:last-of-type {
+    font-size: 16vw;
   }
 }
 /*

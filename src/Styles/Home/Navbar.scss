@@ -33,6 +33,41 @@
 //   }
 // }
 
+//  TOP BUTTON
+.TopBtn {
+  position: fixed;
+  bottom: 5vh;
+  right: 4vw;
+  width: fit-content;
+  padding: 0.4rem 0.48rem 0.25rem;
+  border-radius: 1000px;
+  background-color: white;
+  z-index: 50;
+  box-shadow: 0 0 5px 0.01px #4447;
+  @include trans;
+  // height: 100vh;
+  svg {
+    @include trans;
+    font-size: 0.985rem;
+    color: $gray;
+    transform: rotate(-90deg);
+  }
+  &:hover {
+    box-shadow: 1px 2px 10px 0.1px #111a;
+    svg {
+      font-size: 1rem;
+      color: black;
+    }
+  }
+  &.noShow {
+    opacity: 0;
+    visibility: hidden;
+    // display: none;
+  }
+  visibility: visible;
+  opacity: 1;
+}
+
 //  Small iPhone:
 nav.Navbar {
   @include flex;
@@ -40,16 +75,16 @@ nav.Navbar {
   width: 100%;
   top: 0;
   left: 0;
-  height: 10vh;
+  height: 11vh;
   background: white;
   position: fixed;
   box-shadow: 0 3px 15px #ccca;
   @include trans;
   .Logo {
-    padding-left: 1.2rem;
+    padding-left: 1.5rem;
     z-index: 5;
-    span img {
-      width: 5vw;
+    img {
+      width: 4.5vw;
       // font-size: 7vw;
       // color: $deep_yellow;
     }
@@ -63,8 +98,8 @@ nav.Navbar {
     top: 10vh;
     @include flex($dir: column, $jus: center);
     @include transLong;
-    height: 50vh;
     height: 42vh;
+    height: 80vh;
     width: 100%;
     left: 0;
     transform: translateY(0%);
@@ -161,10 +196,10 @@ nav.Navbar {
     .Logo {
       // padding-left: 1.2rem;
       // z-index: 5;
-      span {
-        // font-size: 7vw;
-        // color: $deep_yellow;
-      }
+      // span {
+      // font-size: 7vw;
+      // color: $deep_yellow;
+      // }
       // p {
       //   display: none;
       // }
@@ -261,8 +296,8 @@ nav.Navbar {
 @media screen and (min-width: 375px) and (max-height: 667px) {
   nav.Navbar {
     .Logo {
-      span {
-      }
+      // span {
+      // }
       p {
       }
     }
@@ -543,10 +578,10 @@ nav.Navbar {
       @include flex;
       padding-left: 2.5rem;
       color: white;
-      span {
+      img {
         // font-size: 2.5rem;
         font-size: 3vw;
-        color: $deep_yellow;
+        // color: $deep_yellow;
       }
       p {
         font-family: Bart;
@@ -674,10 +709,10 @@ nav.Navbar {
       @include flex;
       padding-left: 2.5rem;
       color: white;
-      span {
+      img {
         // font-size: 2.5rem;
         font-size: 2.8vw;
-        color: $deep_yellow;
+        // color: $deep_yellow;
       }
       p {
         font-family: Bart;
@@ -752,6 +787,7 @@ nav.Navbar {
     }
   }
 }
+
 @media screen and (min-width: 1300px) {
   nav.Navbar {
     // @include flex;
@@ -803,14 +839,14 @@ nav.Navbar {
       //   @include flex;
       //   padding-left: 2.5rem;
       //   color: white;
-      span {
-        //     // font-size: 2.5rem;
-        //     font-size: 2.8vw;
-        //     color: $deep_yellow;
-        img {
-          margin-top: 10px;
-          width: 1.9vw;
-        }
+      // span {
+      //     // font-size: 2.5rem;
+      //     font-size: 2.8vw;
+      //     color: $deep_yellow;
+      img {
+        margin-top: 10px;
+        width: 1.9vw;
+        // }
       }
       //   p {
       //     font-family: Bart;
@@ -880,5 +916,115 @@ nav.Navbar {
         }
       }
     }
+  }
+}
+
+// PHONE LANDSCAPE
+@media screen and (min-height: 320px) and (max-height: 450px) {
+  nav.Navbar {
+    height: 12vh;
+    // background: white;
+    // position: fixed;
+    // box-shadow: 0 3px 15px #ccca;
+    // @include trans;
+    .Logo {
+      padding-left: 1.75rem;
+      // z-index: 5;
+      img {
+        width: 3vw;
+      }
+      p {
+        // display: none;
+      }
+    }
+    > nav {
+      // background-color: white;
+      // position: absolute;
+      top: 12vh;
+      // @include flex($dir: column, $jus: center);
+      // @include transLong;
+      // height: 42vh;
+      height: 78vh;
+      // width: 100%;
+      // left: 0;
+      // transform: translateY(0%);
+      // padding-bottom: 12vh;
+      a {
+        //   font-weight: 600;
+        //   letter-spacing: -0.1px;
+        //   text-transform: uppercase;
+        //   text-decoration: none;
+        //   color: $black2;
+        //   margin: 1rem auto;
+        //   @include trans;
+        //   opacity: 0.7;
+        font-size: 3.3vw;
+        &:hover {
+          //     opacity: 1;
+          //     // font-size: 1.07rem;
+          font-size: 3.5vw;
+          //     color: black;
+        }
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+          font-size: 3.5vw;
+        }
+        // ACTIVE NAV
+        &.screen {
+          //     letter-spacing: -0.5px;
+          //     opacity: 1;
+          //     color: black;
+          font-size: 3.8vw;
+          //     font-weight: 600;
+          &::after {
+            //       content: "";
+            //       position: absolute;
+            top: -0.1rem;
+            left: -0.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            //       border-radius: 1000px;
+            //       z-index: -1;
+            //       background-color: $yellow2;
+            //       border: 2px solid $deep_yellow;
+          }
+        }
+        //   // z-index: 4;
+      }
+      // z-index: 4;
+    }
+    .hamburger {
+      //   display: block;
+      //   margin-right: 1.2rem;
+      padding: 4px 4px 1px;
+      //   background: transparent;
+      //   border: 1px solid #fbfbfb;
+      //   border-radius: 30px;
+      //   box-shadow: 1px 1px 5px 0.5px #eee2;
+      //   z-index: 4;
+      svg {
+        //     color: #aaa;
+        font-size: 3.25vw;
+      }
+      //   @include trans;
+      &:hover {
+        padding: 5px 6px 2px;
+        svg {
+          //     color: #aaa;
+          font-size: 3.3vw;
+        }
+        //     cursor: pointer;
+        //     border: 1px solid #eee;
+        //     color: #111;
+        //     box-shadow: 1px 1px 5px 0.5px #ccc3;
+      }
+    }
+    //HAMBURGER CLICKED
+    // &.nosmall {
+    //   > nav {
+    //     transform: translateY(-100%);
+    //   }
+    // }
   }
 }
