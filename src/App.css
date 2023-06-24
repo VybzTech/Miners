@@ -614,26 +614,45 @@ nav.Navbar.nosmall > nav {
     height: 12vh;
   }
   nav.Navbar .Logo {
-    padding-left: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 1.1rem;
   }
   nav.Navbar .Logo img {
+    padding-right: 0.5rem;
     width: 3vw;
+  }
+  nav.Navbar .Logo p {
+    font-family: Bart;
+    text-transform: uppercase;
+    font-size: 1.85vw;
+    letter-spacing: 1px;
+    height: fit-content;
+    word-spacing: 1px;
+    width: 5rem;
+    text-align: center;
+    display: block;
   }
   nav.Navbar > nav {
     top: 12vh;
-    height: 78vh;
+    height: 76vh;
+    padding-bottom: 12vh;
   }
   nav.Navbar > nav a {
-    font-size: 3.3vw;
+    padding: 5px;
+    margin: 0.75rem auto;
+    font-size: 2.85vw;
   }
   nav.Navbar > nav a:hover {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
   nav.Navbar > nav a:focus, nav.Navbar > nav a:focus-visible, nav.Navbar > nav a:focus-within {
-    font-size: 3.5vw;
+    font-size: 3.1vw;
   }
   nav.Navbar > nav a.screen {
-    font-size: 3.8vw;
+    font-size: 3.3vw;
   }
   nav.Navbar > nav a.screen::after {
     top: -0.1rem;
@@ -658,8 +677,8 @@ nav.Navbar.nosmall > nav {
   position: relative;
 }
 #Home .Bg__Image {
-  margin-top: 10vh;
-  height: 85vh;
+  height: 89vh;
+  margin-top: 11vh;
 }
 #Home .swiper-pagination {
   width: 5vw;
@@ -692,10 +711,10 @@ nav.Navbar.nosmall > nav {
 #Home .swiper-pagination-bullet-active::after {
   content: "";
   position: absolute;
-  top: -34%;
-  left: -33.5%;
-  width: 14px;
-  height: 14px;
+  top: -3px;
+  left: -3px;
+  width: 13px;
+  height: 13px;
   border-radius: 1000px;
   z-index: -1;
   background: transparent;
@@ -703,9 +722,9 @@ nav.Navbar.nosmall > nav {
 }
 #Home .swiper-slide > .Bg__Image::before {
   width: 100%;
-  height: 85vh;
   position: fixed;
-  top: 10vh;
+  height: 89vh;
+  top: 11vh;
   left: 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4666666667), rgba(0, 0, 0, 0.1333333333));
   z-index: 2;
@@ -774,7 +793,7 @@ nav.Navbar.nosmall > nav {
   font-weight: 900;
   font-size: 9vh;
   letter-spacing: 1.2px;
-  margin: 16vh auto 0 1rem;
+  margin: 21.5vh auto 0 1rem;
   opacity: 0.6;
   text-transform: uppercase;
   z-index: 1;
@@ -1313,14 +1332,52 @@ nav.Navbar.nosmall > nav {
   }
 }
 @media screen and (min-height: 320px) and (max-height: 450px) {
-  #Home {
+  #Home .Bg__Image {
+    margin-top: 12vh;
     height: 88vh;
   }
-  #Home main h1 {
-    font-size: 9vw;
+  #Home .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
   }
-  #Home main h1:last-of-type {
-    font-size: 16vw;
+  #Home .swiper-pagination-bullet-active {
+    height: 9px;
+    width: 9px;
+  }
+  #Home .swiper-pagination-bullet-active::after {
+    top: -3.5px;
+    left: -3px;
+    width: 13px;
+    height: 13px;
+  }
+  #Home .swiper-slide > .Bg__Image::before {
+    height: 88vh;
+    top: 12vh;
+  }
+  #Home main .title h1 {
+    font-size: 6vw;
+    line-height: 7vh;
+  }
+  #Home main .title h1:last-of-type {
+    font-size: 11.5vw;
+    line-height: 13vh;
+  }
+  #Home main .title > a {
+    border-radius: 1.4vh;
+    font-size: 8.5px;
+    height: 17px;
+    letter-spacing: 0.2px;
+    margin: 0.2rem auto;
+    padding: 6px 11px 0;
+  }
+  #Home main p.img_Counter {
+    filter: blur(0.4vh);
+    font-size: 13vh;
+    margin: 8vh auto 0 1rem;
+  }
+  #Home main img[alt=mouse] {
+    bottom: 8vh;
+    width: 2.8vw;
   }
 }
 /*
@@ -1474,11 +1531,11 @@ nav.Navbar.nosmall > nav {
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
-  height: 130vh;
   width: 100%;
+  padding: 0.2rem 0 2rem;
 }
 #About main {
-  width: 90%;
+  width: 95%;
 }
 #About main h2 {
   font-family: GillsHeavy;
@@ -1493,7 +1550,7 @@ nav.Navbar.nosmall > nav {
   content: "";
   position: absolute;
   bottom: 0.05rem;
-  right: 4.15rem;
+  right: 4.5rem;
   width: 7rem;
   opacity: 0.9;
   height: 0.6rem;
@@ -1509,9 +1566,9 @@ nav.Navbar.nosmall > nav {
   color: #111;
   letter-spacing: 0.2px;
   margin: 1rem auto 0;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: center;
-  line-height: 6.8vh;
+  line-height: 6vh;
 }
 #About .AboutImg {
   position: relative;
@@ -1778,6 +1835,52 @@ nav.Navbar.nosmall > nav {
     width: 80%;
   }
 }
+@media screen and (min-height: 320px) and (max-height: 450px) {
+  #About {
+    height: auto;
+  }
+  #About main {
+    width: 98%;
+  }
+  #About main h2 {
+    font-size: 5.25vw;
+  }
+  #About main h2::after {
+    right: 10.25rem;
+    width: 5rem;
+    bottom: 0.15rem;
+  }
+  #About main p {
+    letter-spacing: 0.1px;
+    font-size: 0.85rem;
+    word-spacing: 3px;
+    line-height: 9vh;
+  }
+  #About .AboutImg {
+    width: 80%;
+  }
+  #About .AboutImg img {
+    left: -1rem;
+    width: 87vw;
+  }
+  #About .AboutImg .svg {
+    width: 100%;
+  }
+  #About .AboutImg .svg svg {
+    transition: all 250ms ease-in-out;
+    width: 80vw;
+    margin: -3.5rem auto 1rem;
+  }
+  #About .AboutImg:hover {
+    cursor: cell;
+  }
+  #About .AboutImg:hover img {
+    transform: scale(1.05);
+  }
+  #About .AboutImg:hover .svg svg {
+    transform: rotate(30deg) scale(1.075);
+  }
+}
 /*
  #About {
     @include flex;
@@ -1904,7 +2007,7 @@ nav.Navbar.nosmall > nav {
   flex-direction: row;
 }
 #Lithium .container aside .bubble {
-  width: 45vw;
+  width: 47vw;
   padding: 15px 10px 5px 14px;
   margin: 0 0 2px auto;
   border: 2px solid #2e0f10;
@@ -1918,7 +2021,7 @@ nav.Navbar.nosmall > nav {
   padding: 12px 11px 0px 12px;
   opacity: 1;
   border: 3px solid #2e0f10;
-  box-shadow: 0 0 15px 0.5px rgba(231, 199, 176, 0.2);
+  box-shadow: 0 0 10px 0.25px rgba(231, 199, 176, 0.2);
   background: rgba(231, 199, 176, 0.631372549);
 }
 #Lithium .container aside .bubble.Tabbed span,
@@ -1948,7 +2051,7 @@ nav.Navbar.nosmall > nav {
   font-family: Gills;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 5vw;
+  font-size: 4.5vw;
   color: #fce1d7;
 }
 #Lithium .container aside .bubble span,
@@ -2722,6 +2825,87 @@ nav.Navbar.nosmall > nav {
     top: 2.4rem;
   }
 }
+@media screen and (min-height: 320px) and (max-height: 450px) {
+  #Lithium .Bg__Image {
+    height: 200vh;
+    border-radius: 0 85px 0 85px;
+  }
+  #Lithium .container h2 {
+    font-size: 6vw;
+    margin: 2.85rem auto 1.1rem;
+    word-spacing: 7px;
+  }
+  #Lithium .container aside .bubble {
+    width: 30vw;
+    padding: 12px 7px 5px 17px;
+    margin: 0 auto;
+  }
+  #Lithium .container aside .bubble.Tabbed, #Lithium .container aside .bubble.Tabbed:hover {
+    padding: 12px 10px 7px 15px;
+  }
+  #Lithium .container aside .bubble.Tabbed span,
+  #Lithium .container aside .bubble.Tabbed p, #Lithium .container aside .bubble.Tabbed:hover span,
+  #Lithium .container aside .bubble.Tabbed:hover p {
+    font-size: 10.25px;
+    line-height: 5vh;
+  }
+  #Lithium .container aside .bubble:last-of-type {
+    margin-left: -15px;
+  }
+  #Lithium .container aside .bubble hr {
+    margin: -1px 0 3px 0;
+  }
+  #Lithium .container aside .bubble h4 {
+    font-size: 3.75vw;
+  }
+  #Lithium .container aside .bubble span,
+  #Lithium .container aside .bubble p {
+    font-size: 9.5px;
+    line-height: 4.5vh;
+  }
+  #Lithium .container main.Roller .content {
+    padding: 1rem 0 0.2rem 0.6rem;
+  }
+  #Lithium .container main.Roller .content.active p span {
+    letter-spacing: -0.25px;
+    font-size: 0.95rem;
+    word-spacing: 3px;
+    line-height: 8vh;
+  }
+  #Lithium .container main.Roller .content.active p:hover span {
+    letter-spacing: -0.25px;
+    font-size: 0.975rem;
+    word-spacing: 3px;
+    line-height: 8vh;
+  }
+  #Lithium .container main.Roller .content.active p:hover::before {
+    width: 0.95rem;
+    height: 0.95rem;
+  }
+  #Lithium .container main.Roller .content.active p::before {
+    width: 0.95rem;
+    height: 0.95rem;
+  }
+  #Lithium .container main.Roller .content.active svg {
+    color: #e7c7b0;
+    opacity: 1;
+  }
+  #Lithium .container main.Roller .content p {
+    width: fit-content;
+  }
+  #Lithium .container main.Roller .content p span {
+    letter-spacing: 0.1px;
+    font-size: 0.8rem;
+    word-spacing: 3px;
+    line-height: 3.5vh;
+  }
+  #Lithium .container main.Roller .content p:hover span {
+    letter-spacing: -0.25px;
+    font-size: 0.95rem;
+    word-spacing: 3px;
+    line-height: 8vh;
+  }
+}
 /*
  #Lithium {
     position: relative;
@@ -2951,7 +3135,7 @@ nav.Navbar.nosmall > nav {
   padding-bottom: 2.5rem;
 }
 #Products .hero {
-  margin: 3rem auto 2rem;
+  margin: 3rem auto 0.1rem;
   width: fit-content;
   text-align: center;
 }
@@ -3001,7 +3185,7 @@ nav.Navbar.nosmall > nav {
   padding: 2rem 0;
 }
 #Products main .swiper-slide:first-child {
-  padding-left: 1.4rem;
+  padding-left: 2rem;
 }
 #Products main [class^=swiper-button-]:after,
 #Products main .swiper-rtl [class^=swiper-button-]:after {
@@ -3038,7 +3222,7 @@ nav.Navbar.nosmall > nav {
   position: relative;
   box-shadow: 0 0 12px 1px #eee;
   min-width: 50vw;
-  width: 88vw;
+  width: 80vw;
   border-radius: 35px;
   overflow: hidden;
   border: 1px solid #eee;
@@ -3047,22 +3231,22 @@ nav.Navbar.nosmall > nav {
 }
 #Products main .card img {
   width: 100%;
-  height: 28vh;
+  height: 25vh;
   object-fit: cover;
 }
 #Products main .card .container {
   z-index: 3;
-  padding: 1rem 1.2rem 2rem 1.5rem;
+  padding: 1.5rem 1.2rem 2rem 1.5rem;
 }
 #Products main .card .container h3 {
   font-family: Bart;
-  font-size: 6.25vw;
+  font-size: 5.5vw;
   margin: 0 auto;
   color: #333;
 }
 #Products main .card .container p {
-  font-size: 4vw;
-  line-height: 5.5vh;
+  font-size: 3.8vw;
+  line-height: 5.1vh;
   opacity: 0.9;
   transition: all 150ms ease-in-out;
   font-family: Gills;
@@ -3073,7 +3257,7 @@ nav.Navbar.nosmall > nav {
   opacity: 0.1;
   height: 1.5px;
   border: none;
-  margin: 0 0 7px 0;
+  margin: 0 0 5px 0;
 }
 #Products main .card:hover {
   transform: translateY(-10px);
@@ -3097,7 +3281,7 @@ nav.Navbar.nosmall > nav {
   border-radius: 1000px;
   width: 3.7rem;
   height: 3.7rem;
-  top: 22vh;
+  top: 19vh;
   left: 0.8rem;
   align-items: center;
   justify-content: center;
@@ -3830,6 +4014,94 @@ nav.Navbar.nosmall > nav {
     width: 3.9vw;
   }
 }
+@media screen and (min-height: 320px) and (max-height: 450px) {
+  #Products .hero {
+    margin: 4rem auto 0.1rem;
+  }
+  #Products .hero span {
+    font-size: 3vw;
+    letter-spacing: -0.15px;
+    opacity: 0.3;
+  }
+  #Products .hero h1 {
+    font-size: 17vw;
+    letter-spacing: 1.5px;
+    opacity: 0.2;
+    filter: blur(2px);
+    line-height: 5vh;
+  }
+  #Products .hero h2 {
+    font-size: 7.5vw;
+    letter-spacing: -1.5px;
+  }
+  #Products .hero h2::after {
+    right: 4.5rem;
+    width: 7rem;
+  }
+  #Products main .swiper-slide {
+    margin-right: 70px !important;
+  }
+  #Products main .swiper-slide:first-child {
+    padding-left: 3rem;
+  }
+  #Products main [class^=swiper-button-]:after,
+  #Products main .swiper-rtl [class^=swiper-button-]:after {
+    font-size: 4.85vw;
+  }
+  #Products main .card {
+    width: 67vw;
+    border-radius: 50px;
+  }
+  #Products main .card img {
+    height: 45vh;
+  }
+  #Products main .card .container {
+    padding: 0.85rem 1.5rem 1.85rem;
+  }
+  #Products main .card .container h3 {
+    font-size: 4.5vw;
+    word-spacing: 2px;
+  }
+  #Products main .card .container p {
+    font-size: 0.85rem;
+    line-height: 7vh;
+    opacity: 0.9;
+  }
+  #Products main .card .container hr {
+    padding-right: 2rem;
+  }
+  #Products main .card > span {
+    width: 3.7rem;
+    height: 3.7rem;
+    top: 36vh;
+  }
+  #Products main .card > span svg {
+    height: 6vw;
+    width: 6vw;
+  }
+  #Products main .card > span svg.min {
+    height: 5vw;
+    width: 5vw;
+  }
+  #Products main .card > span svg.max {
+    height: 8vw;
+    width: 8vw;
+  }
+}
+@media screen and (min-height: 320px) and (max-height: 450px) and (min-width: 1024px) {
+  #Products main .card > span svg {
+    height: 6vw;
+    width: 6vw;
+  }
+  #Products main .card > span svg.min {
+    height: 5.35vw;
+    width: 5.35vw;
+  }
+  #Products main .card > span svg.max {
+    height: 6.75vw;
+    width: 6.75vw;
+  }
+}
 /*
 @media screen and (min-width: 1024px) and (min-height: 550px) {
   #Products {
@@ -4131,7 +4403,7 @@ nav.Navbar.nosmall > nav {
   left: 0;
   width: 100%;
   height: 60vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6666666667), rgba(0, 0, 0, 0.0666666667));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(51, 51, 51, 0.0666666667));
   z-index: 1;
 }
 #Services .container .OurServices > div img {
@@ -4479,6 +4751,40 @@ nav.Navbar.nosmall > nav {
     font-size: 1.2vw;
   }
 }
+@media screen and (min-height: 320px) and (max-height: 450px) {
+  #Services .Bg__Image {
+    height: 150vh;
+  }
+  #Services .container h2 {
+    font-size: 6.75vw;
+    margin: 3rem auto 1rem;
+  }
+  #Services .container .OurServices {
+    gap: 7px;
+  }
+  #Services .container .OurServices > div {
+    border-radius: 1.88vh;
+    width: 40vw;
+    width: 30vw;
+    height: 60vh;
+  }
+  #Services .container .OurServices > div::before {
+    height: 60vh;
+  }
+  #Services .container .OurServices > div img {
+    height: 60vh;
+  }
+  #Services .container .OurServices > div span {
+    font-size: 0.6rem;
+  }
+  #Services .container .OurServices > div:hover {
+    border-radius: 2.2vh;
+    box-shadow: 0 0 10px 2px #2e0f10;
+  }
+  #Services .container .OurServices > div:hover::before {
+    height: 60vh;
+  }
+}
 #Contact {
   height: 185vh;
 }
@@ -4789,7 +5095,7 @@ textarea:focus-within) button {
   color: #fce1d7;
   font-family: system-ui;
   font-weight: 100;
-  font-size: 9px;
+  font-size: 8px;
   width: fit-content;
   margin: 0.7rem auto 0;
   opacity: 0.9;
@@ -4850,7 +5156,7 @@ textarea:focus-within) button {
     right: 5rem;
   }
   #Contact .container .footer footer div.copyX {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 @media screen and (min-width: 375px) and (max-height: 667px) {
@@ -5570,6 +5876,29 @@ textarea:focus-within) button {
   }
   #Contact .container .footer footer .addresses > div > span {
     font-size: 0.75rem;
+  }
+}
+@media screen and (min-height: 320px) and (max-height: 450px) {
+  .Toastify > div {
+    top: 12.25vh;
+    right: auto;
+    left: 0.1rem;
+  }
+  .Toastify > div > div {
+    border-radius: 10px;
+    font-family: Gills;
+    font-size: 4.5vw;
+    letter-spacing: 0px;
+    color: #111;
+    box-shadow: 1px 2px 20px 0.5px #f3ebec;
+    padding-left: 0.5rem;
+    width: 85vw;
+  }
+  .Toastify__progress-bar {
+    height: 3px !important;
+  }
+  .Toastify__toast-icon svg {
+    width: 0.95rem !important;
   }
 }
 /*
@@ -6719,12 +7048,10 @@ textarea:focus-within) button {
 }
 .portal,
 #portal {
-  position: absolute;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
 }
 
 /*

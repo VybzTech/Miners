@@ -52,7 +52,7 @@
           left: 0;
           width: 100%;
           height: 60vh;
-          background: linear-gradient(0deg, #000a, #0001);
+          background: linear-gradient(0deg, #0009, #3331);
           z-index: 1;
         }
         img {
@@ -982,6 +982,136 @@
               // width: 60%;
               // text-transform: uppercase;
               font-size: 1.2vw;
+              // font-family: GillsHeavy;
+              // font-family: Gills;
+              // font-weight: 800;
+              // text-align: left;
+              // letter-spacing: 0.3px;
+              // color: $pinkish_Light;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// PHONE LANDSCAPE
+@media screen and (min-height: 320px) and (max-height: 450px) {
+  #Services {
+    // height: 128vh;
+    // position: relative;
+    .Bg__Image {
+      height: 150vh;
+    }
+    .container {
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // right: 0;
+      // padding: 0 2rem;
+      // width: 100%;
+      h2 {
+        // width: fit-content;
+        // font-family: GillsHeavy;
+        // // text-align: right;
+        // text-transform: uppercase;
+        font-size: 6.75vw;
+        // word-spacing: 5px;
+        // letter-spacing: -1px;
+        // color: $white;
+        //  6rem font-family: GillsBold;
+        margin: 3rem auto 1rem;
+      }
+      .OurServices {
+        // @include flex($dir: column);
+        // @include flex($jus: center);
+        // flex-wrap: wrap;
+        // padding: 0 10px;
+        // position: relative;
+        gap:7px;
+        // z-index: 2;
+        & > div {
+          // position: relative;
+          $high: 67vh;
+          $high: 60vh;
+          // @include trans;
+          // overflow: hidden;
+          border-radius: 1.88vh;
+          // border: 1px solid #2e0f1091;
+          // border: 1px solid $dark_brown;
+          // box-shadow: 0 0 18px 1px $dark_brown;
+          width: 40vw;
+          width: 30vw;
+          height: $high;
+          // margin-bottom: 1.5vh;
+          // z-index: 0;
+          &::before {
+            // @include transShort;
+            // content: "";
+            // position: absolute;
+            // left: 0;
+            // top: 0;
+            // width: 100%;
+            height: $high;
+            // background: linear-gradient(0deg, #0009, #3331);
+            // z-index: 1;
+          }
+          img {
+            // @include trans;
+            height: $high;
+            // height: 62vh;
+            // object-fit: cover;
+            // width: 100%;
+          }
+          span {
+            // z-index: 2;
+            // position: absolute;
+            // // bottom: 13px;
+            // top: 50%;
+            // // transform: scale(1);
+            // left: 15px;
+            // line-height: 1.5;
+            // width: 80%;
+            // text-transform: uppercase;
+            font-size: 0.6rem;
+            // font-family: Gills;
+            // font-weight: 800;
+            // // text-align: left;
+            // text-align: center;
+            // letter-spacing: 0.3px;
+            // color: $pinkish_Light;
+            // transform: scale(0);
+          }
+          &:hover {
+            border-radius: 2.2vh;
+            box-shadow: 0 0 10px 2px $dark_brown;
+            // z-index: 1;
+            //   width: 48vw;
+            // height: 42.5vh;
+            img {
+              // filter: blur(1.1px);
+              // transform: scale(1.02);
+            }
+            &::before {
+              // width: 100%;
+            height: $high;
+            // height: 60vh;
+              // background: linear-gradient(0deg, #000e, #1118);
+            }
+            & span {
+              // animation-timing-function:
+              // animation: zoom 450ms 1ms cubic-bezier(0.165, 0.84, 0.44, 1) 1
+              //   forwards !important;
+              // z-index: 2;
+              // position: absolute;
+              // bottom: 13px;
+              // transform: scale(1);
+              // left: 15px;
+              // line-height: 1.5;
+              // width: 80%;
+              // text-transform: uppercase;
+              // font-size: 12px;
               // font-family: GillsHeavy;
               // font-family: Gills;
               // font-weight: 800;
