@@ -609,7 +609,7 @@ nav.Navbar.nosmall > nav {
     left: -0.55rem;
   }
 }
-@media screen and (min-height: 320px) and (max-height: 450px) {
+@media screen and (min-height: 320px) and (max-width: 580px) and (orientation: Landscape) {
   nav.Navbar {
     height: 12vh;
   }
@@ -1331,12 +1331,16 @@ nav.Navbar.nosmall > nav {
     width: 1.35vw;
   }
 }
-@media screen and (min-height: 320px) and (max-height: 450px) {
+@media screen and (min-height: 320px) and (max-width: 580px) and (orientation: Landscape) {
   #Home .Bg__Image {
     margin-top: 12vh;
     height: 88vh;
   }
+  #Home .swiper-pagination {
+    bottom: 33vh;
+  }
   #Home .swiper-pagination-bullet {
+    margin: 0.55rem auto;
     width: 7px;
     height: 7px;
   }
@@ -1355,12 +1359,12 @@ nav.Navbar.nosmall > nav {
     top: 12vh;
   }
   #Home main .title h1 {
-    font-size: 6vw;
-    line-height: 7vh;
+    font-size: 5.5vw;
+    line-height: 7.5vh;
   }
   #Home main .title h1:last-of-type {
-    font-size: 11.5vw;
-    line-height: 13vh;
+    font-size: 10vw;
+    line-height: 12vh;
   }
   #Home main .title > a {
     border-radius: 1.4vh;
@@ -1373,11 +1377,234 @@ nav.Navbar.nosmall > nav {
   #Home main p.img_Counter {
     filter: blur(0.4vh);
     font-size: 13vh;
-    margin: 8vh auto 0 1rem;
+    margin: 9vh auto 0 1rem;
   }
   #Home main img[alt=mouse] {
     bottom: 8vh;
     width: 2.8vw;
+  }
+}
+@media screen and (min-height: 350px) and (max-width: 750px) and (orientation: Landscape) {
+  #Home .Bg__Image {
+    margin-top: 12vh;
+    height: 88vh;
+  }
+  #Home .swiper-pagination {
+    bottom: 33vh;
+  }
+  #Home .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+  #Home .swiper-pagination-bullet-active {
+    height: 10px;
+    width: 10px;
+  }
+  #Home .swiper-pagination-bullet-active::after {
+    top: -3px;
+    left: -3px;
+    width: 14px;
+    height: 14px;
+  }
+  #Home .swiper-slide > .Bg__Image::before {
+    height: 88vh;
+    top: 12vh;
+  }
+  #Home main {
+    top: 30vh;
+  }
+  #Home main .title h1 {
+    font-size: 5.5vw;
+    line-height: 10vh;
+  }
+  #Home main .title h1:last-of-type {
+    font-size: 10vw;
+    line-height: 15vh !important;
+    padding-top: 5px;
+  }
+  #Home main .title > a {
+    border-radius: 1.4vh;
+    font-size: 9px;
+    height: 19px;
+    letter-spacing: 0.2px;
+    margin: 0.5rem auto;
+    padding: 9px 15px 0;
+  }
+  #Home main p.img_Counter {
+    filter: blur(0.7vh);
+    font-size: 13vh;
+    margin: 3vh auto 0 1rem !important;
+  }
+  #Home main img[alt=mouse] {
+    bottom: 10vh;
+    width: 2.2vw;
+  }
+}
+@media screen and (min-height: 375px) and (orientation: Landscape) {
+  #Home .Bg__Image {
+    margin-top: 12vh;
+    height: 88vh;
+  }
+  #Home .swiper-pagination {
+    bottom: 35vh;
+  }
+  #Home .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+  }
+  #Home .swiper-pagination-bullet-active {
+    height: 9px;
+    width: 9px;
+  }
+  #Home .swiper-pagination-bullet-active::after {
+    top: -3px;
+    left: -3px;
+    width: 13px;
+    height: 13px;
+  }
+  #Home .swiper-slide > .Bg__Image::before {
+    height: 88vh;
+    top: 12vh;
+  }
+  #Home main {
+    top: 25vh;
+  }
+  #Home main .title h1 {
+    font-size: 5.75vw;
+    line-height: 15vh;
+  }
+  #Home main .title h1:last-of-type {
+    font-size: 10vw;
+    line-height: 14vh !important;
+    padding-top: 5px;
+  }
+  #Home main .title > a {
+    border-radius: 1.3vh;
+    font-size: 9.25px;
+    height: 18px;
+    letter-spacing: 0.2px;
+    margin: 0.4rem auto;
+    padding: 7px 11px 0;
+  }
+  #Home main p.img_Counter {
+    filter: blur(0.7vh);
+    font-size: 13vh;
+    letter-spacing: 0.2px;
+    margin: 10.75vh auto 0 1rem !important;
+  }
+  #Home main img[alt=mouse] {
+    bottom: 8vh;
+    width: 2.35vw;
+  }
+}
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Home main .title h1 {
+    font-size: 5.25vw;
+    line-height: 4vw;
+  }
+  #Home main .title h1:last-of-type {
+    font-size: 10vw;
+    line-height: 7.5vw !important;
+    padding-top: 10px;
+  }
+  #Home main p.img_Counter {
+    margin: 7vh auto 0 1rem !important;
+  }
+  #Home main img[alt=mouse] {
+    bottom: 8vh;
+    width: 1.85vw;
+  }
+}
+@media screen and (min-height: 390px) and (orientation: Landscape) {
+  #Home main .title h1 {
+    font-size: 5.25vw;
+    line-height: 17vh;
+  }
+  #Home main .title h1:last-of-type {
+    font-size: 9.5vw;
+    line-height: 16vh !important;
+    padding-top: 8px;
+  }
+  #Home main p.img_Counter {
+    margin-top: 9vh !important;
+  }
+  #Home main img[alt=mouse] {
+    width: 1.9vw;
+  }
+}
+@media screen and (min-height: 414px) and (min-width: 700px) and (orientation: Landscape) {
+  #Home .Bg__Image {
+    margin-top: 10vh;
+    height: 90vh;
+  }
+  #Home .swiper-pagination {
+    bottom: 33vh;
+  }
+  #Home .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+  }
+  #Home .swiper-pagination-bullet-active {
+    height: 11px;
+    width: 11px;
+  }
+  #Home .swiper-pagination-bullet-active::after {
+    top: -3px;
+    left: -3px;
+    width: 15px;
+    height: 15px;
+  }
+  #Home .swiper-slide > .Bg__Image::before {
+    height: 90vh;
+    top: 10vh;
+  }
+  #Home main {
+    top: 28vh;
+  }
+  #Home main .title h1 {
+    font-size: 5.25vw;
+    line-height: 4vw;
+  }
+  #Home main .title h1:last-of-type {
+    font-size: 10vw;
+    line-height: 7.5vw !important;
+    padding-top: 3px;
+  }
+  #Home main .title > a {
+    border-radius: 1.2vh;
+    font-size: 10px;
+    height: 20px;
+    letter-spacing: 0.2px;
+    margin: 0.4rem auto;
+    padding: 9px 15px 0;
+  }
+  #Home main p.img_Counter {
+    filter: blur(0.7vh);
+    font-size: 14vh;
+    letter-spacing: 0.2px;
+    margin: 7.75vh auto 0 1rem !important;
+  }
+  #Home main img[alt=mouse] {
+    bottom: 7vh;
+    width: 2vw;
+  }
+}
+@media screen and (min-height: 414px) and (min-width: 890px) and (orientation: Landscape) {
+  #Home main .title h1 {
+    font-size: 5.25vw;
+    line-height: 4vw;
+  }
+  #Home main .title h1:last-of-type {
+    font-size: 10vw;
+    line-height: 7.5vw !important;
+    padding-top: 10px;
+  }
+  #Home main p.img_Counter {
+    margin: 3.5vh auto 0 1rem !important;
+  }
+  #Home main img[alt=mouse] {
+    bottom: 8vh;
+    width: 1.85vw;
   }
 }
 /*
@@ -1662,14 +1889,17 @@ nav.Navbar.nosmall > nav {
 }
 @media screen and (min-width: 410px) and (max-width: 480px) and (min-height: 730px) {
   #About {
-    height: 120vh;
+    height: 110vh;
   }
   #About main {
     width: 98%;
   }
+  #About main h2 {
+    font-size: 8vw;
+  }
   #About main h2::after {
     bottom: 0.2rem;
-    right: 6rem;
+    right: 7rem;
     height: 1rem;
     width: 9rem;
     opacity: 0.8;
@@ -2904,6 +3134,9 @@ nav.Navbar.nosmall > nav {
     font-size: 0.95rem;
     word-spacing: 3px;
     line-height: 8vh;
+  }
+  #Lithium .container main.Roller .line {
+    top: 7vw;
   }
 }
 /*
@@ -5864,9 +6097,17 @@ textarea:focus-within) button {
     width: 14rem;
     height: 1.3rem;
   }
+  #Contact .container .footer footer .block {
+    margin-bottom: -0.2rem;
+  }
+  #Contact .container .footer footer .block::after {
+    width: 95vw;
+    opacity: 0.04;
+    left: 1.5rem;
+  }
   #Contact .container .footer footer .logo img {
     width: 2vw;
-    margin-right: -1.2rem;
+    margin: -0.1rem -1.2rem auto auto;
   }
   #Contact .container .footer footer .logo p {
     line-height: 3vh;
@@ -5877,8 +6118,91 @@ textarea:focus-within) button {
   #Contact .container .footer footer .addresses > div > span {
     font-size: 0.75rem;
   }
+  #Contact .container .footer footer div.copyX {
+    opacity: 0.7;
+  }
+  .Toastify > div > div {
+    width: 30vw;
+  }
 }
 @media screen and (min-height: 320px) and (max-height: 450px) {
+  #Contact {
+    height: 155vh;
+  }
+  #Contact .Bg__Image {
+    height: 155vh;
+  }
+  #Contact .container main .Form {
+    margin: 1.75rem auto auto;
+  }
+  #Contact .container main .Form p {
+    font-size: 2.75vw;
+    margin-bottom: 0.5rem;
+  }
+  #Contact .container main .Form p svg {
+    padding: 7px;
+  }
+  #Contact .container main .Form .formGroup input {
+    font-size: 0.95rem;
+    height: 1.3rem;
+    width: 60vw;
+  }
+  #Contact .container main .Form .formGroup input::placeholder {
+    font-size: 0.85rem;
+  }
+  #Contact .container main .Form .formGroup button {
+    padding: 2px 3px 0;
+  }
+  #Contact .container main .Form .formGroup button svg {
+    font-size: 1.75rem;
+  }
+  #Contact .container main .hero {
+    width: 60vw;
+  }
+  #Contact .container main .hero p {
+    font-size: 2vw;
+  }
+  #Contact .container main .hero h2 {
+    line-height: 6vw;
+    font-size: 8vw;
+  }
+  #Contact .container main .hero h2::after {
+    width: 20vw;
+    height: 0.7rem;
+    bottom: -0.25rem;
+    right: 15vw;
+  }
+  #Contact .container .footer footer .block {
+    position: relative;
+    padding: 0.7rem 1.5rem 0;
+    flex-direction: row;
+  }
+  #Contact .container .footer footer .shortLinks,
+  #Contact .container .footer footer .addresses {
+    width: 50vw;
+  }
+  #Contact .container .footer footer .shortLinks h2,
+  #Contact .container .footer footer .addresses h2 {
+    font-size: 4vw;
+    letter-spacing: 0.1px;
+    margin-bottom: 0.25rem;
+  }
+  #Contact .container .footer footer .addresses > div {
+    width: 50vw;
+    line-height: 3.25vw;
+  }
+  #Contact .container .footer footer .addresses > div > p {
+    font-size: 12px;
+  }
+  #Contact .container .footer footer .addresses > div > span {
+    font-size: 10px;
+  }
+  #Contact .container .footer footer .addresses > div:last-of-type {
+    margin-top: 0.55rem;
+  }
+  #Contact .container .footer footer div.copyX {
+    font-size: 9px;
+  }
   .Toastify > div {
     top: 12.25vh;
     right: auto;
@@ -6495,6 +6819,55 @@ textarea:focus-within) button {
     transform: scale(1.12);
   }
 }
+@media screen and (min-height: 320px) and (max-height: 450px) {
+  .socials {
+    position: absolute;
+    bottom: -9.2rem;
+    right: -90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0.5rem 0;
+    gap: 7px;
+  }
+  .socials span a {
+    background-color: #541c1d;
+    border-radius: 1000px;
+    opacity: 0.7;
+    width: 1.9rem;
+    height: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    transition: all 150ms ease-in-out;
+  }
+  .socials span a svg {
+    margin: auto;
+    transition: all 250ms ease-in-out;
+    vertical-align: middle;
+    color: #fce1d7;
+    opacity: 0.8;
+    font-size: 18px;
+  }
+  .socials span:first-child svg {
+    font-size: 14px;
+  }
+  .socials span:last-child svg {
+    font-size: 16px;
+    padding: 0 0 1px 1px;
+  }
+  .socials span:hover {
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 1px 2px 8px 0.1px rgba(0, 0, 0, 0.2);
+  }
+  .socials span:hover svg {
+    color: #faefec;
+    transform: scale(1.12);
+  }
+}
 /*
  .socials {
     @include flex($jus: center);
@@ -7046,12 +7419,45 @@ textarea:focus-within) button {
     padding-top: 0.9rem;
   }
 }
+@media screen and (min-height: 320px) and (max-height: 450px) {
+  .shortLinks h2 {
+    text-align: right;
+  }
+  .shortLinks::after {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    left: 0;
+    opacity: 0;
+  }
+}
+@media screen and (min-height: 320px) and (max-height: 450px) and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
+  .shortLinks::after {
+    width: 0;
+    left: 0;
+  }
+}
+@media screen and (min-height: 320px) and (max-height: 450px) {
+  .shortLinks div {
+    min-height: 1.3rem;
+    text-align: right;
+  }
+  .shortLinks div span {
+    padding: 0 7px 0 0;
+    font-size: 11px;
+  }
+  .shortLinks div span::before {
+    bottom: -3.5px;
+    left: -4px;
+  }
+}
 .portal,
 #portal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
 }
 
 /*

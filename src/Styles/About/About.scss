@@ -399,7 +399,7 @@
 // For iPhone 6+/7+/8+ and similar devices: Nexus 6, iPhone XR
 @media screen and (min-width: 410px) and (max-width: 480px) and (min-height: 730px) {
   #About {
-    height: 120vh;
+    height: 110vh;
     // @include flex($dir: column-reverse, $jus: center);
     // width: 100%;
     main {
@@ -408,7 +408,7 @@
       // margin: auto 0;
       h2 {
         // letter-spacing: -2px;
-        // font-size: 8vw;
+        font-size: 8vw;
         // -webkit-text-stroke: 0.75px black;
         // font-family: GillsHeavy;
         // text-align: center;
@@ -416,7 +416,7 @@
         // padding-top: 3rem;
         &::after {
           bottom: 0.2rem;
-          right: 6rem;
+          right: 7rem;
           height: 1rem;
           //   content: "";
           //   position: absolute;

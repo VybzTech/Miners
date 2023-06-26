@@ -919,8 +919,10 @@ nav.Navbar {
   }
 }
 
-// PHONE LANDSCAPE
-@media screen and (min-height: 320px) and (max-height: 450px) {
+// ********************************************************
+// PHONE LANDSCAPE   iPhone 4, iPhone 5/SE (-100px),
+@media screen and (min-height: 320px) and (max-width: 580px) and (orientation: Landscape) {
+  // @media screen and (min-height: 320px) and (max-height: 450px) {
   nav.Navbar {
     height: 12vh;
     // background: white;
@@ -1043,3 +1045,4 @@ nav.Navbar {
     // }
   }
 }
+
