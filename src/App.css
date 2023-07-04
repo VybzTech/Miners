@@ -782,10 +782,10 @@ nav.Navbar.nosmall > nav {
     color: black;
   }
   nav.Navbar .Logo {
-    padding-left: 1.75rem;
+    padding-left: 1.7rem;
   }
   nav.Navbar .Logo img {
-    padding-right: 0.65rem;
+    padding-right: 0.25rem;
     width: 2.5vw;
   }
   nav.Navbar .Logo p {
@@ -794,7 +794,7 @@ nav.Navbar.nosmall > nav {
     word-spacing: 1px;
   }
   nav.Navbar > nav {
-    padding-right: 5vh;
+    padding-right: 2.5vh;
   }
   nav.Navbar > nav a {
     padding: 0 4px;
@@ -3669,8 +3669,30 @@ nav.Navbar.nosmall > nav {
     height: 135vw;
   }
   #Lithium .container h2 {
-    font-size: 5.5vw;
-    margin: 3rem auto 1.25rem;
+    font-size: 4.5vw;
+    margin: 4rem auto 1.2rem;
+  }
+  #Lithium .container aside .bubble {
+    padding: 12px 10px 5px 24px;
+  }
+  #Lithium .container aside .bubble h4 {
+    font-size: 22px;
+  }
+  #Lithium .container aside .bubble span,
+  #Lithium .container aside .bubble p {
+    letter-spacing: -0.2px;
+    font-size: 12px;
+    line-height: 6.75vh;
+  }
+  #Lithium .container aside .bubble > nav {
+    margin-top: 0.05rem;
+  }
+  #Lithium .container aside .bubble > nav span {
+    font-size: 9px;
+    margin: -0.25rem 0 0 0.5rem;
+  }
+  #Lithium .container aside .bubble > nav svg {
+    width: 11px;
   }
 }
 /*

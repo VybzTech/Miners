@@ -1759,7 +1759,6 @@
   }
 }
 
-
 // PHONE LANDSCAPE   iPhone SE, iPhone 6,7,8, iPhone X
 @media screen and (min-height: 375px) and (orientation: Landscape) {
   #Lithium {
@@ -1821,7 +1820,7 @@
         }
       }
       main.Roller {
-        padding:1rem 4rem 3rem 7rem;
+        padding: 1rem 4rem 3rem 7rem;
         .line {
           top: 7.4vw;
           left: 6.58rem;
@@ -1833,79 +1832,81 @@
 
 // PHONE LANDSCAPE   iPhone X Edits
 @media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
-#Lithium {
-  height: 135vw;
-  .Bg__Image {
+  #Lithium {
     height: 135vw;
-  }
-
-  .container {
-    h2 {
-      font-size: 5.5vw;
-      // letter-spacing: -1px;
-      margin: 3rem auto 1.25rem;
+    .Bg__Image {
+      height: 135vw;
     }
-    aside .bubble {
-      // margin: 0 auto;
-      // opacity: 0.5;
-      // padding: 12px 10px 5px 20px;
-      // width: 35vw;
-      &.Tabbed,
-      &.Tabbed:hover {
-        // padding: 10px 15px 0 18px;
+
+    .container {
+      h2 {
+        font-size: 4.5vw;
+        // letter-spacing: -1px;
+        margin: 4rem auto 1.2rem;
+      }
+      aside .bubble {
+        // margin: 0 auto;
+        // opacity: 0.5;
+        padding: 12px 10px 5px 24px;
+        // width: 35vw;
+        &.Tabbed,
+        &.Tabbed:hover {
+          // padding: 10px 15px 0 18px;
+          span,
+          p {
+            // font-size: 10.5px;
+            // letter-spacing: -0.05px;
+            // line-height: 5.5vh;
+            // word-spacing: 2px;
+          }
+          span {
+            // font-size: 8px;
+          }
+          > nav {
+            // margin-top: 0.2rem;
+            svg {
+              // width: 11px;
+            }
+          }
+        }
+        &:last-of-type {
+          // margin-left: 0.05rem;
+        }
+        h4 {
+          font-size: 22px;
+        }
         span,
         p {
-          // font-size: 10.5px;
-          // letter-spacing: -0.05px;
-          // line-height: 5.5vh;
-          // word-spacing: 2px;
-        }
-        span {
-          // font-size: 8px;
+          letter-spacing: -0.2px;
+          font-size: 12px;
+          line-height: 6.75vh;
         }
         > nav {
-          // margin-top: 0.2rem;
+          margin-top: 0.05rem;
+          span {
+            font-size: 9px;
+            margin: -0.25rem 0 0 0.5rem;
+          }
           svg {
-            // width: 11px;
+            width: 11px;
           }
         }
       }
-      &:last-of-type {
-        // margin-left: 0.05rem;
-      }
-
-      span,
-      p {
-        // letter-spacing: -0.2px;
-        // font-size: 9.5px;
-        // line-height: 5.85vh;
-      }
-      span {
-        // font-size: 7.5px;
-        // margin: -0.25rem 0 0 0.5rem;
-      }
-      > nav {
-        // margin-top: 0.65rem;
-        svg {
-          // width: 10px;
+      main.Roller {
+        // padding: 1rem 1rem 5rem 3rem;
+        .line {
+          // top: 8.3vw;
+          // left: 2.6rem;
         }
       }
     }
-    main.Roller {
-      // padding: 1rem 1rem 5rem 3rem;
-      .line {
-        // top: 8.3vw;
-        // left: 2.6rem;
-      }
-    }
   }
-}
 }
 
 // PHONE LANDSCAPE
 @media screen and (min-height: 320px) and (max-height: 450px) {
   // #Lithium {
-    // position: relative;
+  // position: relative;
   //   .Bg__Image {
   //     height: 200vh;
   //     // height: auto;
@@ -2147,7 +2148,6 @@
   //   }
   // }
 }
-
 
 /*
  #Lithium {
