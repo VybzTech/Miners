@@ -23,7 +23,7 @@ const Form = () => {
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     e.preventDefault();
     if (email === "") {
-      toast.error("Email field cannot be empty");
+      toast.error("Email address cannot be empty");
     } else {
       if (!emailRegex.test(email)) {
         // setError('Please enter a valid email address');

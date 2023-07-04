@@ -1098,10 +1098,13 @@
       }
       h2 {
         margin: 0 auto;
-        font-size: 5.5vw;width: fit-content;
+        font-size: 5.5vw;
+        width: fit-content;
         letter-spacing: -1.5px;
-        &::after {height: .85rem;bottom: .35rem;
-          right: -.1rem;
+        &::after {
+          height: 0.85rem;
+          bottom: 0.35rem;
+          right: -0.1rem;
           width: 7.5rem;
         }
       }
@@ -1113,10 +1116,11 @@
         padding: 3rem 0 2rem;
       }
       .swiper-slide {
-        margin-right: 60px !important;
+        margin-right: -50px !important;
+        // margin-right: -40px !important;
       }
       .swiper-slide:first-child {
-        padding-left: 3rem;
+        padding-left: 4rem;
       }
       [class^="swiper-button-"]:after,
       .swiper-rtl [class^="swiper-button-"]:after {
@@ -1126,13 +1130,14 @@
       .swiper-rtl .swiper-button-prev {
       }
       .swiper-slide:last-child > .card {
-        // margin-right: 2rem;
+        margin-right: 0 !important;
       }
       .card {
-        width: 50vw;
+        min-width: auto;
+        width: 45vw;
         border-radius: 40px;
         img {
-          height: 34vh;
+          height: 30vh;
         }
         .container {
           padding: 0.85rem 1.5rem 1.9rem;
@@ -1149,17 +1154,103 @@
             padding-right: 2rem;
           }
         }
-        // &:last-child > .container > p {
-        //     display: none;
-        //     margin-right: 15rem;
-        // }
         &:hover {
         }
         > span {
           width: 3.5rem;
           height: 3.5rem;
-          top: 27vh;
+          top: 22.5vh;
           @include svgValues(4.25vw);
+        }
+      }
+    }
+  }
+}
+
+// PHONE LANDSCAPE   iPhone 4, iPhone 5/SE (-100px),
+@media screen and (min-height: 320px) and (max-width: 580px) and (orientation: Landscape) {
+  #Products {
+    // height: 120vh;
+    .hero {
+      margin: 3rem auto 0.5rem;
+      span {
+        font-size: 2.35vw;
+        letter-spacing: -0.15px;
+        opacity: 0.2;
+      }
+      h1 {
+        font-size: 14vw;
+        letter-spacing: 1px;
+        opacity: 0.2;
+        filter: blur(2.5px);
+        // line-height: 5vh;
+      }
+      h2 {
+        margin: 0 auto;
+        font-size: 6.5vw;
+        width: fit-content;
+        letter-spacing: -1.5px;
+        &::after {
+          height: 0.85rem;
+          bottom: 0.15rem;
+          right: -0.1rem;
+          width: 7rem;
+        }
+      }
+    }
+    main {
+      // padding: 0 3.2rem 0 2.5rem;
+      //    SWIPER  PRODUUCTS EDIT
+      .swiper-wrapper {
+        padding: 2rem 1rem;
+      }
+      .swiper-slide {
+        // margin-right: -70px !important;
+        margin-right: auto !important;
+      }
+      .swiper-slide:first-child {
+        padding-left: 4rem;
+      }
+      [class^="swiper-button-"]:after,
+      .swiper-rtl [class^="swiper-button-"]:after {
+        font-size: 4vw;
+      }
+      // .swiper-button-prev,
+      // .swiper-rtl .swiper-button-prev {
+      // }
+      // .swiper-slide:last-child > .card {
+      //   margin-right: 0 !important;
+      // }
+      .card {
+        min-width: auto;
+        width: 55vw;
+        border-radius: 40px;
+        img {
+          height: 32vh;
+        }
+        .container {
+          padding: 0.9rem 1.5rem 2rem;
+          h3 {
+            font-size: 3.2vw;
+            word-spacing: -1px;
+          }
+          p {
+            font-size: 0.8rem;
+            line-height: 7vh;
+            opacity: 0.8;
+            word-spacing: 1px;
+          }
+          hr {
+            padding-right: 2rem;
+          }
+        }
+        &:hover {
+        }
+        > span {
+          width: 3.25rem;
+          height: 3.25rem;
+          top: 24vh;
+          @include svgValues(4.75vw);
         }
       }
     }

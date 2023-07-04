@@ -929,6 +929,129 @@
     }
   }
 }
+
+// PHONE LANDSCAPE   iPhone 4, iPhone 5/SE (-100px),
+@media screen and (min-height: 320px) and (max-width: 580px) and (orientation: Landscape) {
+  #About {
+    height: auto;
+    main {
+      width: 98%;
+      h2 {
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 5vw;
+        &::after {
+          right: 0;
+          width: 6rem;
+          bottom: -0.05rem;
+          height: 0.8rem;
+        }
+      }
+      p {
+        letter-spacing: 0.1px;
+        font-size: 0.9rem;
+        word-spacing: 3px;
+        line-height: 9vh;
+      }
+    }
+    .AboutImg {
+      width: 70%;
+      img {
+        left: -1rem;
+        width: 75vw;
+      }
+      .svg {
+        svg {
+          width: 65vw;
+          margin: -3.5rem auto -1rem;
+        }
+      }
+    }
+  }
+}
+
+
+// PHONE LANDSCAPE   iPhone SE, iPhone 6,7,8, iPhone X
+@media screen and (min-height: 375px) and (orientation: Landscape) {
+  #About {
+    // height: auto;
+    main {
+      width: 96%;
+      h2 {
+        // width: fit-content;
+        // margin: 0 auto;
+        font-size: 5vw;word-spacing:5px;
+        &::after {
+          // right: 0;
+          width: 8rem;
+          // bottom: -0.05rem;
+          // height: 0.8rem;
+        }
+      }
+      p {
+        // letter-spacing: 0.1px;
+        font-size: 0.955rem;
+        // word-spacing: 3px;
+        line-height: 10vh;
+      }
+    }
+    .AboutImg {
+      // width: 70%;
+      img {
+        // left: -1rem;
+        width: 70vw;
+      }
+      .svg {
+        svg {
+          width: 62vw;
+          // margin: -4.5rem auto -1rem;
+        }
+      }
+    }
+  }
+}
+
+// PHONE LANDSCAPE   iPhone X Edits
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #About {
+    height: auto;
+    main {
+      width: 85%;
+      h2 {
+        // width: fit-content;
+        // margin: 0 auto;
+        font-size: 4.4vw;word-spacing:5px;
+        &::after {
+          // right: 0;
+          width: 9rem;
+          bottom: 0.1rem;
+          // height: 0.8rem;
+        }
+      }
+      p {
+        // letter-spacing: 0.1px;
+        font-size: 1.1rem;
+        word-spacing: 3px;
+        line-height: 13vh;
+      }
+    }
+    .AboutImg {
+      // width: 70%;
+      img {
+        left: 5rem;
+        width: 70vw;
+      }
+      .svg {width: fit-content;margin:0 auto;
+        svg {
+          width: 62vw;
+          margin: -3.5rem auto -1rem;
+        }
+      }
+    }
+  }
+}
+
+
 // PHONE LANDSCAPE
 @media screen and (min-height: 320px) and (max-height: 450px) {
   // #About {

@@ -75,12 +75,12 @@ const Home = () => {
         <SwiperSlide>
           <Background img={pic1} />
         </SwiperSlide>
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <Background img={pic2} />
         </SwiperSlide>
         <SwiperSlide>
           <Background img={pic3} />
-        </SwiperSlide> */}
+        </SwiperSlide>
         <SwiperSlide>
           <Background img={pic4} />
         </SwiperSlide>
