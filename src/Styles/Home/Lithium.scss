@@ -1000,413 +1000,133 @@
   }
 }
 
-// For Desktops, Large screens, Extra large screens, TVs
-@media screen and (min-width: 1024px) and (min-height: 550px) {
+// For Desktops, Large screens, Extra large screens, TVs: iPad Pro, iPad Air, Surface Pro 7
+@media screen and (min-width: 800px) and (min-height: 1100px) {
   #Lithium {
-    position: relative;
-    // height: 125vh;
+    height: 85vh;
     .Bg__Image {
-      border-radius: 0 18vh;
+      height: 85vh;
+      border-radius: 0 230px 0 230px;
     }
     .container {
-      @include flex;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      padding: 0 2rem;
-      > main {
-        width: 50%;
-      }
+      padding: 0 3.5rem;
       h2 {
-        font-family: GillsHeavy;
-        text-align: right;
-        text-transform: uppercase;
-        // font-size: 2.5rem;
-        font-size: 4vw;
-        letter-spacing: -1px;
-        color: $pink;
-        margin: 5rem 2rem 2rem auto;
+        font-size: 5.5vw;
+        width: fit-content;
+        letter-spacing: -3px;
+        margin: 7rem auto 3rem;
+        word-spacing: 10px;
       }
       aside {
-        @include flex($jus: center, $dir: column);
-        padding: 1rem 2.5rem;
-        margin: 1rem auto;
+        // padding-bottom: 0.5rem;
         .bubble {
-          // max-width: 25dvw;
-          width: 22vw;
-          min-width: 20vw;
-          margin: 0 0 0.5rem auto;
-          border: 2px solid $dark_brown;
-          opacity: 0.7;
-          text-align: right;
-          border-radius: 30px 30px 0;
-          background: #e7c7b071;
-          @include transShort;
-          padding: 20px 25px 7px;
-          box-shadow: inset 0 0 20px 0.05px #2e0f107a;
+          margin: 0 auto;
+          width: 30vw;
+          max-width: 35vw;
+          // padding-left: 11px;
+          padding: 25px 0px 5px 25px;
+          border-radius: 33px 47px 0;
           &.Tabbed,
           &.Tabbed:hover {
-            padding: 18px 25px 5px;
-            opacity: 1;
-            border: 3px solid $dark_brown;
-            box-shadow: inset 0 0 18px 0.01px #2e0f1057,
-              0 0 15px 0.5px #e7c7b033;
-            // padding: 1rem 1.5rem 0.5rem 0.8rem;
-            background: #e7c7b0a1;
+            padding: 20px 12px 10px 27px;
+            // padding: 18px 20px 15px 25px;
+            // padding-left: 14px;
+            // border: 2px solid $dark_brown;
             span,
             p {
-              font-size: 0.92rem;
+              opacity: 1;
+              // padding: 3px 0 0 0;
+              line-height: 2.75vh;
+              font-size: 20px;
               word-spacing: 2px;
-              line-height: 3.5vh;
-              letter-spacing: -0.5px;
             }
-            span {
-              font-size: 0.8rem;
-            }
-            nav svg {
-              width: 14px;
+            nav {
+              // opacity: 1;
+              margin-top: -0.01rem;
+              svg {
+                width: 18px;
+              }
             }
           }
           &:last-of-type {
-            margin-left: auto;
-            border-radius: 30px 0 30px 30px;
-          }
-          &:hover {
-            cursor: pointer;
-            opacity: 0.825;
-          }
-          hr {
-            background-color: $pinkish;
-            opacity: 0.1;
-            height: 1px;
-            border: none;
-            margin: 0 0 10px 0;
+            margin-left: -8vw;
+            border-radius: 33px 47px 33px 0;
           }
           h4 {
-            font-family: Gills;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 1.85rem;
-            letter-spacing: 1.2px;
-            color: $pinkish;
+            font-size: 3.5vw;
           }
           span,
           p {
-            letter-spacing: -0.25px;
-            line-height: 3.2vh;
-            color: $pinkish_Light;
+            // padding: 2px 5px 0 1px;
+            // letter-spacing: 0.2px;
+            line-height: 2.5vh;
+            padding: 5px 0;
+            font-size: 17px;
+            opacity: 0.7;
             word-spacing: 2px;
-            font-size: 0.875rem;
-            font-weight: 400;
-            font-family: Gills;
-            @include transShort;
-          }
-          span {
-            font-size: 0.8rem;
-            margin-left: 0.75rem;
           }
           svg {
-            margin-right: 0.2rem;
-            width: 12px;
-            @include trans;
+            // width: 10px;
           }
           > nav {
-            margin: 1rem -0.05rem 1.2rem auto;
-            @include flex($jus: right);
-          }
-        }
-      }
-      main.Roller {
-        padding-left: 3rem;
-        .content {
-          @include flex($jus: left, $align: center);
-          padding: 1rem 3rem;
-
-          //   ACTIVE ROLLER
-          &.active {
-            p {
-              font-family: Gills;
-
-              span {
-                font-style: normal;
-                font-size: 1.08rem;
-                letter-spacing: -0.1px;
-                line-height: 1.35rem;
-
-                opacity: 1;
-                color: $pinkish_Light;
-              }
-              &:hover span {
-                font-size: 1.1rem;
-                opacity: 1;
-              }
-              &::before {
-                content: "";
-
-                position: absolute;
-
-                z-index: 2;
-
-                top: 0.5rem;
-                left: -2.5rem;
-
-                width: 0.8rem;
-                height: 0.8rem;
-                border-radius: 10000px;
-                background-color: $pink;
-                opacity: 1;
-              }
-            }
-          }
-
-          p {
-            color: $pinkish;
-            width: fit-content;
-            z-index: 2;
-            span {
-              font-size: 0.8rem;
-              line-height: 1.15rem;
-              font-style: italic;
-              opacity: 0.5;
+            // opacity: 0.6;
+            // margin: 7px auto 10px 2px;
+            svg {
+              width: 14px;
               @include trans;
             }
-            &:hover span {
-              opacity: 0.7;
-            }
-            &::before {
-              content: "";
-
-              position: absolute;
-
-              top: 0.5rem;
-              left: -2.3rem;
-              width: 0.5rem;
-              height: 0.5rem;
-              @include transShort;
-              border-radius: 10000px;
-              background-color: $pinkish;
-            }
-            &:hover::before {
-              opacity: 1 !important;
-              transform: scale(1.2);
-              cursor: pointer;
-              color: $pinkish_Light;
-            }
-          }
-        }
-        .line {
-          content: "";
-          opacity: 0.85;
-          background-color: $pinkish;
-          position: absolute;
-          top: 2rem;
-          left: 3.85rem;
-          width: 2px;
-          height: 25rem;
-          border-radius: 1px;
-
-          z-index: 1;
-          @include transShort;
-
-          &:hover {
-            width: 3px;
-          }
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 1300px) {
-  #Lithium {
-    // position: relative;
-    .Bg__Image {
-      // height: 125vh;
-      // border-radius: 0 180px 0 180px;
-      border-radius: 0 25vh;
-    }
-    .container {
-      // @include flex;
-      // position: absolute;
-      // top: 0;
-      // left: 0;
-      // right: 0;
-      // padding: 0 2rem;
-      > main {
-        // width: 50%;
-      }
-      h2 {
-        // font-family: GillsHeavy;
-        // text-align: right;
-        // text-transform: uppercase;
-        // font-size: 2.5rem;
-        // letter-spacing: -1px;
-        // color: $pink;
-        margin: 7rem 3rem 2rem auto;
-      }
-      aside {
-        // @include flex($jus: center, $dir: column);
-        // padding: 1rem 2rem;
-        // margin: 1rem auto;
-        .bubble {
-          // min-width: 20vw;
-          width: 17vw;
-          // padding: 1.5rem 1.5rem 1rem;
-          // margin: 0 0 0.5rem auto;
-          // border: 4px solid $dark_brown;
-          // opacity: 0.7;
-          // text-align: right;
-          // border-radius: 30px 30px 0;
-          // background: #e7c7b071;
-          // @include transShort;
-          padding: 18px 27px 8px 17px;
-          &.Tabbed,
-          &.Tabbed:hover {
-            padding: 15px 27px 5px 17px;
-            // opacity: 1;
-            // border: 5px solid $dark_brown;
-            // box-shadow: 0 0 15px 0.5px #e7c7b033;
-            // background: #e7c7b0a1;
-            span,
-            p {
-              // line-height: 1.7rem;
-              font-size: 1rem;
-              line-height: 4.5vh;
-              letter-spacing: -0.5px;
-              word-spacing: 3px;
-            }
-          }
-          &:last-of-type {
-            // margin-left: auto;
-            // border-radius: 30px 0 30px 30px;
-          }
-          &:hover {
-            // cursor: pointer;
-            // opacity: 0.825;
-          }
-
-          h4 {
-            font-size: 2rem;
-            // color: $pinkish;
-          }
-          span,
-          p {
-            letter-spacing: 0.2px;
-            // line-height: 1.5rem;
-            // color: $pinkish_Light;
-            word-spacing: 5px;
-            // padding-left: 15px;
-            line-height: 3.75vh;
-            font-size: 0.975rem;
-            // font-family: Gills;
-            // @include transShort;
-          }
-          span {
-            // font-size: 0.7rem;
-            // margin-left: 0.75rem;
-          }
-          svg {
-            // margin-right: 0.2rem;
-            // width: 13px;
-          }
-          > nav {
-            // margin: 0.7rem -0.05rem 1.2rem auto;
-            // @include flex($jus: right);
           }
         }
       }
       main.Roller {
-        // padding-left: 3rem;
+        padding: 3rem 7rem 3rem 13rem;
         .content {
-          // @include flex($jus: left, $align: center);
-          padding: 1.25rem 3rem;
-
+          padding-top: 1.3rem;
+          padding-right: 2rem;
+          //   ACTIVE ROLLER
           &.active {
+            padding-bottom: 0.8rem;
+            padding-top: 1.2rem;
             p {
-              // font-family: Gills;
-
               span {
-                // font-style: normal;
-                font-size: 1.3rem;
-                // letter-spacing: -0.1px;
-                line-height: 4vh;
-                // opacity: 1;
-                // color: $pinkish_Light;
-              }
-              &:hover span {
-                font-size: 1.15rem;
-                // opacity: 1;
+                font-size: 2.8vw;
+                line-height: 3vh;
               }
               &::before {
-                // content: "";
-                // position: absolute;
-                // z-index: 2;
-                // top: 0.5rem;
-                // left: -2.5rem;
-
-                // width: 0.8rem;
-                // height: 0.8rem;
-                // border-radius: 10000px;
-                // background-color: $pink;
-                // opacity: 1;
+                left: -2.8rem;
+                width: 1.3rem;
+                height: 1.3rem;
+              }
+              &:hover {
+                span {
+                  font-size: 2.8vw;
+                }
               }
             }
           }
-
           p {
-            // color: $pinkish;
-            // width: fit-content;
-            // z-index: 2;
             span {
-              font-size: 1rem;
-              line-height: 3vh;
-              // font-style: italic;
-              // opacity: 0.5;
-              // @include trans;
-            }
-            &:hover span {
-              // opacity: 0.7;
+              font-size: 2.25vw;
+              line-height: 2.5vh;
             }
             &::before {
-              // content: "";
-              // position: absolute;
-              // top: 0.5rem;
-              // left: -2.3rem;
-              // width: 0.5rem;
-              // height: 0.5rem;
-              // @include transShort;
-              // border-radius: 10000px;
-              // background-color: $pinkish;
-            }
-            &:hover::before {
-              // opacity: 1 !important;
-              // transform: scale(1.2);
-              // cursor: pointer;
-              // color: $pinkish_Light;
+              left: -2.55rem;
+              width: 0.8rem;
+              height: 0.8rem;
             }
           }
         }
         .line {
-          // content: "";
-          // opacity: 0.85;
-          // background-color: $pinkish;
-          // position: absolute;
-          top: 2.4rem;
-          // left: 3.85rem;
-          // width: 2px;
-          // height: 25rem;
-          // border-radius: 1px;
-          // z-index: 1;
-          &:hover {
-            // width: 3px;
-          }
+          left: 11.45rem;
+          top: 4.8rem;
         }
       }
     }
   }
 }
 
-// ********************************************************
+// ************************ LANDSCAPE ********************************
+
 // PHONE LANDSCAPE   iPhone , Nexus 6, Samsung Galaxy S8+
 @media screen and (min-height: 350px) and (max-width: 750px) and (orientation: Landscape) {
   #Lithium {
@@ -1851,7 +1571,7 @@
         padding: 12px 10px 5px 24px;
         &.Tabbed,
         &.Tabbed:hover {
-          padding: 13px 10px 12px  24px;
+          padding: 13px 10px 12px 24px;
           // padding: 10px 15px 0 18px;
           span,
           p {
@@ -1898,71 +1618,70 @@
         // main.Roller {
         //   width: 90%;
         //   padding: 2rem 5rem 3rem;
-          .content {
-            // padding: 1rem 0 0.2rem 0.6rem;
-            // ACTIVE ROLLER
-            &.active {
-              padding-top: 0.8rem !important;
-              p {
+        .content {
+          // padding: 1rem 0 0.2rem 0.6rem;
+          // ACTIVE ROLLER
+          &.active {
+            padding-top: 0.8rem !important;
+            p {
+              span {
+                letter-spacing: -0.25px;
+                font-size: 1rem;
+                word-spacing: 3px;
+                line-height: 5vh;
+              }
+              &:hover {
                 span {
                   letter-spacing: -0.25px;
                   font-size: 1rem;
                   word-spacing: 3px;
                   line-height: 5vh;
-                }
-                &:hover {
-                  span {
-                    letter-spacing: -0.25px;
-                    font-size: 1rem;
-                    word-spacing: 3px;
-                    line-height: 5vh;
-                    // line-height: 8vh;
-                  }
-                  &::before {
-                    width: 14px;
-                    height: 14px;
-                  }
+                  // line-height: 8vh;
                 }
                 &::before {
-                  left: -1.65rem;
-                  width: 13.5px;
-                  height: 13.5px;
+                  width: 14px;
+                  height: 14px;
                 }
               }
-              svg {
-                color: $pink;
-                opacity: 1;
+              &::before {
+                left: -1.65rem;
+                width: 13.5px;
+                height: 13.5px;
               }
             }
-            p {
-              span {
-                font-size: 0.85rem;
-                letter-spacing: 0.1px;
-                line-height: 4.25vh;
-                word-spacing: 2px;
-              }
-              &:hover span {
-                font-size: 0.99rem;
-                letter-spacing: -0.25px;
-                line-height: 5vh;
-                word-spacing: 3px;
-              }
-              &::before {
-                width: 10px;
-                height: 10px;
-              }
-              &:hover::before {
-                width: 11px;
-                height: 11px;
-              }
+            svg {
+              color: $pink;
+              opacity: 1;
             }
           }
+          p {
+            span {
+              font-size: 0.85rem;
+              letter-spacing: 0.1px;
+              line-height: 4.25vh;
+              word-spacing: 2px;
+            }
+            &:hover span {
+              font-size: 0.99rem;
+              letter-spacing: -0.25px;
+              line-height: 5vh;
+              word-spacing: 3px;
+            }
+            &::before {
+              width: 10px;
+              height: 10px;
+            }
+            &:hover::before {
+              width: 11px;
+              height: 11px;
+            }
+          }
+        }
         //   .line {
         //     top: 11vw;
         //     left: 4.55rem;
         //   }
         // }
-
 
         .line {
           top: 6.25vw;
@@ -2217,6 +1936,416 @@
   //     }
   //   }
   // }
+}
+
+// ****************************** LAPTOP ********************************
+
+// For Desktops, Large screens, Extra large screens, TVs
+// @media screen and (min-width: 1024px) and (min-height: 550px) {
+@media screen and (min-width: 1024px) and (height: 768px) {
+  #Lithium {
+    position: relative;
+    // height: 125vh;
+    .Bg__Image {
+      border-radius: 0 18vh;
+    }
+    .container {
+      @include flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0 2rem;
+      > main {
+        width: 50%;
+      }
+      h2 {
+        font-family: GillsHeavy;
+        text-align: right;
+        text-transform: uppercase;
+        // font-size: 2.5rem;
+        font-size: 4vw;
+        letter-spacing: -1px;
+        color: $pink;
+        margin: 5rem 2rem 2rem auto;
+      }
+      aside {
+        @include flex($jus: center, $dir: column);
+        padding: 1rem 2.5rem;
+        margin: 1rem auto;
+        .bubble {
+          // max-width: 25dvw;
+          width: 22vw;
+          min-width: 20vw;
+          margin: 0 0 0.5rem auto;
+          border: 2px solid $dark_brown;
+          opacity: 0.7;
+          text-align: right;
+          border-radius: 30px 30px 0;
+          background: #e7c7b071;
+          @include transShort;
+          padding: 20px 25px 7px;
+          box-shadow: inset 0 0 20px 0.05px #2e0f107a;
+          &.Tabbed,
+          &.Tabbed:hover {
+            padding: 18px 25px 5px;
+            opacity: 1;
+            border: 3px solid $dark_brown;
+            box-shadow: inset 0 0 18px 0.01px #2e0f1057,
+              0 0 15px 0.5px #e7c7b033;
+            // padding: 1rem 1.5rem 0.5rem 0.8rem;
+            background: #e7c7b0a1;
+            span,
+            p {
+              font-size: 0.92rem;
+              word-spacing: 2px;
+              line-height: 3.5vh;
+              letter-spacing: -0.5px;
+            }
+            span {
+              font-size: 0.8rem;
+            }
+            nav svg {
+              width: 14px;
+            }
+          }
+          &:last-of-type {
+            margin-left: auto;
+            border-radius: 30px 0 30px 30px;
+          }
+          &:hover {
+            cursor: pointer;
+            opacity: 0.825;
+          }
+          hr {
+            background-color: $pinkish;
+            opacity: 0.1;
+            height: 1px;
+            border: none;
+            margin: 0 0 10px 0;
+          }
+          h4 {
+            font-family: Gills;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.85rem;
+            letter-spacing: 1.2px;
+            color: $pinkish;
+          }
+          span,
+          p {
+            letter-spacing: -0.25px;
+            line-height: 3.2vh;
+            color: $pinkish_Light;
+            word-spacing: 2px;
+            font-size: 0.875rem;
+            font-weight: 400;
+            font-family: Gills;
+            @include transShort;
+          }
+          span {
+            font-size: 0.8rem;
+            margin-left: 0.75rem;
+          }
+          svg {
+            margin-right: 0.2rem;
+            width: 12px;
+            @include trans;
+          }
+          > nav {
+            margin: 1rem -0.05rem 1.2rem auto;
+            @include flex($jus: right);
+          }
+        }
+      }
+      main.Roller {
+        padding-left: 3rem;
+        .content {
+          @include flex($jus: left, $align: center);
+          padding: 1rem 3rem;
+
+          //   ACTIVE ROLLER
+          &.active {
+            p {
+              font-family: Gills;
+
+              span {
+                font-style: normal;
+                font-size: 1.08rem;
+                letter-spacing: -0.1px;
+                line-height: 1.35rem;
+
+                opacity: 1;
+                color: $pinkish_Light;
+              }
+              &:hover span {
+                font-size: 1.1rem;
+                opacity: 1;
+              }
+              &::before {
+                content: "";
+
+                position: absolute;
+
+                z-index: 2;
+
+                top: 0.5rem;
+                left: -2.5rem;
+
+                width: 0.8rem;
+                height: 0.8rem;
+                border-radius: 10000px;
+                background-color: $pink;
+                opacity: 1;
+              }
+            }
+          }
+
+          p {
+            color: $pinkish;
+            width: fit-content;
+            z-index: 2;
+            span {
+              font-size: 0.8rem;
+              line-height: 1.15rem;
+              font-style: italic;
+              opacity: 0.5;
+              @include trans;
+            }
+            &:hover span {
+              opacity: 0.7;
+            }
+            &::before {
+              content: "";
+
+              position: absolute;
+
+              top: 0.5rem;
+              left: -2.3rem;
+              width: 0.5rem;
+              height: 0.5rem;
+              @include transShort;
+              border-radius: 10000px;
+              background-color: $pinkish;
+            }
+            &:hover::before {
+              opacity: 1 !important;
+              transform: scale(1.2);
+              cursor: pointer;
+              color: $pinkish_Light;
+            }
+          }
+        }
+        .line {
+          content: "";
+          opacity: 0.85;
+          background-color: $pinkish;
+          position: absolute;
+          top: 2rem;
+          left: 3.85rem;
+          width: 2px;
+          height: 25rem;
+          border-radius: 1px;
+
+          z-index: 1;
+          @include transShort;
+
+          &:hover {
+            width: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #Lithium {
+    // position: relative;
+    .Bg__Image {
+      // height: 125vh;
+      // border-radius: 0 180px 0 180px;
+      border-radius: 0 25vh;
+    }
+    .container {
+      // @include flex;
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // right: 0;
+      // padding: 0 2rem;
+      > main {
+        // width: 50%;
+      }
+      h2 {
+        // font-family: GillsHeavy;
+        // text-align: right;
+        // text-transform: uppercase;
+        // font-size: 2.5rem;
+        // letter-spacing: -1px;
+        // color: $pink;
+        margin: 7rem 3rem 2rem auto;
+      }
+      aside {
+        // @include flex($jus: center, $dir: column);
+        // padding: 1rem 2rem;
+        // margin: 1rem auto;
+        .bubble {
+          // min-width: 20vw;
+          width: 17vw;
+          // padding: 1.5rem 1.5rem 1rem;
+          // margin: 0 0 0.5rem auto;
+          // border: 4px solid $dark_brown;
+          // opacity: 0.7;
+          // text-align: right;
+          // border-radius: 30px 30px 0;
+          // background: #e7c7b071;
+          // @include transShort;
+          padding: 18px 27px 8px 17px;
+          &.Tabbed,
+          &.Tabbed:hover {
+            padding: 15px 27px 5px 17px;
+            // opacity: 1;
+            // border: 5px solid $dark_brown;
+            // box-shadow: 0 0 15px 0.5px #e7c7b033;
+            // background: #e7c7b0a1;
+            span,
+            p {
+              // line-height: 1.7rem;
+              font-size: 1rem;
+              line-height: 4.5vh;
+              letter-spacing: -0.5px;
+              word-spacing: 3px;
+            }
+          }
+          &:last-of-type {
+            // margin-left: auto;
+            // border-radius: 30px 0 30px 30px;
+          }
+          &:hover {
+            // cursor: pointer;
+            // opacity: 0.825;
+          }
+
+          h4 {
+            font-size: 2rem;
+            // color: $pinkish;
+          }
+          span,
+          p {
+            letter-spacing: 0.2px;
+            // line-height: 1.5rem;
+            // color: $pinkish_Light;
+            word-spacing: 5px;
+            // padding-left: 15px;
+            line-height: 3.75vh;
+            font-size: 0.975rem;
+            // font-family: Gills;
+            // @include transShort;
+          }
+          span {
+            // font-size: 0.7rem;
+            // margin-left: 0.75rem;
+          }
+          svg {
+            // margin-right: 0.2rem;
+            // width: 13px;
+          }
+          > nav {
+            // margin: 0.7rem -0.05rem 1.2rem auto;
+            // @include flex($jus: right);
+          }
+        }
+      }
+      main.Roller {
+        // padding-left: 3rem;
+        .content {
+          // @include flex($jus: left, $align: center);
+          padding: 1.25rem 3rem;
+
+          &.active {
+            p {
+              // font-family: Gills;
+
+              span {
+                // font-style: normal;
+                font-size: 1.3rem;
+                // letter-spacing: -0.1px;
+                line-height: 4vh;
+                // opacity: 1;
+                // color: $pinkish_Light;
+              }
+              &:hover span {
+                font-size: 1.15rem;
+                // opacity: 1;
+              }
+              &::before {
+                // content: "";
+                // position: absolute;
+                // z-index: 2;
+                // top: 0.5rem;
+                // left: -2.5rem;
+
+                // width: 0.8rem;
+                // height: 0.8rem;
+                // border-radius: 10000px;
+                // background-color: $pink;
+                // opacity: 1;
+              }
+            }
+          }
+
+          p {
+            // color: $pinkish;
+            // width: fit-content;
+            // z-index: 2;
+            span {
+              font-size: 1rem;
+              line-height: 3vh;
+              // font-style: italic;
+              // opacity: 0.5;
+              // @include trans;
+            }
+            &:hover span {
+              // opacity: 0.7;
+            }
+            &::before {
+              // content: "";
+              // position: absolute;
+              // top: 0.5rem;
+              // left: -2.3rem;
+              // width: 0.5rem;
+              // height: 0.5rem;
+              // @include transShort;
+              // border-radius: 10000px;
+              // background-color: $pinkish;
+            }
+            &:hover::before {
+              // opacity: 1 !important;
+              // transform: scale(1.2);
+              // cursor: pointer;
+              // color: $pinkish_Light;
+            }
+          }
+        }
+        .line {
+          // content: "";
+          // opacity: 0.85;
+          // background-color: $pinkish;
+          // position: absolute;
+          top: 2.4rem;
+          // left: 3.85rem;
+          // width: 2px;
+          // height: 25rem;
+          // border-radius: 1px;
+          // z-index: 1;
+          &:hover {
+            // width: 3px;
+          }
+        }
+      }
+    }
+  }
 }
 
 /*

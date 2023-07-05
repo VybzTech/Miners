@@ -98,7 +98,7 @@
 }
 // }
 
-//  Small iPhone 2
+//  Small iPhone 2: iPhone 6, iPhone 5/SE,
 @media screen and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
   #About {
     // @include flex($dir: column-reverse, $jus: center);
@@ -196,7 +196,7 @@
     }
   }
 }
-// iPhone 6/7/8 and similar devices:
+// iPhone 6/7/8 and similar devices: iPhone SE,
 @media screen and (min-width: 375px) and (max-height: 667px) {
   #About {
     height: 100vh;
@@ -296,7 +296,7 @@
   }
 }
 
-// For iPhone X and similar devices:
+// For iPhone X and similar devices: iPhone 12 Pro,
 @media only screen and (min-width: 375px) and (min-height: 730px) and (max-height: 850px) {
   #About {
     height: 100vh;
@@ -713,8 +713,291 @@
   }
 }
 
+// For Desktops, Large screens, Extra large screens, TVs: iPad Pro, iPad Air, Surface Pro 7
+@media screen and (min-width: 800px) and (min-height: 1100px) {
+  #About {
+    height: 100vh;
+    height: auto;
+    // @include flex($dir: column-reverse, $jus: center);
+    // width: 100%;
+    main {
+      width: 90%;
+      // padding: 0 .7rem 0;
+      // margin: auto 0;
+      h2 {
+        // letter-spacing: -2px;
+        font-size: 5.5vw;
+        padding-top: 5rem;
+        width: fit-content;
+        // -webkit-text-stroke: 0.75px black;
+        // font-family: GillsHeavy;
+        // text-align: center;
+        // text-transform: uppercase;
+        // padding-top: 3rem;
+        margin: 0 auto;
+        &::after {
+          bottom: 0.2rem;
+          right: -0.2rem;
+          height: 1.1rem;
+          width: 10rem;
+          // opacity: 0.8;
+          //   content: "";
+          //   position: absolute;
+          //   // bottom: 0.5rem;
+          //   // right: -0.25rem;
+          //   // width: 10rem;
+          //   // height: 1rem;
+          // border-radius: 1000px;
+          //   z-index: -1;
+          //   // z-index: 1;
+          //   background-color: $yellow2;
+          //   border: 2px solid $deep_yellow;
+        }
+        //   font-family: GillsBold;
+      }
+      p {
+        padding-top: 0.85rem;
+        font-size: 27px;
+        line-height: 5.25vh;
+        width: 100%;
+        // font-family: Gills;
+        // text-shadow: 0 0 3px #2222;
+        // color: #111;
+        // letter-spacing: 0.2px;
+        // // word-spacing: 3px;
+        // // margin: 2rem 0 0 auto;
+        // margin: 1rem auto 0;
+        // // font-size: 1.2rem;
+        // text-align: center;
+      }
+    }
+    .AboutImg {
+      // position: relative;
+      // width: 95%;
+      // width: 60%;
+      img {
+        // @include trans;
+        // position: absolute;
+        // // top: 9rem;
+        // top: 1.2rem;
+        // left: 1rem;
+        // width: 90vw;
+        // width: 65vw;
+        // width: 40vw;
+
+        // margin: 0 auto;
+      }
+      .svg {
+        //   width: 100%;
+        svg {
+          //     @include trans;
+          width: 75vw;
+          margin: -7rem auto 1rem 7rem;
+          //     // width: 40vw;
+          //     // margin: 2rem auto 0;
+        }
+      }
+      &:hover {
+        //   cursor: cell;
+        img {
+          //     // top: 10rem;
+          // left: 5rem;
+          // transform: scale(1.05);
+          // transform: rotateZ(-2.5deg);
+
+          //     // transform: scale(0.95);
+          // transform-origin: 0 0;
+          // transform: scale(1.05) rotate(-2deg);
+        }
+        .svg svg {
+          //     transform: rotate(30deg) scale(1.075);
+          //     // transform: rotate3d(30deg);
+        }
+      }
+    }
+  }
+}
+
+// ************************ LANDSCAPE ********************************
+
+// PHONE LANDSCAPE   iPhone , Nexus 6, Samsung Galaxy S8+
+@media screen and (min-height: 350px) and (max-width: 750px) and (orientation: Landscape) {
+  #About {
+    height: auto;
+    main {
+      width: 98%;
+      h2 {
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 4vw;
+        &::after {
+          right: 0;
+          width: 7rem;
+          bottom: 0.1rem;
+          height: 0.85rem;
+        }
+      }
+      p {
+        letter-spacing: 0.1px;
+        font-size: 0.9rem;
+        word-spacing: 3px;
+        line-height: 9vh;
+      }
+    }
+    .AboutImg {
+      width: 70%;
+      img {
+        left: -1rem;
+        width: 78vw;
+      }
+      .svg {
+        // width: 100%;
+        svg {
+          // @include trans;
+          width: 70vw;
+          margin: -3.5rem auto -0.5rem;
+        }
+      }
+      &:hover {
+        img {
+          // transform: scale(1.05);
+        }
+        .svg svg {
+          // transform: rotate(30deg) scale(1.075);
+        }
+      }
+    }
+  }
+}
+
+// PHONE LANDSCAPE   iPhone 4, iPhone 5/SE (-100px),
+@media screen and (min-height: 320px) and (max-width: 580px) and (orientation: Landscape) {
+  #About {
+    height: auto;
+    main {
+      width: 98%;
+      h2 {
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 5vw;
+        &::after {
+          right: 0;
+          width: 6rem;
+          bottom: -0.05rem;
+          height: 0.8rem;
+        }
+      }
+      p {
+        letter-spacing: 0.1px;
+        font-size: 0.9rem;
+        word-spacing: 3px;
+        line-height: 9vh;
+      }
+    }
+    .AboutImg {
+      width: 70%;
+      img {
+        left: -1rem;
+        width: 75vw;
+      }
+      .svg {
+        svg {
+          width: 65vw;
+          margin: -3.5rem auto -1rem;
+        }
+      }
+    }
+  }
+}
+
+// PHONE LANDSCAPE   iPhone SE, iPhone 6,7,8, iPhone X
+@media screen and (min-height: 375px) and (orientation: Landscape) {
+  #About {
+    // height: auto;
+    main {
+      width: 96%;
+      h2 {
+        // width: fit-content;
+        // margin: 0 auto;
+        font-size: 5vw;
+        word-spacing: 5px;
+        &::after {
+          // right: 0;
+          width: 8rem;
+          // bottom: -0.05rem;
+          // height: 0.8rem;
+        }
+      }
+      p {
+        // letter-spacing: 0.1px;
+        font-size: 0.955rem;
+        // word-spacing: 3px;
+        line-height: 10vh;
+      }
+    }
+    .AboutImg {
+      // width: 70%;
+      img {
+        // left: -1rem;
+        width: 70vw;
+      }
+      .svg {
+        svg {
+          width: 62vw;
+          // margin: -4.5rem auto -1rem;
+        }
+      }
+    }
+  }
+}
+
+// PHONE LANDSCAPE   iPhone X Edits
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #About {
+    height: auto;
+    main {
+      width: 85%;
+      h2 {
+        // width: fit-content;
+        // margin: 0 auto;
+        font-size: 4.4vw;
+        word-spacing: 5px;
+        &::after {
+          // right: 0;
+          width: 9rem;
+          bottom: 0.1rem;
+          // height: 0.8rem;
+        }
+      }
+      p {
+        // letter-spacing: 0.1px;
+        font-size: 1.1rem;
+        word-spacing: 3px;
+        line-height: 13vh;
+      }
+    }
+    .AboutImg {
+      // width: 70%;
+      img {
+        left: 5rem;
+        width: 70vw;
+      }
+      .svg {
+        width: fit-content;
+        margin: 0 auto;
+        svg {
+          width: 62vw;
+          margin: -3.5rem auto -1rem;
+        }
+      }
+    }
+  }
+}
+
+// ****************************** LAPTOP ********************************
+
 // For Desktops, Large screens, Extra large screens, TVs
-@media screen and (min-width: 1024px) and (min-height: 550px) {
+@media screen and (min-width: 1024px) and (height: 768px) {
   // @media screen and (min-width: 1024px) {
   #About {
     @include flex;
@@ -879,276 +1162,103 @@
   }
 }
 
-// ********************************************************
-// PHONE LANDSCAPE   iPhone , Nexus 6, Samsung Galaxy S8+
-@media screen and (min-height: 350px) and (max-width: 750px) and (orientation: Landscape) {
-  #About {
-    height: auto;
-    main {
-      width: 98%;
-      h2 {
-        width: fit-content;
-        margin: 0 auto;
-        font-size: 4vw;
-        &::after {
-          right: 0;
-          width: 7rem;
-          bottom: 0.1rem;
-          height: 0.85rem;
-        }
-      }
-      p {
-        letter-spacing: 0.1px;
-        font-size: 0.9rem;
-        word-spacing: 3px;
-        line-height: 9vh;
-      }
-    }
-    .AboutImg {
-      width: 70%;
-      img {
-        left: -1rem;
-        width: 78vw;
-      }
-      .svg {
-        // width: 100%;
-        svg {
-          // @include trans;
-          width: 70vw;
-          margin: -3.5rem auto -0.5rem;
-        }
-      }
-      &:hover {
-        img {
-          // transform: scale(1.05);
-        }
-        .svg svg {
-          // transform: rotate(30deg) scale(1.075);
-        }
-      }
-    }
-  }
-}
-
-// PHONE LANDSCAPE   iPhone 4, iPhone 5/SE (-100px),
-@media screen and (min-height: 320px) and (max-width: 580px) and (orientation: Landscape) {
-  #About {
-    height: auto;
-    main {
-      width: 98%;
-      h2 {
-        width: fit-content;
-        margin: 0 auto;
-        font-size: 5vw;
-        &::after {
-          right: 0;
-          width: 6rem;
-          bottom: -0.05rem;
-          height: 0.8rem;
-        }
-      }
-      p {
-        letter-spacing: 0.1px;
-        font-size: 0.9rem;
-        word-spacing: 3px;
-        line-height: 9vh;
-      }
-    }
-    .AboutImg {
-      width: 70%;
-      img {
-        left: -1rem;
-        width: 75vw;
-      }
-      .svg {
-        svg {
-          width: 65vw;
-          margin: -3.5rem auto -1rem;
-        }
-      }
-    }
-  }
-}
-
-
-// PHONE LANDSCAPE   iPhone SE, iPhone 6,7,8, iPhone X
-@media screen and (min-height: 375px) and (orientation: Landscape) {
-  #About {
-    // height: auto;
-    main {
-      width: 96%;
-      h2 {
-        // width: fit-content;
-        // margin: 0 auto;
-        font-size: 5vw;word-spacing:5px;
-        &::after {
-          // right: 0;
-          width: 8rem;
-          // bottom: -0.05rem;
-          // height: 0.8rem;
-        }
-      }
-      p {
-        // letter-spacing: 0.1px;
-        font-size: 0.955rem;
-        // word-spacing: 3px;
-        line-height: 10vh;
-      }
-    }
-    .AboutImg {
-      // width: 70%;
-      img {
-        // left: -1rem;
-        width: 70vw;
-      }
-      .svg {
-        svg {
-          width: 62vw;
-          // margin: -4.5rem auto -1rem;
-        }
-      }
-    }
-  }
-}
-
-// PHONE LANDSCAPE   iPhone X Edits
-@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
-  #About {
-    height: auto;
-    main {
-      width: 85%;
-      h2 {
-        // width: fit-content;
-        // margin: 0 auto;
-        font-size: 4.4vw;word-spacing:5px;
-        &::after {
-          // right: 0;
-          width: 9rem;
-          bottom: 0.1rem;
-          // height: 0.8rem;
-        }
-      }
-      p {
-        // letter-spacing: 0.1px;
-        font-size: 1.1rem;
-        word-spacing: 3px;
-        line-height: 13vh;
-      }
-    }
-    .AboutImg {
-      // width: 70%;
-      img {
-        left: 5rem;
-        width: 70vw;
-      }
-      .svg {width: fit-content;margin:0 auto;
-        svg {
-          width: 62vw;
-          margin: -3.5rem auto -1rem;
-        }
-      }
-    }
-  }
-}
-
-
 // PHONE LANDSCAPE
-@media screen and (min-height: 320px) and (max-height: 450px) {
-  // #About {
-  //   // @include flex($dir: column-reverse, $jus: center);
-  //   height: auto;
-  //   // width: 100%;
-  //   // padding: .2rem 0 2rem;
-  //   main {
-  //     width: 98%;
-  //     // margin: auto 0;
-  //     h2 {
-  //       // font-family: GillsHeavy;
-  //       // text-align: center;
-  //       // text-transform: uppercase;
-  //       // padding-top: 2.8rem;
-  //       // letter-spacing: -1px;
-  //       font-size: 5.25vw;
-  //       // -webkit-text-stroke: 1px black;
-  //       &::after {
-  //         // content: "";
-  //         // position: absolute;
-  //         // bottom: 0.05rem;
-  //         right: 10.25rem;
-  //         width: 5rem;
-  //         bottom: 0.15rem;
-  //         // right: -0.25rem;
-  //         // width: 10rem;
-  //         // height: 1rem;
-  //         // border-radius: 1000px;
-  //         // z-index: -1;
-  //         // z-index: 1;
-  //         // background-color: $yellow2;
-  //         // border: 2px solid $deep_yellow;
-  //       }
-  //       //   font-family: GillsBold;
-  //     }
-  //     p {
-  //       // font-family: Gills;
-  //       // width: 95%;
-  //       // text-shadow: 0 0 3px #2222;
-  //       // color: #111;
-  //       // // margin: 2rem 0 0 auto;
-  //       // margin: 1rem auto 0;
-  //       letter-spacing: 0.1px;
-  //       font-size: 0.85rem;
-  //       word-spacing: 3px;
-  //       line-height: 9vh;
-  //       // font-size: 1.2rem;
-  //       // text-align: center;
-  //     }
-  //   }
-  //   .AboutImg {
-  //     // position: relative;
-  //     width: 80%;
-  //     // width: 60%;
-  //     img {
-  //       // @include trans;
-  //       // position: absolute;
-  //       // // top: 9rem;
-  //       // top: 0;
-  //       left: -1rem;
-  //       width: 87vw;
-  //       // width: 65vw;
-  //       // width: 40vw;
+// @media screen and (min-height: 320px) and (max-height: 450px) {
+//   // #About {
+//   //   // @include flex($dir: column-reverse, $jus: center);
+//   //   height: auto;
+//   //   // width: 100%;
+//   //   // padding: .2rem 0 2rem;
+//   //   main {
+//   //     width: 98%;
+//   //     // margin: auto 0;
+//   //     h2 {
+//   //       // font-family: GillsHeavy;
+//   //       // text-align: center;
+//   //       // text-transform: uppercase;
+//   //       // padding-top: 2.8rem;
+//   //       // letter-spacing: -1px;
+//   //       font-size: 5.25vw;
+//   //       // -webkit-text-stroke: 1px black;
+//   //       &::after {
+//   //         // content: "";
+//   //         // position: absolute;
+//   //         // bottom: 0.05rem;
+//   //         right: 10.25rem;
+//   //         width: 5rem;
+//   //         bottom: 0.15rem;
+//   //         // right: -0.25rem;
+//   //         // width: 10rem;
+//   //         // height: 1rem;
+//   //         // border-radius: 1000px;
+//   //         // z-index: -1;
+//   //         // z-index: 1;
+//   //         // background-color: $yellow2;
+//   //         // border: 2px solid $deep_yellow;
+//   //       }
+//   //       //   font-family: GillsBold;
+//   //     }
+//   //     p {
+//   //       // font-family: Gills;
+//   //       // width: 95%;
+//   //       // text-shadow: 0 0 3px #2222;
+//   //       // color: #111;
+//   //       // // margin: 2rem 0 0 auto;
+//   //       // margin: 1rem auto 0;
+//   //       letter-spacing: 0.1px;
+//   //       font-size: 0.85rem;
+//   //       word-spacing: 3px;
+//   //       line-height: 9vh;
+//   //       // font-size: 1.2rem;
+//   //       // text-align: center;
+//   //     }
+//   //   }
+//   //   .AboutImg {
+//   //     // position: relative;
+//   //     width: 80%;
+//   //     // width: 60%;
+//   //     img {
+//   //       // @include trans;
+//   //       // position: absolute;
+//   //       // // top: 9rem;
+//   //       // top: 0;
+//   //       left: -1rem;
+//   //       width: 87vw;
+//   //       // width: 65vw;
+//   //       // width: 40vw;
 
-  //       // margin: 0 auto;
-  //     }
-  //     .svg {
-  //       width: 100%;
-  //       svg {
-  //         @include trans;
-  //         width: 80vw;
-  //         margin: -3.5rem auto 1rem;
+//   //       // margin: 0 auto;
+//   //     }
+//   //     .svg {
+//   //       width: 100%;
+//   //       svg {
+//   //         @include trans;
+//   //         width: 80vw;
+//   //         margin: -3.5rem auto 1rem;
 
-  //         // width: 40vw;
-  //         // margin: 2rem auto 0;
-  //       }
-  //     }
-  //     &:hover {
-  //       cursor: cell;
-  //       img {
-  //         // top: 10rem;
-  //         // left: 2.5rem;
-  //         transform: scale(1.05);
-  //         // transform: rotateZ(-2.5deg);
-  //         // transform: scale(0.95);
-  //         // transform-origin: 0 -100%;
-  //         // transform: scale(1.05) rotate(-7deg);
-  //       }
-  //       .svg svg {
-  //         transform: rotate(30deg) scale(1.075);
-  //         // transform: rotate3d(30deg);
-  //       }
-  //     }
-  //   }
-  // }
-}
+//   //         // width: 40vw;
+//   //         // margin: 2rem auto 0;
+//   //       }
+//   //     }
+//   //     &:hover {
+//   //       cursor: cell;
+//   //       img {
+//   //         // top: 10rem;
+//   //         // left: 2.5rem;
+//   //         transform: scale(1.05);
+//   //         // transform: rotateZ(-2.5deg);
+//   //         // transform: scale(0.95);
+//   //         // transform-origin: 0 -100%;
+//   //         // transform: scale(1.05) rotate(-7deg);
+//   //       }
+//   //       .svg svg {
+//   //         transform: rotate(30deg) scale(1.075);
+//   //         // transform: rotate3d(30deg);
+//   //       }
+//   //     }
+//   //   }
+//   // }
+// }
 
 /*
  #About {
