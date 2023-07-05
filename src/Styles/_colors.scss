@@ -170,4 +170,41 @@ $light_gray: #ccc;
       }
     }
   }
+
+  // PHONE LANDSCAPE   iPhone X Edits
+  @media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+    $min: $siz - 0.5vw;
+    $max: $siz + 0.7vw;
+    svg {
+      height: $siz;
+      width: $siz;
+      &.min {
+        height: $min;
+        width: $min;
+      }
+      &.max {
+        height: $max;
+        width: $max;
+      }
+    }
+  }
+
+  // PHONE LANDSCAPE   iPhone XR, iPhone 6+,7+,8+,
+  @media screen and (min-height: 414px) and (min-width: 700px) and (orientation: Landscape) {
+   $size : $siz - 0.55vw;
+    $min: $size - 0.5vw;
+    $max: $size + 0.75vw;
+    svg {
+      height: $size;
+      width: $size;
+      &.min {
+        height: $min;
+        width: $min;
+      }
+      &.max {
+        height: $max;
+        width: $max;
+      }
+    }
+  }
 }

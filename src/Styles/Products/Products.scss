@@ -1257,6 +1257,97 @@
   }
 }
 
+
+// PHONE LANDSCAPE   iPhone X Edits
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Products {
+    // height: 120vh;
+    .hero {
+      // margin: 3rem auto 0.5rem;
+      span {
+        font-size: 2vw;
+        // letter-spacing: -0.15px;
+        // opacity: 0.2;
+      }
+      h1 {
+        font-size: 13vw;
+        // letter-spacing: 1px;
+        // opacity: 0.2;
+        // filter: blur(2.5px);
+        // line-height: 5vh;
+      }
+      h2 {
+        // margin: 0 auto;
+        font-size: 5.3vw;
+        // width: fit-content;
+        // letter-spacing: -1.5px;
+        &::after {
+          height: 0.9rem;
+          bottom: 0.2rem;
+        //   right: -0.1rem;
+          width: 8.25rem;
+        }
+      }
+    }
+    main {
+      // padding: 0 3.2rem 0 2.5rem;
+      //    SWIPER  PRODUUCTS EDIT
+      .swiper-wrapper {
+        padding: 2rem 0;
+      }
+      .swiper-slide {
+        // margin-right: -70px !important;
+        margin-right: auto !important;
+      }
+      .swiper-slide:first-child {
+        padding-left: 3rem;
+      }
+      [class^="swiper-button-"]:after,
+      .swiper-rtl [class^="swiper-button-"]:after {
+        font-size: 3.5vw;
+      }
+      // .swiper-button-prev,
+      // .swiper-rtl .swiper-button-prev {
+      // }
+      // .swiper-slide:last-child > .card {
+      //   margin-right: 0 !important;
+      // }
+      .card {
+        // min-width: auto;
+        width: 43vw;
+        border-radius: 50px;
+        img {
+          height: 30vh;
+        }
+        .container {
+          // padding: 0.9rem 1.5rem 2rem;
+          h3 {
+            font-size: 3vw;
+            word-spacing: -1px;
+          }
+          p {
+            font-size: 0.9rem;
+            line-height: 6.5vh;
+            opacity: 0.8;
+            word-spacing: 1px;
+          }
+          hr {
+            // padding-right: 2rem;
+          }
+        }
+        &:hover {
+        }
+        > span {
+          width: 3.5rem;
+          height: 3.5rem;
+          top: 22.5vh;
+          @include svgValues(3.5vw);
+        }
+      }
+    }
+  }
+}
+
 // PHONE LANDSCAPE
 @media screen and (min-height: 320px) and (max-height: 450px) {
   // #Products {

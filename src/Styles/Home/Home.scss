@@ -554,6 +554,7 @@
     }
   }
 }
+
 // Longer phone iPhone XR
 @media only screen and (min-height: 850px) {
   main .title h1 {
@@ -692,275 +693,74 @@
   }
 }
 
-// For Desktops, Large screens, Extra large screens, TVs
-@media screen and (min-width: 1024px) and (min-height: 550px) {
+// For Desktops, Large screens, Extra large screens, TVs: iPad Pro, iPad Air, Surface Pro 7
+@media screen and (min-width: 800px) and (min-height: 1100px) {
   #Home {
-    position: relative;
-    .Bg__Image {
-      margin-top: 0;
-      height: 100vh;
-    }
-    //  SWIPER OVERRIDES
-    .swiper-pagination {
-      width: 10vw;
-      top: 40vh;
-      z-index: 5;
-      right: -2rem !important;
-      left: auto;
-      height: fit-content;
-      @include flex($dir: column);
-    }
-    .swiper-pagination-bullet {
-      margin: 0.6rem auto;
-      background: white;
-      opacity: 0.7;
-      width: 9px;
-      height: 9px;
-      z-index: 5;
-      @include transShort;
-      &-active {
-        width: 15px;
-        height: 15px;
-        margin: 1.2rem auto;
-        opacity: 1;
-        background: $deep_yellow;
-        &::after {
-          content: "";
-          position: absolute;
-          // top: -0.85rem; // INCREASE TO TAKEDOWN
-          // left: -0.8rem; // INCREASE TO TAKE RIGHT
-          top: -5.45px; // INCREASE TO TAKEDOWN
-          left: -5.55px; // INCREASE TO TAKE RIGHT
-          width: 22px;
-          height: 22px;
-          border-radius: 1000px;
-          z-index: -1;
-          // z-index: 1;
-          background: transparent;
-          border: 2px solid $deep_yellow;
+      .Bg__Image {
+        margin-top: 0;
+        height: 100vh;
+      }
+    //   //  SWIPER OVERRIDES
+    // .swiper-pagination {
+    //   bottom: 8vh;
+    // }
+      .swiper-pagination-bullet {
+        height: 12px;
+        width: 12px;
+        &-active {
+          height: 17px;
+          width: 17px;
+          &::after {
+            height: 25px;
+            width: 25px;
+            left: -5px;
+            top: -5px;
+          }
         }
       }
-      &:hover {
-        opacity: 1;
-        width: 15px;
-        height: 15px;
+      .swiper-slide > .Bg__Image::before {
+    //     // backdrop-filter: brightness(1.3) blur(0.15px);
+        height: 100vh;
+    //     // top: 7vh;
+        top: 0;
       }
-    }
-    .swiper-slide > .Bg__Image::before {
-      width: 100%;
-      height: 100vh;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background: linear-gradient(0deg, #0007, #0002);
-      z-index: 2;
-      content: "";
-      backdrop-filter: brightness(1.2) blur(0.5px);
-    }
     main {
-      position: absolute;
       top: 35vh;
-      left: 0;
-      width: 100%;
       .title {
-        margin: 0 auto;
-        text-align: center;
-        width: fit-content;
-        z-index: 2;
         h1 {
-          -webkit-text-stroke: 1.5px white;
-          color: white; // font-weight: 900;
-          font-size: 5vw;
-          font-family: GillsHeavy;
-          font-weight: 900;
-          letter-spacing: -3px;
-          line-height: 5vh;
-          text-transform: uppercase;
+          font-size: 8vw;
+                  line-height: 4.75vh !important;
           &:last-of-type {
-            font-size: 9vw;
-            -webkit-text-stroke: 5px white;
-            line-height: 9.25vh;
+                      font-size: 14.75vw;
+                      line-height: 7.8vh !important;
           }
         }
         & > a {
-          @include trans;
-          background-color: $dirty_yellow_shadow;
-          border-radius: 1vh;
-          border: 3px solid $orange;
-          color: $orange;
-          cursor: pointer;
-          display: inline-block;
-          font-size: 13px;
-          height: 28px;
-          margin: 1rem auto;
-          padding: 12px 25px 0;
-          position: relative;
-          text-transform: uppercase;
-          text-decoration: none;
-          text-shadow: 0 0 2.5px $orange;
-          word-spacing: 2px;
-          &:hover {
-            background-color: $dirty_yellow_shadow2;
-          }
-          &:active {
-            box-shadow: 0 3px 10px $dirty_yellow_shadow;
-            top: 3px;
-          }
+                  border-radius: 0.6vh;
+                  font-size: 18px;letter-spacing: 0.5px;
+          //         max-height: 40px;
+                  height: 26px;
+                  margin-top: 1.2vh;
+                  padding: 22px 35px 18px;
+          //         word-spacing: 1px;
         }
       }
       p.img_Counter {
-        z-index: 1;
-        // text-shadow: 0 0 5px $white;
-        font-size: 7rem;
-        // letter-spacing: -1px;
-        text-transform: uppercase;
-        filter: blur(0.7vh);
-        color: transparent;
-        opacity: 0.5;
-        // opacity: 1;
-        // border: 1.5px solid white;
-        // font-weight: 900;
-        // color: white; // font-weight: 900;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        margin: 5.35rem auto 3rem 2.5rem;
-        // font-family: Gills;
-        font-weight: 900;
-        // line-height: 3rem;
-        -webkit-text-stroke: 3px white;
-        // box-shadow: inset 1px 1px 5px #fff1, 0 0 7px 1px #fff8;
+              margin-top: 24.5vh !important;
+        //       margin: 27vh auto auto 5.5vw !important;
+        //       filter: blur(0.3vh);
+        //       // opacity: 0.5;
+        //       // font-size: 18vw;
       }
       img[alt="mouse"] {
-        left: 50%;
-        bottom: 9.85vh;
-        z-index: 2;
-        width: 1.6vw;
-        animation: bounce 2s 100ms ease-in-out infinite forwards;
+        width: 3.5vw;
       }
     }
   }
 }
 
-// For Desktops 1.3K+
-@media screen and (min-width: 1300px) {
-  #Home {
-    // position: relative;
-    .Bg__Image {
-      // margin-top: 0;
-      // height: 100vh;
-    }
-    //  SWIPER OVERRIDES
-    .swiper-pagination {
-      // width: 10vw;
-      // top: 40vh;
-      // z-index: 5;
-      // right: -2rem !important;
-      // left: auto;
-      // height: fit-content;
-      // @include flex($dir: column);
-    }
-    .swiper-pagination-bullet {
-      // margin: 0.6rem auto;
-      // background: white;
-      // opacity: 0.7;
-      width: 10px;
-      height: 10px;
-      // z-index: 5;
-      // @include transShort;
-      &-active {
-        width: 16px;
-        height: 16px;
-        // margin: 1.2rem auto;
-        // opacity: 1;
-        // background: $deep_yellow;
-        &::after {
-          // content: "";
-          // position: absolute;
-          // // top: -0.85rem; // INCREASE TO TAKEDOWN
-          // // left: -0.8rem; // INCREASE TO TAKE RIGHT
-          top: -5.5px; // INCREASE TO TAKEDOWN
-          left: -4.5px; // INCREASE TO TAKE RIGHT
-          // width: 22px;
-          // height: 22px;
-          // border-radius: 1000px;
-          // z-index: -1;
-          // // z-index: 1;
-          // background: transparent;
-          // border: 2px solid $deep_yellow;
-        }
-      }
-      &:hover {
-        // opacity: 1;
-        // width: 15px;
-        // height: 15px;
-      }
-    }
-    .swiper-slide > .Bg__Image::before {
-      // width: 100%;
-      // height: 100vh;
-      // position: fixed;
-      // top: 0;
-      // left: 0;
-      // background: linear-gradient(0deg, #0007, #0002);
-      // z-index: 2;
-      // content: "";
-      // backdrop-filter: brightness(1.2) blur(0.5px);
-    }
-    main {
-      // position: absolute;
-      top: 25vh;
-      // left: 0;
-      // width: 100%;
-      .title {
-        // margin: 0 auto;
-        // text-align: center;
-        // width: fit-content;
-        // z-index: 2;
-        h1 {
-          // -webkit-text-stroke: 1.5px white;
-          // color: white; // font-weight: 900;
-          // font-size: 5vw;
-          // font-family: GillsHeavy;
-          // font-weight: 900;
-          // letter-spacing: -3px;
-          line-height: 7.2vh;
-          // text-transform: uppercase;
-          &:last-of-type {
-            font-size: 8.5vw;
-            // -webkit-text-stroke: 5px white;
-            line-height: 14vh;
-          }
-        }
-        & > a {
-          // display: inline-block;
-          font-size: 14px;
-          height: 30px;
-          margin: 0.7rem auto;
-          // }
-          // &:active {
-          //   box-shadow: 0 3px 10px $dirty_yellow_shadow;
-          //   top: 3px;
-          // }
-        }
-      }
-      p.img_Counter {
-        filter: blur(0.6vh);
-        // color: transparent;
-        opacity: 0.5;
-        margin: 1.5rem auto 3rem 3.5rem;
-        -webkit-text-stroke: 5px white;
-        // box-shadow: inset 1px 1px 5px #fff1, 0 0 7px 1px #fff8;
-      }
-      img[alt="mouse"] {
-        // left: 50%;
-        // bottom: 3.5vh;
-        bottom: 12vh;
-        width: 1.35vw;
-      }
-    }
-  }
-}
+// ************************ LANDSCAPE ********************************
 
-// ********************************************************
 // PHONE LANDSCAPE   iPhone , Nexus 6, Samsung Galaxy S8+
 @media screen and (min-height: 350px) and (max-width: 750px) and (orientation: Landscape) {
   #Home {
@@ -1288,7 +1088,7 @@
       margin-top: 0;
       height: 100vh;
     }
-.swiper-slide > .Bg__Image::before {
+    .swiper-slide > .Bg__Image::before {
       width: 100%;
       height: 100vh;
       position: fixed;
@@ -1347,6 +1147,7 @@
       }
       p.img_Counter {
         margin-top: 9vh !important;
+        margin-top: 7vh !important;
       }
       img[alt="mouse"] {
         width: 1.9vw;
@@ -1360,8 +1161,9 @@
   #Home {
     // position: relative;
     .Bg__Image {
-      margin-top: 10vh;
-      height: 90vh;
+      // margin-top: 10vh;
+      margin-top: 0;
+      height: 100vh;
     }
     // //  SWIPER OVERRIDES
     .swiper-pagination {
@@ -1406,8 +1208,8 @@
       }
     }
     .swiper-slide > .Bg__Image::before {
-      height: 90vh;
-      top: 10vh;
+      height: 100vh;
+      top: 0;
     }
     main {
       top: 28vh;
@@ -1471,6 +1273,276 @@
       img[alt="mouse"] {
         bottom: 8vh;
         width: 1.85vw;
+      }
+    }
+  }
+}
+
+// ****************************** LAPTOP ********************************
+
+// For Desktops, Large screens, Extra large screens, TVs
+@media screen and (min-width: 1024px) and (height: 768px) {
+  #Home {
+    position: relative;
+    .Bg__Image {
+      margin-top: 0;
+      height: 100vh;
+    }
+    //  SWIPER OVERRIDES
+    .swiper-pagination {
+      width: 10vw;
+      top: 40vh;
+      z-index: 5;
+      right: -2rem !important;
+      left: auto;
+      height: fit-content;
+      @include flex($dir: column);
+    }
+    .swiper-pagination-bullet {
+      margin: 0.6rem auto;
+      background: white;
+      opacity: 0.7;
+      width: 9px;
+      height: 9px;
+      z-index: 5;
+      @include transShort;
+      &-active {
+        width: 15px;
+        height: 15px;
+        margin: 1.2rem auto;
+        opacity: 1;
+        background: $deep_yellow;
+        &::after {
+          content: "";
+          position: absolute;
+          // top: -0.85rem; // INCREASE TO TAKEDOWN
+          // left: -0.8rem; // INCREASE TO TAKE RIGHT
+          top: -5.45px; // INCREASE TO TAKEDOWN
+          left: -5.55px; // INCREASE TO TAKE RIGHT
+          width: 22px;
+          height: 22px;
+          border-radius: 1000px;
+          z-index: -1;
+          // z-index: 1;
+          background: transparent;
+          border: 2px solid $deep_yellow;
+        }
+      }
+      &:hover {
+        opacity: 1;
+        width: 15px;
+        height: 15px;
+      }
+    }
+    .swiper-slide > .Bg__Image::before {
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: linear-gradient(0deg, #0007, #0002);
+      z-index: 2;
+      content: "";
+      backdrop-filter: brightness(1.2) blur(0.5px);
+    }
+    main {
+      position: absolute;
+      top: 35vh;
+      left: 0;
+      width: 100%;
+      .title {
+        margin: 0 auto;
+        text-align: center;
+        width: fit-content;
+        z-index: 2;
+        h1 {
+          -webkit-text-stroke: 1.5px white;
+          color: white; // font-weight: 900;
+          font-size: 5vw;
+          font-family: GillsHeavy;
+          font-weight: 900;
+          letter-spacing: -3px;
+          line-height: 5vh;
+          text-transform: uppercase;
+          &:last-of-type {
+            font-size: 9vw;
+            -webkit-text-stroke: 5px white;
+            line-height: 9.25vh;
+          }
+        }
+        & > a {
+          @include trans;
+          background-color: $dirty_yellow_shadow;
+          border-radius: 1vh;
+          border: 3px solid $orange;
+          color: $orange;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 13px;
+          height: 28px;
+          margin: 1rem auto;
+          padding: 12px 25px 0;
+          position: relative;
+          text-transform: uppercase;
+          text-decoration: none;
+          text-shadow: 0 0 2.5px $orange;
+          word-spacing: 2px;
+          &:hover {
+            background-color: $dirty_yellow_shadow2;
+          }
+          &:active {
+            box-shadow: 0 3px 10px $dirty_yellow_shadow;
+            top: 3px;
+          }
+        }
+      }
+      p.img_Counter {
+        z-index: 1;
+        // text-shadow: 0 0 5px $white;
+        font-size: 7rem;
+        // letter-spacing: -1px;
+        text-transform: uppercase;
+        filter: blur(0.7vh);
+        color: transparent;
+        opacity: 0.5;
+        // opacity: 1;
+        // border: 1.5px solid white;
+        // font-weight: 900;
+        // color: white; // font-weight: 900;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 5.35rem auto 3rem 2.5rem;
+        // font-family: Gills;
+        font-weight: 900;
+        // line-height: 3rem;
+        -webkit-text-stroke: 3px white;
+        // box-shadow: inset 1px 1px 5px #fff1, 0 0 7px 1px #fff8;
+      }
+      img[alt="mouse"] {
+        left: 50%;
+        bottom: 9.85vh;
+        z-index: 2;
+        width: 1.6vw;
+        animation: bounce 2s 100ms ease-in-out infinite forwards;
+      }
+    }
+  }
+}
+
+// For Desktops 1.3K+
+@media screen and (min-width: 1300px) {
+  #Home {
+    // position: relative;
+    .Bg__Image {
+      // margin-top: 0;
+      // height: 100vh;
+    }
+    //  SWIPER OVERRIDES
+    .swiper-pagination {
+      // width: 10vw;
+      // top: 40vh;
+      // z-index: 5;
+      // right: -2rem !important;
+      // left: auto;
+      // height: fit-content;
+      // @include flex($dir: column);
+    }
+    .swiper-pagination-bullet {
+      // margin: 0.6rem auto;
+      // background: white;
+      // opacity: 0.7;
+      width: 10px;
+      height: 10px;
+      // z-index: 5;
+      // @include transShort;
+      &-active {
+        width: 16px;
+        height: 16px;
+        // margin: 1.2rem auto;
+        // opacity: 1;
+        // background: $deep_yellow;
+        &::after {
+          // content: "";
+          // position: absolute;
+          // // top: -0.85rem; // INCREASE TO TAKEDOWN
+          // // left: -0.8rem; // INCREASE TO TAKE RIGHT
+          top: -5.5px; // INCREASE TO TAKEDOWN
+          left: -4.5px; // INCREASE TO TAKE RIGHT
+          // width: 22px;
+          // height: 22px;
+          // border-radius: 1000px;
+          // z-index: -1;
+          // // z-index: 1;
+          // background: transparent;
+          // border: 2px solid $deep_yellow;
+        }
+      }
+      &:hover {
+        // opacity: 1;
+        // width: 15px;
+        // height: 15px;
+      }
+    }
+    .swiper-slide > .Bg__Image::before {
+      // width: 100%;
+      // height: 100vh;
+      // position: fixed;
+      // top: 0;
+      // left: 0;
+      // background: linear-gradient(0deg, #0007, #0002);
+      // z-index: 2;
+      // content: "";
+      // backdrop-filter: brightness(1.2) blur(0.5px);
+    }
+    main {
+      // position: absolute;
+      top: 25vh;
+      // left: 0;
+      // width: 100%;
+      .title {
+        // margin: 0 auto;
+        // text-align: center;
+        // width: fit-content;
+        // z-index: 2;
+        h1 {
+          // -webkit-text-stroke: 1.5px white;
+          // color: white; // font-weight: 900;
+          // font-size: 5vw;
+          // font-family: GillsHeavy;
+          // font-weight: 900;
+          // letter-spacing: -3px;
+          line-height: 7.2vh;
+          // text-transform: uppercase;
+          &:last-of-type {
+            font-size: 8.5vw;
+            // -webkit-text-stroke: 5px white;
+            line-height: 14vh;
+          }
+        }
+        & > a {
+          // display: inline-block;
+          font-size: 14px;
+          height: 30px;
+          margin: 0.7rem auto;
+          // }
+          // &:active {
+          //   box-shadow: 0 3px 10px $dirty_yellow_shadow;
+          //   top: 3px;
+          // }
+        }
+      }
+      p.img_Counter {
+        filter: blur(0.6vh);
+        // color: transparent;
+        opacity: 0.5;
+        margin: 1.5rem auto 3rem 3.5rem;
+        -webkit-text-stroke: 5px white;
+        // box-shadow: inset 1px 1px 5px #fff1, 0 0 7px 1px #fff8;
+      }
+      img[alt="mouse"] {
+        // left: 50%;
+        // bottom: 3.5vh;
+        bottom: 12vh;
+        width: 1.35vw;
       }
     }
   }

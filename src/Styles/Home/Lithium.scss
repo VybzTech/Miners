@@ -1833,28 +1833,29 @@
 // PHONE LANDSCAPE   iPhone X Edits
 @media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
   #Lithium {
-    height: 135vw;
+    height: 95vw;
     .Bg__Image {
-      height: 135vw;
+      height: 95vw;
     }
 
     .container {
       h2 {
         font-size: 4.5vw;
         // letter-spacing: -1px;
-        margin: 4rem auto 1.2rem;
+        margin: 5rem auto 1.4rem;
       }
       aside .bubble {
         // margin: 0 auto;
         // opacity: 0.5;
-        padding: 12px 10px 5px 24px;
         // width: 35vw;
+        padding: 12px 10px 5px 24px;
         &.Tabbed,
         &.Tabbed:hover {
+          padding: 13px 10px 12px  24px;
           // padding: 10px 15px 0 18px;
           span,
           p {
-            // font-size: 10.5px;
+            font-size: 13px;
             // letter-spacing: -0.05px;
             // line-height: 5.5vh;
             // word-spacing: 2px;
@@ -1894,9 +1895,78 @@
       }
       main.Roller {
         // padding: 1rem 1rem 5rem 3rem;
+        // main.Roller {
+        //   width: 90%;
+        //   padding: 2rem 5rem 3rem;
+          .content {
+            // padding: 1rem 0 0.2rem 0.6rem;
+            // ACTIVE ROLLER
+            &.active {
+              padding-top: 0.8rem !important;
+              p {
+                span {
+                  letter-spacing: -0.25px;
+                  font-size: 1rem;
+                  word-spacing: 3px;
+                  line-height: 5vh;
+                }
+                &:hover {
+                  span {
+                    letter-spacing: -0.25px;
+                    font-size: 1rem;
+                    word-spacing: 3px;
+                    line-height: 5vh;
+                    // line-height: 8vh;
+                  }
+                  &::before {
+                    width: 14px;
+                    height: 14px;
+                  }
+                }
+                &::before {
+                  left: -1.65rem;
+                  width: 13.5px;
+                  height: 13.5px;
+                }
+              }
+              svg {
+                color: $pink;
+                opacity: 1;
+              }
+            }
+            p {
+              span {
+                font-size: 0.85rem;
+                letter-spacing: 0.1px;
+                line-height: 4.25vh;
+                word-spacing: 2px;
+              }
+              &:hover span {
+                font-size: 0.99rem;
+                letter-spacing: -0.25px;
+                line-height: 5vh;
+                word-spacing: 3px;
+              }
+              &::before {
+                width: 10px;
+                height: 10px;
+              }
+              &:hover::before {
+                width: 11px;
+                height: 11px;
+              }
+            }
+          }
+        //   .line {
+        //     top: 11vw;
+        //     left: 4.55rem;
+        //   }
+        // }
+
+
         .line {
-          // top: 8.3vw;
-          // left: 2.6rem;
+          top: 6.25vw;
+          left: 6.325rem;
         }
       }
     }

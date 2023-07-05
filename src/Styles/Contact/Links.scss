@@ -875,6 +875,33 @@
   }
 }
 
+// PHONE LANDSCAPE   iPhone X Edits
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  .shortLinks {
+    text-align: right;
+    h2 {
+      //   padding: 0 5px 0 0;
+    }
+    @include noFooterLine;
+    div {
+      min-height: 1rem;
+      margin-top: 7px;
+      span {
+          padding: 1px 2px 1px 1px;
+        font-size: 14px;
+        //   &::before {
+        //     bottom: -3.5px;
+        //     left: -4px;
+      }
+      // }
+      &:hover {
+        span::before {
+        }
+      }
+    }
+  }
+}
+
 // PHONE LANDSCAPE
 @media screen and (min-height: 320px) and (max-height: 450px) {
   // .shortLinks {

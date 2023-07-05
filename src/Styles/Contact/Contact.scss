@@ -2408,18 +2408,18 @@
             // position: relative;
             padding: 0.7rem 1.5rem 0;
             @include flex;
- > div:first-child {
+            > div:first-child {
               position: absolute;
               bottom: -0.5rem;
               right: 2.2rem;
-          }
+            }
 
             .logo {
             }
             .shortLinks,
             .addresses {
               width: 50vw;
-              margin:0 auto auto auto;
+              margin: 0 auto auto auto;
               h2 {
                 font-size: 2.8vw;
                 // !important;
@@ -2487,6 +2487,209 @@
   }
   .Toastify__toast-icon svg {
     width: 0.85rem !important;
+  }
+}
+
+// PHONE LANDSCAPE   iPhone X Edits
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Contact {
+    height: 160vh;
+    .Bg__Image {
+      height: 160vh;
+    }
+    .container {
+      main {
+        .Form {
+          margin: 1.5rem auto auto;
+          p {
+            font-size: 2.1vw;
+            margin-bottom: 0.75rem;
+            svg {
+              padding: 5px;
+              margin-bottom: 0.5rem;
+            }
+          }
+          .formGroup {
+            padding: 0.5rem;
+            padding-left: 2rem;
+            input {
+              font-size: 1rem;
+              height: 1.4rem;
+              width: 50vw;
+              &::placeholder {
+                font-size: 0.9rem;
+                opacity: 0.3;
+              }
+            }
+            button {
+              padding: 2px 3px 0;
+              svg {
+                font-size: 1.5rem;
+              }
+            }
+
+            &:has(input:focus, input:focus-visible, input:focus-within) {
+              // border: 2px solid #541c1dca;
+              input {
+                // background: transparent;
+              }
+              button {
+                // opacity: 0.85;
+              }
+            }
+            &.disappear {
+              // display: none;
+            }
+            &.message {
+              textarea {
+                width: 60vw;
+                height: 18vh;
+                font-size: 0.9rem;
+                &::after {
+                }
+                &::placeholder {
+                  font-size: 0.8rem;
+                }
+              }
+              button {
+                svg {
+                  // font-size: 1.1rem;
+                }
+              }
+              &:hover {
+                input {
+                  &::placeholder {
+                  }
+                }
+                button {
+                  svg {
+                  }
+                }
+              }
+              &:has(
+                  textarea:focus,
+                  textarea:focus-visible,
+                  textarea:focus-within
+                ) {
+                textarea {
+                }
+                button {
+                }
+              }
+            }
+          }
+        }
+        .hero {
+          margin-top: 1.8rem;
+          width: 50vw;
+          p {
+            font-size: 1.7vw;
+          }
+          h2 {
+            line-height:6vw;
+            font-size: 7vw;
+            // width: fit-content;
+            // margin: 0 auto;
+            &::after {
+              width: 18vw;
+              height: 0.95rem;
+              bottom: 0.05rem;
+              right: 10vw;
+            }
+          }
+        }
+      }
+      .footer {
+        footer {
+          .block {
+            // position: relative;
+            padding: 0.7rem 1.5rem 0;
+            @include flex;
+            > div:first-child {
+              position: absolute;
+              bottom: -0.5rem;
+              right: 2.2rem;
+            }
+
+            .logo {
+            }
+            .shortLinks,
+            .addresses {
+              width: 50vw;
+              margin: 0 auto auto auto;
+              h2 {
+                font-size: 2.8vw;
+                // !important;
+                letter-spacing: 0.1px;
+                margin-bottom: 0.15rem;
+              }
+            }
+            .addresses {
+              padding-bottom: 2.5rem;
+              > div {
+                width: 50vw;
+                margin-top: 0.5rem;
+                // line-height: 3.25vw;
+                & > p {
+                  font-size: 16px;
+                  letter-spacing: .5px;
+                }
+                > span {
+                  // margin-bottom: 3px;
+                  // opacity: 0.7;
+                  font-size: 13px;
+                
+                &:last-of-type {
+                  margin-left: .55rem;
+                }
+                }
+                &:last-of-type {
+                  margin-top: 0.55rem;
+                }
+              }
+            }
+          }
+          div.copyX {
+            // color: $pinkish;
+            // font-family: system-ui;
+            // font-weight: 100;
+            font-size: 9px;
+            // width: fit-content;
+            // margin: 0.7rem auto 0;
+            // opacity: 0.9;
+            // padding-bottom: 0.75rem;
+            // letter-spacing: 0.3px;
+          }
+        }
+      }
+    }
+  }
+  .Toastify {
+    > div {
+      top: 12.05vh;
+      // right: auto;
+      left: 0;
+      > div {
+        // border-radius: 10px;
+        // font-family: Gills;
+        font-size: 2vw;
+        letter-spacing: -0.215px;
+        padding-top: 0.55rem;
+        padding-bottom: 0.3rem;
+        padding-left: 0.5rem;
+        width: 55vw;
+        min-height: 3.5rem;
+        svg {
+          width: 1.08rem !important;
+        }
+      }
+    }
+  }
+  .Toastify__progress-bar {
+    height: 2.5px !important;
+  }
+  .Toastify__toast-icon svg {
+    width: 0.9rem !important;
   }
 }
 

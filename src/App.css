@@ -85,38 +85,6 @@ input:-internal-autofill-selected {
   height: 100vh;
 }
 
-.TopBtn {
-  position: fixed;
-  bottom: 5vh;
-  right: 4vw;
-  width: fit-content;
-  padding: 0.4rem 0.48rem 0.25rem;
-  border-radius: 1000px;
-  background-color: white;
-  z-index: 50;
-  box-shadow: 0 0 5px 0.01px rgba(68, 68, 68, 0.4666666667);
-  transition: all 250ms ease-in-out;
-  visibility: visible;
-  opacity: 1;
-}
-.TopBtn svg {
-  transition: all 250ms ease-in-out;
-  font-size: 0.985rem;
-  color: #aaa;
-  transform: rotate(-90deg);
-}
-.TopBtn:hover {
-  box-shadow: 1px 2px 10px 0.1px rgba(17, 17, 17, 0.6666666667);
-}
-.TopBtn:hover svg {
-  font-size: 1rem;
-  color: black;
-}
-.TopBtn.noShow {
-  opacity: 0;
-  visibility: hidden;
-}
-
 nav.Navbar {
   display: flex;
   justify-content: space-between;
@@ -354,6 +322,9 @@ nav.Navbar.nosmall > nav {
   nav.Navbar {
     height: 14vh;
   }
+  nav.Navbar .Logo img {
+    padding-left: 1.5rem;
+  }
   nav.Navbar > nav {
     top: 14vh;
     height: 86vh;
@@ -480,21 +451,11 @@ nav.Navbar.nosmall > nav {
     display: none;
   }
 }
-@media screen and (min-width: 1024px) and (min-height: 550px) {
+@media screen and (min-width: 800px) and (min-height: 1100px) {
   nav.Navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    z-index: 5;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-shadow: 0 0 0 transparent;
-    height: 10vh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.0117647059), rgba(0, 0, 0, 0.1333333333));
-    padding: 0;
+    box-shadow: 0 0 10px transparent;
+    height: 8vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.0039215686), rgba(0, 0, 0, 0.0666666667));
   }
   nav.Navbar.Light {
     background: white;
@@ -522,91 +483,58 @@ nav.Navbar.nosmall > nav {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding-left: 2.5rem;
+    padding-left: 3rem;
     color: white;
   }
   nav.Navbar .Logo img {
-    font-size: 2.8vw;
+    width: 2.75vw;
+    padding-right: 0.3rem;
   }
   nav.Navbar .Logo p {
     font-family: Bart;
     text-transform: uppercase;
-    font-size: 1.3vw;
-    letter-spacing: 2px;
+    font-size: 1.8vw;
+    letter-spacing: 1px;
     height: fit-content;
-    color: white;
-    width: 8rem;
+    width: 10rem;
     text-align: center;
     display: block;
   }
   nav.Navbar > nav {
     flex-direction: row;
+    transform: none !important;
     height: auto !important;
     width: auto !important;
     padding: 0;
     background-color: transparent;
     position: initial;
-    transform: none !important;
+    padding-right: 1.2rem;
   }
   nav.Navbar > nav a {
     color: #f3ebec;
-    margin: 0 2rem 0 0;
-    font-size: 1.4vw;
+    margin: 0 20px 0 0;
+    font-size: 1.55vw;
   }
   nav.Navbar > nav a:hover {
+    font-size: 1.7vw;
     opacity: 1;
-    font-size: 1.5vw;
-    color: white !important;
   }
   nav.Navbar > nav a:focus, nav.Navbar > nav a:focus-visible, nav.Navbar > nav a:focus-within {
     opacity: 0.9;
-    font-size: 1.3vw;
+    font-size: 1.7vw;
   }
   nav.Navbar > nav a.screen {
-    letter-spacing: -0.5px;
-    opacity: 1;
+    font-size: 1.8vw;
     color: white;
-    font-size: 1.6vw;
-    font-weight: 600;
   }
   nav.Navbar > nav a.screen::after {
-    content: "";
-    position: absolute;
-    top: -0.5rem;
-    left: -0.8rem;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 1000px;
-    z-index: -1;
-    background-color: #f2d30b;
-    border: 2px solid #f1c30b;
+    top: -0.4rem;
+    left: -0.75rem;
+    width: 1.9rem;
+    height: 1.9rem;
   }
   nav.Navbar .hamburger {
     display: none;
-  }
-}
-@media screen and (min-width: 1300px) {
-  nav.Navbar .Logo img {
-    margin-top: 10px;
-    width: 1.9vw;
-  }
-  nav.Navbar > nav a {
-    letter-spacing: 0.1px;
-    font-size: 1.3vw;
-  }
-  nav.Navbar > nav a:hover {
-    font-size: 1.325vw;
-  }
-  nav.Navbar > nav a:focus, nav.Navbar > nav a:focus-visible, nav.Navbar > nav a:focus-within {
-    font-size: 1.325vw;
-  }
-  nav.Navbar > nav a.screen {
-    letter-spacing: -0.05px;
-    font-size: 1.4vw;
-  }
-  nav.Navbar > nav a.screen::after {
-    top: -0.275rem;
-    left: -0.55rem;
   }
 }
 @media screen and (min-height: 350px) and (max-width: 750px) and (orientation: Landscape) {
@@ -809,16 +737,146 @@ nav.Navbar.nosmall > nav {
     font-size: 1.65vw;
   }
   nav.Navbar > nav a.screen {
-    font-size: 1.8vw;
+    font-size: 1.7vw;
+    letter-spacing: -0.05px;
   }
   nav.Navbar > nav a.screen::after {
-    top: -0.2rem;
+    top: -0.25rem;
     left: -0.25rem;
     width: 1.35rem;
     height: 1.35rem;
   }
   nav.Navbar .hamburger {
     display: none;
+  }
+}
+@media screen and (min-width: 1024px) and (height: 768px) {
+  nav.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    z-index: 5;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 0 transparent;
+    height: 10vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.0117647059), rgba(0, 0, 0, 0.1333333333));
+    padding: 0;
+  }
+  nav.Navbar.Light {
+    background: white;
+    position: fixed;
+    box-shadow: 0 3px 15px rgba(238, 238, 238, 0.3333333333);
+  }
+  nav.Navbar.Light .Logo p {
+    color: #111;
+  }
+  nav.Navbar.Light > nav a {
+    color: #333;
+  }
+  nav.Navbar.Light > nav a:hover {
+    color: black !important;
+  }
+  nav.Navbar.Light > nav a.screen {
+    color: black;
+  }
+  nav.Navbar.Light > nav a:focus, nav.Navbar.Light > nav a:focus-visible, nav.Navbar.Light > nav a:focus-within {
+    opacity: 1;
+    color: black;
+  }
+  nav.Navbar .Logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 2.5rem;
+    color: white;
+  }
+  nav.Navbar .Logo img {
+    font-size: 2.8vw;
+  }
+  nav.Navbar .Logo p {
+    font-family: Bart;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    letter-spacing: 2px;
+    height: fit-content;
+    color: white;
+    width: 8rem;
+    text-align: center;
+    display: block;
+  }
+  nav.Navbar > nav {
+    flex-direction: row;
+    height: auto !important;
+    width: auto !important;
+    padding: 0;
+    background-color: transparent;
+    position: initial;
+    transform: none !important;
+  }
+  nav.Navbar > nav a {
+    color: #f3ebec;
+    margin: 0 2rem 0 0;
+    font-size: 1.4vw;
+  }
+  nav.Navbar > nav a:hover {
+    opacity: 1;
+    font-size: 1.5vw;
+    color: white !important;
+  }
+  nav.Navbar > nav a:focus, nav.Navbar > nav a:focus-visible, nav.Navbar > nav a:focus-within {
+    opacity: 0.9;
+    font-size: 1.3vw;
+  }
+  nav.Navbar > nav a.screen {
+    letter-spacing: -0.5px;
+    opacity: 1;
+    color: white;
+    font-size: 1.6vw;
+    font-weight: 600;
+  }
+  nav.Navbar > nav a.screen::after {
+    content: "";
+    position: absolute;
+    top: -0.5rem;
+    left: -0.8rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1000px;
+    z-index: -1;
+    background-color: #f2d30b;
+    border: 2px solid #f1c30b;
+  }
+  nav.Navbar .hamburger {
+    display: none;
+  }
+}
+@media screen and (min-width: 1300px) {
+  nav.Navbar .Logo img {
+    margin-top: 10px;
+    width: 1.9vw;
+  }
+  nav.Navbar > nav a {
+    letter-spacing: 0.1px;
+    font-size: 1.3vw;
+  }
+  nav.Navbar > nav a:hover {
+    font-size: 1.325vw;
+  }
+  nav.Navbar > nav a:focus, nav.Navbar > nav a:focus-visible, nav.Navbar > nav a:focus-within {
+    font-size: 1.325vw;
+  }
+  nav.Navbar > nav a.screen {
+    letter-spacing: -0.05px;
+    font-size: 1.4vw;
+  }
+  nav.Navbar > nav a.screen::after {
+    top: -0.275rem;
+    left: -0.55rem;
   }
 }
 #Home {
@@ -1304,179 +1362,53 @@ nav.Navbar.nosmall > nav {
     width: 3.2vw;
   }
 }
-@media screen and (min-width: 1024px) and (min-height: 550px) {
-  #Home {
-    position: relative;
-  }
+@media screen and (min-width: 800px) and (min-height: 1100px) {
   #Home .Bg__Image {
     margin-top: 0;
     height: 100vh;
   }
-  #Home .swiper-pagination {
-    width: 10vw;
-    top: 40vh;
-    z-index: 5;
-    right: -2rem !important;
-    left: auto;
-    height: fit-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-  }
   #Home .swiper-pagination-bullet {
-    margin: 0.6rem auto;
-    background: white;
-    opacity: 0.7;
-    width: 9px;
-    height: 9px;
-    z-index: 5;
-    transition: all 150ms ease-in-out;
+    height: 12px;
+    width: 12px;
   }
   #Home .swiper-pagination-bullet-active {
-    width: 15px;
-    height: 15px;
-    margin: 1.2rem auto;
-    opacity: 1;
-    background: #f1c30b;
+    height: 17px;
+    width: 17px;
   }
   #Home .swiper-pagination-bullet-active::after {
-    content: "";
-    position: absolute;
-    top: -5.45px;
-    left: -5.55px;
-    width: 22px;
-    height: 22px;
-    border-radius: 1000px;
-    z-index: -1;
-    background: transparent;
-    border: 2px solid #f1c30b;
-  }
-  #Home .swiper-pagination-bullet:hover {
-    opacity: 1;
-    width: 15px;
-    height: 15px;
+    height: 25px;
+    width: 25px;
+    left: -5px;
+    top: -5px;
   }
   #Home .swiper-slide > .Bg__Image::before {
-    width: 100%;
     height: 100vh;
-    position: fixed;
     top: 0;
-    left: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4666666667), rgba(0, 0, 0, 0.1333333333));
-    z-index: 2;
-    content: "";
-    backdrop-filter: brightness(1.2) blur(0.5px);
   }
   #Home main {
-    position: absolute;
     top: 35vh;
-    left: 0;
-    width: 100%;
-  }
-  #Home main .title {
-    margin: 0 auto;
-    text-align: center;
-    width: fit-content;
-    z-index: 2;
   }
   #Home main .title h1 {
-    -webkit-text-stroke: 1.5px white;
-    color: white;
-    font-size: 5vw;
-    font-family: GillsHeavy;
-    font-weight: 900;
-    letter-spacing: -3px;
-    line-height: 5vh;
-    text-transform: uppercase;
+    font-size: 8vw;
+    line-height: 4.75vh !important;
   }
   #Home main .title h1:last-of-type {
-    font-size: 9vw;
-    -webkit-text-stroke: 5px white;
-    line-height: 9.25vh;
+    font-size: 14.75vw;
+    line-height: 7.8vh !important;
   }
   #Home main .title > a {
-    transition: all 250ms ease-in-out;
-    background-color: rgba(151, 121, 0, 0.2274509804);
-    border-radius: 1vh;
-    border: 3px solid #f8a414;
-    color: #f8a414;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 13px;
-    height: 28px;
-    margin: 1rem auto;
-    padding: 12px 25px 0;
-    position: relative;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-shadow: 0 0 2.5px #f8a414;
-    word-spacing: 2px;
-  }
-  #Home main .title > a:hover {
-    background-color: rgba(151, 121, 0, 0.4666666667);
-  }
-  #Home main .title > a:active {
-    box-shadow: 0 3px 10px rgba(151, 121, 0, 0.2274509804);
-    top: 3px;
+    border-radius: 0.6vh;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    height: 26px;
+    margin-top: 1.2vh;
+    padding: 22px 35px 18px;
   }
   #Home main p.img_Counter {
-    z-index: 1;
-    font-size: 7rem;
-    text-transform: uppercase;
-    filter: blur(0.7vh);
-    color: transparent;
-    opacity: 0.5;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    margin: 5.35rem auto 3rem 2.5rem;
-    font-weight: 900;
-    -webkit-text-stroke: 3px white;
+    margin-top: 24.5vh !important;
   }
   #Home main img[alt=mouse] {
-    left: 50%;
-    bottom: 9.85vh;
-    z-index: 2;
-    width: 1.6vw;
-    animation: bounce 2s 100ms ease-in-out infinite forwards;
-  }
-}
-@media screen and (min-width: 1300px) {
-  #Home .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-  }
-  #Home .swiper-pagination-bullet-active {
-    width: 16px;
-    height: 16px;
-  }
-  #Home .swiper-pagination-bullet-active::after {
-    top: -5.5px;
-    left: -4.5px;
-  }
-  #Home main {
-    top: 25vh;
-  }
-  #Home main .title h1 {
-    line-height: 7.2vh;
-  }
-  #Home main .title h1:last-of-type {
-    font-size: 8.5vw;
-    line-height: 14vh;
-  }
-  #Home main .title > a {
-    font-size: 14px;
-    height: 30px;
-    margin: 0.7rem auto;
-  }
-  #Home main p.img_Counter {
-    filter: blur(0.6vh);
-    opacity: 0.5;
-    margin: 1.5rem auto 3rem 3.5rem;
-    -webkit-text-stroke: 5px white;
-  }
-  #Home main img[alt=mouse] {
-    bottom: 12vh;
-    width: 1.35vw;
+    width: 3.5vw;
   }
 }
 @media screen and (min-height: 350px) and (max-width: 750px) and (orientation: Landscape) {
@@ -1702,6 +1634,7 @@ nav.Navbar.nosmall > nav {
   }
   #Home main p.img_Counter {
     margin-top: 9vh !important;
+    margin-top: 7vh !important;
   }
   #Home main img[alt=mouse] {
     width: 1.9vw;
@@ -1709,8 +1642,8 @@ nav.Navbar.nosmall > nav {
 }
 @media screen and (min-height: 414px) and (min-width: 700px) and (orientation: Landscape) {
   #Home .Bg__Image {
-    margin-top: 10vh;
-    height: 90vh;
+    margin-top: 0;
+    height: 100vh;
   }
   #Home .swiper-pagination {
     bottom: 33vh;
@@ -1730,8 +1663,8 @@ nav.Navbar.nosmall > nav {
     height: 15px;
   }
   #Home .swiper-slide > .Bg__Image::before {
-    height: 90vh;
-    top: 10vh;
+    height: 100vh;
+    top: 0;
   }
   #Home main {
     top: 28vh;
@@ -1780,6 +1713,181 @@ nav.Navbar.nosmall > nav {
   #Home main img[alt=mouse] {
     bottom: 8vh;
     width: 1.85vw;
+  }
+}
+@media screen and (min-width: 1024px) and (height: 768px) {
+  #Home {
+    position: relative;
+  }
+  #Home .Bg__Image {
+    margin-top: 0;
+    height: 100vh;
+  }
+  #Home .swiper-pagination {
+    width: 10vw;
+    top: 40vh;
+    z-index: 5;
+    right: -2rem !important;
+    left: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #Home .swiper-pagination-bullet {
+    margin: 0.6rem auto;
+    background: white;
+    opacity: 0.7;
+    width: 9px;
+    height: 9px;
+    z-index: 5;
+    transition: all 150ms ease-in-out;
+  }
+  #Home .swiper-pagination-bullet-active {
+    width: 15px;
+    height: 15px;
+    margin: 1.2rem auto;
+    opacity: 1;
+    background: #f1c30b;
+  }
+  #Home .swiper-pagination-bullet-active::after {
+    content: "";
+    position: absolute;
+    top: -5.45px;
+    left: -5.55px;
+    width: 22px;
+    height: 22px;
+    border-radius: 1000px;
+    z-index: -1;
+    background: transparent;
+    border: 2px solid #f1c30b;
+  }
+  #Home .swiper-pagination-bullet:hover {
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+  }
+  #Home .swiper-slide > .Bg__Image::before {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4666666667), rgba(0, 0, 0, 0.1333333333));
+    z-index: 2;
+    content: "";
+    backdrop-filter: brightness(1.2) blur(0.5px);
+  }
+  #Home main {
+    position: absolute;
+    top: 35vh;
+    left: 0;
+    width: 100%;
+  }
+  #Home main .title {
+    margin: 0 auto;
+    text-align: center;
+    width: fit-content;
+    z-index: 2;
+  }
+  #Home main .title h1 {
+    -webkit-text-stroke: 1.5px white;
+    color: white;
+    font-size: 5vw;
+    font-family: GillsHeavy;
+    font-weight: 900;
+    letter-spacing: -3px;
+    line-height: 5vh;
+    text-transform: uppercase;
+  }
+  #Home main .title h1:last-of-type {
+    font-size: 9vw;
+    -webkit-text-stroke: 5px white;
+    line-height: 9.25vh;
+  }
+  #Home main .title > a {
+    transition: all 250ms ease-in-out;
+    background-color: rgba(151, 121, 0, 0.2274509804);
+    border-radius: 1vh;
+    border: 3px solid #f8a414;
+    color: #f8a414;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    height: 28px;
+    margin: 1rem auto;
+    padding: 12px 25px 0;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 0 0 2.5px #f8a414;
+    word-spacing: 2px;
+  }
+  #Home main .title > a:hover {
+    background-color: rgba(151, 121, 0, 0.4666666667);
+  }
+  #Home main .title > a:active {
+    box-shadow: 0 3px 10px rgba(151, 121, 0, 0.2274509804);
+    top: 3px;
+  }
+  #Home main p.img_Counter {
+    z-index: 1;
+    font-size: 7rem;
+    text-transform: uppercase;
+    filter: blur(0.7vh);
+    color: transparent;
+    opacity: 0.5;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5.35rem auto 3rem 2.5rem;
+    font-weight: 900;
+    -webkit-text-stroke: 3px white;
+  }
+  #Home main img[alt=mouse] {
+    left: 50%;
+    bottom: 9.85vh;
+    z-index: 2;
+    width: 1.6vw;
+    animation: bounce 2s 100ms ease-in-out infinite forwards;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #Home .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+  #Home .swiper-pagination-bullet-active {
+    width: 16px;
+    height: 16px;
+  }
+  #Home .swiper-pagination-bullet-active::after {
+    top: -5.5px;
+    left: -4.5px;
+  }
+  #Home main {
+    top: 25vh;
+  }
+  #Home main .title h1 {
+    line-height: 7.2vh;
+  }
+  #Home main .title h1:last-of-type {
+    font-size: 8.5vw;
+    line-height: 14vh;
+  }
+  #Home main .title > a {
+    font-size: 14px;
+    height: 30px;
+    margin: 0.7rem auto;
+  }
+  #Home main p.img_Counter {
+    filter: blur(0.6vh);
+    opacity: 0.5;
+    margin: 1.5rem auto 3rem 3.5rem;
+    -webkit-text-stroke: 5px white;
+  }
+  #Home main img[alt=mouse] {
+    bottom: 12vh;
+    width: 1.35vw;
   }
 }
 /*
@@ -3663,17 +3771,25 @@ nav.Navbar.nosmall > nav {
 }
 @media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
   #Lithium {
-    height: 135vw;
+    height: 95vw;
   }
   #Lithium .Bg__Image {
-    height: 135vw;
+    height: 95vw;
   }
   #Lithium .container h2 {
     font-size: 4.5vw;
-    margin: 4rem auto 1.2rem;
+    margin: 5rem auto 1.4rem;
   }
   #Lithium .container aside .bubble {
     padding: 12px 10px 5px 24px;
+  }
+  #Lithium .container aside .bubble.Tabbed, #Lithium .container aside .bubble.Tabbed:hover {
+    padding: 13px 10px 12px 24px;
+  }
+  #Lithium .container aside .bubble.Tabbed span,
+  #Lithium .container aside .bubble.Tabbed p, #Lithium .container aside .bubble.Tabbed:hover span,
+  #Lithium .container aside .bubble.Tabbed:hover p {
+    font-size: 13px;
   }
   #Lithium .container aside .bubble h4 {
     font-size: 22px;
@@ -3693,6 +3809,58 @@ nav.Navbar.nosmall > nav {
   }
   #Lithium .container aside .bubble > nav svg {
     width: 11px;
+  }
+  #Lithium .container main.Roller .content.active {
+    padding-top: 0.8rem !important;
+  }
+  #Lithium .container main.Roller .content.active p span {
+    letter-spacing: -0.25px;
+    font-size: 1rem;
+    word-spacing: 3px;
+    line-height: 5vh;
+  }
+  #Lithium .container main.Roller .content.active p:hover span {
+    letter-spacing: -0.25px;
+    font-size: 1rem;
+    word-spacing: 3px;
+    line-height: 5vh;
+  }
+  #Lithium .container main.Roller .content.active p:hover::before {
+    width: 14px;
+    height: 14px;
+  }
+  #Lithium .container main.Roller .content.active p::before {
+    left: -1.65rem;
+    width: 13.5px;
+    height: 13.5px;
+  }
+  #Lithium .container main.Roller .content.active svg {
+    color: #e7c7b0;
+    opacity: 1;
+  }
+  #Lithium .container main.Roller .content p span {
+    font-size: 0.85rem;
+    letter-spacing: 0.1px;
+    line-height: 4.25vh;
+    word-spacing: 2px;
+  }
+  #Lithium .container main.Roller .content p:hover span {
+    font-size: 0.99rem;
+    letter-spacing: -0.25px;
+    line-height: 5vh;
+    word-spacing: 3px;
+  }
+  #Lithium .container main.Roller .content p::before {
+    width: 10px;
+    height: 10px;
+  }
+  #Lithium .container main.Roller .content p:hover::before {
+    width: 11px;
+    height: 11px;
+  }
+  #Lithium .container main.Roller .line {
+    top: 6.25vw;
+    left: 6.325rem;
   }
 }
 /*
@@ -4101,6 +4269,34 @@ nav.Navbar.nosmall > nav {
     width: 10.75vw;
   }
 }
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 10vw;
+    width: 10vw;
+  }
+  #Products main .card > span svg.min {
+    height: 9.5vw;
+    width: 9.5vw;
+  }
+  #Products main .card > span svg.max {
+    height: 10.7vw;
+    width: 10.7vw;
+  }
+}
+@media screen and (min-height: 414px) and (min-width: 700px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 9.45vw;
+    width: 9.45vw;
+  }
+  #Products main .card > span svg.min {
+    height: 8.95vw;
+    width: 8.95vw;
+  }
+  #Products main .card > span svg.max {
+    height: 10.2vw;
+    width: 10.2vw;
+  }
+}
 #Products main .card > span svg {
   transition: all 150ms ease-in-out;
   fill: #333 !important;
@@ -4205,6 +4401,34 @@ nav.Navbar.nosmall > nav {
     width: 9.5vw;
   }
 }
+@media screen and (min-width: 375px) and (max-height: 667px) and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 8.75vw;
+    width: 8.75vw;
+  }
+  #Products main .card > span svg.min {
+    height: 8.25vw;
+    width: 8.25vw;
+  }
+  #Products main .card > span svg.max {
+    height: 9.45vw;
+    width: 9.45vw;
+  }
+}
+@media screen and (min-width: 375px) and (max-height: 667px) and (min-height: 414px) and (min-width: 700px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 8.2vw;
+    width: 8.2vw;
+  }
+  #Products main .card > span svg.min {
+    height: 7.7vw;
+    width: 7.7vw;
+  }
+  #Products main .card > span svg.max {
+    height: 8.95vw;
+    width: 8.95vw;
+  }
+}
 @media only screen and (min-width: 375px) and (min-height: 730px) and (max-height: 850px) {
   #Products main .swiper-slide:first-child {
     padding-left: 1.875rem;
@@ -4257,6 +4481,34 @@ nav.Navbar.nosmall > nav {
   #Products main .card > span svg.max {
     height: 8.5vw;
     width: 8.5vw;
+  }
+}
+@media only screen and (min-width: 375px) and (min-height: 730px) and (max-height: 850px) and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 7.75vw;
+    width: 7.75vw;
+  }
+  #Products main .card > span svg.min {
+    height: 7.25vw;
+    width: 7.25vw;
+  }
+  #Products main .card > span svg.max {
+    height: 8.45vw;
+    width: 8.45vw;
+  }
+}
+@media only screen and (min-width: 375px) and (min-height: 730px) and (max-height: 850px) and (min-height: 414px) and (min-width: 700px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 7.2vw;
+    width: 7.2vw;
+  }
+  #Products main .card > span svg.min {
+    height: 6.7vw;
+    width: 6.7vw;
+  }
+  #Products main .card > span svg.max {
+    height: 7.95vw;
+    width: 7.95vw;
   }
 }
 @media screen and (min-width: 410px) and (max-width: 480px) and (min-height: 730px) {
@@ -4316,6 +4568,34 @@ nav.Navbar.nosmall > nav {
     width: 8.25vw;
   }
 }
+@media screen and (min-width: 410px) and (max-width: 480px) and (min-height: 730px) and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 7.5vw;
+    width: 7.5vw;
+  }
+  #Products main .card > span svg.min {
+    height: 7vw;
+    width: 7vw;
+  }
+  #Products main .card > span svg.max {
+    height: 8.2vw;
+    width: 8.2vw;
+  }
+}
+@media screen and (min-width: 410px) and (max-width: 480px) and (min-height: 730px) and (min-height: 414px) and (min-width: 700px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 6.95vw;
+    width: 6.95vw;
+  }
+  #Products main .card > span svg.min {
+    height: 6.45vw;
+    width: 6.45vw;
+  }
+  #Products main .card > span svg.max {
+    height: 7.7vw;
+    width: 7.7vw;
+  }
+}
 @media only screen and (min-height: 850px) {
   #Products main .card img {
     height: 18vh;
@@ -4351,6 +4631,34 @@ nav.Navbar.nosmall > nav {
   #Products main .card > span svg.max {
     height: 7.65vw;
     width: 7.65vw;
+  }
+}
+@media only screen and (min-height: 850px) and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 6.9vw;
+    width: 6.9vw;
+  }
+  #Products main .card > span svg.min {
+    height: 6.4vw;
+    width: 6.4vw;
+  }
+  #Products main .card > span svg.max {
+    height: 7.6vw;
+    width: 7.6vw;
+  }
+}
+@media only screen and (min-height: 850px) and (min-height: 414px) and (min-width: 700px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 6.35vw;
+    width: 6.35vw;
+  }
+  #Products main .card > span svg.min {
+    height: 5.85vw;
+    width: 5.85vw;
+  }
+  #Products main .card > span svg.max {
+    height: 7.1vw;
+    width: 7.1vw;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
@@ -4432,6 +4740,34 @@ nav.Navbar.nosmall > nav {
   #Products main .card > span svg.max {
     height: 8.25vw;
     width: 8.25vw;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 7.5vw;
+    width: 7.5vw;
+  }
+  #Products main .card > span svg.min {
+    height: 7vw;
+    width: 7vw;
+  }
+  #Products main .card > span svg.max {
+    height: 8.2vw;
+    width: 8.2vw;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) and (min-height: 414px) and (min-width: 700px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 6.95vw;
+    width: 6.95vw;
+  }
+  #Products main .card > span svg.min {
+    height: 6.45vw;
+    width: 6.45vw;
+  }
+  #Products main .card > span svg.max {
+    height: 7.7vw;
+    width: 7.7vw;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -4528,6 +4864,34 @@ nav.Navbar.nosmall > nav {
   #Products main .card > span svg.max {
     height: 5vw;
     width: 5vw;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 4.25vw;
+    width: 4.25vw;
+  }
+  #Products main .card > span svg.min {
+    height: 3.75vw;
+    width: 3.75vw;
+  }
+  #Products main .card > span svg.max {
+    height: 4.95vw;
+    width: 4.95vw;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) and (min-height: 414px) and (min-width: 700px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 3.7vw;
+    width: 3.7vw;
+  }
+  #Products main .card > span svg.min {
+    height: 3.2vw;
+    width: 3.2vw;
+  }
+  #Products main .card > span svg.max {
+    height: 4.45vw;
+    width: 4.45vw;
   }
 }
 @media screen and (min-width: 1024px) and (min-height: 550px) {
@@ -4712,6 +5076,34 @@ nav.Navbar.nosmall > nav {
     width: 4.25vw;
   }
 }
+@media screen and (min-width: 1024px) and (min-height: 550px) and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 3.5vw;
+    width: 3.5vw;
+  }
+  #Products main .card > span svg.min {
+    height: 3vw;
+    width: 3vw;
+  }
+  #Products main .card > span svg.max {
+    height: 4.2vw;
+    width: 4.2vw;
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 550px) and (min-height: 414px) and (min-width: 700px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 2.95vw;
+    width: 2.95vw;
+  }
+  #Products main .card > span svg.min {
+    height: 2.45vw;
+    width: 2.45vw;
+  }
+  #Products main .card > span svg.max {
+    height: 3.7vw;
+    width: 3.7vw;
+  }
+}
 @media screen and (min-width: 1300px) {
   #Products .hero {
     margin: 12vh auto 4vh;
@@ -4801,6 +5193,34 @@ nav.Navbar.nosmall > nav {
   #Products main .card > span svg.max {
     height: 3.9vw;
     width: 3.9vw;
+  }
+}
+@media screen and (min-width: 1300px) and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 3.15vw;
+    width: 3.15vw;
+  }
+  #Products main .card > span svg.min {
+    height: 2.65vw;
+    width: 2.65vw;
+  }
+  #Products main .card > span svg.max {
+    height: 3.85vw;
+    width: 3.85vw;
+  }
+}
+@media screen and (min-width: 1300px) and (min-height: 414px) and (min-width: 700px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 2.6vw;
+    width: 2.6vw;
+  }
+  #Products main .card > span svg.min {
+    height: 2.1vw;
+    width: 2.1vw;
+  }
+  #Products main .card > span svg.max {
+    height: 3.35vw;
+    width: 3.35vw;
   }
 }
 @media screen and (min-height: 350px) and (max-width: 750px) and (orientation: Landscape) {
@@ -4902,6 +5322,34 @@ nav.Navbar.nosmall > nav {
     width: 5vw;
   }
 }
+@media screen and (min-height: 350px) and (max-width: 750px) and (orientation: Landscape) and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 4.25vw;
+    width: 4.25vw;
+  }
+  #Products main .card > span svg.min {
+    height: 3.75vw;
+    width: 3.75vw;
+  }
+  #Products main .card > span svg.max {
+    height: 4.95vw;
+    width: 4.95vw;
+  }
+}
+@media screen and (min-height: 350px) and (max-width: 750px) and (orientation: Landscape) and (min-height: 414px) and (min-width: 700px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 3.7vw;
+    width: 3.7vw;
+  }
+  #Products main .card > span svg.min {
+    height: 3.2vw;
+    width: 3.2vw;
+  }
+  #Products main .card > span svg.max {
+    height: 4.45vw;
+    width: 4.45vw;
+  }
+}
 @media screen and (min-height: 320px) and (max-width: 580px) and (orientation: Landscape) {
   #Products .hero {
     margin: 3rem auto 0.5rem;
@@ -4996,6 +5444,139 @@ nav.Navbar.nosmall > nav {
   #Products main .card > span svg.max {
     height: 5.5vw;
     width: 5.5vw;
+  }
+}
+@media screen and (min-height: 320px) and (max-width: 580px) and (orientation: Landscape) and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 4.75vw;
+    width: 4.75vw;
+  }
+  #Products main .card > span svg.min {
+    height: 4.25vw;
+    width: 4.25vw;
+  }
+  #Products main .card > span svg.max {
+    height: 5.45vw;
+    width: 5.45vw;
+  }
+}
+@media screen and (min-height: 320px) and (max-width: 580px) and (orientation: Landscape) and (min-height: 414px) and (min-width: 700px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 4.2vw;
+    width: 4.2vw;
+  }
+  #Products main .card > span svg.min {
+    height: 3.7vw;
+    width: 3.7vw;
+  }
+  #Products main .card > span svg.max {
+    height: 4.95vw;
+    width: 4.95vw;
+  }
+}
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Products .hero span {
+    font-size: 2vw;
+  }
+  #Products .hero h1 {
+    font-size: 13vw;
+  }
+  #Products .hero h2 {
+    font-size: 5.3vw;
+  }
+  #Products .hero h2::after {
+    height: 0.9rem;
+    bottom: 0.2rem;
+    width: 8.25rem;
+  }
+  #Products main .swiper-wrapper {
+    padding: 2rem 0;
+  }
+  #Products main .swiper-slide {
+    margin-right: auto !important;
+  }
+  #Products main .swiper-slide:first-child {
+    padding-left: 3rem;
+  }
+  #Products main [class^=swiper-button-]:after,
+  #Products main .swiper-rtl [class^=swiper-button-]:after {
+    font-size: 3.5vw;
+  }
+  #Products main .card {
+    width: 43vw;
+    border-radius: 50px;
+  }
+  #Products main .card img {
+    height: 30vh;
+  }
+  #Products main .card .container h3 {
+    font-size: 3vw;
+    word-spacing: -1px;
+  }
+  #Products main .card .container p {
+    font-size: 0.9rem;
+    line-height: 6.5vh;
+    opacity: 0.8;
+    word-spacing: 1px;
+  }
+  #Products main .card > span {
+    width: 3.5rem;
+    height: 3.5rem;
+    top: 22.5vh;
+  }
+  #Products main .card > span svg {
+    height: 3.5vw;
+    width: 3.5vw;
+  }
+  #Products main .card > span svg.min {
+    height: 2.5vw;
+    width: 2.5vw;
+  }
+  #Products main .card > span svg.max {
+    height: 5.5vw;
+    width: 5.5vw;
+  }
+}
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) and (min-width: 1024px) {
+  #Products main .card > span svg {
+    height: 3.5vw;
+    width: 3.5vw;
+  }
+  #Products main .card > span svg.min {
+    height: 2.85vw;
+    width: 2.85vw;
+  }
+  #Products main .card > span svg.max {
+    height: 4.25vw;
+    width: 4.25vw;
+  }
+}
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 3.5vw;
+    width: 3.5vw;
+  }
+  #Products main .card > span svg.min {
+    height: 3vw;
+    width: 3vw;
+  }
+  #Products main .card > span svg.max {
+    height: 4.2vw;
+    width: 4.2vw;
+  }
+}
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) and (min-height: 414px) and (min-width: 700px) and (orientation: Landscape) {
+  #Products main .card > span svg {
+    height: 2.95vw;
+    width: 2.95vw;
+  }
+  #Products main .card > span svg.min {
+    height: 2.45vw;
+    width: 2.45vw;
+  }
+  #Products main .card > span svg.max {
+    height: 3.7vw;
+    width: 3.7vw;
   }
 }
 /*
@@ -5720,6 +6301,44 @@ nav.Navbar.nosmall > nav {
   }
   #Services .container .OurServices > div:hover::before {
     height: 60vh;
+  }
+}
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Services {
+    height: 75vw;
+  }
+  #Services .Bg__Image {
+    height: 75vw;
+  }
+  #Services .container h2 {
+    font-size: 5.2vw;
+    letter-spacing: -1.5px;
+    margin: 3rem auto 1.5rem;
+  }
+  #Services .container .OurServices {
+    gap: 8px;
+  }
+  #Services .container .OurServices > div {
+    border-radius: 1.85vh;
+    width: 28vw;
+    height: 67vh;
+    margin-bottom: 2vh;
+  }
+  #Services .container .OurServices > div::before {
+    height: 67vh;
+  }
+  #Services .container .OurServices > div img {
+    height: 67vh;
+  }
+  #Services .container .OurServices > div span {
+    font-size: 0.75rem;
+  }
+  #Services .container .OurServices > div:hover {
+    border-radius: 2.1vh;
+    box-shadow: 0 0 10px 2px #2e0f10;
+  }
+  #Services .container .OurServices > div:hover::before {
+    height: 67vh;
   }
 }
 #Contact {
@@ -7071,6 +7690,137 @@ textarea:focus-within) button {
     width: 0.85rem !important;
   }
 }
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Contact {
+    height: 160vh;
+  }
+  #Contact .Bg__Image {
+    height: 160vh;
+  }
+  #Contact .container main .Form {
+    margin: 1.5rem auto auto;
+  }
+  #Contact .container main .Form p {
+    font-size: 2.1vw;
+    margin-bottom: 0.75rem;
+  }
+  #Contact .container main .Form p svg {
+    padding: 5px;
+    margin-bottom: 0.5rem;
+  }
+  #Contact .container main .Form .formGroup {
+    padding: 0.5rem;
+    padding-left: 2rem;
+  }
+  #Contact .container main .Form .formGroup input {
+    font-size: 1rem;
+    height: 1.4rem;
+    width: 50vw;
+  }
+  #Contact .container main .Form .formGroup input::placeholder {
+    font-size: 0.9rem;
+    opacity: 0.3;
+  }
+  #Contact .container main .Form .formGroup button {
+    padding: 2px 3px 0;
+  }
+  #Contact .container main .Form .formGroup button svg {
+    font-size: 1.5rem;
+  }
+  #Contact .container main .Form .formGroup.message textarea {
+    width: 60vw;
+    height: 18vh;
+    font-size: 0.9rem;
+  }
+  #Contact .container main .Form .formGroup.message textarea::placeholder {
+    font-size: 0.8rem;
+  }
+  #Contact .container main .hero {
+    margin-top: 1.8rem;
+    width: 50vw;
+  }
+  #Contact .container main .hero p {
+    font-size: 1.7vw;
+  }
+  #Contact .container main .hero h2 {
+    line-height: 6vw;
+    font-size: 7vw;
+  }
+  #Contact .container main .hero h2::after {
+    width: 18vw;
+    height: 0.95rem;
+    bottom: 0.05rem;
+    right: 10vw;
+  }
+  #Contact .container .footer footer .block {
+    padding: 0.7rem 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  #Contact .container .footer footer .block > div:first-child {
+    position: absolute;
+    bottom: -0.5rem;
+    right: 2.2rem;
+  }
+  #Contact .container .footer footer .block .shortLinks,
+  #Contact .container .footer footer .block .addresses {
+    width: 50vw;
+    margin: 0 auto auto auto;
+  }
+  #Contact .container .footer footer .block .shortLinks h2,
+  #Contact .container .footer footer .block .addresses h2 {
+    font-size: 2.8vw;
+    letter-spacing: 0.1px;
+    margin-bottom: 0.15rem;
+  }
+  #Contact .container .footer footer .block .addresses {
+    padding-bottom: 2.5rem;
+  }
+  #Contact .container .footer footer .block .addresses > div {
+    width: 50vw;
+    margin-top: 0.5rem;
+  }
+  #Contact .container .footer footer .block .addresses > div > p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+  #Contact .container .footer footer .block .addresses > div > span {
+    font-size: 13px;
+  }
+  #Contact .container .footer footer .block .addresses > div > span:last-of-type {
+    margin-left: 0.55rem;
+  }
+  #Contact .container .footer footer .block .addresses > div:last-of-type {
+    margin-top: 0.55rem;
+  }
+  #Contact .container .footer footer div.copyX {
+    font-size: 9px;
+  }
+  .Toastify > div {
+    top: 12.05vh;
+    left: 0;
+  }
+  .Toastify > div > div {
+    font-size: 2vw;
+    letter-spacing: -0.215px;
+    padding-top: 0.55rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    width: 55vw;
+    min-height: 3.5rem;
+  }
+  .Toastify > div > div svg {
+    width: 1.08rem !important;
+  }
+  .Toastify__progress-bar {
+    height: 2.5px !important;
+  }
+  .Toastify__toast-icon svg {
+    width: 0.9rem !important;
+  }
+}
 /*
  #Contact {
     position: relative;
@@ -7710,6 +8460,28 @@ textarea:focus-within) button {
     font-size: 15.5px;
   }
 }
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  .socials {
+    position: absolute;
+    bottom: 0.45rem;
+    right: -0.75vw;
+    z-index: 4;
+    gap: 7px;
+  }
+  .socials span a {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .socials span a svg {
+    font-size: 20px;
+  }
+  .socials span:first-child svg {
+    font-size: 16px;
+  }
+  .socials span:last-child svg {
+    font-size: 18px;
+  }
+}
 /*
  .socials {
     @include flex($jus: center);
@@ -8314,6 +9086,34 @@ textarea:focus-within) button {
   }
   .shortLinks div span {
     font-size: 13px;
+  }
+}
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  .shortLinks {
+    text-align: right;
+  }
+  .shortLinks::after {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    left: 0;
+    opacity: 0;
+  }
+}
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
+  .shortLinks::after {
+    width: 0;
+    left: 0;
+  }
+}
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  .shortLinks div {
+    min-height: 1rem;
+    margin-top: 7px;
+  }
+  .shortLinks div span {
+    padding: 1px 2px 1px 1px;
+    font-size: 14px;
   }
 }
 .portal,
