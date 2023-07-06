@@ -1420,10 +1420,10 @@
       .footer {
         footer {
           .block {
-            // max-width: 100vw;
-            // flex-direction: row;
+            max-width: 100vw;
+            flex-direction: row;
             > div:first-child {
-              margin: auto 1rem;
+              margin: auto 1.75rem auto 0;
               position: static;
               // bottom: -0.5rem;
               // right: 2.2rem;
@@ -1487,6 +1487,7 @@
                   //           padding-left: 0;
                 }
               }
+              &::after{left: -14rem;width: 95vw;}
             }
           }
           div.copyX {

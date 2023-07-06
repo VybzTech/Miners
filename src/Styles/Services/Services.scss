@@ -821,12 +821,12 @@
         margin: 5rem auto 2rem;
       }
       .OurServices {
-        $imgHeight: 28vh;
+        $imgHeight: 27vh;
         gap: .5rem;
         & > div {
           width: 31vw;
           height: $imgHeight;
-          margin-bottom: .75vh;
+          margin-bottom: 1vh;
           border-radius: 1vh;
           &::before {
             // width: 100%;
