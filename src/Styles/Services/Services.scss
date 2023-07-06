@@ -806,8 +806,279 @@
   }
 }
 
+// For Desktops, Large screens, Extra large screens, TVs: iPad Pro, iPad Air, Surface Pro 7
+@media screen and (min-width: 800px) and (min-height: 1100px) {
+  #Services {
+    height: 100vh;
+    .Bg__Image {
+      height: 100vh;
+    }
+    .container {
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // width: 100%;
+      h2 {
+        // width: fit-content;
+        // font-family: GillsHeavy;
+        // // text-align: right;
+        // text-transform: uppercase;
+        font-size: 6vw;
+        // word-spacing: 5px;
+        letter-spacing: -0.5px;
+        // color: $white;
+        margin: 4rem auto 2rem;
+      }
+      .OurServices {
+        // @include flex($jus: center);
+        // flex-wrap: wrap;
+        // padding: 0 10px;
+        // position: relative;
+        gap: 1.2rem;
+        // z-index: 2;
+        & > div {
+          // border: 1px solid transparent;
+          // box-shadow: 0 1px 8px 0.1px #2e0f105a;
+          width: 30vw;
+          height: 30vh;
+          margin-bottom: -0.75vh;
+          // @include trans;
+          // overflow: hidden;
+          border-radius: 1.2vh;
+          //0 0 7px 1px $dark_brown;
+          // z-index: 0;
+          &::before {
+            // width: 100%;
+            // height: 30vh;
+            // bottom: -1;
+            // left: 1;
+            width: 100%;
+            height: 30vh;
+            // height: 33vh;
+            //   @include transShort;
+            //   content: "";
+            //   position: absolute;
+            //   background: linear-gradient(0deg, transparent, transparent);
+            // background: linear-gradient(0deg, #000e, transparent);
+            //   z-index: 1;
+          }
+          img {
+            // height: 27vh;
+            // height: 33vh;
+            //   @include trans;
+            height: 30vh;
+            //   object-fit: cover;
+            //   width: 100%;
+            // }
+            //   filter: brightness(1.25);
+            // box-shadow: inset 0 0 13px 1px #000e;
+            // span {
+            //   transform: scale(0);
+          }
+          span {
+            opacity: 0.7;
+            left: 10%;
+            font-size: 2vw;
+          }
+          &:hover {
+            border-radius: 1.75vh;
+            // z-index: 1;
+            // box-shadow: inset 0 0 10px #000, 0 0 30px 1px $dark_brown;
+            img {
+              // filter: blur(1.1px);
+              // transform: scale(1.02);
+            }
+            &::before {
+              // width: 100%;
+              // height: 33vh;
+              // height: 60vh;
+              // background: linear-gradient(0deg, #000e, #1117);
+            }
+            & span {
+              opacity: 1;
+              // z-index: 2;
+              // position: absolute;
+              // bottom: 13px;
+              // left: 15px;
+              // transform: scale(2.5);
+              // @include zoom2;
+              animation: zoom2 400ms 1ms cubic-bezier(0.165, 0.84, 0.44, 1) 1
+                forwards !important;
+              // line-height: 1.5;
+              // width: 80%;
+              // text-transform: uppercase;
+              // font-size: 12px;
+              // font-family: GillsHeavy;
+              // font-family: Gills;
+              // font-weight: 800;
+              // text-align: left;
+              letter-spacing: 1px;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// ************************ LANDSCAPE ********************************
+
+// PHONE LANDSCAPE   iPhone , Nexus 6, Samsung Galaxy S8+
+@media screen and (min-height: 350px) and (max-width: 750px) and (orientation: Landscape) {
+  #Services {
+    // height: 128vh;
+    // position: relative;
+    height: 138vh;
+    .Bg__Image {
+      height: 138vh;
+      // height: 150vh;
+    }
+    .container {
+      // padding: 0 2rem;
+      h2 {
+        font-size: 5.5vw;
+        letter-spacing: -1.5px;
+        margin: 3rem auto 1rem;
+      }
+      .OurServices {
+        gap:7px;
+        & > div {
+          // $high: 67vh;
+          $high: 58vh;
+          border-radius: 1.85vh;
+          width: 29vw;
+          height: $high;
+          margin-bottom: 2vh;
+          &::before {
+            height: $high;
+          }
+          img {
+            height: $high;
+          }
+          span {
+            font-size: 0.755rem;
+          }
+          &:hover {
+            border-radius: 2.1vh;
+            box-shadow: 0 0 10px 2px $dark_brown;
+            &::before {
+            height: $high;
+            }
+            & span {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// PHONE LANDSCAPE   iPhone 4, iPhone 5/SE (-100px),
+@media screen and (min-height: 320px) and (max-width: 580px) and (orientation: Landscape) {
+  #Services {
+    // height: 128vh;
+    // position: relative;
+    height: 145vh;
+    .Bg__Image {
+      height: 145vh;
+      // height: 150vh;
+    }
+    .container {
+      // padding: 0 2rem;
+      h2 {
+        font-size: 6vw;
+        letter-spacing: -1.5px;
+        margin: 3rem auto 1rem;
+      }
+      .OurServices {
+        gap:7px;
+        & > div {
+          // $high: 67vh;
+          $high:60vh;
+          // border-radius: 1.85vh;
+          width: 30vw;
+          height: $high;
+          margin-bottom: 2vh;
+          &::before {
+            height: $high;
+          }
+          img {
+            height: $high;
+          }
+          span {
+            font-size: 0.655rem;
+          }
+          &:hover {
+            border-radius: 2.1vh;
+            box-shadow: 0 0 10px 2px $dark_brown;
+            &::before {
+            height: $high;
+            }
+            & span {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// PHONE LANDSCAPE   iPhone X Edits
+@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
+  #Services {
+    // height: 128vh;
+    // position: relative;
+    height:75vw;
+    .Bg__Image {
+      height:75vw;
+      // height: 150vh;
+    }
+    .container {
+      // padding: 0 2rem;
+      h2 {
+        font-size: 5.2vw;
+        letter-spacing: -1.5px;
+        margin: 3rem auto 1.5rem;
+      }
+      .OurServices {
+        gap:8px;
+        & > div {
+          $high: 67vh;
+          // $high: 65vh;
+          border-radius: 1.85vh;
+          width: 28vw;
+          height: $high;
+          margin-bottom: 2vh;
+          &::before {
+            height: $high;
+          }
+          img {
+            height: $high;
+          }
+          span {
+            font-size: 0.75rem;
+          }
+          &:hover {
+            border-radius: 2.1vh;
+            box-shadow: 0 0 10px 2px $dark_brown;
+            &::before {
+            height: $high;
+            }
+            & span {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ****************************** LAPTOP ********************************
+
 // For Desktops, Large screens, Extra large screens, TVs
-@media screen and (min-width: 1024px) and (min-height: 550px) {
+@media screen and (min-width: 1024px) and (height: 768px) {
   #Services {
     position: relative;
     height: 110vh;
@@ -996,159 +1267,8 @@
   }
 }
 
-// ********************************************************
-// PHONE LANDSCAPE   iPhone , Nexus 6, Samsung Galaxy S8+
-@media screen and (min-height: 350px) and (max-width: 750px) and (orientation: Landscape) {
-  #Services {
-    // height: 128vh;
-    // position: relative;
-    height: 138vh;
-    .Bg__Image {
-      height: 138vh;
-      // height: 150vh;
-    }
-    .container {
-      // padding: 0 2rem;
-      h2 {
-        font-size: 5.5vw;
-        letter-spacing: -1.5px;
-        margin: 3rem auto 1rem;
-      }
-      .OurServices {
-        gap:7px;
-        & > div {
-          // $high: 67vh;
-          $high: 58vh;
-          border-radius: 1.85vh;
-          width: 29vw;
-          height: $high;
-          margin-bottom: 2vh;
-          &::before {
-            height: $high;
-          }
-          img {
-            height: $high;
-          }
-          span {
-            font-size: 0.755rem;
-          }
-          &:hover {
-            border-radius: 2.1vh;
-            box-shadow: 0 0 10px 2px $dark_brown;
-            &::before {
-            height: $high;
-            }
-            & span {
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-// PHONE LANDSCAPE   iPhone 4, iPhone 5/SE (-100px),
-@media screen and (min-height: 320px) and (max-width: 580px) and (orientation: Landscape) {
-  #Services {
-    // height: 128vh;
-    // position: relative;
-    height: 145vh;
-    .Bg__Image {
-      height: 145vh;
-      // height: 150vh;
-    }
-    .container {
-      // padding: 0 2rem;
-      h2 {
-        font-size: 6vw;
-        letter-spacing: -1.5px;
-        margin: 3rem auto 1rem;
-      }
-      .OurServices {
-        gap:7px;
-        & > div {
-          // $high: 67vh;
-          $high:60vh;
-          // border-radius: 1.85vh;
-          width: 30vw;
-          height: $high;
-          margin-bottom: 2vh;
-          &::before {
-            height: $high;
-          }
-          img {
-            height: $high;
-          }
-          span {
-            font-size: 0.655rem;
-          }
-          &:hover {
-            border-radius: 2.1vh;
-            box-shadow: 0 0 10px 2px $dark_brown;
-            &::before {
-            height: $high;
-            }
-            & span {
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-// PHONE LANDSCAPE   iPhone X Edits
-@media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
-  #Services {
-    // height: 128vh;
-    // position: relative;
-    height:75vw;
-    .Bg__Image {
-      height:75vw;
-      // height: 150vh;
-    }
-    .container {
-      // padding: 0 2rem;
-      h2 {
-        font-size: 5.2vw;
-        letter-spacing: -1.5px;
-        margin: 3rem auto 1.5rem;
-      }
-      .OurServices {
-        gap:8px;
-        & > div {
-          $high: 67vh;
-          // $high: 65vh;
-          border-radius: 1.85vh;
-          width: 28vw;
-          height: $high;
-          margin-bottom: 2vh;
-          &::before {
-            height: $high;
-          }
-          img {
-            height: $high;
-          }
-          span {
-            font-size: 0.75rem;
-          }
-          &:hover {
-            border-radius: 2.1vh;
-            box-shadow: 0 0 10px 2px $dark_brown;
-            &::before {
-            height: $high;
-            }
-            & span {
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
 // PHONE LANDSCAPE
-@media screen and (min-height: 320px) and (max-height: 450px) {
+// @media screen and (min-height: 320px) and (max-height: 450px) {
   // #Services {
   //   // height: 128vh;
   //   // position: relative;
@@ -1275,4 +1395,4 @@
   //     }
   //   }
   // }
-}
+// }
