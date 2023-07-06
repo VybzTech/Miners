@@ -6372,44 +6372,43 @@ nav.Navbar.nosmall > nav {
 }
 @media screen and (min-width: 800px) and (min-height: 1100px) {
   #Services {
-    height: 100vh;
+    height: 65vh;
   }
   #Services .Bg__Image {
-    height: 100vh;
+    height: 65vh;
   }
   #Services .container h2 {
-    font-size: 6vw;
-    letter-spacing: -0.5px;
-    margin: 4rem auto 2rem;
+    font-size: 5.75vw;
+    letter-spacing: -1px;
+    margin: 5rem auto 2rem;
   }
   #Services .container .OurServices {
-    gap: 1.2rem;
+    gap: 0.5rem;
   }
   #Services .container .OurServices > div {
-    width: 30vw;
-    height: 30vh;
-    margin-bottom: -0.75vh;
-    border-radius: 1.2vh;
+    width: 31vw;
+    height: 28vh;
+    margin-bottom: 0.75vh;
+    border-radius: 1vh;
   }
   #Services .container .OurServices > div::before {
-    width: 100%;
-    height: 30vh;
+    height: 28vh;
   }
   #Services .container .OurServices > div img {
-    height: 30vh;
+    height: 28vh;
   }
   #Services .container .OurServices > div span {
-    opacity: 0.7;
+    opacity: 0.5;
     left: 10%;
-    font-size: 2vw;
+    font-size: 13.5px;
   }
   #Services .container .OurServices > div:hover {
-    border-radius: 1.75vh;
+    border-radius: 1.25vh;
   }
   #Services .container .OurServices > div:hover span {
     opacity: 1;
     animation: zoom2 400ms 1ms cubic-bezier(0.165, 0.84, 0.44, 1) 1 forwards !important;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     color: #f3ebec;
   }
 }
@@ -7335,415 +7334,130 @@ textarea:focus-within) button {
     width: 5.5vw !important;
   }
 }
-@media screen and (min-width: 1024px) and (min-height: 550px) {
+@media screen and (min-width: 800px) and (min-height: 1100px) {
   #Contact {
-    position: relative;
-    height: 107vh;
+    height: 80vh;
+    height: 80vh;
+    height: 90vh;
   }
   #Contact .Bg__Image {
-    height: 107vh;
-    z-index: 1;
-  }
-  #Contact .container {
-    position: absolute;
-    top: 28vh;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    z-index: 2;
-    width: 100%;
-  }
-  #Contact .container main {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+    height: 90vh;
   }
   #Contact .container main .Form {
-    margin: auto;
-    margin-left: 7rem;
+    margin: 3rem auto auto;
   }
   #Contact .container main .Form p {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    font-family: Gills;
-    font-size: 1.15rem;
-    color: #541c1d;
-    margin-bottom: 1rem;
-    text-shadow: 0 0 1px rgba(51, 51, 51, 0.4666666667);
-    opacity: 0.85;
-    letter-spacing: 0.25px;
-  }
-  #Contact .container main .Form p svg {
-    padding: 10px;
-    transition: all 250ms ease-in-out;
-    opacity: 0.85;
-    font-size: 1.2rem;
-    border-radius: 1000px;
-    background-color: rgba(84, 28, 29, 0.2274509804);
-    box-shadow: 0 0 10px rgba(84, 28, 29, 0.1647058824);
-  }
-  #Contact .container main .Form p svg:hover {
-    cursor: pointer;
-    box-shadow: 0 0 20px 0.5px rgba(84, 28, 29, 0.4784313725);
-    opacity: 1;
-    color: #2e0f10;
-    background-color: rgba(84, 28, 29, 0.4784313725);
+    font-size: 2.5vw;
   }
   #Contact .container main .Form .formGroup {
-    box-shadow: 0 0 15px 1px rgba(84, 28, 29, 0.3176470588);
-    padding: 0.5rem;
-    padding-left: 1.8rem;
-    border: 2px solid rgba(84, 28, 29, 0.4784313725);
-    border-radius: 1000px;
-    transition: all 250ms ease-in-out;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+    padding: 0.4rem;
+    padding-left: 3rem;
   }
   #Contact .container main .Form .formGroup input {
-    border: none;
-    width: 20rem;
-    transition: all 250ms ease-in-out;
-    height: 1.5rem;
-    background: transparent;
-    font-size: 1.1rem;
-    font-family: Gills;
-    opacity: 0.9;
-    color: #541c1d;
+    height: 4rem;
+    font-size: 2.8vw;
   }
   #Contact .container main .Form .formGroup input::placeholder {
-    word-spacing: 2px;
-    opacity: 0.4;
-    color: #2e0f10;
-    font-size: 1.02rem;
-    font-family: Gills;
-  }
-  #Contact .container main .Form .formGroup input:focus, #Contact .container main .Form .formGroup input:focus-visible, #Contact .container main .Form .formGroup input:focus-within {
-    border: none;
-    outline: none;
-  }
-  #Contact .container main .Form .formGroup button {
-    border: none;
-    outline: none;
-    color: transparent;
-    background-color: #541c1d;
-    opacity: 0.5;
-    padding: 4px 5px 3px;
-    border-radius: 1000px;
-    transition: all 250ms ease-in-out;
-  }
-  #Contact .container main .Form .formGroup button:focus, #Contact .container main .Form .formGroup button:focus-visible, #Contact .container main .Form .formGroup button:focus-within {
-    outline: none;
-    background: rgba(17, 17, 17, 0.3333333333);
-    box-shadow: 0 0.5px 10px 0.25px rgba(17, 17, 17, 0.3333333333);
+    font-size: 2.3vw;
   }
   #Contact .container main .Form .formGroup button svg {
-    font-size: 1.5rem;
-    color: #fce1d7;
-    transition: all 250ms ease-in-out;
-  }
-  #Contact .container main .Form .formGroup:hover {
-    border: 2px solid rgba(84, 28, 29, 0.7921568627);
-  }
-  #Contact .container main .Form .formGroup:hover button {
-    opacity: 0.7;
-    transform: scale(1.02);
-  }
-  #Contact .container main .Form .formGroup:has(input:focus, input:focus-visible, input:focus-within) {
-    border: 2px solid rgba(84, 28, 29, 0.7921568627);
-  }
-  #Contact .container main .Form .formGroup:has(input:focus, input:focus-visible, input:focus-within) input {
-    background: transparent;
-  }
-  #Contact .container main .Form .formGroup:has(input:focus, input:focus-visible, input:focus-within) button {
-    opacity: 0.85;
-    transform: scale(1);
-  }
-  #Contact .container main .Form .formGroup.disappear {
-    display: none;
+    font-size: 4.5vw;
   }
   #Contact .container main .Form .formGroup.message {
-    border-radius: 20px;
-    margin-top: 0.5rem;
-    flex-direction: column;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
   }
   #Contact .container main .Form .formGroup.message textarea {
-    border: none;
-    width: 25rem;
-    height: 7rem;
-    transition: all 250ms ease-in-out;
-    background: transparent;
-    font-size: 1.1rem;
-    opacity: 0.9;
-    color: #541c1d;
+    font-size: 2.8vw;
   }
   #Contact .container main .Form .formGroup.message textarea::placeholder {
-    word-spacing: 3px;
-    opacity: 0.4;
-    color: #2e0f10;
-    font-size: 1.03rem;
-  }
-  #Contact .container main .Form .formGroup.message textarea:focus, #Contact .container main .Form .formGroup.message textarea:focus-visible, #Contact .container main .Form .formGroup.message textarea:focus-within {
-    border: none;
-    outline: none;
-  }
-  #Contact .container main .Form .formGroup.message button {
-    color: #fce1d7;
-    font-size: 0.8rem;
-    transition: all 250ms ease-in-out;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    padding: 10px 25px 9px;
-    border-radius: 10px;
-    border-radius: 7px;
-    font-size: 1.1rem;
-  }
-  #Contact .container main .Form .formGroup.message button svg {
-    margin-left: 0.4rem;
-    font-size: 1.1rem;
-    transition: all 250ms ease-in-out;
-  }
-  #Contact .container main .Form .formGroup.message:has(textarea:focus,
-  textarea:focus-visible,
-  textarea:focus-within) {
-    border: 2px solid rgba(84, 28, 29, 0.7921568627);
-  }
-  #Contact .container main .Form .formGroup.message:has(textarea:focus,
-  textarea:focus-visible,
-  textarea:focus-within) textarea {
-    background: transparent;
-  }
-  #Contact .container main .Form .formGroup.message:has(textarea:focus,
-  textarea:focus-visible,
-  textarea:focus-within) button {
-    opacity: 1;
-    transform: scale(1);
+    font-size: 2.3vw;
   }
   #Contact .container main .hero {
-    margin: 0 3.5rem 4rem auto;
-    width: fit-content;
-    text-align: center;
+    margin-top: -4vh;
   }
   #Contact .container main .hero p {
-    color: #333;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    opacity: 0.5;
-    font-family: Gills;
-    margin-bottom: 0.5rem;
-    margin-right: -0.1rem;
-    text-align: right;
-    text-shadow: 0 0 30px #333;
-    -webkit-text-stroke: 1px #333;
+    font-size: 2vw;
+    margin-bottom: 1.25vh;
+    opacity: 0.2;
   }
   #Contact .container main .hero h2 {
-    font-weight: 900;
-    line-height: 3.25rem;
-    width: 35vw;
-    font-family: Bart;
-    text-align: right;
-    text-transform: uppercase;
-    font-size: 5.5vw;
-    letter-spacing: 1px;
-    color: #111;
+    font-size: 7vw;
+    max-width: 50vw;
+    line-height: 4vh;
   }
   #Contact .container main .hero h2::after {
-    content: "";
-    position: absolute;
-    bottom: 0.1rem;
-    right: 0.1rem;
-    width: 10rem;
-    height: 1.1rem;
-    border-radius: 1000px;
-    z-index: -1;
-    background-color: #f2d30b;
-    border: 2px solid #f1c30b;
+    height: 1.9rem;
+    width: 11rem;
+    bottom: -0.3rem;
+    right: 5.5rem;
   }
-  #Contact .container .footer {
-    width: 100%;
+  #Contact .container .footer footer .block > div:first-child {
+    margin: auto 1rem;
+    position: static;
   }
-  #Contact .container .footer footer {
-    color: #f3ebec;
-    opacity: 0.925;
-    background: #2e0f10;
-    filter: grayscale(-0.4) brightness(8);
-  }
-  #Contact .container .footer footer .block {
+  #Contact .container .footer footer .block > div:first-child .logo {
+    display: block;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-    padding: 1.75rem 2rem 0;
-    margin-bottom: -1rem;
-  }
-  #Contact .container .footer footer .block::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    width: 90vw;
-    left: -0.5rem;
-    opacity: 0.1;
-    height: 1px;
-    background-color: #fce1d7;
-  }
-  #Contact .container .footer footer .logo {
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
+  }
+  #Contact .container .footer footer .block > div:first-child .logo img {
+    width: 3vw;
+  }
+  #Contact .container .footer footer .block > div:first-child .logo span, #Contact .container .footer footer .block > div:first-child .logo p {
+    font-family: Bart;
     text-transform: uppercase;
-    font-weight: 900;
-    width: 8rem;
-    width: 15rem;
-    color: #e7c7b0;
+    font-size: 2vw;
+    letter-spacing: 1px;
+    height: fit-content;
+    width: 10rem;
     text-align: center;
-    padding: 0.5rem 0 0.5rem 1rem;
   }
-  #Contact .container .footer footer .logo big {
-    font-size: 2.5rem;
-    color: #f1c30b;
+  #Contact .container .footer footer .block .shortLinks,
+  #Contact .container .footer footer .block .addresses {
+    width: 40vw;
   }
-  #Contact .container .footer footer .logo p {
-    font-family: Bart;
-    padding-left: 1rem;
-    font-size: 1.5rem;
-    letter-spacing: 1.2px;
-    word-spacing: -10px;
+  #Contact .container .footer footer .block .shortLinks h2,
+  #Contact .container .footer footer .block .addresses h2 {
+    font-size: 3vw;
+    letter-spacing: -0.2px;
   }
-  #Contact .container .footer footer .logo span {
-    letter-spacing: 0.9px;
-    word-spacing: 0px;
-    font-family: Bart;
-    font-weight: 400;
-    font-size: 0.9rem;
+  #Contact .container .footer footer .block .addresses > div {
+    width: 50vw;
+    margin-bottom: 10px;
   }
-  #Contact .container .footer footer .shortLinks h2,
-  #Contact .container .footer footer .addresses h2 {
-    font-size: 1.4rem;
-    color: white;
-    font-family: Gills;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    margin-bottom: 0.7rem;
+  #Contact .container .footer footer .block .addresses > div > p {
+    font-size: 18px;
+    text-shadow: 0 0 20px #3e3333;
   }
-  #Contact .container .footer footer .addresses {
-    font-family: Gills;
-    font-weight: 500;
+  #Contact .container .footer footer .block .addresses > div > span {
+    line-height: 1.3vh;
+    font-size: 14px;
   }
-  #Contact .container .footer footer .addresses::after {
-    position: absolute;
-    bottom: 0;
-    width: 0;
-    left: 0;
-    opacity: 0;
-  }
-}
-@media screen and (min-width: 1024px) and (min-height: 550px) and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
-  #Contact .container .footer footer .addresses::after {
-    width: 0;
-    left: 0;
-  }
-}
-@media screen and (min-width: 1024px) and (min-height: 550px) {
-  #Contact .container .footer footer .addresses > div {
-    max-width: 40vw;
-    margin-bottom: 15px;
-  }
-  #Contact .container .footer footer .addresses > div p {
-    font-size: 1rem;
-  }
-  #Contact .container .footer footer .addresses > div > span {
-    margin-bottom: 3px;
-    opacity: 0.7;
-    font-weight: 400;
-    font-family: system-ui;
-    font-size: 0.825rem;
-    display: inline;
-  }
-  #Contact .container .footer footer .addresses > div > span:last-of-type {
-    padding-left: 7px;
+  #Contact .container .footer footer .block .addresses > div:last-of-type {
+    margin-top: 0;
   }
   #Contact .container .footer footer div.copyX {
-    font-family: system-ui;
-    font-weight: 100;
-    font-size: 0.7rem;
-    width: fit-content;
-    margin: 0.7rem auto 0;
-    color: #fce1d7;
-    padding-bottom: 0.75rem;
-    letter-spacing: 0.3px;
+    opacity: 0.7;
+    font-size: 13px;
   }
   .Toastify > div {
-    top: 10vh;
+    top: 7.2vh;
     right: auto;
-    left: 2rem;
+    left: 0.1rem;
   }
   .Toastify > div > div {
-    border-radius: 10px;
-    font-family: Gills;
-    font-size: 1.05rem;
-    letter-spacing: 0.15px;
-    color: #111;
-    box-shadow: 1px 2px 20px 0.5px #f3ebec;
-    padding-left: 0.75rem;
+    border-radius: 12px;
+    font-size: 2.35vw;
+    padding: 1.1rem;
+    width: 50vw;
   }
-  .Toastify__progress-bar {
-    height: 3px !important;
+  .Toastify > div > div svg {
+    font-size: 8vw;
   }
   .Toastify__toast-icon svg {
-    width: 1.05rem !important;
-  }
-}
-@media screen and (min-width: 1300px) {
-  #Contact .container main .hero p {
-    opacity: 0.35;
-  }
-  #Contact .container main .hero h2 {
-    line-height: 3.75rem;
-    width: 25rem;
-    font-size: 4.8vw;
-  }
-  #Contact .container main .hero h2::after {
-    width: 14rem;
-    height: 1.3rem;
-  }
-  #Contact .container .footer footer .block {
-    margin-bottom: -0.2rem;
-  }
-  #Contact .container .footer footer .block::after {
-    width: 95vw;
-    opacity: 0.04;
-    left: 1.5rem;
-  }
-  #Contact .container .footer footer .logo img {
-    width: 2vw;
-    margin: -0.1rem -1.2rem auto auto;
-  }
-  #Contact .container .footer footer .logo p {
-    line-height: 3vh;
-  }
-  #Contact .container .footer footer .addresses > div p {
-    font-size: 0.95rem;
-  }
-  #Contact .container .footer footer .addresses > div > span {
-    font-size: 0.75rem;
-  }
-  #Contact .container .footer footer div.copyX {
-    opacity: 0.7;
-  }
-  .Toastify > div > div {
-    width: 30vw;
+    width: 5.5vw !important;
   }
 }
 @media screen and (min-height: 350px) and (max-width: 750px) and (orientation: Landscape) {
@@ -8117,6 +7831,417 @@ textarea:focus-within) button {
   }
   .Toastify__toast-icon svg {
     width: 0.9rem !important;
+  }
+}
+@media screen and (min-width: 1024px) and (height: 768px) {
+  #Contact {
+    position: relative;
+    height: 107vh;
+  }
+  #Contact .Bg__Image {
+    height: 107vh;
+    z-index: 1;
+  }
+  #Contact .container {
+    position: absolute;
+    top: 28vh;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    width: 100%;
+  }
+  #Contact .container main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  #Contact .container main .Form {
+    margin: auto;
+    margin-left: 7rem;
+  }
+  #Contact .container main .Form p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-family: Gills;
+    font-size: 1.15rem;
+    color: #541c1d;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 1px rgba(51, 51, 51, 0.4666666667);
+    opacity: 0.85;
+    letter-spacing: 0.25px;
+  }
+  #Contact .container main .Form p svg {
+    padding: 10px;
+    transition: all 250ms ease-in-out;
+    opacity: 0.85;
+    font-size: 1.2rem;
+    border-radius: 1000px;
+    background-color: rgba(84, 28, 29, 0.2274509804);
+    box-shadow: 0 0 10px rgba(84, 28, 29, 0.1647058824);
+  }
+  #Contact .container main .Form p svg:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px 0.5px rgba(84, 28, 29, 0.4784313725);
+    opacity: 1;
+    color: #2e0f10;
+    background-color: rgba(84, 28, 29, 0.4784313725);
+  }
+  #Contact .container main .Form .formGroup {
+    box-shadow: 0 0 15px 1px rgba(84, 28, 29, 0.3176470588);
+    padding: 0.5rem;
+    padding-left: 1.8rem;
+    border: 2px solid rgba(84, 28, 29, 0.4784313725);
+    border-radius: 1000px;
+    transition: all 250ms ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  #Contact .container main .Form .formGroup input {
+    border: none;
+    width: 20rem;
+    transition: all 250ms ease-in-out;
+    height: 1.5rem;
+    background: transparent;
+    font-size: 1.1rem;
+    font-family: Gills;
+    opacity: 0.9;
+    color: #541c1d;
+  }
+  #Contact .container main .Form .formGroup input::placeholder {
+    word-spacing: 2px;
+    opacity: 0.4;
+    color: #2e0f10;
+    font-size: 1.02rem;
+    font-family: Gills;
+  }
+  #Contact .container main .Form .formGroup input:focus, #Contact .container main .Form .formGroup input:focus-visible, #Contact .container main .Form .formGroup input:focus-within {
+    border: none;
+    outline: none;
+  }
+  #Contact .container main .Form .formGroup button {
+    border: none;
+    outline: none;
+    color: transparent;
+    background-color: #541c1d;
+    opacity: 0.5;
+    padding: 4px 5px 3px;
+    border-radius: 1000px;
+    transition: all 250ms ease-in-out;
+  }
+  #Contact .container main .Form .formGroup button:focus, #Contact .container main .Form .formGroup button:focus-visible, #Contact .container main .Form .formGroup button:focus-within {
+    outline: none;
+    background: rgba(17, 17, 17, 0.3333333333);
+    box-shadow: 0 0.5px 10px 0.25px rgba(17, 17, 17, 0.3333333333);
+  }
+  #Contact .container main .Form .formGroup button svg {
+    font-size: 1.5rem;
+    color: #fce1d7;
+    transition: all 250ms ease-in-out;
+  }
+  #Contact .container main .Form .formGroup:hover {
+    border: 2px solid rgba(84, 28, 29, 0.7921568627);
+  }
+  #Contact .container main .Form .formGroup:hover button {
+    opacity: 0.7;
+    transform: scale(1.02);
+  }
+  #Contact .container main .Form .formGroup:has(input:focus, input:focus-visible, input:focus-within) {
+    border: 2px solid rgba(84, 28, 29, 0.7921568627);
+  }
+  #Contact .container main .Form .formGroup:has(input:focus, input:focus-visible, input:focus-within) input {
+    background: transparent;
+  }
+  #Contact .container main .Form .formGroup:has(input:focus, input:focus-visible, input:focus-within) button {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+  #Contact .container main .Form .formGroup.disappear {
+    display: none;
+  }
+  #Contact .container main .Form .formGroup.message {
+    border-radius: 20px;
+    margin-top: 0.5rem;
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+  #Contact .container main .Form .formGroup.message textarea {
+    border: none;
+    width: 25rem;
+    height: 7rem;
+    transition: all 250ms ease-in-out;
+    background: transparent;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    color: #541c1d;
+  }
+  #Contact .container main .Form .formGroup.message textarea::placeholder {
+    word-spacing: 3px;
+    opacity: 0.4;
+    color: #2e0f10;
+    font-size: 1.03rem;
+  }
+  #Contact .container main .Form .formGroup.message textarea:focus, #Contact .container main .Form .formGroup.message textarea:focus-visible, #Contact .container main .Form .formGroup.message textarea:focus-within {
+    border: none;
+    outline: none;
+  }
+  #Contact .container main .Form .formGroup.message button {
+    color: #fce1d7;
+    font-size: 0.8rem;
+    transition: all 250ms ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 25px 9px;
+    border-radius: 10px;
+    border-radius: 7px;
+    font-size: 1.1rem;
+  }
+  #Contact .container main .Form .formGroup.message button svg {
+    margin-left: 0.4rem;
+    font-size: 1.1rem;
+    transition: all 250ms ease-in-out;
+  }
+  #Contact .container main .Form .formGroup.message:has(textarea:focus,
+  textarea:focus-visible,
+  textarea:focus-within) {
+    border: 2px solid rgba(84, 28, 29, 0.7921568627);
+  }
+  #Contact .container main .Form .formGroup.message:has(textarea:focus,
+  textarea:focus-visible,
+  textarea:focus-within) textarea {
+    background: transparent;
+  }
+  #Contact .container main .Form .formGroup.message:has(textarea:focus,
+  textarea:focus-visible,
+  textarea:focus-within) button {
+    opacity: 1;
+    transform: scale(1);
+  }
+  #Contact .container main .hero {
+    margin: 0 3.5rem 4rem auto;
+    width: fit-content;
+    text-align: center;
+  }
+  #Contact .container main .hero p {
+    color: #333;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-family: Gills;
+    margin-bottom: 0.5rem;
+    margin-right: -0.1rem;
+    text-align: right;
+    text-shadow: 0 0 30px #333;
+    -webkit-text-stroke: 1px #333;
+  }
+  #Contact .container main .hero h2 {
+    font-weight: 900;
+    line-height: 3.25rem;
+    width: 35vw;
+    font-family: Bart;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 5.5vw;
+    letter-spacing: 1px;
+    color: #111;
+  }
+  #Contact .container main .hero h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0.1rem;
+    right: 0.1rem;
+    width: 10rem;
+    height: 1.1rem;
+    border-radius: 1000px;
+    z-index: -1;
+    background-color: #f2d30b;
+    border: 2px solid #f1c30b;
+  }
+  #Contact .container .footer {
+    width: 100%;
+  }
+  #Contact .container .footer footer {
+    color: #f3ebec;
+    opacity: 0.925;
+    background: #2e0f10;
+    filter: grayscale(-0.4) brightness(8);
+  }
+  #Contact .container .footer footer .block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 1.75rem 2rem 0;
+    margin-bottom: -1rem;
+  }
+  #Contact .container .footer footer .block::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 90vw;
+    left: -0.5rem;
+    opacity: 0.1;
+    height: 1px;
+    background-color: #fce1d7;
+  }
+  #Contact .container .footer footer .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    text-transform: uppercase;
+    font-weight: 900;
+    width: 8rem;
+    width: 15rem;
+    color: #e7c7b0;
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 1rem;
+  }
+  #Contact .container .footer footer .logo big {
+    font-size: 2.5rem;
+    color: #f1c30b;
+  }
+  #Contact .container .footer footer .logo p {
+    font-family: Bart;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 1.2px;
+    word-spacing: -10px;
+  }
+  #Contact .container .footer footer .logo span {
+    letter-spacing: 0.9px;
+    word-spacing: 0px;
+    font-family: Bart;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+  #Contact .container .footer footer .shortLinks h2,
+  #Contact .container .footer footer .addresses h2 {
+    font-size: 1.4rem;
+    color: white;
+    font-family: Gills;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.7rem;
+  }
+  #Contact .container .footer footer .addresses {
+    font-family: Gills;
+    font-weight: 500;
+  }
+  #Contact .container .footer footer .addresses::after {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    left: 0;
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 1024px) and (height: 768px) and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
+  #Contact .container .footer footer .addresses::after {
+    width: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width: 1024px) and (height: 768px) {
+  #Contact .container .footer footer .addresses > div {
+    max-width: 40vw;
+    margin-bottom: 15px;
+  }
+  #Contact .container .footer footer .addresses > div p {
+    font-size: 1rem;
+  }
+  #Contact .container .footer footer .addresses > div > span {
+    margin-bottom: 3px;
+    opacity: 0.7;
+    font-weight: 400;
+    font-family: system-ui;
+    font-size: 0.825rem;
+    display: inline;
+  }
+  #Contact .container .footer footer .addresses > div > span:last-of-type {
+    padding-left: 7px;
+  }
+  #Contact .container .footer footer div.copyX {
+    font-family: system-ui;
+    font-weight: 100;
+    font-size: 0.7rem;
+    width: fit-content;
+    margin: 0.7rem auto 0;
+    color: #fce1d7;
+    padding-bottom: 0.75rem;
+    letter-spacing: 0.3px;
+  }
+  .Toastify > div {
+    top: 10vh;
+    right: auto;
+    left: 2rem;
+  }
+  .Toastify > div > div {
+    border-radius: 10px;
+    font-family: Gills;
+    font-size: 1.05rem;
+    letter-spacing: 0.15px;
+    color: #111;
+    box-shadow: 1px 2px 20px 0.5px #f3ebec;
+    padding-left: 0.75rem;
+  }
+  .Toastify__progress-bar {
+    height: 3px !important;
+  }
+  .Toastify__toast-icon svg {
+    width: 1.05rem !important;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 5000px) {
+  #Contact .container main .hero p {
+    opacity: 0.35;
+  }
+  #Contact .container main .hero h2 {
+    line-height: 3.75rem;
+    width: 25rem;
+    font-size: 4.8vw;
+  }
+  #Contact .container main .hero h2::after {
+    width: 14rem;
+    height: 1.3rem;
+  }
+  #Contact .container .footer footer .block {
+    margin-bottom: -0.2rem;
+  }
+  #Contact .container .footer footer .block::after {
+    width: 95vw;
+    opacity: 0.04;
+    left: 1.5rem;
+  }
+  #Contact .container .footer footer .logo img {
+    width: 2vw;
+    margin: -0.1rem -1.2rem auto auto;
+  }
+  #Contact .container .footer footer .logo p {
+    line-height: 3vh;
+  }
+  #Contact .container .footer footer .addresses > div p {
+    font-size: 0.95rem;
+  }
+  #Contact .container .footer footer .addresses > div > span {
+    font-size: 0.75rem;
+  }
+  #Contact .container .footer footer div.copyX {
+    opacity: 0.7;
+  }
+  .Toastify > div > div {
+    width: 30vw;
   }
 }
 /*

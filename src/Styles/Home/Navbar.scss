@@ -1,38 +1,3 @@
-//  TOP BUTTON
-// .TopBtn {
-//   position: fixed;
-//   bottom: 5vh;
-//   right: 4vw;
-//   width: fit-content;
-//   padding: 0.4rem 0.48rem 0.25rem;
-//   border-radius: 1000px;
-//   background-color: white;
-//   z-index: 50;
-//   box-shadow: 0 0 5px 0.01px #4447;
-//   @include trans;
-//   // height: 100vh;
-//   svg {
-//     @include trans;
-//     font-size: 0.985rem;
-//     color: $gray;
-//     transform: rotate(-90deg);
-//   }
-//   &:hover {
-//     box-shadow: 1px 2px 10px 0.1px #111a;
-//     svg {
-//       font-size: 1rem;
-//       color: black;
-//     }
-//   }
-//   &.noShow {
-//     opacity: 0;
-//     visibility: hidden;
-//     // display: none;
-//   }
-//   visibility: visible;
-//   opacity: 1;
-// }
-
 //  Small iPhone:
 nav.Navbar {
   @include flex;
