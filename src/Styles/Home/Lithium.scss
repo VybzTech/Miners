@@ -1942,7 +1942,7 @@
 
 @media screen and (min-width: 1024px) and (height: 768px) {
   #Lithium {
-    $pageHeight:100vh;
+    $pageHeight: 100vh;
     position: relative;
     height: $pageHeight;
     .Bg__Image {
@@ -1963,14 +1963,15 @@
         font-family: GillsHeavy;
         text-align: left;
         text-transform: uppercase;
-        font-size: 4.5vw;width: 60vw;
+        font-size: 4.5vw;
+        width: 60vw;
         letter-spacing: -1px;
         color: $pink;
         margin: 7rem 2rem 2rem;
       }
       aside {
         @include flex($jus: center, $dir: column);
-        padding: 1rem .5rem;
+        padding: 1rem 0.5rem;
         margin: 1rem auto;
         .bubble {
           // max-width: 25dvw;
@@ -2058,7 +2059,7 @@
         }
       }
       main.Roller {
-        padding: 12rem .5rem 3rem 3rem;
+        padding: 12rem 0.5rem 3rem 3rem;
         .content {
           @include flex($jus: left, $align: center);
           padding: 1rem;
@@ -2154,68 +2155,79 @@
   }
 }
 
-@media screen and (min-width: 1300px)  and (max-width: 5000px) {
+@media screen and (min-width: 1300px) and (max-width: 5000px) {
   #Lithium {
-    // position: relative;
+    position: relative;
+    height: 125vh;
     .Bg__Image {
-      // height: 125vh;
-      // border-radius: 0 180px 0 180px;
-      border-radius: 0 25vh;
+      height: 125vh;
+      border-radius: 0 180px 0 180px;
+      // border-radius: 0 25vh;
     }
     .container {
-      // @include flex;
-      // position: absolute;
-      // top: 0;
-      // left: 0;
-      // right: 0;
-      // padding: 0 2rem;
+      width: 94%;
+      @include flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0 2rem;
       > main {
-        // width: 50%;
+        width: 50%;
       }
       h2 {
         // font-family: GillsHeavy;
-        // text-align: right;
-        // text-transform: uppercase;
-        // font-size: 2.5rem;
+        text-align: right;
+        text-transform: uppercase;
+        font-size: 2.9rem;
         // letter-spacing: -1px;
         // color: $pink;
-        margin: 7rem 3rem 2rem auto;
+        margin: 5rem 3rem 2rem auto;
       }
       aside {
-        // @include flex($jus: center, $dir: column);
-        // padding: 1rem 2rem;
-        // margin: 1rem auto;
+        @include flex($jus: center, $dir: column);
+        padding: 1rem 2rem;
+        margin: 1rem auto;
         .bubble {
-          // min-width: 20vw;
-          width: 17vw;
+          // min-width: 15vw;
+          width: 20vw;
           // padding: 1.5rem 1.5rem 1rem;
-          // margin: 0 0 0.5rem auto;
-          // border: 4px solid $dark_brown;
-          // opacity: 0.7;
-          // text-align: right;
-          // border-radius: 30px 30px 0;
+          margin: 0 0 0.5rem auto;
+          border: 3px solid $dark_brown;
+          opacity: 0.7;
+          text-align: right;
+          border-radius: 30px 30px 0;
           // background: #e7c7b071;
           // @include transShort;
-          padding: 18px 27px 8px 17px;
+          // padding: 18px 27px 8px 17px;
+          padding: 15px 30px 17px 20px;
           &.Tabbed,
           &.Tabbed:hover {
-            padding: 15px 27px 5px 17px;
+            padding: 15px 30px 15px 20px;
             // opacity: 1;
-            // border: 5px solid $dark_brown;
+            border: 4px solid $dark_brown;
             // box-shadow: 0 0 15px 0.5px #e7c7b033;
             // background: #e7c7b0a1;
             span,
             p {
-              // line-height: 1.7rem;
-              font-size: 1rem;
-              line-height: 4.5vh;
-              letter-spacing: -0.5px;
-              word-spacing: 3px;
+              font-size: 16px;
+              line-height: 5.5vh;
+              letter-spacing: 0.01px;
+              word-spacing: 4.5px;
+            }
+            > nav {
+              margin: 0 0 0 2rem;
+              svg {
+                width: 14px;
+              }
+              span {
+                font-size: 12px;
+              }
             }
           }
           &:last-of-type {
-            // margin-left: auto;
-            // border-radius: 30px 0 30px 30px;
+            margin-left: auto;
+            border-radius: 30px 0 30px 30px;
           }
           &:hover {
             // cursor: pointer;
@@ -2228,32 +2240,30 @@
           }
           span,
           p {
-            letter-spacing: 0.2px;
-            // line-height: 1.5rem;
-            // color: $pinkish_Light;
-            word-spacing: 5px;
-            // padding-left: 15px;
-            line-height: 3.75vh;
-            font-size: 0.975rem;
-            // font-family: Gills;
-            // @include transShort;
-          }
-          span {
-            // font-size: 0.7rem;
-            // margin-left: 0.75rem;
-          }
-          svg {
-            // margin-right: 0.2rem;
-            // width: 13px;
+            font-size: 14px;
+            line-height: 6vh;
+            letter-spacing: 0.55px;
+            word-spacing: 6px;
           }
           > nav {
+            margin: 0 0 0 2rem;
+            span {
+              font-size: 11px;
+              // font-size: 0.7rem;
+              // margin-left: 0.75rem;
+            }
+            svg {
+              // margin-right: 0.2rem;
+              width: 13px;
+            }
             // margin: 0.7rem -0.05rem 1.2rem auto;
             // @include flex($jus: right);
           }
         }
       }
       main.Roller {
-        // padding-left: 3rem;
+        padding-top: 10rem;
+        padding-left: 3rem;
         .content {
           // @include flex($jus: left, $align: center);
           padding: 1.25rem 3rem;
@@ -2264,14 +2274,15 @@
 
               span {
                 // font-style: normal;
-                font-size: 1.3rem;
+                font-size: 1.2rem;
                 // letter-spacing: -0.1px;
                 line-height: 4vh;
                 // opacity: 1;
                 // color: $pinkish_Light;
               }
               &:hover span {
-                font-size: 1.15rem;
+                font-size: 1.205rem;
+                line-height: 4.1vh;
                 // opacity: 1;
               }
               &::before {
@@ -2279,17 +2290,16 @@
                 // position: absolute;
                 // z-index: 2;
                 // top: 0.5rem;
-                // left: -2.5rem;
+                left: -1.55rem;
 
-                // width: 0.8rem;
-                // height: 0.8rem;
+                width: 17px;
+                height: 17px;
                 // border-radius: 10000px;
                 // background-color: $pink;
                 // opacity: 1;
               }
             }
           }
-
           p {
             // color: $pinkish;
             // width: fit-content;
@@ -2302,23 +2312,25 @@
               // @include trans;
             }
             &:hover span {
+              font-size: 1.01rem;
+              line-height: 3.1vh;
               // opacity: 0.7;
+              cursor: pointer;
             }
             &::before {
               // content: "";
               // position: absolute;
               // top: 0.5rem;
               // left: -2.3rem;
-              // width: 0.5rem;
-              // height: 0.5rem;
+              width: 9px;
+              height: 9px;
               // @include transShort;
               // border-radius: 10000px;
               // background-color: $pinkish;
             }
             &:hover::before {
               // opacity: 1 !important;
-              // transform: scale(1.2);
-              // cursor: pointer;
+              transform: scale(1.1);
               // color: $pinkish_Light;
             }
           }
@@ -2328,14 +2340,14 @@
           // opacity: 0.85;
           // background-color: $pinkish;
           // position: absolute;
-          top: 2.4rem;
-          // left: 3.85rem;
-          // width: 2px;
+          top: 12rem;
+          left: 4.91rem;
+          width: 2px;
           // height: 25rem;
-          // border-radius: 1px;
+          border-radius: 1px;
           // z-index: 1;
           &:hover {
-            // width: 3px;
+            width: 3px;
           }
         }
       }

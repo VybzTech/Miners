@@ -726,7 +726,8 @@
       }
       .swiper-slide {
         margin-right: 3rem !important;
-    width: auto !important;  }
+        width: auto !important;
+      }
       .card {
         margin-right: 0;
         min-width: 30vw;
@@ -1351,18 +1352,18 @@
 @media screen and (min-width: 1300px) {
   #Products {
     .hero {
-      margin: 12vh auto 4vh;
+      margin: 14vh auto 3vh;
       span {
         font-size: 1.3vw;
         opacity: 0.25;
       }
       h1 {
         // z-index: -2;
-        font-size: 9rem;
+        font-size: 10rem;
         // text-transform: capitalize;
-        filter: blur(0.5vh);
+        filter: blur(0.45vh);
         // color: transparent;
-        // opacity: 0.25;
+        opacity: 0.225;
         // font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         // margin: 0.25rem auto -1.8rem 2.5rem;
         // font-weight: 900;
@@ -1377,10 +1378,10 @@
         &::after {
           // content: "";
           // position: absolute;
-          bottom: 0.55rem;
-          right: 9rem;
+          bottom: 0.75rem;
+          right: 7rem;
           width: 11rem;
-          // height: 1rem;
+          height: 1.25rem;
           // border-radius: 1000px;
           // z-index: -1;
           // background-color: $yellow2;
@@ -1389,15 +1390,15 @@
       }
     }
     main {
-      padding: 0 1.2rem 0 1.5rem;
+      padding: 0 2rem 0 1.5rem;
       .swiper-wrapper {
         padding: 3rem 0;
       }
       .swiper-slide:first-child {
-        // padding-left: 2.8rem;
+        padding-left: 2.8rem;
       }
       .swiper-slide {
-        // margin-right: 2rem !important;
+        margin-right: 4rem !important;
       }
       .swiper-slide:last-child > .card::after {
       }
@@ -1428,7 +1429,7 @@
       .card {
         // position: relative;
         box-shadow: 0 0 10px 0.01px #ddd;
-        // min-width: 380px;
+        min-width: 380px;
         width: 400px;
         border-radius: 50px;
         // overflow: hidden;

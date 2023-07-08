@@ -1058,12 +1058,12 @@ nav.Navbar {
     //END SCROLL CHANGES
     .Logo {
       @include flex;
-      padding-left: 2.4rem;
+      padding-left: 1.5rem;
       color: white;
       img {
         // font-size: 2.5rem;
         font-size: 2.5vw;
-        padding-right: 0.5rem;
+        padding-right: 0.25rem;
         // color: $deep_yellow;
       }
       p {
@@ -1079,19 +1079,20 @@ nav.Navbar {
       }
     }
     > nav {
+      background-color: transparent;
       flex-direction: row;
       height: auto !important;
-      width: auto !important;
-      padding: 0 20px 0 0;
-      background-color: transparent;
+      // padding: 0 2px 0 0;
+      padding: 0;
       position: initial;
-      // margin: auto 0;
       transform: none !important;
+      width: auto !important;
       a {
         // font-weight: 600;
         // letter-spacing: -0.1px;
         // text-transform: uppercase;
         // text-decoration: none;
+        font-size: 1.5vw;
         padding: 5px;
         color: $white;
         margin: 0 1.1rem 0 0;
@@ -1100,7 +1101,6 @@ nav.Navbar {
         // font-size: 1.05rem;
         // font-size: 1.15vw;
         // font-size: 1.2vw;
-        font-size: 1.5vw;
         &:hover {
           opacity: 1;
           // font-size: 1.07rem;
@@ -1149,122 +1149,123 @@ nav.Navbar {
     // position: absolute;
     // top: 0;
     // left: 0;
-    // box-shadow: 0 0 0 transparent;
-    // height: 10vh;
-    // background: linear-gradient(0deg, #00000003, #0002);
-    // padding: 0;
+    box-shadow: 0 0 0 transparent;
+    height: 12vh;
+    background: linear-gradient(0deg, #00000003, #0002);
+    padding: 0;
 
     //  SCROLLED CHANGES
     &.Light {
-      // background: white;
-      // position: fixed;
-      // box-shadow: 0 3px 15px #eee5;
+      background: white;
+      position: fixed;
+      box-shadow: 0 3px 15px #eee5;
       .Logo {
         span {
           img {
             // width: 3vw;
           }
         }
-        // p {
-        //   color: $black;
+        p {
+          color: $black;
+        }
         // }
       }
       > nav {
         a {
-          // color: $black3;
-          // &:hover {
-          //   color: black !important;
-          // }
-          // &.screen {
-          //   color: black;
-          // }
-          // &:focus,
-          // &:focus-visible,
-          // &:focus-within {
-          //   opacity: 1;
-          //   color: black;
-          // }
+          color: $black3;
+          &:hover {
+            color: black !important;
+          }
+          &.screen {
+            color: black !important;
+          }
+          &:focus,
+          &:focus-visible,
+          &:focus-within {
+            opacity: 1;
+            color: black;
+          }
         }
       }
     }
     //END SCROLL CHANGES
     .Logo {
-      //   @include flex;
-      //   padding-left: 2.5rem;
-      //   color: white;
+        @include flex;
+        padding-left: 2.5rem;
+        color: white;
       // span {
       //     // font-size: 2.5rem;
       //     font-size: 2.8vw;
       //     color: $deep_yellow;
       img {
-        margin-top: 10px;
-        width: 1.9vw;
+        margin-top: 5px;
+        width: 2.2vw;
         // }
       }
-      //   p {
-      //     font-family: Bart;
-      //     text-transform: uppercase;
-      //     font-size: 1.3vw;
-      //     letter-spacing: 2px;
-      //     height: fit-content;
-      //     color: white;
-      //     width: 8rem;
-      //     text-align: center;
-      //     display: block;
-      //   }
+        p {
+          font-family: Bart;
+          text-transform: uppercase;
+          font-size: 1.3vw;
+          letter-spacing: 2px;
+          height: fit-content;
+          color: white;
+          width: 8rem;
+          text-align: center;
+          display: block;
+        }
     }
     > nav {
-      // flex-direction: row;
-      // height: auto !important;
-      // width: auto !important;
-      // padding: 0;
-      // background-color: transparent;
-      // position: initial;
-      // // margin: auto 0;
-      // transform: none !important;
+      flex-direction: row;
+      height: auto !important;
+      width: auto !important;
+      padding: 0;
+      background-color: transparent;
+      position: initial;
+      // margin: auto 0;
+      transform: none !important;
       a {
-        // font-weight: 600;
+        color: $white;
+        font-weight: 600;
+        font-size: 1.3vw;
         letter-spacing: 0.1px;
-        // text-transform: uppercase;
-        // text-decoration: none;
-        // color: $white;
-        // margin: 0 2rem 0 0;
-        // @include trans;
-        // opacity: 0.8;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 0 2rem 0 0;
+        @include trans;
+        opacity: 0.8;
         // font-size: 1.05rem;
         // font-size: 1.15vw;
         // font-size: 1.2vw;
-        font-size: 1.3vw;
         &:hover {
-          // opacity: 1;
-          // font-size: 1.07rem;
+          opacity: 1;
+          font-size: 1.07rem;
           font-size: 1.325vw;
-          // color: white !important;
+          color: white !important;
         }
         &:focus,
         &:focus-visible,
         &:focus-within {
-          // opacity: 0.9;
+          opacity: 0.9;
           font-size: 1.325vw;
         }
         // ACTIVE NAV
         &.screen {
           letter-spacing: -0.05px;
-          // opacity: 1;
-          // color: white;
-          font-size: 1.4vw;
-          // font-weight: 600;
+          opacity: 1;
+          font-size: 1.45vw;
+          font-weight: 600;
+          color: white !important;
           &::after {
-            // content: "";
-            // position: absolute;
-            top: -0.275rem;
+            content: "";
+            position: absolute;
+            top: -.45rem;
             left: -0.55rem;
-            // width: 2rem;
-            // height: 2rem;
-            // border-radius: 1000px;
-            // z-index: -1;
-            // background-color: $yellow2;
-            // border: 2px solid $deep_yellow;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 1000px;
+            z-index: -1;
+            background-color: $yellow2;
+            border: 2px solid $deep_yellow;
           }
         }
       }
