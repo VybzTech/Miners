@@ -1141,7 +1141,7 @@ nav.Navbar {
   }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 5000px) {
+@media screen and (min-width: 1025px) and (max-width: 5000px) {
   nav.Navbar {
     // @include flex;
     // z-index: 5;
@@ -1190,9 +1190,9 @@ nav.Navbar {
     }
     //END SCROLL CHANGES
     .Logo {
-        @include flex;
-        padding-left: 2.5rem;
-        color: white;
+      @include flex;
+      padding-left: 2.5rem;
+      color: white;
       // span {
       //     // font-size: 2.5rem;
       //     font-size: 2.8vw;
@@ -1202,17 +1202,17 @@ nav.Navbar {
         width: 2.2vw;
         // }
       }
-        p {
-          font-family: Bart;
-          text-transform: uppercase;
-          font-size: 1.3vw;
-          letter-spacing: 2px;
-          height: fit-content;
-          color: white;
-          width: 8rem;
-          text-align: center;
-          display: block;
-        }
+      p {
+        font-family: Bart;
+        text-transform: uppercase;
+        font-size: 1.3vw;
+        letter-spacing: 2px;
+        height: fit-content;
+        color: white;
+        width: 8rem;
+        text-align: center;
+        display: block;
+      }
     }
     > nav {
       flex-direction: row;
@@ -1258,7 +1258,7 @@ nav.Navbar {
           &::after {
             content: "";
             position: absolute;
-            top: -.45rem;
+            top: -0.45rem;
             left: -0.55rem;
             width: 2rem;
             height: 2rem;

@@ -542,17 +542,16 @@
   }
 }
 
-
 // For Desktops, Large screens, Extra large screens, TVs: iPad Pro, iPad Air, Surface Pro 7
 @media screen and (min-width: 800px) and (min-height: 1100px) {
   .shortLinks {
     h2 {
-          text-align: right;
-        }
+      text-align: right;
+    }
     // margin: 0.5rem auto 1.2rem 0;
     @include noFooterLine;
     div {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       min-height: 1.6rem;
       // max-height: 1.2rem;
       text-align: right;
@@ -752,7 +751,7 @@
       min-height: 1rem;
       margin-top: 7px;
       span {
-          padding: 1px 2px 1px 1px;
+        padding: 1px 2px 1px 1px;
         font-size: 14px;
         //   &::before {
         //     bottom: -3.5px;
@@ -966,18 +965,19 @@
     }
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1025px) and (max-width: 5000px) {
   .shortLinks {
-    // padding-right: 5rem;
+    padding-right: 5rem;
     div {
-      // margin-bottom: 10px;
+      margin-bottom: 15px;
       // width: 10rem;
       // max-width: 10rem;
       // opacity: 0.7;
       // max-height: 1.2rem;
+      padding: 1px;
       // @include trans;
       span {
-        font-size: 16px;
+        font-size: 16.5px;
         // font-family: Gills;
         // color: $pinkish;
         // margin-bottom: 20px;
@@ -1097,7 +1097,6 @@
     }
   }
 }
-
 
 //  PORTAL
 .portal,

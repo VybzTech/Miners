@@ -1428,11 +1428,12 @@
               .logo {
                 // width: 50%;
                 display: block;
-                @include flex($jus:center);
+                @include flex($jus: center);
                 img {
                   width: 3vw;
                 }
-               span, p {
+                span,
+                p {
                   font-family: Bart;
                   text-transform: uppercase;
                   font-size: 2vw;
@@ -1467,7 +1468,7 @@
             .addresses {
               > div {
                 width: 50vw;
-                      margin-bottom: 10px;
+                margin-bottom: 10px;
                 & > p {
                   font-size: 18px;
                   text-shadow: 0 0 20px $gray_brown;
@@ -1485,7 +1486,10 @@
                   //           padding-left: 0;
                 }
               }
-              &::after{left: -14rem;width: 95vw;}
+              &::after {
+                left: -14rem;
+                width: 95vw;
+              }
             }
           }
           div.copyX {
@@ -2416,11 +2420,12 @@
               .logo {
                 // width: 50%;
                 display: block;
-                @include flex($jus:center);
+                @include flex($jus: center);
                 img {
                   width: 3vw;
                 }
-               span, p {
+                span,
+                p {
                   font-family: Bart;
                   text-transform: uppercase;
                   font-size: 1.8vw;
@@ -2513,7 +2518,7 @@
           .addresses {
             > div {
               width: 50vw;
-                    margin-bottom: 10px;
+              margin-bottom: 10px;
               & > p {
                 font-size: 18px;
                 text-shadow: 0 0 20px $gray_brown;
@@ -2533,9 +2538,12 @@
                 //           display: inline-block;
               }
             }
-            &::after{opacity: .1;
-              bottom: .65rem;
-              left: -14rem;width: 92vw;}
+            &::after {
+              opacity: 0.1;
+              bottom: 0.65rem;
+              left: -14rem;
+              width: 92vw;
+            }
           }
           div.copyX {
             // font-family: system-ui;
@@ -2577,16 +2585,19 @@
   }
 }
 
-@media screen and (min-width: 1300px) and (max-width: 5000px) {
+@media screen and (min-width: 1025px) and (max-width: 5000px) {
+  $contact_Height: 130vh;
   #Contact {
     // position: relative;
+    height: $contact_Height;
     .Bg__Image {
+      height: $contact_Height;
       // z-index: 1;
       // height: 110vh;
     }
     .container {
       // position: absolute;
-      // top: 30vh;
+      top: 28vh;
       // bottom: 0;
       // @include flex($dir: column);
       // z-index: 2;
@@ -2600,7 +2611,7 @@
           p {
             // @include flex;
             // font-family: Gills;
-            // font-size: 1.15rem;
+            font-size: 1.2rem;
             // color: $brown;
             // margin-bottom: 1rem;
             // text-shadow: 0 0 1px #3337;
@@ -2610,7 +2621,7 @@
               // padding: 10px;
               // @include trans;
               // opacity: 0.85;
-              // font-size: 1.2rem;
+              font-size: 1.25rem;
               // border-radius: 1000px;
               // background-color: #541c1d3a;
               // box-shadow: 0 0 10px #541c1d2a;
@@ -2781,12 +2792,12 @@
           // text-align: center;
           p {
             // color: $black3;
-            // font-size: 0.9rem;
+            font-size: 1rem;
             // letter-spacing: 0.5px;
             // text-transform: uppercase;
             opacity: 0.35;
             // font-family: Gills;
-            // margin-bottom: 0.5rem;
+            margin-bottom: 0.8rem;
             // margin-right: -0.1rem;
             // text-align: right;
             // text-shadow: 0 0 30px #333;
@@ -2797,7 +2808,8 @@
             line-height: 3.75rem;
             width: 25rem;
             // font-family: Bart;
-            // text-align: right;
+            // text-align: center;
+            margin: 0 auto;
             // text-transform: uppercase;
             font-size: 4.8vw;
             // letter-spacing: 1px;
@@ -2806,8 +2818,8 @@
               // content: "";
               // position: absolute;
               // bottom: 0.55rem;
-              // right: 9rem;
-              width: 14rem;
+              right: 3.5rem;
+              width: 10rem;
               height: 1.3rem;
               // border-radius: 1000px;
               // z-index: -1;
@@ -2848,80 +2860,114 @@
               opacity: 0.04;
               left: 1.5rem;
             }
-          }
-          .logo {
-            // @include flex;
-            // text-transform: uppercase;
-            // font-weight: 900;
-            // width: 8rem;
-            // width: 15rem;
-            // color: $pink;
-            // text-align: center;
-            // padding: 0.5rem 0 0.5rem 1rem;
-            big {
-              // font-size: 2.5rem;
-              // color: $deep_yellow;
+            > div:first-child {
+              margin: auto 1.5rem auto 0;
+              position: static;
+              .logo {
+                // width: 50%;
+                display: block;
+                @include flex($jus: center);
+                img {
+                  width: 2.55vw;
+                }
+                span,
+                p {
+                  font-family: Bart;
+                  text-transform: uppercase;
+                  font-size: 1.7vw;
+                  letter-spacing: 1px;
+                  height: fit-content;
+                  // color: white;
+                  width: 12rem;
+                  text-align: center;
+                }
+              }
             }
-            img {
-              width: 2vw;
-              margin: -0.1rem -1.2rem auto auto;
+
+            // .logo {
+            //   // @include flex;
+            //   // text-transform: uppercase;
+            //   // font-weight: 900;
+            //   // width: 8rem;
+            //   // width: 15rem;
+            //   // color: $pink;
+            //   // text-align: center;
+            //   // padding: 0.5rem 0 0.5rem 1rem;
+            //   big {
+            //     // font-size: 2.5rem;
+            //     // color: $deep_yellow;
+            //   }
+            //   img {
+            //     width: 2vw;
+            //     margin: -0.1rem -1.2rem auto auto;
+            //   }
+            //   p {
+            //     // font-family: Bart;
+            //     // padding-left: 1rem;
+            //     // font-size: 1.5rem;
+            //     // letter-spacing: 1.2px;
+            //     // word-spacing: -10px;
+            //     line-height: 3vh;
+            //   }
+            //   span {
+            //     // letter-spacing: 0.9px;
+            //     // word-spacing: 0px;
+            //     // font-family: Bart;
+            //     // font-weight: 400;
+            //     // font-size: 0.9rem;
+            //   }
+            // }
+            //  REMOVED IMPORTS
+            .shortLinks,
+            .addresses {
+              h2 {
+                // font-size: 1.2rem;
+                font-size: 1.75vw;
+                // color: white;
+                // font-family: Gills;
+                // font-weight: 500;
+                letter-spacing: 0.75px;
+                margin-top: 0.75rem;
+              }
             }
-            p {
-              // font-family: Bart;
-              // padding-left: 1rem;
-              // font-size: 1.5rem;
-              // letter-spacing: 1.2px;
-              // word-spacing: -10px;
-              line-height: 3vh;
-            }
-            span {
-              // letter-spacing: 0.9px;
-              // word-spacing: 0px;
-              // font-family: Bart;
-              // font-weight: 400;
-              // font-size: 0.9rem;
-            }
-          }
-          //  REMOVED IMPORTS
-          .shortLinks,
-          .addresses {
-            h2 {
-              // font-size: 1.2rem;
-              // color: white;
+            .addresses {
               // font-family: Gills;
               // font-weight: 500;
-              // letter-spacing: 0.5px;
-              // margin-bottom: 0.75rem;
-            }
-          }
-          .addresses {
-            // font-family: Gills;
-            // font-weight: 500;
-            > div {
-              // max-width: 450px;
-              // margin-bottom: 15px;
-              p {
-                //./
-                font-size: 0.95rem;
+              margin-left: 1.5rem;
+              padding-bottom: 1.3rem;
+              > div {
+                max-width: 42vw;
+                p {
+                  //./
+                  font-size: 0.99rem;
+                }
+                > span {
+                  // opacity: 0.7;
+                  // font-weight: 400;
+                  // font-family: system-ui;
+                  // font-size: 0.825rem;
+                  font-size: 0.8rem;
+                  // display: block;
+                  &:last-of-type {
+                    margin-left: 0;
+                  }
+                }
+                &:last-of-type {
+                  // margin-top: 1rem;
+                }
               }
-              > span {
-                // margin-bottom: 3px;
-                // opacity: 0.7;
-                // font-weight: 400;
-                // font-family: system-ui;
-                // font-size: 0.825rem;
-                font-size: 0.75rem;
-                // display: block;
-              }
-              &:last-of-type {
-                // margin-top: 1rem;
+              &::after {
+                opacity: 0.1;
+                bottom: -0.1rem;
+                left: -16rem;
+                width: 92vw;
               }
             }
           }
           div.copyX {
             // font-family: system-ui;
             // font-weight: 100;
-            // font-size: 0.7rem;
+            font-size: 11px;
             // width: fit-content;
             // margin: 0.7rem auto 0 4rem;
             // color: $pinkish;

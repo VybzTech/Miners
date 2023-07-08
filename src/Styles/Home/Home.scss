@@ -1431,7 +1431,7 @@
 }
 
 // For Desktops 1.3K+
-@media screen and (min-width: 1300px) and (max-width: 5000px) {
+@media screen and (min-width: 1025px) and (max-width: 5000px) {
   #Home {
     // position: relative;
     .Bg__Image {
@@ -1457,8 +1457,8 @@
       // z-index: 5;
       // @include transShort;
       &-active {
-        width: 15px;
-        height: 15px;
+        width: 16px;
+        height: 16px;
         // margin: 1.2rem auto;
         // opacity: 1;
         // background: $deep_yellow;
@@ -1524,9 +1524,9 @@
         }
         & > a {
           font-size: 14px;
-    height: 30px;
-    margin: 1.2rem auto 0;
-    padding: 12px 30px 0;
+          height: 30px;
+          margin: 1.2rem auto 0;
+          padding: 12px 30px 0;
         }
       }
       p.img_Counter {
