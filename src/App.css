@@ -792,20 +792,21 @@ nav.Navbar.nosmall > nav {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding-left: 2.5rem;
+    padding-left: 2.4rem;
     color: white;
   }
   nav.Navbar .Logo img {
-    font-size: 2.8vw;
+    font-size: 2.5vw;
+    padding-right: 0.5rem;
   }
   nav.Navbar .Logo p {
     font-family: Bart;
     text-transform: uppercase;
-    font-size: 1.3vw;
-    letter-spacing: 2px;
+    font-size: 1.5vw;
+    letter-spacing: 1.5px;
     height: fit-content;
     color: white;
-    width: 8rem;
+    width: 9rem;
     text-align: center;
     display: block;
   }
@@ -813,39 +814,40 @@ nav.Navbar.nosmall > nav {
     flex-direction: row;
     height: auto !important;
     width: auto !important;
-    padding: 0;
+    padding: 0 20px 0 0;
     background-color: transparent;
     position: initial;
     transform: none !important;
   }
   nav.Navbar > nav a {
+    padding: 5px;
     color: #f3ebec;
-    margin: 0 2rem 0 0;
-    font-size: 1.4vw;
+    margin: 0 1.1rem 0 0;
+    font-size: 1.5vw;
   }
   nav.Navbar > nav a:hover {
     opacity: 1;
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     color: white !important;
   }
   nav.Navbar > nav a:focus, nav.Navbar > nav a:focus-visible, nav.Navbar > nav a:focus-within {
     opacity: 0.9;
-    font-size: 1.3vw;
+    font-size: 1.6vw;
   }
   nav.Navbar > nav a.screen {
     letter-spacing: -0.5px;
     opacity: 1;
     color: white;
-    font-size: 1.6vw;
+    font-size: 1.8vw;
     font-weight: 600;
   }
   nav.Navbar > nav a.screen::after {
     content: "";
     position: absolute;
-    top: -0.5rem;
-    left: -0.8rem;
-    width: 2rem;
-    height: 2rem;
+    top: -0.1rem;
+    left: -0.55rem;
+    width: 1.9rem;
+    height: 1.9rem;
     border-radius: 1000px;
     z-index: -1;
     background-color: #f2d30b;
@@ -855,7 +857,7 @@ nav.Navbar.nosmall > nav {
     display: none;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) and (max-width: 5000px) {
   nav.Navbar .Logo img {
     margin-top: 10px;
     width: 1.9vw;
@@ -1781,7 +1783,7 @@ nav.Navbar.nosmall > nav {
   }
   #Home main {
     position: absolute;
-    top: 35vh;
+    top: 33vh;
     left: 0;
     width: 100%;
   }
@@ -1794,17 +1796,17 @@ nav.Navbar.nosmall > nav {
   #Home main .title h1 {
     -webkit-text-stroke: 1.5px white;
     color: white;
-    font-size: 5vw;
+    font-size: 5.5vw;
     font-family: GillsHeavy;
     font-weight: 900;
-    letter-spacing: -3px;
-    line-height: 5vh;
+    letter-spacing: -2px;
+    line-height: 4.25vh;
     text-transform: uppercase;
   }
   #Home main .title h1:last-of-type {
-    font-size: 9vw;
+    font-size: 9.2vw;
     -webkit-text-stroke: 5px white;
-    line-height: 9.25vh;
+    line-height: 9.75vh !important;
   }
   #Home main .title > a {
     transition: all 250ms ease-in-out;
@@ -1814,10 +1816,11 @@ nav.Navbar.nosmall > nav {
     color: #f8a414;
     cursor: pointer;
     display: inline-block;
-    font-size: 13px;
-    height: 28px;
+    font-size: 14px;
+    height: 30px;
+    letter-spacing: 0.5px;
     margin: 1rem auto;
-    padding: 12px 25px 0;
+    padding: 14px 20px 0;
     position: relative;
     text-transform: uppercase;
     text-decoration: none;
@@ -1839,19 +1842,19 @@ nav.Navbar.nosmall > nav {
     color: transparent;
     opacity: 0.5;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    margin: 5.35rem auto 3rem 2.5rem;
+    margin: 5.35rem auto 3rem 2.5rem !important;
     font-weight: 900;
     -webkit-text-stroke: 3px white;
   }
   #Home main img[alt=mouse] {
     left: 50%;
-    bottom: 9.85vh;
+    bottom: 11vh;
     z-index: 2;
-    width: 1.6vw;
+    width: 2.25vw;
     animation: bounce 2s 100ms ease-in-out infinite forwards;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) and (max-width: 5000px) {
   #Home .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
@@ -2487,7 +2490,7 @@ nav.Navbar.nosmall > nav {
     transform: rotate(30deg) scale(1.075);
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) and (max-width: 5000px) {
   #About {
     height: 100vh;
   }
@@ -3737,8 +3740,10 @@ nav.Navbar.nosmall > nav {
 @media screen and (min-width: 1024px) and (height: 768px) {
   #Lithium {
     position: relative;
+    height: 100vh;
   }
   #Lithium .Bg__Image {
+    height: 100vh;
     border-radius: 0 18vh;
   }
   #Lithium .container {
@@ -3750,26 +3755,27 @@ nav.Navbar.nosmall > nav {
     top: 0;
     left: 0;
     right: 0;
-    padding: 0 2rem;
+    padding: 0 3rem;
   }
   #Lithium .container > main {
     width: 50%;
   }
   #Lithium .container h2 {
     font-family: GillsHeavy;
-    text-align: right;
+    text-align: left;
     text-transform: uppercase;
-    font-size: 4vw;
+    font-size: 4.5vw;
+    width: 60vw;
     letter-spacing: -1px;
     color: #e7c7b0;
-    margin: 5rem 2rem 2rem auto;
+    margin: 7rem 2rem 2rem;
   }
   #Lithium .container aside {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 1rem 2.5rem;
+    padding: 1rem 0.5rem;
     margin: 1rem auto;
   }
   #Lithium .container aside .bubble {
@@ -3857,14 +3863,14 @@ nav.Navbar.nosmall > nav {
     flex-direction: row;
   }
   #Lithium .container main.Roller {
-    padding-left: 3rem;
+    padding: 12rem 0.5rem 3rem 3rem;
   }
   #Lithium .container main.Roller .content {
     display: flex;
     justify-content: left;
     align-items: center;
     flex-direction: row;
-    padding: 1rem 3rem;
+    padding: 1rem;
   }
   #Lithium .container main.Roller .content.active p {
     font-family: Gills;
@@ -3878,6 +3884,7 @@ nav.Navbar.nosmall > nav {
     color: #faefec;
   }
   #Lithium .container main.Roller .content.active p:hover span {
+    line-height: 1.4rem;
     font-size: 1.1rem;
     opacity: 1;
   }
@@ -3886,10 +3893,10 @@ nav.Navbar.nosmall > nav {
     position: absolute;
     z-index: 2;
     top: 0.5rem;
-    left: -2.5rem;
-    width: 0.8rem;
-    height: 0.8rem;
-    border-radius: 10000px;
+    left: -2.4rem;
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
     background-color: #e7c7b0;
     opacity: 1;
   }
@@ -3906,6 +3913,7 @@ nav.Navbar.nosmall > nav {
     transition: all 250ms ease-in-out;
   }
   #Lithium .container main.Roller .content p:hover span {
+    line-height: 1.3rem;
     opacity: 0.7;
   }
   #Lithium .container main.Roller .content p::before {
@@ -3913,10 +3921,10 @@ nav.Navbar.nosmall > nav {
     position: absolute;
     top: 0.5rem;
     left: -2.3rem;
-    width: 0.5rem;
-    height: 0.5rem;
+    height: 11px;
+    width: 11px;
     transition: all 150ms ease-in-out;
-    border-radius: 10000px;
+    border-radius: 100px;
     background-color: #fce1d7;
   }
   #Lithium .container main.Roller .content p:hover::before {
@@ -3930,8 +3938,9 @@ nav.Navbar.nosmall > nav {
     opacity: 0.85;
     background-color: #fce1d7;
     position: absolute;
-    top: 2rem;
-    left: 3.85rem;
+    top: 13.7rem;
+    left: 3.97rem;
+    left: 2rem;
     width: 2px;
     height: 25rem;
     border-radius: 1px;
@@ -3942,7 +3951,7 @@ nav.Navbar.nosmall > nav {
     width: 3px;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) and (max-width: 5000px) {
   #Lithium .Bg__Image {
     border-radius: 0 25vh;
   }
@@ -5540,14 +5549,14 @@ nav.Navbar.nosmall > nav {
   #Products .hero h2 {
     font-family: GillsHeavy;
     text-transform: capitalize;
-    font-size: 4.2vw;
+    font-size: 4.5vw;
     letter-spacing: -1px;
   }
   #Products .hero h2::after {
     content: "";
     position: absolute;
     bottom: 0.3rem;
-    right: 9rem;
+    right: 8rem;
     width: 9rem;
     height: 1rem;
     border-radius: 1000px;
@@ -8092,103 +8101,59 @@ textarea:focus-within) button {
     flex-direction: row;
     padding: 1.75rem 2rem 0;
     margin-bottom: -1rem;
+    max-width: 100vw;
+    flex-direction: row;
   }
-  #Contact .container .footer footer .block::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    width: 90vw;
-    left: -0.5rem;
-    opacity: 0.1;
-    height: 1px;
-    background-color: #fce1d7;
+  #Contact .container .footer footer .block > div:first-child {
+    margin: auto 1.75rem auto 0;
+    position: static;
   }
-  #Contact .container .footer footer .logo {
+  #Contact .container .footer footer .block > div:first-child .logo {
+    display: block;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
+  }
+  #Contact .container .footer footer .block > div:first-child .logo img {
+    width: 3vw;
+  }
+  #Contact .container .footer footer .block > div:first-child .logo span, #Contact .container .footer footer .block > div:first-child .logo p {
+    font-family: Bart;
     text-transform: uppercase;
-    font-weight: 900;
-    width: 8rem;
-    width: 15rem;
-    color: #e7c7b0;
+    font-size: 2vw;
+    letter-spacing: 1px;
+    height: fit-content;
+    width: 10rem;
     text-align: center;
-    padding: 0.5rem 0 0.5rem 1rem;
   }
-  #Contact .container .footer footer .logo big {
-    font-size: 2.5rem;
-    color: #f1c30b;
-  }
-  #Contact .container .footer footer .logo p {
-    font-family: Bart;
-    padding-left: 1rem;
-    font-size: 1.5rem;
-    letter-spacing: 1.2px;
-    word-spacing: -10px;
-  }
-  #Contact .container .footer footer .logo span {
-    letter-spacing: 0.9px;
-    word-spacing: 0px;
-    font-family: Bart;
-    font-weight: 400;
-    font-size: 0.9rem;
+  #Contact .container .footer footer .shortLinks,
+  #Contact .container .footer footer .addresses {
+    width: 40vw;
   }
   #Contact .container .footer footer .shortLinks h2,
   #Contact .container .footer footer .addresses h2 {
-    font-size: 1.4rem;
-    color: white;
-    font-family: Gills;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    margin-bottom: 0.7rem;
+    font-size: 3vw;
+    letter-spacing: -0.2px;
   }
-  #Contact .container .footer footer .addresses {
-    font-family: Gills;
-    font-weight: 500;
-  }
-  #Contact .container .footer footer .addresses::after {
-    position: absolute;
-    bottom: 0;
-    width: 0;
-    left: 0;
-    opacity: 0;
-  }
-}
-@media screen and (min-width: 1024px) and (height: 768px) and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
-  #Contact .container .footer footer .addresses::after {
-    width: 0;
-    left: 0;
-  }
-}
-@media screen and (min-width: 1024px) and (height: 768px) {
   #Contact .container .footer footer .addresses > div {
-    max-width: 40vw;
-    margin-bottom: 15px;
+    width: 50vw;
+    margin-bottom: 10px;
   }
-  #Contact .container .footer footer .addresses > div p {
-    font-size: 1rem;
+  #Contact .container .footer footer .addresses > div > p {
+    font-size: 18px;
+    text-shadow: 0 0 20px #3e3333;
   }
   #Contact .container .footer footer .addresses > div > span {
-    margin-bottom: 3px;
-    opacity: 0.7;
-    font-weight: 400;
-    font-family: system-ui;
-    font-size: 0.825rem;
-    display: inline;
+    line-height: 1.3vh;
+    font-size: 14px;
   }
-  #Contact .container .footer footer .addresses > div > span:last-of-type {
-    padding-left: 7px;
+  #Contact .container .footer footer .addresses > div:last-of-type {
+    margin-top: 0;
   }
-  #Contact .container .footer footer div.copyX {
-    font-family: system-ui;
-    font-weight: 100;
-    font-size: 0.7rem;
-    width: fit-content;
-    margin: 0.7rem auto 0;
-    color: #fce1d7;
-    padding-bottom: 0.75rem;
-    letter-spacing: 0.3px;
+  #Contact .container .footer footer .addresses::after {
+    left: -14rem;
+    width: 95vw;
   }
   .Toastify > div {
     top: 10vh;
@@ -8843,48 +8808,23 @@ textarea:focus-within) button {
 }
 @media screen and (min-width: 1024px) and (height: 768px) {
   .socials {
-    display: flex;
+    position: static;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    padding: 0.25rem 0 0 1.2rem;
-    gap: 0.9rem;
-    gap: 1rem;
+    padding: 1.5rem 0 0;
+    gap: 10px;
   }
   .socials span a {
-    background-color: #541c1d;
-    border-radius: 1000px;
-    opacity: 0.7;
-    width: 2.5rem;
-    height: 2.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    transition: all 150ms ease-in-out;
+    width: 3.2rem;
+    height: 3.2rem;
   }
   .socials span a svg {
-    margin: auto;
-    transition: all 250ms ease-in-out;
-    vertical-align: middle;
-    color: #fce1d7;
-    opacity: 0.8;
-    font-size: 1.45rem;
+    font-size: 28px;
   }
-  .socials span a:first-child svg {
-    font-size: 1.18rem;
+  .socials span:first-child svg {
+    font-size: 23px;
   }
-  .socials span a:last-child svg {
-    font-size: 1.3rem;
-  }
-  .socials span a:hover {
-    cursor: pointer;
-    opacity: 1;
-    box-shadow: 1px 2px 8px 0.1px rgba(0, 0, 0, 0.2);
-  }
-  .socials span a:hover svg {
-    color: #faefec;
-    transform: scale(1.12);
+  .socials span:last-child svg {
+    font-size: 26px;
   }
 }
 @media screen and (min-width: 1300px) {

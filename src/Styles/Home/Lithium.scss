@@ -1940,13 +1940,13 @@
 
 // ****************************** LAPTOP ********************************
 
-// For Desktops, Large screens, Extra large screens, TVs
-// @media screen and (min-width: 1024px) and (min-height: 550px) {
 @media screen and (min-width: 1024px) and (height: 768px) {
   #Lithium {
+    $pageHeight:100vh;
     position: relative;
-    // height: 125vh;
+    height: $pageHeight;
     .Bg__Image {
+      height: $pageHeight;
       border-radius: 0 18vh;
     }
     .container {
@@ -1955,23 +1955,22 @@
       top: 0;
       left: 0;
       right: 0;
-      padding: 0 2rem;
+      padding: 0 3rem;
       > main {
         width: 50%;
       }
       h2 {
         font-family: GillsHeavy;
-        text-align: right;
+        text-align: left;
         text-transform: uppercase;
-        // font-size: 2.5rem;
-        font-size: 4vw;
+        font-size: 4.5vw;width: 60vw;
         letter-spacing: -1px;
         color: $pink;
-        margin: 5rem 2rem 2rem auto;
+        margin: 7rem 2rem 2rem;
       }
       aside {
         @include flex($jus: center, $dir: column);
-        padding: 1rem 2.5rem;
+        padding: 1rem .5rem;
         margin: 1rem auto;
         .bubble {
           // max-width: 25dvw;
@@ -2059,10 +2058,10 @@
         }
       }
       main.Roller {
-        padding-left: 3rem;
+        padding: 12rem .5rem 3rem 3rem;
         .content {
           @include flex($jus: left, $align: center);
-          padding: 1rem 3rem;
+          padding: 1rem;
 
           //   ACTIVE ROLLER
           &.active {
@@ -2074,27 +2073,23 @@
                 font-size: 1.08rem;
                 letter-spacing: -0.1px;
                 line-height: 1.35rem;
-
                 opacity: 1;
                 color: $pinkish_Light;
               }
               &:hover span {
+                line-height: 1.4rem;
                 font-size: 1.1rem;
                 opacity: 1;
               }
               &::before {
                 content: "";
-
                 position: absolute;
-
                 z-index: 2;
-
                 top: 0.5rem;
-                left: -2.5rem;
-
-                width: 0.8rem;
-                height: 0.8rem;
-                border-radius: 10000px;
+                left: -2.4rem;
+                width: 15px;
+                height: 15px;
+                border-radius: 100px;
                 background-color: $pink;
                 opacity: 1;
               }
@@ -2113,19 +2108,18 @@
               @include trans;
             }
             &:hover span {
+              line-height: 1.3rem;
               opacity: 0.7;
             }
             &::before {
               content: "";
-
               position: absolute;
-
               top: 0.5rem;
               left: -2.3rem;
-              width: 0.5rem;
-              height: 0.5rem;
+              height: 11px;
+              width: 11px;
               @include transShort;
-              border-radius: 10000px;
+              border-radius: 100px;
               background-color: $pinkish;
             }
             &:hover::before {
@@ -2141,8 +2135,9 @@
           opacity: 0.85;
           background-color: $pinkish;
           position: absolute;
-          top: 2rem;
-          left: 3.85rem;
+          top: 13.7rem;
+          left: 3.97rem;
+          left: 2rem;
           width: 2px;
           height: 25rem;
           border-radius: 1px;
@@ -2159,7 +2154,7 @@
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px)  and (max-width: 5000px) {
   #Lithium {
     // position: relative;
     .Bg__Image {

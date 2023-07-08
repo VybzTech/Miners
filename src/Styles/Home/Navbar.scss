@@ -1058,21 +1058,22 @@ nav.Navbar {
     //END SCROLL CHANGES
     .Logo {
       @include flex;
-      padding-left: 2.5rem;
+      padding-left: 2.4rem;
       color: white;
       img {
         // font-size: 2.5rem;
-        font-size: 2.8vw;
+        font-size: 2.5vw;
+        padding-right: 0.5rem;
         // color: $deep_yellow;
       }
       p {
         font-family: Bart;
         text-transform: uppercase;
-        font-size: 1.3vw;
-        letter-spacing: 2px;
+        font-size: 1.5vw;
+        letter-spacing: 1.5px;
         height: fit-content;
         color: white;
-        width: 8rem;
+        width: 9rem;
         text-align: center;
         display: block;
       }
@@ -1081,7 +1082,7 @@ nav.Navbar {
       flex-direction: row;
       height: auto !important;
       width: auto !important;
-      padding: 0;
+      padding: 0 20px 0 0;
       background-color: transparent;
       position: initial;
       // margin: auto 0;
@@ -1091,40 +1092,41 @@ nav.Navbar {
         // letter-spacing: -0.1px;
         // text-transform: uppercase;
         // text-decoration: none;
+        padding: 5px;
         color: $white;
-        margin: 0 2rem 0 0;
+        margin: 0 1.1rem 0 0;
         // @include trans;
         // opacity: 0.8;
         // font-size: 1.05rem;
         // font-size: 1.15vw;
         // font-size: 1.2vw;
-        font-size: 1.4vw;
+        font-size: 1.5vw;
         &:hover {
           opacity: 1;
           // font-size: 1.07rem;
-          font-size: 1.5vw;
+          font-size: 1.6vw;
           color: white !important;
         }
         &:focus,
         &:focus-visible,
         &:focus-within {
           opacity: 0.9;
-          font-size: 1.3vw;
+          font-size: 1.6vw;
         }
         // ACTIVE NAV
         &.screen {
           letter-spacing: -0.5px;
           opacity: 1;
           color: white;
-          font-size: 1.6vw;
+          font-size: 1.8vw;
           font-weight: 600;
           &::after {
             content: "";
             position: absolute;
-            top: -0.5rem;
-            left: -0.8rem;
-            width: 2rem;
-            height: 2rem;
+            top: -0.1rem;
+            left: -0.55rem;
+            width: 1.9rem;
+            height: 1.9rem;
             border-radius: 1000px;
             z-index: -1;
             background-color: $yellow2;
@@ -1139,7 +1141,7 @@ nav.Navbar {
   }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) and (max-width: 5000px) {
   nav.Navbar {
     // @include flex;
     // z-index: 5;
