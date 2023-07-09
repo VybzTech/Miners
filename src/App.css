@@ -6848,7 +6848,7 @@ nav.Navbar.nosmall > nav {
     gap: 1.2rem;
   }
   #Services .container .OurServices > div {
-    width: 32%;
+    width: 31%;
     margin-bottom: 1.1rem !important;
     height: 66vh;
     margin-bottom: 2rem;
@@ -8497,6 +8497,7 @@ textarea:focus-within) button {
     bottom: -0.1rem;
     left: -16rem;
     width: 92vw;
+    width: 100vw;
   }
   #Contact .container .footer footer div.copyX {
     font-size: 11px;
@@ -9281,9 +9282,9 @@ textarea:focus-within) button {
   background: #fff;
   border-radius: 15px;
   z-index: 6;
-  margin: 4rem auto;
-  width: 75%;
-  padding: 2rem 5rem 7rem;
+  margin: 1.2rem auto;
+  width: 80%;
+  padding: 1.2rem 1.2rem 2rem;
   box-shadow: 1px 3px 15px 0.5px #fafafa;
 }
 .Privacy > main header,
@@ -9293,17 +9294,28 @@ textarea:focus-within) button {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin: 2rem auto 1rem;
+  margin: 0.5em auto 0.5rem;
+}
+.Privacy > main header h1,
+.Terms > main header h1,
+.Faqs > main header h1 {
+  font-size: 1.2rem;
+}
+.Privacy > main header h2,
+.Terms > main header h2,
+.Faqs > main header h2 {
+  font-size: 1rem;
 }
 .Privacy > main header aside button,
 .Terms > main header aside button,
 .Faqs > main header aside button {
-  padding: 8px 9px 3px;
+  padding: 5px 6px 0;
   background: transparent;
   border: 1px solid #fbfbfb;
   border-radius: 30px;
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: #aaa;
+  margin: -2rem -1rem 0 0;
   box-shadow: 1px 1px 5px 0.5px rgba(238, 238, 238, 0.2666666667);
   transition: all 250ms ease-in-out;
 }
@@ -9319,88 +9331,149 @@ textarea:focus-within) button {
 .Privacy > main hr,
 .Terms > main hr,
 .Faqs > main hr {
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   background-color: #ccc;
   opacity: 0.18;
   height: 1.5px;
   border: none;
 }
+.Privacy > main .wrapper,
+.Terms > main .wrapper,
+.Faqs > main .wrapper {
+  border-radius: 1vh;
+  height: 66vh;
+  overflow-y: scroll;
+}
+.Privacy > main .wrapper::-webkit-scrollbar,
+.Terms > main .wrapper::-webkit-scrollbar,
+.Faqs > main .wrapper::-webkit-scrollbar {
+  width: 10px;
+}
+.Privacy > main .wrapper::-webkit-scrollbar-thumb,
+.Terms > main .wrapper::-webkit-scrollbar-thumb,
+.Faqs > main .wrapper::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  border: 1px solid #666;
+  background-color: #777;
+}
+.Privacy > main .wrapper::-webkit-scrollbar-thumb:hover,
+.Terms > main .wrapper::-webkit-scrollbar-thumb:hover,
+.Faqs > main .wrapper::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0 0 3px rgba(34, 34, 34, 0.2666666667);
+  background-color: #666;
+}
+.Privacy > main .wrapper .container,
+.Terms > main .wrapper .container,
+.Faqs > main .wrapper .container {
+  padding: 1rem 0.85rem 0 7px;
+  margin-bottom: 1.2rem;
+  box-shadow: inset 0 0 15px 10px white;
+}
+.Privacy > main .wrapper .container h2,
+.Terms > main .wrapper .container h2,
+.Faqs > main .wrapper .container h2 {
+  font-size: 1.1rem;
+}
+.Privacy > main .wrapper .container p,
+.Terms > main .wrapper .container p,
+.Faqs > main .wrapper .container p {
+  letter-spacing: -0.2px;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  font-size: 15px;
+  font-family: system-ui;
+  font-family: Gills;
+  word-spacing: 1px;
+}
+.Privacy > main .wrapper .container p::first-letter,
+.Terms > main .wrapper .container p::first-letter,
+.Faqs > main .wrapper .container p::first-letter {
+  font-size: 16px;
+  padding-left: 5px;
+}
+.Privacy > main span,
+.Terms > main span,
+.Faqs > main span {
+  font-style: italic;
+  font-size: 0.65rem;
+  opacity: 0.7;
+  display: block;
+  padding-top: 0.9rem;
+}
 
 @media screen and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
-  .Privacy,
-  .Terms,
-  .Faqs {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.7333333333);
-    backdrop-filter: blur(3px);
-    height: 100vh;
-    position: fixed;
-    z-index: 5;
-  }
-  .Privacy.noshow,
-  .Terms.noshow,
-  .Faqs.noshow {
-    display: none;
-  }
   .Privacy main,
   .Terms main,
   .Faqs main {
-    background: #fff;
-    border-radius: 15px;
-    z-index: 6;
-    margin: 4rem auto;
-    width: 75%;
-    padding: 2rem 5rem 7rem;
-    box-shadow: 1px 3px 15px 0.5px #fafafa;
-  }
-  .Privacy main header,
-  .Terms main header,
-  .Faqs main header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    margin: 2rem auto 1rem;
+    margin: 1rem auto;
+    padding-bottom: 1.2rem;
   }
   .Privacy main header aside button,
   .Terms main header aside button,
   .Faqs main header aside button {
-    padding: 8px 9px 3px;
-    background: transparent;
-    border: 1px solid #fbfbfb;
-    border-radius: 30px;
-    font-size: 1.4rem;
-    color: #aaa;
-    box-shadow: 1px 1px 5px 0.5px rgba(238, 238, 238, 0.2666666667);
-    transition: all 250ms ease-in-out;
+    margin: -2rem 0.5rem 0 0;
   }
-  .Privacy main header aside button:hover,
-  .Terms main header aside button:hover,
-  .Faqs main header aside button:hover {
-    padding: 9px 10px 4px;
-    cursor: pointer;
-    border: 1px solid #eee;
-    color: #111;
-    box-shadow: 1px 1px 5px 0.5px rgba(204, 204, 204, 0.2666666667);
+  .Privacy main .wrapper,
+  .Terms main .wrapper,
+  .Faqs main .wrapper {
+    height: 62vh;
   }
-  .Privacy main hr,
-  .Terms main hr,
-  .Faqs main hr {
-    margin-bottom: 2rem;
-    background-color: #ccc;
-    opacity: 0.18;
-    height: 1.5px;
-    border: none;
+  .Privacy main .wrapper::-webkit-scrollbar,
+  .Terms main .wrapper::-webkit-scrollbar,
+  .Faqs main .wrapper::-webkit-scrollbar {
+    width: 11px;
   }
 }
 @media screen and (min-width: 375px) and (max-height: 667px) {
   .shortLinks div span {
     font-size: 14.75px;
   }
+  .Privacy main,
+  .Terms main,
+  .Faqs main {
+    margin: 1.5rem auto 1.2rem;
+  }
+  .Privacy main .wrapper,
+  .Terms main .wrapper,
+  .Faqs main .wrapper {
+    height: 75vh;
+  }
 }
 @media only screen and (min-width: 375px) and (min-height: 730px) and (max-height: 850px) {
   .shortLinks div span {
     font-size: 14.5px;
+  }
+  .Privacy main,
+  .Terms main,
+  .Faqs main {
+    margin: 1.75rem auto 2rem;
+  }
+  .Privacy main .wrapper,
+  .Terms main .wrapper,
+  .Faqs main .wrapper {
+    height: 78vh;
+  }
+  .Privacy main .wrapper .container,
+  .Terms main .wrapper .container,
+  .Faqs main .wrapper .container {
+    padding: 0.7rem 0.35rem 0 0;
+  }
+}
+@media only screen and (min-height: 850px) {
+  .Privacy main,
+  .Terms main,
+  .Faqs main {
+    margin: 1.75rem auto 3rem;
+  }
+  .Privacy main .wrapper,
+  .Terms main .wrapper,
+  .Faqs main .wrapper {
+    height: 80vh;
+  }
+  .Privacy main .wrapper .container,
+  .Terms main .wrapper .container,
+  .Faqs main .wrapper .container {
+    padding: 0.8rem 0.35rem 1rem 0;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
@@ -9493,6 +9566,22 @@ textarea:focus-within) button {
     bottom: -3.5px;
     left: -4px;
   }
+  .Privacy main,
+  .Terms main,
+  .Faqs main {
+    width: 84%;
+    margin: 1.75rem auto 3rem;
+  }
+  .Privacy main .wrapper,
+  .Terms main .wrapper,
+  .Faqs main .wrapper {
+    height: 85vh;
+  }
+  .Privacy main .wrapper .container,
+  .Terms main .wrapper .container,
+  .Faqs main .wrapper .container {
+    padding: 1rem 0.5rem 1.5rem 10px;
+  }
 }
 @media screen and (min-height: 350px) and (max-width: 750px) and (orientation: Landscape) {
   .shortLinks::after {
@@ -9521,6 +9610,28 @@ textarea:focus-within) button {
     bottom: -3.5px;
     left: -4px;
   }
+  .Privacy main,
+  .Terms main,
+  .Faqs main {
+    margin: 1.25rem auto 1.8rem;
+    padding: 1rem 2rem 1.25rem;
+  }
+  .Privacy main header aside button,
+  .Terms main header aside button,
+  .Faqs main header aside button {
+    margin: -1rem -0.5rem 0 0;
+  }
+  .Privacy main .wrapper,
+  .Terms main .wrapper,
+  .Faqs main .wrapper {
+    height: 60vh;
+  }
+  .Privacy main .wrapper .container,
+  .Terms main .wrapper .container,
+  .Faqs main .wrapper .container {
+    padding: 0 0.5rem 1rem 0.75rem;
+    margin-bottom: 0.2rem;
+  }
 }
 @media screen and (min-height: 320px) and (max-width: 580px) and (orientation: Landscape) {
   .shortLinks {
@@ -9547,6 +9658,107 @@ textarea:focus-within) button {
   }
   .shortLinks div span {
     font-size: 13px;
+  }
+  .Privacy main,
+  .Terms main,
+  .Faqs main {
+    margin: 1.2rem auto;
+    width: 80%;
+    padding: 0.5rem 1.2rem 1.5rem 1.75rem;
+  }
+  .Privacy main header,
+  .Terms main header,
+  .Faqs main header {
+    margin: 0.75rem auto 0.5rem;
+  }
+  .Privacy main header h1,
+  .Terms main header h1,
+  .Faqs main header h1 {
+    font-size: 1.25rem;
+  }
+  .Privacy main header h2,
+  .Terms main header h2,
+  .Faqs main header h2 {
+    font-size: 0.975rem;
+  }
+  .Privacy main header aside button,
+  .Terms main header aside button,
+  .Faqs main header aside button {
+    margin: -0.75rem -0.5rem 0 0;
+    padding: 5px 5px 0;
+    font-size: 0.9rem;
+  }
+  .Privacy main header aside button:hover,
+  .Terms main header aside button:hover,
+  .Faqs main header aside button:hover {
+    font-size: 0.925rem;
+    padding: 6px 6px 1px;
+  }
+  .Privacy main hr,
+  .Terms main hr,
+  .Faqs main hr {
+    margin-bottom: 0.8rem;
+  }
+  .Privacy main .wrapper,
+  .Terms main .wrapper,
+  .Faqs main .wrapper {
+    border-radius: 1vh;
+    height: 55vh;
+    overflow-y: scroll;
+  }
+  .Privacy main .wrapper::-webkit-scrollbar,
+  .Terms main .wrapper::-webkit-scrollbar,
+  .Faqs main .wrapper::-webkit-scrollbar {
+    width: 7px;
+  }
+  .Privacy main .wrapper::-webkit-scrollbar-thumb,
+  .Terms main .wrapper::-webkit-scrollbar-thumb,
+  .Faqs main .wrapper::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    border: 1px solid #666;
+    background-color: #777;
+  }
+  .Privacy main .wrapper::-webkit-scrollbar-thumb:hover,
+  .Terms main .wrapper::-webkit-scrollbar-thumb:hover,
+  .Faqs main .wrapper::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 3px rgba(34, 34, 34, 0.2666666667);
+    background-color: #666;
+  }
+  .Privacy main .wrapper .container,
+  .Terms main .wrapper .container,
+  .Faqs main .wrapper .container {
+    padding: 0 1.5rem 0 7px;
+    margin-bottom: 0.9rem;
+    box-shadow: inset 0 0 15px 10px white;
+  }
+  .Privacy main .wrapper .container h2,
+  .Terms main .wrapper .container h2,
+  .Faqs main .wrapper .container h2 {
+    font-size: 0.955rem;
+  }
+  .Privacy main .wrapper .container p,
+  .Terms main .wrapper .container p,
+  .Faqs main .wrapper .container p {
+    letter-spacing: -0.3px;
+    line-height: 1.55;
+    font-size: 13px;
+    padding-top: 2px;
+    word-spacing: 0;
+  }
+  .Privacy main .wrapper .container p::first-letter,
+  .Terms main .wrapper .container p::first-letter,
+  .Faqs main .wrapper .container p::first-letter {
+    font-size: 14px;
+    padding-left: 7px;
+  }
+  .Privacy main span,
+  .Terms main span,
+  .Faqs main span {
+    font-style: italic;
+    font-size: 0.65rem;
+    opacity: 0.7;
+    display: block;
+    padding-top: 0.9rem;
   }
 }
 @media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
@@ -9575,6 +9787,93 @@ textarea:focus-within) button {
   .shortLinks div span {
     padding: 1px 2px 1px 1px;
     font-size: 14px;
+  }
+  .Privacy main,
+  .Terms main,
+  .Faqs main {
+    margin: 1rem auto;
+    width: 85%;
+    padding: 0.7rem 1.5rem 1.8rem 3rem;
+  }
+  .Privacy main header,
+  .Terms main header,
+  .Faqs main header {
+    margin: 1.2rem auto 0.5rem;
+  }
+  .Privacy main header aside button,
+  .Terms main header aside button,
+  .Faqs main header aside button {
+    padding: 6px 7px 1px;
+    font-size: 1.3rem;
+  }
+  .Privacy main header aside button:hover,
+  .Terms main header aside button:hover,
+  .Faqs main header aside button:hover {
+    padding: 8px 9px 3px;
+  }
+  .Privacy main hr,
+  .Terms main hr,
+  .Faqs main hr {
+    margin-bottom: 0.8rem;
+  }
+  .Privacy main .wrapper,
+  .Terms main .wrapper,
+  .Faqs main .wrapper {
+    border-radius: 1vh;
+    height: 55vh;
+    overflow-y: scroll;
+  }
+  .Privacy main .wrapper::-webkit-scrollbar,
+  .Terms main .wrapper::-webkit-scrollbar,
+  .Faqs main .wrapper::-webkit-scrollbar {
+    width: 10px;
+  }
+  .Privacy main .wrapper::-webkit-scrollbar-thumb,
+  .Terms main .wrapper::-webkit-scrollbar-thumb,
+  .Faqs main .wrapper::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    border: 1px solid #666;
+    background-color: #777;
+  }
+  .Privacy main .wrapper::-webkit-scrollbar-thumb:hover,
+  .Terms main .wrapper::-webkit-scrollbar-thumb:hover,
+  .Faqs main .wrapper::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 3px rgba(34, 34, 34, 0.2666666667);
+    background-color: #666;
+  }
+  .Privacy main .wrapper .container,
+  .Terms main .wrapper .container,
+  .Faqs main .wrapper .container {
+    padding: 0 1.5rem 0 7px;
+    margin-bottom: 1rem;
+    box-shadow: inset 0 0 15px 10px white;
+  }
+  .Privacy main .wrapper .container p,
+  .Terms main .wrapper .container p,
+  .Faqs main .wrapper .container p {
+    letter-spacing: -0.2px;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    font-size: 17px;
+    font-family: system-ui;
+    padding-top: 3px;
+    font-family: Gills;
+    word-spacing: 1px;
+  }
+  .Privacy main .wrapper .container p::first-letter,
+  .Terms main .wrapper .container p::first-letter,
+  .Faqs main .wrapper .container p::first-letter {
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  .Privacy main span,
+  .Terms main span,
+  .Faqs main span {
+    font-style: italic;
+    font-size: 0.65rem;
+    opacity: 0.7;
+    display: block;
+    padding-top: 0.9rem;
   }
 }
 @media screen and (min-width: 1024px) and (height: 768px) {
@@ -9650,11 +9949,11 @@ textarea:focus-within) button {
   .Terms main,
   .Faqs main {
     background: #fff;
-    border-radius: 15px;
+    border-radius: 5vh;
     z-index: 6;
-    margin: 4rem auto;
-    width: 75%;
-    padding: 2rem 5rem 7rem;
+    margin: 2rem auto;
+    width: 80%;
+    padding: 1.2rem 2rem 2.5rem 3.5rem;
     box-shadow: 1px 3px 15px 0.5px #fafafa;
   }
   .Privacy main header,
@@ -9695,6 +9994,65 @@ textarea:focus-within) button {
     opacity: 0.18;
     height: 1.5px;
     border: none;
+  }
+  .Privacy main .wrapper,
+  .Terms main .wrapper,
+  .Faqs main .wrapper {
+    border-radius: 1vh;
+    height: 66vh;
+    overflow-y: scroll;
+  }
+  .Privacy main .wrapper::-webkit-scrollbar,
+  .Terms main .wrapper::-webkit-scrollbar,
+  .Faqs main .wrapper::-webkit-scrollbar {
+    width: 10px;
+  }
+  .Privacy main .wrapper::-webkit-scrollbar-thumb,
+  .Terms main .wrapper::-webkit-scrollbar-thumb,
+  .Faqs main .wrapper::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    border: 1px solid #666;
+    background-color: #777;
+  }
+  .Privacy main .wrapper::-webkit-scrollbar-thumb:hover,
+  .Terms main .wrapper::-webkit-scrollbar-thumb:hover,
+  .Faqs main .wrapper::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 3px rgba(34, 34, 34, 0.2666666667);
+    background-color: #666;
+  }
+  .Privacy main .wrapper .container,
+  .Terms main .wrapper .container,
+  .Faqs main .wrapper .container {
+    padding: 0 1.75rem 0 7px;
+    margin-bottom: 1.2rem;
+    box-shadow: inset 0 0 15px 10px white;
+  }
+  .Privacy main .wrapper .container p,
+  .Terms main .wrapper .container p,
+  .Faqs main .wrapper .container p {
+    letter-spacing: -0.2px;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    font-size: 18px;
+    font-family: system-ui;
+    padding-top: 3px;
+    font-family: Gills;
+    word-spacing: 1px;
+  }
+  .Privacy main .wrapper .container p::first-letter,
+  .Terms main .wrapper .container p::first-letter,
+  .Faqs main .wrapper .container p::first-letter {
+    font-size: 19px;
+    padding-left: 10px;
+  }
+  .Privacy main span,
+  .Terms main span,
+  .Faqs main span {
+    font-style: italic;
+    font-size: 0.65rem;
+    opacity: 0.7;
+    display: block;
+    padding-top: 0.9rem;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 5000px) {
@@ -9743,6 +10101,16 @@ textarea:focus-within) button {
     flex-direction: row;
     margin: 0.5rem auto 0.25rem;
   }
+  .Privacy > main header h1,
+  .Terms > main header h1,
+  .Faqs > main header h1 {
+    font-size: 1.75rem;
+  }
+  .Privacy > main header h2,
+  .Terms > main header h2,
+  .Faqs > main header h2 {
+    font-size: 1rem;
+  }
   .Privacy > main header aside button,
   .Terms > main header aside button,
   .Faqs > main header aside button {
@@ -9782,6 +10150,7 @@ textarea:focus-within) button {
   .Privacy > main .wrapper,
   .Terms > main .wrapper,
   .Faqs > main .wrapper {
+    border-radius: 1vh;
     height: 70vh;
     overflow-y: scroll;
   }
@@ -9806,7 +10175,9 @@ textarea:focus-within) button {
   .Privacy > main .wrapper .container,
   .Terms > main .wrapper .container,
   .Faqs > main .wrapper .container {
+    padding: 1rem 1.75rem 0 7px;
     margin-bottom: 1.5rem;
+    box-shadow: inset 0 0 15px 10px white;
   }
   .Privacy > main .wrapper .container p,
   .Terms > main .wrapper .container p,
@@ -9814,14 +10185,16 @@ textarea:focus-within) button {
     letter-spacing: -0.2px;
     line-height: 1.5;
     font-size: 0.9rem;
+    font-size: 18px;
     font-family: system-ui;
+    font-family: Gills;
     word-spacing: 1px;
   }
   .Privacy > main .wrapper .container p::first-letter,
   .Terms > main .wrapper .container p::first-letter,
   .Faqs > main .wrapper .container p::first-letter {
-    font-size: 1rem;
-    padding-left: 7px;
+    font-size: 19px;
+    padding-left: 10px;
   }
   .Privacy > main span,
   .Terms > main span,
