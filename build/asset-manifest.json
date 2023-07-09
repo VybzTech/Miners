@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.444d9a1b.css",
-    "main.js": "/static/js/main.9a5d6078.js",
+    "main.css": "/static/css/main.35d6199d.css",
+    "main.js": "/static/js/main.2e8b6507.js",
     "static/media/Tractor-Cut.png": "/static/media/Tractor-Cut.6d4ac64813bc8ecff8fd.png",
     "static/media/Drilled-Hole.jpg": "/static/media/Drilled-Hole.d1c857f2c6d01030739c.jpg",
     "static/media/Tractors.jpg": "/static/media/Tractors.82de942e101b0f42c5f7.jpg",
@@ -34,11 +34,11 @@
     "static/media/Metalurgy.svg": "/static/media/Metalurgy.b91f7db25c20934a00c71788a28c5a76.svg",
     "static/media/Elect.svg": "/static/media/Elect.4429e040663a5f22a88f6b9604e88dfe.svg",
     "index.html": "/index.html",
-    "main.444d9a1b.css.map": "/static/css/main.444d9a1b.css.map",
-    "main.9a5d6078.js.map": "/static/js/main.9a5d6078.js.map"
+    "main.35d6199d.css.map": "/static/css/main.35d6199d.css.map",
+    "main.2e8b6507.js.map": "/static/js/main.2e8b6507.js.map"
   },
   "entrypoints": [
-    "static/css/main.444d9a1b.css",
-    "static/js/main.9a5d6078.js"
+    "static/css/main.35d6199d.css",
+    "static/js/main.2e8b6507.js"
   ]
 }
