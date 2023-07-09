@@ -507,27 +507,29 @@
     // gap: 0.9rem;
     // gap: 1rem;
     // padding: 2rem 0 1.5rem 3rem;
-    span a {
-      background-color: $brown;
-      border-radius: 1000px;
-      // padding: 0.5rem;
-      // margin-right: 0.7rem;
-      opacity: 0.7;
-      width: 2.5rem;
-      height: 2.5rem;
-      // display: block;
-      @include flex;
-      @include transShort;
-      svg {
-        margin: auto;
-        @include trans;
-        vertical-align: middle;
-        color: $pinkish;
-        opacity: 0.8;
-        font-size: 1.45rem;
+    span {
+      a {
+        background-color: $brown;
+        border-radius: 1000px;
+        // padding: 0.5rem;
+        // margin-right: 0.7rem;
+        opacity: 0.7;
+        width: 2.5rem;
+        height: 2.5rem;
+        // display: block;
+        @include flex;
+        @include transShort;
+        svg {
+          margin: auto;
+          @include trans;
+          vertical-align: middle;
+          color: $pinkish;
+          opacity: 0.8;
+          font-size: 1.5rem;
+        }
       }
       &:first-child svg {
-        font-size: 1.18rem;
+        font-size: 1.2rem;
       }
       &:last-child svg {
         font-size: 1.3rem;

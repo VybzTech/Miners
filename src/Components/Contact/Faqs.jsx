@@ -34,54 +34,133 @@ const Faqs = ({ showFaqs, setShowFaqs }) => {
           <hr />
           <div className="wrapper">
             <div className="container">
-              <h2>What is Lithium Mining ? </h2>
-              <h2>Introduction</h2>
-              <h2>Introduction</h2>
-              <h2>Introduction</h2>
-              <h2>Introduction</h2>
-              <h2>Introduction</h2>
+              <h2>What is Lithium ?</h2>
+
+              <p>
+                Basically, lithium is a highly reactive alkali metal with
+                excellent heat and electrical conductivity. Such characteristics
+                make it especially useful to manufacture lubricants,
+                pharmaceuticals, glass and, most importantly, lithium-ion
+                batteries for electric cars and consumer electronics.
+              </p>
+            </div>
+            <div className="container">
+              <h2>why should I invest in Lithium ?</h2>
+
+              <p>
+                Lithium demand is expected to nearly triple by 2025, and this
+                will lead to a major boom in lithium mining.
+              </p>
+            </div>
+            <div className="container">
+              <h2>Where else can lithium be found ?</h2>
+
+              <p>
+                The salars with the highest lithium concentrations are located
+                in Bolivia, Argentina, and Chile, in an area called “the lithium
+                triangle.” Lithium obtained from salars is then recovered in the
+                form of lithium carbonate, the main raw material that is used by
+                companies in lithium-ion batteries. Argentina, Bolivia and Chile
+                have the world’s largest reserves of lithium so to speak. They
+                represent 80% of all the lithium of the planet. Argentina owns
+                20% of the world lithium deposits, located in the regions of
+                Salta, Catamarca and Jujuy, which places it in the fourth global
+                position.
+              </p>
+            </div>
+            <div className="container">
+              <h2>What does the Government think of it ?</h2>
+
+              <p>
+                Argentina’s Government wants to make Argentina a Lithium World
+                Leader. For this reason, the government has flexible policies to
+                support the industry.
+              </p>
+            </div>
+            <div className="container">
+              <h2>Where can Lithium be found ?</h2>
+
+              <p>
+                Lithium salts can be found in underground deposits of clay,
+                mineral ore and brine, as well as in geothermal water and
+                seawater. Most of the world’s lithium comes from mines, from
+                where it’s extracted. Briny lakes, also known as salars, have
+                the highest concentration of lithium, ranging from 1,000 to
+                3,000 parts per million. But lithium can’t just be found in
+                nature, as it’s highly reactive. Instead, it’s present as a
+                constituent of salts or other compounds. Most of the lithium
+                available in the market can be found as lithium carbonate, a
+                more stable compound that can then transformed into chemicals or
+                salts. Bolivia has the largest deposits of the three countries
+                of the lithium triangle, which are in the Salar de Uyuni area.
+              </p>
+            </div>
+            <div className="container">
+              <h2> What are the risks of lithium mining ?</h2>
+
+              <p>
+                Lack of water in the region is not just the single potential
+                problem with lithium mining. Toxic chemicals can leak from the
+                evaporation pools to the water supply, such as hydrochloric
+                acid, which is used in the processing of lithium – as well as
+                waste products that can filter out of the brine. In the United
+                States, Canada, and Australia, lithium is usually extracted from
+                the rock by using more traditional methods. Nevertheless, this
+                still requires the use of chemicals in order to extract it in a
+                useful form. In Nevada, the research found impacts on fish 150
+                miles downstream from a lithium processing operation, for
+                example. A report by Friends of the Earth argued that extracting
+                lithium can affect the soil and causes air contamination. In the
+                area Salar del Hombre Muerto in Argentina, residents complain
+                that lithium polluted streams that are used by humans and
+                livestock, while in Chile there were clashes between mining
+                firms and locals.
+              </p>
+            </div>
+            <div className="container">
+              <h2>What is the Lithium Mining process ?</h2>
+
+              <p>
+                Brine mining in salars is normally a very long process that can
+                take from eight months to three years. Mining starts by drilling
+                a hole and pumping brine to the surface. Then they leave it to
+                evaporate for months, first creating a mix of manganese,
+                potassium, borax, and salts which is filtered and placed into
+                another evaporation pool. It will take between 12 and 18 months
+                for that mix to be filtered enough in order to be able to
+                extract the lithium carbonate, also known as white gold. While
+                it’s cheap and effective, the process needs a lot of water,
+                estimated at 500.000 gallons per ton of lithium extracted. This
+                creates a lot of pressure in local communities living in nearby
+                areas. For example, in Chile’s Salar de Atacama, mining has
+                caused the region to lose 65% of the region’s water. This has
+                meant impacts of local farmers, who rely on agriculture and
+                cattle for their livelihoods and now need to get the water from
+                somewhere else.
+              </p>
+            </div>
+            `````` Chile owns 48% of the world's reserves of this metal and has
+            the Atacama Salar, one of the areas with greater power and
+            competitiveness at the global level of lithium’s extraction Chile
+            invests US $2 billion in lithium projects which will allow the
+            country to triple its production by the year 2022 Recently
+            discovered lithium resources deposit in Peru is expected to require
+            an investment ofUS$ 800 million ```` How can I get Lithium ?
+            <div className="container">
+              {/*
+               </p>
+            </div>
+            <div className="container">
+              <h2>Changes to Terms</h2>
+              <p> 
+              */}
+
               <h2>Introduction</h2>
               <p>{`
+              What is Lithium Mining ?
               More than $8 billion are to be investment in Latam Lithium
 
-              Lithium demand is expected to nearly triple by 2025, and this will lead to a major boom in lithium mining
-              
-              Argentina, Bolivia and Chile have the world’s largest reserves of lithium. They represent 80% of all the lithium of the planet
-              
-              Argentina owns 20% of the world lithium deposits, located in the regions of Salta, Catamarca and Jujuy, which places it in the fourth global position
-              
-              Argentina’s Government wants to make Argentina a Lithium World Leader. For this reason, the government has flexible policies to support the industry
-              
-              Chile owns 48% of the world's reserves of this metal and has the Atacama Salar, one of the areas with greater power and competitiveness at the global level of lithium’s extraction
-              
-              Chile invests US $2 billion in lithium projects which will allow the country to triple its production by the year 2022
-              
-              Recently discovered lithium resources deposit in Peru is expected to require an investment ofUS$ 800 million
-              
-              Bolivia has the largest deposits of the three countries of the lithium triangle, which are in the Salar de Uyuni area
-              
-              Basically, lithium is a highly reactive alkali metal with excellent heat and electrical conductivity. Such characteristics make it especially useful to manufacture lubricants, pharmaceuticals, glass and, most importantly, lithium-ion batteries for electric cars and consumer electronics.
-              
-              But lithium can’t just be found in nature, as it’s highly reactive. Instead, it’s present as a constituent of salts or other compounds. Most of the lithium available in the market can be found as lithium carbonate, a more stable compound that can then transformed into chemicals or salts.
-              
-              Lithium salts can be found in underground deposits of clay, mineral ore and brine, as well as in geothermal water and seawater. Most of the world’s lithium comes from mines, from where it’s extracted. Briny lakes, also known as salars, have the highest concentration of lithium, ranging from 1,000 to 3,000 parts per million.
-              
-              Lithium extraction
-              
-              The salars with the highest lithium concentrations are located in Bolivia, Argentina, and Chile, in an area called “the lithium triangle.” Lithium obtained from salars is then recovered in the form of lithium carbonate, the main raw material that is used by companies in lithium-ion batteries.
-              Brine mining in salars is normally a very long process that can take from eight months to three years. Mining starts by drilling a hole and pumping brine to the surface. Then they leave it to evaporate for months, first creating a mix of manganese, potassium, borax, and salts which is filtered and placed into another evaporation pool.
-              
-              It will take between 12 and 18 months for that mix to be filtered enough in order to be able to extract the lithium carbonate, also known as white gold. While it’s cheap and effective, the process needs a lot of water, estimated at 500.000 gallons per ton of lithium extracted.
-              
-              This creates a lot of pressure in local communities living in nearby areas. For example, in Chile’s Salar de Atacama, mining has caused the region to lose 65% of the region’s water. This has meant impacts of local farmers, who rely on agriculture and cattle for their livelihoods and now need to get the water from somewhere else.
-              
-              The risks of lithium mining
-              
-              Lack of water in the region is not just the single potential problem with lithium mining. Toxic chemicals can leak from the evaporation pools to the water supply, such as hydrochloric acid, which is used in the processing of lithium – as well as waste products that can filter out of the brine.
-              
-              In the United States, Canada, and Australia, lithium is usually extracted from the rock by using more traditional methods. Nevertheless, this still requires the use of chemicals in order to extract it in a useful form. In Nevada, the research found impacts on fish 150 miles downstream from a lithium processing operation, for example.
-              A report by Friends of the Earth argued that extracting lithium can affect the soil and causes air contamination. In the area Salar del Hombre Muerto in Argentina, residents complain that lithium polluted streams that are used by humans and livestock, while in Chile there were clashes between mining firms and locals.
-              
+             
               Improved technologies for lithium extraction
               
               Researchers argue that there’s a need to develop new extraction technologies that can allow manufacturing batteries in a more environmentally friendly way. That’s why across the world many are looking for new alternatives, such as battery chemistries that replace cobalt and lithium with more common and less toxic materials.

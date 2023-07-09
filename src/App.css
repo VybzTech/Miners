@@ -9141,20 +9141,20 @@ textarea:focus-within) button {
     vertical-align: middle;
     color: #fce1d7;
     opacity: 0.8;
-    font-size: 1.45rem;
+    font-size: 1.5rem;
   }
-  .socials span a:first-child svg {
-    font-size: 1.18rem;
+  .socials span:first-child svg {
+    font-size: 1.2rem;
   }
-  .socials span a:last-child svg {
+  .socials span:last-child svg {
     font-size: 1.3rem;
   }
-  .socials span a:hover {
+  .socials span:hover {
     cursor: pointer;
     opacity: 1;
     box-shadow: 1px 2px 8px 0.1px rgba(0, 0, 0, 0.2);
   }
-  .socials span a:hover svg {
+  .socials span:hover svg {
     color: #faefec;
     transform: scale(1.12);
   }
