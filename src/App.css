@@ -2601,6 +2601,7 @@ nav.Navbar.nosmall > nav {
   #About main p {
     width: 80%;
     margin: 1rem 0 0 auto;
+    font-size: 1.2rem;
     text-align: right;
     line-height: 10vh;
   }
