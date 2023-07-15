@@ -17,12 +17,7 @@ const Lithium = () => {
         <Roller infos={LithiumInfo} active={active} set={setIndex} />
         <main>
           <h2>Lithium Mining</h2>
-          <LithiumBubble
-            tabbed={tabbed}
-            set={set}
-            // LithiumInfo={LithiumInfo}
-            setIndex={setIndex}
-          />
+          <LithiumBubble tabbed={tabbed} set={set} setIndex={setIndex} />
         </main>
       </div>
     </section>

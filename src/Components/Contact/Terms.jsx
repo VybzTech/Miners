@@ -1,32 +1,17 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { MdClose } from "react-icons/md";
 
 const Terms = ({ showTerms, setShowTerms }) => {
   const companyLink = "platinumvillemines.com";
   const serviceName = "Platinum Miners Service";
   const companyName = "Platinum Ville Miners";
-  // const portal =
-  //   document?.getElementById("portal") ?? document?.getElementById("app");
   if (showTerms) {
     return (
-      // ReactDOM.createPortal(
-      <div
-        className={`Terms ${showTerms ? "show" : "noshow"}`}
-        // className={`Terms`}
-        // className={`Terms&Cond`}
-        // onClick={() => setShowTerms(!showTerms)}
-      >
-        <main
-        // onClick={() => {
-        //   console.log("I am Main");
-        // }}
-        >
+      <div className={`Terms ${showTerms ? "show" : "noshow"}`}>
+        <main>
           <header>
             <h1>Terms & Conditions</h1>
             <aside>
-              {/* <button> */}
-              {/* <button onClick={() => setShowTerms(!showTerms)}> */}
               <button
                 onClick={() => {
                   setShowTerms((s) => (s = !s));
@@ -363,15 +348,8 @@ If you access (or download) the ${serviceName} through any third party platform 
           <span>Last updated on June 17, 2023.</span>
         </main>
       </div>
-      // ,
-      // portal,
-      // "Terms"
     );
   }
-  // );
-  //   //: (
-  //   // );
-  // }
   return <></>;
 };
 

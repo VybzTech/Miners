@@ -10,28 +10,16 @@ const Privacy = ({ showPrivacy, setShowPrivacy }) => {
   const pad = { paddingLeft: 10 };
   if (showPrivacy) {
     return (
-      // showPrivacy ? (
-      //   // return
-      // ReactDOM.createPortal(
-      <div
-        className={`Privacy ${showPrivacy ? "show" : "noshow"}`}
-        // onClick={() => setShowPrivacy(!showPrivacy)}
-      >
-        <main
-        // onClick={() => {
-        //   console.log("I am Main");
-        // }}
-        >
+      <div className={`Privacy ${showPrivacy ? "show" : "noshow"}`}>
+        <main>
           <header>
             <h1>Privacy Policy and Cookie Policy </h1>
             <aside>
-              {/* // onClick={() => setShowPrivacy(!showPrivacy)}> */}
               <button
                 onClick={() => {
                   setShowPrivacy((s) => (s = !s));
                 }}
               >
-                {/* <button onClick={()={setShowPrivacy((s)=>s=!s)}}> */}
                 <MdClose />
               </button>
             </aside>
@@ -60,12 +48,10 @@ const Privacy = ({ showPrivacy, setShowPrivacy }) => {
               Nigeria.`}
               </p>
             </div>
-            {/* <p>{` */}
             <div className="container">
               <h2>What we may collect</h2>
               <p>{`
               We may collect and process the following data about you:
-              
               Information you put into forms or surveys on our site at any time
               A record of any correspondence between us
               Details of transactions you carry out through our site
@@ -95,29 +81,20 @@ const Privacy = ({ showPrivacy, setShowPrivacy }) => {
             <div className="container">
               <h2>Cookies</h2>
               <p>{`The site uses cookies or similar technology to collect information about your access to the site. Cookies are pieces of information that include a unique reference code that a website transfers to your device to store and sometimes track information about you.
-              
               A few of the cookies we use last only for the duration of your web session and expire when you close your browser. Other cookies are used to remember you when you return to the site and will last for longer.
-              
               All cookies used on our site are set by us.
-              
               Most computer and some mobile web browsers automatically accept cookies but, if you prefer, you can change your browser to prevent that or to notify you each time a cookie is set. You can prevent the setting of cookies by adjusting the settings on your browser. Please note however, that by blocking or deleting cookies you may not be able to take full advantage of the site.
-              
               Our cookies will be used for:
-              
               Essential session management
-              
               creating a specific log-in session for a user of the site in order that the site remembers that a user is logged in and that their page requests are delivered in an effective, secure and consistent manner;
               recognising when a user of the site has visited before allowing us to identify the number of unique users we receive to the site and make sure we have enough capacity for the number of users that we get;
               recognising if a visitor to the site is registered with us in any way;
               we may also log information from your computer including the existence of cookies, your IP address and information about your browser program in order to allow us to diagnose problems, administer and track your usage of our site.
               Functionality
-              
               customising elements of the promotional layout and/or content of the pages of the site.
               Performance and measurement
-              
               collecting statistical information about how our users use the site so that we can improve the site and learn which parts are most popular to users.]
               OR
-              
               [We use cookies to distinguish users and improve our site. Please look at our Cookie Policy for more cookie information.]
               [All Cookies used by and on our website are used in accordance with current English and EU Cookie Law.]
               `}</p>
@@ -155,15 +132,11 @@ const Privacy = ({ showPrivacy, setShowPrivacy }) => {
               <p>
                 {`
               We are allowed to disclose your information in the following cases:
-              
               If we want to sell our business, or our company, we can disclose it to the potential buyer.
               We can disclose it to other businesses in our group.
               We can disclose it if we have a legal obligation to do so, or in order to protect other people’s property, safety or rights.
               We can exchange information with others to protect against fraud or credit risks.
               We may contract with third parties to supply services to you on our behalf. These may include payment processing, search engine facilities, advertising and marketing. In some cases, the third parties may require access to some or all of your data. These are the third parties that have access to your information:
-              
-              Yandex.ru, Google.com
-              
               Where any of your data is required for such a purpose, we will take all reasonable steps to ensure that your data will be handled safely, securely, and in accordance with your rights, our obligations, and the obligations of the third party under GDPR and the law.
               `}
               </p>
@@ -182,7 +155,6 @@ const Privacy = ({ showPrivacy, setShowPrivacy }) => {
               to object to processing of your personal data; and
               complain to a supervisory authority.
               You also have rights with respect to automated decision-making and profiling as set out in section 11 below.
-              
               To enforce any of the foregoing rights or if you have any other questions about our site or this Privacy Policy, please contact us at ${companyMail}.
               `}
               </p>

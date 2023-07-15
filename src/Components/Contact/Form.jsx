@@ -6,14 +6,9 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Form = () => {
-  // useEffect(() => {
-  //     // toast.error('test error');
-  // }, []);
-
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [verified, setVerified] = useState(false);
-  // const [error, setError] = useState('');
   const ChangeEmail = (e) =>
     email !== e.target.value && setEmail(e.target.value);
   const ChangeMesssage = (e) =>
@@ -26,18 +21,13 @@ const Form = () => {
       toast.error("Email address cannot be empty");
     } else {
       if (!emailRegex.test(email)) {
-        // setError('Please enter a valid email address');
         toast.error("Please check the email address' spelling");
-        // setError('');
-        // toast.error(error);
       } else {
         toast.success("Email Verified");
         setTimeout(toast.dismiss(), 3000);
         sendEmailValidationRequest(email);
       }
     }
-    console.log("Finished Validation");
-    // console.log('Finished Submission');
   };
 
   const ServiceID = "service_akhfykf";
@@ -52,18 +42,12 @@ const Form = () => {
     try {
       const response = await fetch(apiURL + "&email=" + email);
       const data = await response.json();
-      console.log(data);
-
       const isValidSMTP =
         data.is_smtp_valid.value && data.deliverability == "DELIVERABLE";
       if (isValidSMTP) {
-        // console.log('Correct Email');
-        // const load = toast.loading;
         toast.dismiss(load);
         setVerified(true);
       } else {
-        console.log("InCorrect Email");
-        // setError("This email address doesn't exist");
         toast.warning("This email address doesn't exist");
       }
     } catch (error) {
@@ -86,9 +70,6 @@ const Form = () => {
       const newArr = [...email];
       return newArr.map((str) => str.replace(regex, "")).toString();
     };
-    console.log(name);
-    console.log("email", email);
-    console.log("message", message);
     if (message === undefined || message === "") {
       toast.warn("Kindly Indulge us!");
       return;
@@ -99,12 +80,10 @@ const Form = () => {
       .then(
         (result) => {
           console.log("SUCCESS!", result.status, result.text);
-          console.log(result.text);
           toast.dismiss(load);
           toast.success("Email successfully sent !");
         },
         (error) => {
-          console.log(error.text);
           toast.dismiss(load);
           toast.error(error.name);
           toast.error(error.text);

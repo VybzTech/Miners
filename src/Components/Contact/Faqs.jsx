@@ -5,18 +5,8 @@ import { MdClose } from "react-icons/md";
 const Faqs = ({ showFaqs, setShowFaqs }) => {
   if (showFaqs) {
     return (
-      // showFaqs ? (
-      //   // return
-      //   ReactDOM.createPortal(
-      <div
-        className={`Faqs ${showFaqs ? "show" : "noshow"}`}
-        // onClick={() => setShowFaqs(!showFaqs)}
-      >
-        <main
-        // onClick={() => {
-        //   console.log("I am Main");
-        // }}
-        >
+      <div className={`Faqs ${showFaqs ? "show" : "noshow"}`}>
+        <main>
           <header>
             <h1>FAQs</h1>
             <h2>(Frequently Asked Questions)</h2>
@@ -26,7 +16,6 @@ const Faqs = ({ showFaqs, setShowFaqs }) => {
                   setShowFaqs((s) => (s = !s));
                 }}
               >
-                {/* <button onClick={()={setShowFaqs((s)=>s=!s)}}> */}
                 <MdClose />
               </button>
             </aside>
@@ -35,7 +24,6 @@ const Faqs = ({ showFaqs, setShowFaqs }) => {
           <div className="wrapper">
             <div className="container">
               <h2>What is Lithium ?</h2>
-
               <p>
                 Lithium is a chemical element with the symbol Li and atomic
                 number 3. It is a soft, silvery-white alkali metal. Under

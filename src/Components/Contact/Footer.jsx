@@ -9,10 +9,8 @@ const Footer = ({ props }) => {
     <footer>
       <div className="block">
         <div>
-          {/* <div className='logoNsocials'> */}
           <div className="logo">
             <img src={Logo} alt="Logo" />
-            {/* <big>p</big> */}
             <p>
               platinum ville <span> mines limited</span>
             </p>
@@ -36,14 +34,9 @@ const Footer = ({ props }) => {
             </span>
             <span>Mobile No: +234 803-280-1376</span>
           </div>
-          {/* <div>
-            <p>Mobile Nos:</p>
-            <span>+234 801 253 6589, +234 801 253 6589</span>
-          </div> */}
         </div>
         <Links props={props} />
       </div>
-      {/* <hr /> */}
       <div className="copyX">
         Platinum Ville Mines Limited &copy; 2023. All Rights Reserved.
       </div>
