@@ -1,5 +1,4 @@
 import React from "react";
-// import Background from '../Background';
 import Pic from "../../Images/Drilled-Hole.jpg";
 import Served from "../Services/Served";
 import Service1 from "../../Images/Services/Mining-Industry.jpg";
@@ -23,9 +22,6 @@ const Services = () => {
   return (
     <section id="Services">
       <LithiumBg img={Pic} color={"#120504ec"} color2={"#120504cf"} />
-      {/* <LithiumBg img={Pic} color={"#1a0b0adc"} color2={"#1f0a0cbf"} /> */}
-      {/* <LithiumBg img={Pic} color={"#1a0b0adc"} color2={"#2e0f10bf"} /> */}
-      {/* <LithiumBg img={Pic} color={"#000c"} color2={"#222e"} /> */}
       <div className="container">
         <h2>Our Services</h2>
         <div className="OurServices">

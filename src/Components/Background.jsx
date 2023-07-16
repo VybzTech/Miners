@@ -1,12 +1,9 @@
-import React from 'react';
-// import pic from "../Images/pxfuel.jpg";
-// import "../Styles/Home/Bg.css";
-// import "../Styles/Home/Bg.css";
+import React from "react";
 
 const Background = ({ img }) => {
-    return (
-        <div className='Bg__Image' style={{ backgroundImage: `url(${img})` }} />
-    );
+  return (
+    <div className="Bg__Image" style={{ backgroundImage: `url(${img})` }} />
+  );
 };
 
 export default Background;

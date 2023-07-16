@@ -1,15 +1,5 @@
 @import "./Styles/colors";
 
-/* INDEX CONTENT */
-// * {
-//     margin: 0;
-// }
-
-// code {
-//     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-//         monospace;
-// }
-
 // DEFAULT STYLES & VARIABLES
 
 * {
@@ -26,30 +16,13 @@
   &::selection {
     background-color: $dirty_yellow;
   }
-  // &::-webkit-scrollbar{}
 }
 .App {
   overflow: hidden;
-  // overflow: hidden auto;
 }
 img {
   width: 10vw;
 }
-
-//   background: #333a;
-//   &-track {
-//     width: 10px;
-//   }
-//   &-button {
-//   }
-//   &-thumb {
-//     width: 10px;
-//     background: #111a;
-//   }
-//   *::-webkit-scrollbar {
-// padding-top: 13vh;
-//   padding-top: 13vh;
-// }
 
 /* APP CONTENT   */
 input:-internal-autofill-selected {
@@ -59,7 +32,6 @@ input:-internal-autofill-selected {
 }
 
 .Bg__Image {
-  /* background-position: 100% 100vh; */
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;

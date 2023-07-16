@@ -8,31 +8,12 @@ import Products from "./Components/Products/Products";
 import Services from "./Components/Services/Services";
 import ErrorHandler from "./Components/ErrorHandler";
 import Navbar from "./Components/Home/Navbar";
-import TopBtn from "./Components/Home/TopBtn";
-
-// import React, { Component  } from 'react'
-// // useEffect, useState
-// export class App extends Component {
-//   componentDidMount(){
-
-//   }
-
-//   render() {
-//     return (
-//       <div>App</div>
-//     )
-//   }
-// }
-
-// export default App
 
 function App() {
   const [activeNav, set] = useState("Home");
   const navs = ["Home", "About", "Products", "Services", "Contact"];
-  // console.log(document?.getElementById("portal"), "portal div");
   useEffect(() => {
     navs?.forEach((nav) => {
-      // console.log(document.querySelector(`section#${nav}`));
       const elem =
         document?.querySelector(`section#${nav}`) ??
         document?.getElementById("portal");
@@ -41,12 +22,10 @@ function App() {
         threshold: 0.5,
       });
       function onIntersection(entries) {
-        // console.log(entries[0]);
         if (entries[0].isIntersecting === true) {
           set(nav);
         }
       }
-      //   console.log(nav);
       observer.observe(elem);
     });
     window.addEventListener("scroll", () => {
@@ -58,6 +37,7 @@ function App() {
       window.removeEventListener("scroll", () => {});
     };
   }, []);
+  // }, [navs]);
 
   return (
     <>
@@ -81,11 +61,7 @@ function App() {
         <ErrorHandler>
           <Contact />
         </ErrorHandler>
-        {/* <TopBtn /> */}
       </div>
-      {/* <ErrorHandler>
-        <div id="portal" />
-      </ErrorHandler> */}
     </>
   );
 }
