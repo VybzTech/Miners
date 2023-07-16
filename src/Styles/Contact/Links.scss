@@ -1,15 +1,7 @@
-// @import "../colors";
 //  Small iPhone
-// @media screen and (min-width: 320px) and (max-height: 550px) {
 .shortLinks {
-  // padding-right: 5rem;
   margin: 0.5rem auto 1.2rem 0;
   div {
-    // margin-bottom: 10px;
-    // margin-bottom: 1rem;
-    // width: 10rem;
-    // max-width: 10rem;
-    // opacity: 0.7;
     min-height: 1.82rem;
     max-height: 1.2rem;
     @include trans;
@@ -18,7 +10,6 @@
       font-family: Gills;
       color: $pinkish;
       opacity: 0.8;
-      // margin-bottom: 20px;
       &::before {
         @include trans;
         content: "";
@@ -94,7 +85,6 @@
       opacity: 0.18;
       height: 1.5px;
       border: none;
-      // margin: 0 0 10px 0;
     }
     .wrapper {
       border-radius: 1vh;
@@ -128,7 +118,6 @@
           font-family: Gills;
           word-spacing: 1px;
           &::first-letter {
-            // font-size: 1rem;
             font-size: 16px;
             padding-left: 5px;
           }
@@ -147,148 +136,22 @@
 
 //  Small iPhone 2: iPhone 6, iPhone 5/SE
 @media screen and (min-width: 320px) and (min-height: 551px) and (max-height: 750px) {
-  .shortLinks {
-    //   margin: 0.5rem auto 1.2rem 0;
-    //   div {
-    //     // margin-bottom: 10px;
-    //     // margin-bottom: 1rem;
-    //     // width: 10rem;
-    //     // max-width: 10rem;
-    //     // opacity: 0.7;
-    //     min-height: 1.75rem;
-    //     // max-height: 1.2rem;
-    //     span {
-    //       font-size: 15px;
-    //       font-family: Gills;
-    //       color: $pinkish;
-    //       // margin-bottom: 20px;
-    //       &::before {
-    //         @include trans;
-    //         content: "";
-    //         position: absolute;
-    //         bottom: -2px;
-    //         left: 1px;
-    //         width: 0%;
-    //         height: 2px;
-    //         background-color: $pinkish;
-    //       }
-    //     }
-    //     &:hover {
-    //       cursor: pointer;
-    //       opacity: 1;
-    //       color: white;
-    //       font-size: 18px;
-    //       span::before {
-    //         width: 98%;
-    //       }
-    //     }
-    //   }
-    //   &::after {
-    //     // @include trans;
-    //     content: "";
-    //     position: absolute;
-    //     bottom: -2px;
-    // width: 80vw;
-    //     left: 0;
-    //     opacity: 0.1;
-    //     height: 1px;
-    //     background-color: $pinkish;
-    //   }
-  }
   .Privacy,
   .Terms,
   .Faqs {
-    &.noshow {
-      // display: none;
-    }
-    // width: 100%;
-    // background: #fffb;
-    // backdrop-filter: blur(3px);
-    // height: 100vh;
-    // position: fixed;
-    // z-index: 5;
     main {
-      // background: #fff;
-      // border-radius: 15px;
-      // z-index: 6;
       margin: 1rem auto;
-      // width: 75%;
       padding-bottom: 1.2rem;
-      // box-shadow: 1px 3px 15px 0.5px #fafafa;
       header {
-        // @include flex;
-        // margin: 2rem auto 1rem;
         aside button {
-          //   padding: 8px 9px 3px;
-          //   background: transparent;
-          //   border: 1px solid #fbfbfb;
-          //   border-radius: 30px;
-          //   font-size: 1.4rem;
-          //   color: #aaa;
-          //   box-shadow: 1px 1px 5px 0.5px #eee4;
-          //   @include trans;
           margin: -2rem 0.5rem 0 0;
-          &:hover {
-            // padding: 9px 10px 4px;
-            // cursor: pointer;
-            // border: 1px solid #eee;
-            // color: #111;
-            // box-shadow: 1px 1px 5px 0.5px #ccc4;
-          }
         }
-      }
-      hr {
-        // margin-bottom: 2rem;
-        // background-color: $light_gray;
-        // opacity: 0.18;
-        // height: 1.5px;
-        // border: none;
       }
       .wrapper {
-        // border-radius: 1vh;
         height: 62vh;
-        // overflow-y: scroll;
         &::-webkit-scrollbar {
           width: 11px;
-          // &-thumb {
-          //   border-radius: 3px;
-          //   border: 1px solid #666;
-          //   background-color: #777;
-          //   &:hover {
-          //     box-shadow: 0 0 3px #2224;
-          //     background-color: #666;
-          //   }
-          // }
         }
-        .container {
-          // padding: 1rem 0.85rem 0 7px;
-          // margin-bottom: 1.2rem;
-          // box-shadow: inset 0 0 15px 10px white;
-          h2 {
-            //   font-size: 1.1rem;
-          }
-          p {
-            //   letter-spacing: -0.2px;
-            //   line-height: 1.5;
-            //   font-size: 0.9rem;
-            //   font-size: 15px;
-            //   font-family: system-ui;
-            //   font-family: Gills;
-            //   word-spacing: 1px;
-            &::first-letter {
-              // font-size: 1rem;
-              // font-size: 16px;
-              // padding-left: 5px;
-            }
-          }
-        }
-      }
-      span {
-        // font-style: italic;
-        // font-size: 0.65rem;
-        // opacity: 0.7;
-        // display: block;
-        // padding-top: 0.9rem;
       }
     }
   }
@@ -297,53 +160,11 @@
 // iPhone 6/7/8 and similar devices: iPhone SE
 @media screen and (min-width: 375px) and (max-height: 667px) {
   .shortLinks {
-    //   // padding-right: 5rem;
-    //   margin: 0.5rem auto 1.2rem 0;
     div {
-      //     // margin-bottom: 10px;
-      //     // margin-bottom: 1rem;
-      //     // width: 10rem;
-      //     // max-width: 10rem;
-      //     // opacity: 0.7;
-      //     min-height: 1.75rem;
-      // max-height: 1.2rem;
-      //     @include trans;
       span {
         font-size: 14.75px;
-        //       font-family: Gills;
-        //       color: $pinkish;
-        //       // margin-bottom: 20px;
-        //       &::before {
-        //         @include trans;
-        //         content: "";
-        //         position: absolute;
-        //         bottom: -2px;
-        //         left: 1px;
-        //         width: 0%;
-        //         height: 2px;
-        //         background-color: $pinkish;
-        //       }
       }
-      //     &:hover {
-      //       cursor: pointer;
-      //       opacity: 1;
-      //       color: white;
-      //       font-size: 18px;
-      //       span::before {
-      //         width: 98%;
-      //       }
-      //     }
     }
-    //   &::after {
-    //     // @include trans;
-    //     content: "";
-    //     position: absolute;
-    //     bottom: -2px;
-    // width: 80vw;
-    //     opacity: 0.1;
-    //     height: 1px;
-    //     background-color: $pinkish;
-    //   }
   }
   .Privacy,
   .Terms,
@@ -360,53 +181,11 @@
 // For iPhone X and similar devices: iPhone 12 Pro
 @media only screen and (min-width: 375px) and (min-height: 730px) and (max-height: 850px) {
   .shortLinks {
-    //   // padding-right: 5rem;
-    //   margin: 0.5rem auto 1.2rem 0;
     div {
-      //     // margin-bottom: 10px;
-      //     // margin-bottom: 1rem;
-      //     // width: 10rem;
-      //     // max-width: 10rem;
-      //     // opacity: 0.7;
-      //     min-height: 1.75rem;
-      // max-height: 1.2rem;
-      //     @include trans;
       span {
         font-size: 14.5px;
-        //       font-family: Gills;
-        //       color: $pinkish;
-        //       // margin-bottom: 20px;
-        //       &::before {
-        //         @include trans;
-        //         content: "";
-        //         position: absolute;
-        //         bottom: -2px;
-        //         left: 1px;
-        //         width: 0%;
-        //         height: 2px;
-        //         background-color: $pinkish;
-        //       }
       }
-      //     &:hover {
-      //       cursor: pointer;
-      //       opacity: 1;
-      //       color: white;
-      //       font-size: 18px;
-      //       span::before {
-      //         width: 98%;
-      //       }
-      //     }
     }
-    //   &::after {
-    //     // @include trans;
-    //     content: "";
-    //     position: absolute;
-    //     bottom: -2px;
-    // width: 80vw;
-    //     opacity: 0.1;
-    //     height: 1px;
-    //     background-color: $pinkish;
-    //   }
   }
   .Privacy,
   .Terms,
@@ -421,10 +200,6 @@
       }
     }
   }
-}
-
-// For iPhone 6+/7+/8+ and similar devices:  Nexus 6, iPhone XR
-@media screen and (min-width: 450px) and (max-width: 480px) {
 }
 
 // Longer phone iPhone XR
@@ -447,89 +222,17 @@
 // For iPads, Tablets Sizes: iPad , iPad Mini
 @media screen and (min-width: 481px) and (max-width: 768px) and (max-height: 1024px) {
   .shortLinks {
-    // margin: 0.5rem auto 1.2rem 0;
     @include noFooterLine;
     div {
       min-height: 1.6rem;
-      // max-height: 1.2rem;
       text-align: right;
-      // @include trans;
       span {
-        // font-size: 11px;
         padding: 0 7px 0 0;
         font-size: 1.85vw;
-        // font-family: Gills;
-        // color: $pinkish;
-        // opacity: 0.8;
         &::before {
-          // @include trans;
-          // content: "";
-          // position: absolute;
           bottom: -3.5px;
           left: -4px;
-          // width: 0%;
-          // height: 2px;
-          // background-color: $pinkish;
         }
-      }
-      &:hover {
-        // cursor: pointer;
-        // opacity: 1;
-        // color: white;
-        // font-size: 18px;
-        span::before {
-          // width: 98%;
-        }
-      }
-    }
-  }
-  .Privacy,
-  .Terms,
-  .Faqs {
-    &.noshow {
-      // display: none;
-    }
-    // width: 100%;
-    // background: #fffb;
-    // backdrop-filter: blur(3px);
-    // height: 100vh;
-    // position: fixed;
-    // z-index: 5;
-    main {
-      // background: #fff;
-      // border-radius: 15px;
-      // z-index: 6;
-      // margin: 4rem auto;
-      // width: 75%;
-      // padding: 2rem 5rem 7rem;
-      // box-shadow: 1px 3px 15px 0.5px #fafafa;
-      header {
-        // @include flex;
-        // margin: 2rem auto 1rem;
-        aside button {
-          // padding: 8px 9px 3px;
-          // background: transparent;
-          // border: 1px solid #fbfbfb;
-          // border-radius: 30px;
-          // font-size: 1.4rem;
-          // color: #aaa;
-          // box-shadow: 1px 1px 5px 0.5px #eee4;
-          // @include trans;
-          &:hover {
-            // padding: 9px 10px 4px;
-            // cursor: pointer;
-            // border: 1px solid #eee;
-            // color: #111;
-            // box-shadow: 1px 1px 5px 0.5px #ccc4;
-          }
-        }
-      }
-      hr {
-        // margin-bottom: 2rem;
-        // background-color: $light_gray;
-        // opacity: 0.18;
-        // height: 1.5px;
-        // border: none;
       }
     }
   }
@@ -538,89 +241,17 @@
 // For Small screens, Laptops Sizes: iPad Air, Surface Pro
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   .shortLinks {
-    // margin: 0.5rem auto 1.2rem 0;
     @include noFooterLine;
     div {
       min-height: 1.6rem;
-      // max-height: 1.2rem;
       text-align: right;
-      // @include trans;
       span {
-        // font-size: 11px;
         padding: 0 7px 0 0;
         font-size: 1.85vw;
-        // font-family: Gills;
-        // color: $pinkish;
-        // opacity: 0.8;
         &::before {
-          // @include trans;
-          // content: "";
-          // position: absolute;
           bottom: -3.5px;
           left: -4px;
-          // width: 0%;
-          // height: 2px;
-          // background-color: $pinkish;
         }
-      }
-      &:hover {
-        // cursor: pointer;
-        // opacity: 1;
-        // color: white;
-        // font-size: 18px;
-        span::before {
-          // width: 98%;
-        }
-      }
-    }
-  }
-  .Privacy,
-  .Terms,
-  .Faqs {
-    &.noshow {
-      // display: none;
-    }
-    // width: 100%;
-    // background: #fffb;
-    // backdrop-filter: blur(3px);
-    // height: 100vh;
-    // position: fixed;
-    // z-index: 5;
-    main {
-      // background: #fff;
-      // border-radius: 15px;
-      // z-index: 6;
-      // margin: 4rem auto;
-      // width: 75%;
-      // padding: 2rem 5rem 7rem;
-      // box-shadow: 1px 3px 15px 0.5px #fafafa;
-      header {
-        // @include flex;
-        // margin: 2rem auto 1rem;
-        aside button {
-          // padding: 8px 9px 3px;
-          // background: transparent;
-          // border: 1px solid #fbfbfb;
-          // border-radius: 30px;
-          // font-size: 1.4rem;
-          // color: #aaa;
-          // box-shadow: 1px 1px 5px 0.5px #eee4;
-          // @include trans;
-          &:hover {
-            // padding: 9px 10px 4px;
-            // cursor: pointer;
-            // border: 1px solid #eee;
-            // color: #111;
-            // box-shadow: 1px 1px 5px 0.5px #ccc4;
-          }
-        }
-      }
-      hr {
-        // margin-bottom: 2rem;
-        // background-color: $light_gray;
-        // opacity: 0.18;
-        // height: 1.5px;
-        // border: none;
       }
     }
   }
@@ -632,39 +263,17 @@
     h2 {
       text-align: right;
     }
-    // margin: 0.5rem auto 1.2rem 0;
     @include noFooterLine;
     div {
       margin-bottom: 0.5rem;
       min-height: 1.6rem;
-      // max-height: 1.2rem;
       text-align: right;
-      // @include trans;
       span {
-        // font-size: 11px;
         padding: 0 7px 0 0;
         font-size: 1.9vw;
-        // font-family: Gills;
-        // color: $pinkish;
-        // opacity: 0.8;
         &::before {
-          // @include trans;
-          // content: "";
-          // position: absolute;
           bottom: -3.5px;
           left: -4px;
-          // width: 0%;
-          // height: 2px;
-          // background-color: $pinkish;
-        }
-      }
-      &:hover {
-        // cursor: pointer;
-        // opacity: 1;
-        // color: white;
-        // font-size: 18px;
-        span::before {
-          // width: 98%;
         }
       }
     }
@@ -690,8 +299,6 @@
 // PHONE LANDSCAPE   iPhone , Nexus 6, Samsung Galaxy S8+
 @media screen and (min-height: 350px) and (max-width: 750px) and (orientation: Landscape) {
   .shortLinks {
-    h2 {
-    }
     @include noFooterLine;
     div {
       min-height: 1.3rem;
@@ -703,10 +310,6 @@
           left: -4px;
         }
       }
-      &:hover {
-        span::before {
-        }
-      }
     }
   }
   .Privacy,
@@ -714,10 +317,8 @@
   .Faqs {
     main {
       margin: 1.25rem auto 1.8rem;
-      // width: 75%;
       padding: 1rem 2rem 1.25rem;
       header {
-        // margin: 2rem auto 1rem;
         aside button {
           margin: -1rem -0.5rem 0 0;
         }
@@ -737,45 +338,23 @@
 @media screen and (min-height: 320px) and (max-width: 580px) and (orientation: Landscape) {
   .shortLinks {
     text-align: right;
-    h2 {
-    }
     @include noFooterLine;
     div {
       min-height: 1.2rem;
       margin-top: 5px;
       span {
-        //   padding: 0 5px 0 0;
         font-size: 13px;
-        //   &::before {
-        //     bottom: -3.5px;
-        //     left: -4px;
-      }
-      // }
-      &:hover {
-        span::before {
-        }
       }
     }
   }
   .Privacy,
   .Terms,
   .Faqs {
-    // width: 100%;
-    // background: #fffb;
-    // backdrop-filter: blur(3px);
-    // height: 100vh;
-    // position: fixed;
-    // z-index: 5;
     main {
-      // background: #fff;
-      // border-radius: 5vh;
-      // z-index: 6;
       margin: 1.2rem auto;
       width: 80%;
       padding: 0.5rem 1.2rem 1.5rem 1.75rem;
-      // box-shadow: 1px 3px 15px 0.5px #fafafa;
       header {
-        // @include flex;
         margin: 0.75rem auto 0.5rem;
         h1 {
           font-size: 1.25rem;
@@ -786,30 +365,15 @@
         aside button {
           margin: -0.75rem -0.5rem 0 0;
           padding: 5px 5px 0;
-          // background: transparent;
-          // border: 1px solid #fbfbfb;
-          // border-radius: 30px;
           font-size: 0.9rem;
-          // color: #aaa;
-          // box-shadow: 1px 1px 5px 0.5px #eee4;
-          // @include trans;
           &:hover {
             font-size: 0.925rem;
             padding: 6px 6px 1px;
-            // padding: 9px 10px 4px;
-            // cursor: pointer;
-            // border: 1px solid #eee;
-            // color: #111;
-            // box-shadow: 1px 1px 5px 0.5px #ccc4;
           }
         }
       }
       hr {
         margin-bottom: 0.8rem;
-        // background-color: $light_gray;
-        // opacity: 0.18;
-        // height: 1.5px;
-        // border: none;
       }
       .wrapper {
         border-radius: 1vh;
@@ -837,17 +401,11 @@
           p {
             letter-spacing: -0.3px;
             line-height: 1.55;
-            // font-size: 0.9rem;
-            // font-size: 15px;
             font-size: 13px;
-            // font-family: system-ui;
             padding-top: 2px;
-            // font-family: Gills;
             word-spacing: 0;
             &::first-letter {
               font-size: 14px;
-              // font-size: 1rem;
-              // font-size: 18px;
               padding-left: 7px;
             }
           }
@@ -868,9 +426,6 @@
 @media screen and (min-height: 375px) and (min-width: 800px) and (orientation: Landscape) {
   .shortLinks {
     text-align: right;
-    h2 {
-      //   padding: 0 5px 0 0;
-    }
     @include noFooterLine;
     div {
       min-height: 1rem;
@@ -878,62 +433,28 @@
       span {
         padding: 1px 2px 1px 1px;
         font-size: 14px;
-        //   &::before {
-        //     bottom: -3.5px;
-        //     left: -4px;
-      }
-      // }
-      &:hover {
-        span::before {
-        }
       }
     }
   }
   .Privacy,
   .Terms,
   .Faqs {
-    // width: 100%;
-    // background: #fffb;
-    // backdrop-filter: blur(3px);
-    // height: 100vh;
-    // position: fixed;
-    // z-index: 5;
     main {
-      // background: #fff;
-      // border-radius: 5vh;
-      // z-index: 6;
       margin: 1rem auto;
       width: 85%;
       padding: 0.7rem 1.5rem 1.8rem 3rem;
-      // box-shadow: 1px 3px 15px 0.5px #fafafa;
       header {
-        // @include flex;
         margin: 1.2rem auto 0.5rem;
         aside button {
           padding: 6px 7px 1px;
-          // background: transparent;
-          // border: 1px solid #fbfbfb;
-          // border-radius: 30px;
           font-size: 1.3rem;
-          // color: #aaa;
-          // box-shadow: 1px 1px 5px 0.5px #eee4;
-          // @include trans;
           &:hover {
             padding: 8px 9px 3px;
-            // padding: 9px 10px 4px;
-            // cursor: pointer;
-            // border: 1px solid #eee;
-            // color: #111;
-            // box-shadow: 1px 1px 5px 0.5px #ccc4;
           }
         }
       }
       hr {
         margin-bottom: 0.8rem;
-        // background-color: $light_gray;
-        // opacity: 0.18;
-        // height: 1.5px;
-        // border: none;
       }
       .wrapper {
         border-radius: 1vh;
@@ -965,7 +486,6 @@
             font-family: Gills;
             word-spacing: 1px;
             &::first-letter {
-              // font-size: 1rem;
               font-size: 18px;
               padding-left: 10px;
             }
@@ -983,120 +503,19 @@
   }
 }
 
-// PHONE LANDSCAPE
-@media screen and (min-height: 320px) and (max-height: 450px) {
-  // .shortLinks {
-  //   h2 {
-  //     text-align: right;
-  //   }
-  //   // margin: 0.5rem auto 1.2rem 0;
-  //   @include noFooterLine;
-  //   div {
-  //     min-height: 1.3rem;
-  //     // max-height: 1.2rem;
-  //     text-align: right;
-  //     // @include trans;
-  //     span {
-  //       // font-size: 11px;
-  //       padding: 0 7px 0 0;
-  //       font-size: 11px;
-  //       // font-size: 1.85vw;
-  //       // font-family: Gills;
-  //       // color: $pinkish;
-  //       // opacity: 0.8;
-  //       &::before {
-  //         // @include trans;
-  //         // content: "";
-  //         // position: absolute;
-  //         bottom: -3.5px;
-  //         left: -4px;
-  //         // width: 0%;
-  //         // height: 2px;
-  //         // background-color: $pinkish;
-  //       }
-  //     }
-  //     &:hover {
-  //       // cursor: pointer;
-  //       // opacity: 1;
-  //       // color: white;
-  //       // font-size: 18px;
-  //       span::before {
-  //         // width: 98%;
-  //       }
-  //     }
-  //   }
-  // }
-  // .Privacy,
-  // .Terms,
-  // .Faqs {
-  //   &.noshow {
-  //     // display: none;
-  //   }
-  //   // width: 100%;
-  //   // background: #fffb;
-  //   // backdrop-filter: blur(3px);
-  //   // height: 100vh;
-  //   // position: fixed;
-  //   // z-index: 5;
-  //   main {
-  //     // background: #fff;
-  //     // border-radius: 15px;
-  //     // z-index: 6;
-  //     // margin: 4rem auto;
-  //     // width: 75%;
-  //     // padding: 2rem 5rem 7rem;
-  //     // box-shadow: 1px 3px 15px 0.5px #fafafa;
-  //     header {
-  //       // @include flex;
-  //       // margin: 2rem auto 1rem;
-  //       aside button {
-  //         // padding: 8px 9px 3px;
-  //         // background: transparent;
-  //         // border: 1px solid #fbfbfb;
-  //         // border-radius: 30px;
-  //         // font-size: 1.4rem;
-  //         // color: #aaa;
-  //         // box-shadow: 1px 1px 5px 0.5px #eee4;
-  //         // @include trans;
-  //         &:hover {
-  //           // padding: 9px 10px 4px;
-  //           // cursor: pointer;
-  //           // border: 1px solid #eee;
-  //           // color: #111;
-  //           // box-shadow: 1px 1px 5px 0.5px #ccc4;
-  //         }
-  //       }
-  //     }
-  //     hr {
-  //       // margin-bottom: 2rem;
-  //       // background-color: $light_gray;
-  //       // opacity: 0.18;
-  //       // height: 1.5px;
-  //       // border: none;
-  //     }
-  //   }
-  // }
-}
-
 // ****************************** LAPTOP ********************************
 
 // For Desktops, Large screens, Extra large screens, TVs
 @media screen and (min-width: 1024px) and (height: 768px) {
-  // @media screen and (min-width: 1024px) {
   .shortLinks {
     margin: 0;
-    // padding-right: 2rem;
     @include noFooterLine;
     h2,
     & > div {
       width: fit-content;
-      // text-align: right;
       margin: 0 0 0 auto;
     }
     div {
-      // margin-bottom: 10px;
-      // margin-bottom: 1rem;
-      // width: 8rem;
       margin: 10px 0 15px auto;
       max-width: 10rem;
       opacity: 0.825;
@@ -1104,10 +523,8 @@
       @include trans;
       span {
         font-size: 17px;
-        // text-align: right;
         font-family: Gills;
         color: $pinkish;
-        // margin-bottom: 20px;
         &::before {
           @include trans;
           content: "";
@@ -1208,7 +625,6 @@
             font-family: Gills;
             word-spacing: 1px;
             &::first-letter {
-              // font-size: 1rem;
               font-size: 19px;
               padding-left: 10px;
             }
@@ -1230,36 +646,9 @@
     padding-right: 5rem;
     div {
       margin-bottom: 15px;
-      // width: 10rem;
-      // max-width: 10rem;
-      // opacity: 0.7;
-      // max-height: 1.2rem;
       padding: 1px;
-      // @include trans;
       span {
         font-size: 16.5px;
-        // font-family: Gills;
-        // color: $pinkish;
-        // margin-bottom: 20px;
-        &::before {
-          // @include trans;
-          // content: "";
-          // position: absolute;
-          // bottom: -2px;
-          // left: 1px;
-          // width: 0%;
-          // height: 2px;
-          // background-color: $pinkish;
-        }
-      }
-      &:hover {
-        // cursor: pointer;
-        // opacity: 1;
-        // color: white;
-        // font-size: 18px;
-        span::before {
-          // width: 98%;
-        }
       }
     }
   }
@@ -1320,7 +709,6 @@
         opacity: 0.05;
         height: 1.5px;
         border: none;
-        // margin: 0 0 10px 0;
       }
       .wrapper {
         border-radius: 1vh;
@@ -1351,7 +739,6 @@
             font-family: Gills;
             word-spacing: 1px;
             &::first-letter {
-              // font-size: 1rem;
               font-size: 19px;
               padding-left: 10px;
             }
@@ -1372,112 +759,9 @@
 //  PORTAL
 .portal,
 #portal {
-  // position: absolute;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  // height: 100vh;
   z-index: 10;
-  // &::-webkit-scrollbar {
-  //   display: none;
-  // }
 }
-// #fff;
-// border-radius: 10vh;
-// z-index: 6;
-// margin: 1.5rem auto;
-// width: 80%;
-// padding: 1rem 4rem 7rem;
-// box-shadow: 1px 3px 20px 1.5px #fafafa;
-
-/*
- .shortLinks {
-    padding-right: 5rem;
-    div {
-      margin-bottom: 10px;
-      // margin-bottom: 1rem;
-      width: 10rem;
-      max-width: 10rem;
-      opacity: 0.7;
-      max-height: 1.2rem;
-      @include trans;
-      span {
-        font-size: 16px;
-        font-family: Gills;
-        color: $pinkish;
-        // margin-bottom: 20px;
-        &::before {
-          @include trans;
-          content: "";
-          position: absolute;
-          bottom: -2px;
-          left: 1px;
-          width: 0%;
-          height: 2px;
-          background-color: $pinkish;
-        }
-      }
-      &:hover {
-        cursor: pointer;
-        opacity: 1;
-        color: white;
-        font-size: 18px;
-        span::before {
-          width: 98%;
-        }
-      }
-    }
-  }
-  .Privacy,
-  .Terms,
-  .Faqs {
-    &.noshow {
-      display: none;
-    }
-    width: 100%;
-    background: #fffb;
-    backdrop-filter: blur(3px);
-    height: 100vh;
-    position: fixed;
-    z-index: 5;
-    main {
-      background: #fff;
-      border-radius: 15px;
-      z-index: 6;
-      margin: 4rem auto;
-      width: 75%;
-      padding: 2rem 5rem 7rem;
-      box-shadow: 1px 3px 15px 0.5px #fafafa;
-      header {
-        @include flex;
-        margin: 2rem auto 1rem;
-        aside button {
-          padding: 8px 9px 3px;
-          background: transparent;
-          border: 1px solid #fbfbfb;
-          border-radius: 30px;
-          font-size: 1.4rem;
-          color: #aaa;
-          box-shadow: 1px 1px 5px 0.5px #eee4;
-          @include trans;
-          &:hover {
-            padding: 9px 10px 4px;
-            cursor: pointer;
-            border: 1px solid #eee;
-            color: #111;
-            box-shadow: 1px 1px 5px 0.5px #ccc4;
-          }
-        }
-      }
-      hr {
-        margin-bottom: 2rem;
-        background-color: $light_gray;
-        opacity: 0.18;
-        height: 1.5px;
-        border: none;
-        // margin: 0 0 10px 0;
-      }
-    }
-  }
-*/
