@@ -23,7 +23,18 @@
 img {
   width: 10vw;
 }
+html {
+  scroll-snap-type: y proximity;
+}
 
+section#Home,
+section#About,
+section#Lithium,
+section#Products,
+section#Services,
+section#Contact {
+  scroll-snap-align: start;
+}
 /* APP CONTENT   */
 input:-internal-autofill-selected {
   color: $brown !important;

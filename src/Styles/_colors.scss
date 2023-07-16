@@ -39,11 +39,6 @@ $light_gray: #ccc;
     url("/src/Fonts/Gill-Sans/Gill-Sans-Heavy.otf") format("opentype");
   font-weight: 900;
 }
-// @font-face {
-//     font-family: GillsBold;
-//     src: local(GillsBold),
-//         url('/src/Fonts/Gill-Sans/Gill-Sans-Bold.otf') format('opentype');
-// }
 
 //  MIXINS
 @mixin flex($align: center, $jus: space-between, $dir: row) {
@@ -191,7 +186,7 @@ $light_gray: #ccc;
 
   // PHONE LANDSCAPE   iPhone XR, iPhone 6+,7+,8+,
   @media screen and (min-height: 414px) and (min-width: 700px) and (orientation: Landscape) {
-   $size : $siz - 0.55vw;
+    $size: $siz - 0.55vw;
     $min: $size - 0.5vw;
     $max: $size + 0.75vw;
     svg {
