@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { MdClose } from "react-icons/md";
 
 const Faqs = ({ showFaqs, setShowFaqs }) => {

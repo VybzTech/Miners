@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { LITHIUM__MINING } from "../Services/Data";
 import Star from "./Star";
 

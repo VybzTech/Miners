@@ -1705,6 +1705,7 @@
       .footer {
         footer {
           .block {
+            @include flex($align: flex-start);
             margin-bottom: -0.2rem;
             &::after {
               width: 95vw;

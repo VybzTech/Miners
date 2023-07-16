@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 import { BiLogOutCircle, BiMailSend } from "react-icons/bi";
 import emailjs from "@emailjs/browser";
@@ -43,7 +43,7 @@ const Form = () => {
       const response = await fetch(apiURL + "&email=" + email);
       const data = await response.json();
       const isValidSMTP =
-        data.is_smtp_valid.value && data.deliverability == "DELIVERABLE";
+        data.is_smtp_valid.value && data.deliverability === "DELIVERABLE";
       if (isValidSMTP) {
         toast.dismiss(load);
         setVerified(true);

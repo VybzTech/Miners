@@ -14,7 +14,7 @@ const Roller = ({ infos, active, set }) => {
     return () => {
       clearInterval(RollerInterval);
     };
-  }, [active, content?.length]);
+  }, [set, active, content?.length]);
 
   return (
     <main className="Roller">
